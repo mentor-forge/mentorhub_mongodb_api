@@ -1,74 +1,71 @@
-.PHONY: help test clean merge diff take
+.PHONY: help dev container process push build-package publish-package delete-package deploy open down
+ORG ?= mentor-forge
+API_PORT ?= 8385
 
 help:
-	@echo "  make test             - Run tests using ~/temp folder"
-	@echo "  make clean            - Clean up temporary test files"
-	@echo "  make merge <specs_path>  - Merge templates (repo is .); e.g. make merge ../Specifications"
-	@echo "  make diff <filespec>  - Diff temp vs expected for a single file"
-	@echo "  make take <filespec>  - Overwrite expected file with temp file"
+	@echo "Available commands:"
+	@echo "  make dev              - Run development runtime to edit configurations"
+	@echo "  make container        - Build Docker container for deployment"
+	@echo "  make process          - Call Configure Database API and validate JSON"
+	@echo "  make deploy           - Run packaged configuration (read-only)"
+	@echo "  make open             - Open browser for running containers"
+	@echo "  make down             - Shut down containers"
 
-test:
-	@TEMP_REPO="$$HOME/tmp/testRepo"; \
-	echo "Setting up temporary testing folder at $$TEMP_REPO..."; \
-	rm -rf "$$TEMP_REPO"; \
-	mkdir -p "$$TEMP_REPO"; \
-	cp -r . "$$TEMP_REPO"
-	@echo "Debug: Checking specifications structure..."; \
-	find .stage0_template/Specifications -name "*.yaml" | head -10
-	@echo "Running the container..."; \
-	LOG_LEVEL="$${LOG_LEVEL:-DEBUG}"; \
-	docker run --rm \
-		-v "$$HOME/tmp/testRepo:/repo" \
-		-v "$$(pwd)/.stage0_template/specifications:/specifications" \
-		-e LOG_LEVEL="$$LOG_LEVEL" \
-		ghcr.io/agile-learning-institute/stage0_runbook_merge:latest
-	@echo "Checking output (ignoring .git, .DS_Store, node_modules, dist)..."; \
-	(diff -qr "$$(pwd)/.stage0_template/test_expected/" "$$HOME/tmp/testRepo/" 2>/dev/null || true) | (grep -v '\.git' | grep -v '\.DS_Store' | grep -v 'node_modules' | grep -v 'dist' | grep -v 'playwright-report' | grep -v 'test-results' || true) > /tmp/stage0_diff.txt; \
-	if [ -s /tmp/stage0_diff.txt ]; then cat /tmp/stage0_diff.txt; echo "Fail: unexpected differences."; exit 1; fi; \
-	echo "Done."
+dev:
+	@echo "Shutting down centralized services..."
+	@mh down || true
+	@echo "Starting local development services..."
+	@export INPUT_FOLDER=$$(pwd)/configurator && docker compose up -d
+	@make open
 
-clean:
-	@echo "Removing temporary test repo at $$HOME/tmp/testRepo..."; \
-	rm -rf "$$HOME/tmp/testRepo"
+container:
+	@echo "Building Docker container image..."
+	DOCKER_BUILDKIT=0 docker build -t ghcr.io/mentor-forge/mentorhub_mongodb_api:latest .
 
-merge:
-	@SPECS_PATH="$(firstword $(filter-out $@,$(MAKECMDGOALS)))"; \
-	if [ -z "$$SPECS_PATH" ]; then \
-		echo "Usage: make merge <specs_path>"; \
-		echo "  e.g. make merge ../Specifications"; \
-		exit 1; \
-	fi; \
-	echo "Running merge: repo=. specs=$$SPECS_PATH"; \
-	LOG_LEVEL="$${LOG_LEVEL:-INFO}"; \
-	docker run --rm \
-		-v ".:/repo" \
-		-v "$$SPECS_PATH:/specifications" \
-		-e LOG_LEVEL="$$LOG_LEVEL" \
-		ghcr.io/agile-learning-institute/stage0_runbook_merge:latest
+process:
+	@echo "Running Configure Database via API on port $(API_PORT)..."
+	@export INPUT_FOLDER=$$(pwd)/configurator && docker compose down
+	@export INPUT_FOLDER=$$(pwd)/configurator && docker compose up -d
+	@mkdir -p artifacts
+	@set -e; \
+	  STATUS=$$(curl -sS -o artifacts/process_all_configurations.json -w "%{http_code}" -X POST "http://localhost:$(API_PORT)/api/configurations/"); \
+	  echo "$$STATUS" > artifacts/process_all_configurations.status; \
+	  if [ "$$STATUS" -ge 400 ]; then \
+	    echo "Configure Database HTTP error: $$STATUS"; \
+	    exit 1; \
+	  fi; \
+	  echo "Checking Configure Database result with jq..."; \
+	  jq -e 'if type=="array" then .[0].status=="SUCCESS" else .status=="SUCCESS" end' artifacts/process_all_configurations.json > /dev/null || (echo "Configure Database reported FAILURE; see artifacts/process_all_configurations.json for details." && exit 1); \
+	  echo "Configure Database completed successfully. Event JSON saved to artifacts/process_all_configurations.json"
 
-diff:
-	@FILESPEC="$(firstword $(filter-out diff,$(MAKECMDGOALS)))"; \
-	if [ -z "$$FILESPEC" ]; then \
-		echo "Usage: make diff <filespec>  (e.g. make diff DeveloperEdition/mh)"; \
-		exit 1; \
-	fi; \
-	TEMP="$$HOME/tmp/testRepo/$$FILESPEC"; \
-	EXP="$(PWD)/.stage0_template/test_expected/$$FILESPEC"; \
-	if [ ! -f "$$TEMP" ]; then echo "Temp file not found: $$TEMP"; exit 1; fi; \
-	if [ ! -f "$$EXP" ]; then echo "Expected file not found: $$EXP"; exit 1; fi; \
-	diff "$$TEMP" "$$EXP"
+push:
+	@echo "Pushing Docker container image..."
+	@docker push ghcr.io/mentor-forge/mentorhub_mongodb_api:latest
+	@echo "Pushed: ghcr.io/mentor-forge/mentorhub_mongodb_api:latest"
 
-take:
-	@FILESPEC="$(firstword $(filter-out take,$(MAKECMDGOALS)))"; \
-	if [ -z "$$FILESPEC" ]; then \
-		echo "Usage: make take <filespec>  (e.g. make take DeveloperEdition/mh)"; \
-		exit 1; \
-	fi; \
-	TEMP="$$HOME/tmp/testRepo/$$FILESPEC"; \
-	EXP="$(PWD)/.stage0_template/test_expected/$$FILESPEC"; \
-	if [ ! -f "$$TEMP" ]; then echo "Temp file not found: $$TEMP"; exit 1; fi; \
-	cp "$$TEMP" "$$EXP"; \
-	echo "Updated $$EXP from $$TEMP"
+build-publish:
+	@echo "Building and pushing Docker container image..."
+	make container
+	make push
 
-%:
-	@:
+build-package: container
+publish-package: push
+delete-package:
+	@echo "Deleting container package..."
+	@gh api -X DELETE "/orgs/mentor-forge/packages/container/mentorhub_mongodb_api" 2>/dev/null || true
+
+deploy:
+	@echo "Deploying packaged configuration..."
+	make down
+	mh up mongodb
+	make open
+
+open:
+	@echo "Opening browser..."
+	open -a 'Google Chrome' 'http://localhost:8386' || google-chrome 'http://localhost:8386' || xdg-open 'http://localhost:8386'
+
+down:
+	@echo "Shutting down local containers..."
+	@docker compose down || true
+	@echo "Shutting down centralized services..."
+	@mh down || true

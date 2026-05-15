@@ -24,17 +24,17 @@ services:
     image: ghcr.io/agile-learning-institute/mongodb_configurator_api:latest
     restart: no
     ports:
-      - "127.0.0.1:{{info.base_port + 2}}:{{info.base_port + 2}}"
+      - "127.0.0.1:8385:8385"
     environment:
       MONGODB_REQUIRE_TLS: False
       ENABLE_DROP_DATABASE: True
-      MONGO_DB_NAME: {{info.db_name}}
+      MONGO_DB_NAME: mentor_hub
       AUTO_PROCESS: False
       LOAD_TEST_DATA: True
-      API_PORT: {{info.base_port + 2}}
-      SPA_PORT: {{info.base_port + 3}}
+      API_PORT: 8385
+      SPA_PORT: 8386
       INPUT_FOLDER: /input
-      UI_HEADER: "{{info.name}} Schemas DEV MODE"
+      UI_HEADER: "Mentor Hub Schemas DEV MODE"
     volumes:
       - ${INPUT_FOLDER:-./configurator}:/input
     depends_on:
@@ -49,11 +49,10 @@ services:
     restart: no
     environment:
       API_HOST: configurator_api
-      API_PORT: {{info.base_port + 2}}
-      SPA_PORT: {{info.base_port + 3}}
+      API_PORT: 8385
+      SPA_PORT: 8386
     ports:
-      - "127.0.0.1:{{info.base_port + 3}}:{{info.base_port + 3}}"
+      - "127.0.0.1:8386:8386"
     depends_on:
       configurator_api:
         condition: service_started
-

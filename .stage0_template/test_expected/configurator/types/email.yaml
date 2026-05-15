@@ -1,8 +1,0 @@
-root:
-  name: email
-  description: A valid email address
-  type: simple
-  schema:
-    type: string
-    pattern: ^[^\s@]+@[^\s@]+\.[^\s@]+$
-  required: false

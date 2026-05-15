@@ -1,6 +1,6 @@
 # Use Configurator API Base Image
 FROM ghcr.io/agile-learning-institute/mongodb_configurator_api:latest
-LABEL org.opencontainers.image.source="{{org.git_host}}/{{org.git_org}}/{{info.slug}}_mongodb_api"
+LABEL org.opencontainers.image.source="https://github.com/mentor-forge/mentorhub_mongodb_api"
 
 # Switch to root to set up /input directory
 USER root
@@ -31,5 +31,5 @@ RUN chown -R app:app /input && \
 USER app
 
 # Port Number for the API
-ENV API_PORT={{info.base_port + 2}}
-EXPOSE {{info.base_port + 2}}
+ENV API_PORT=8385
+EXPOSE 8385

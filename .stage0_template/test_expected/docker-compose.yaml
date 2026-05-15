@@ -1,0 +1,58 @@
+# docker-compose.yaml for Editing MongoDB Configurations
+services:
+  ##################################
+  # MongoDB backing service 
+  ##################################
+  mongodb:
+    image: mongo:7.0.5
+    ports:
+      - "127.0.0.1:27017:27017"
+    extra_hosts:
+      - "mongodb:127.0.0.1"
+    healthcheck:
+      test: echo "db.runCommand('ping')" | mongosh --port 27017 --quiet
+      interval: 5s
+      timeout: 30s
+      start_period: 0s
+      retries: 3
+    command: ["--bind_ip_all", "--port", "27017"]
+
+  ##################################
+  # MongoDB Configurator API - Dev Mode (mounts ./configurator to /input)
+  ##################################
+  configurator_api:
+    image: ghcr.io/agile-learning-institute/mongodb_configurator_api:latest
+    restart: no
+    ports:
+      - "127.0.0.1:8385:8385"
+    environment:
+      MONGODB_REQUIRE_TLS: False
+      ENABLE_DROP_DATABASE: True
+      MONGO_DB_NAME: mentor_hub
+      AUTO_PROCESS: False
+      LOAD_TEST_DATA: True
+      API_PORT: 8385
+      SPA_PORT: 8386
+      INPUT_FOLDER: /input
+      UI_HEADER: "Mentor Hub Schemas DEV MODE"
+    volumes:
+      - ${INPUT_FOLDER:-./configurator}:/input
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  ##################################
+  # MongoDB Configurator SPA
+  ##################################
+  configurator_spa:
+    image: ghcr.io/agile-learning-institute/mongodb_configurator_spa:latest
+    restart: no
+    environment:
+      API_HOST: configurator_api
+      API_PORT: 8385
+      SPA_PORT: 8386
+    ports:
+      - "127.0.0.1:8386:8386"
+    depends_on:
+      configurator_api:
+        condition: service_started

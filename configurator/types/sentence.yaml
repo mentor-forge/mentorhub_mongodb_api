@@ -1,0 +1,8 @@
+root:
+  name: sentence
+  description: A String of text, 0 to 255 characters with no special characters
+  type: simple
+  schema:
+    type: string
+    pattern: "^[^\\t\\n]{0,255}$"
+  required: false

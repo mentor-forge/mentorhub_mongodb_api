@@ -1,0 +1,12 @@
+root:
+  name: index
+  description: A zero-based array index
+  type: complex
+  json_type:
+    type: number
+    minimum: 0
+    multipleOf: 1
+  bson_type:
+    bsonType: int
+    minimum: 0
+  required: false 

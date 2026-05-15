@@ -1,0 +1,32 @@
+# Default dictionary template for new collections (playground/Docker).
+# Placeholders: {{collection_name}}, {{description}}
+# Same as built-in: configurator/templates/default_new_dictionary.yaml
+name: root
+description: "{{description}}"
+type: object
+properties:
+  - name: _id
+    description: A unique identifier for {{collection_name}}
+    type: identifier
+    required: true
+  - name: name
+    description: The name
+    type: word
+    required: true
+  - name: description
+    description: A description
+    type: sentence
+    required: false
+  - name: status
+    description: The current status
+    type: enum
+    enums: default_status
+    required: true
+  - name: created
+    description: When this document was created
+    type: breadcrumb
+    required: true
+  - name: last_saved
+    description: The last time this document was saved
+    type: breadcrumb
+    required: true

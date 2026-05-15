@@ -1,0 +1,10 @@
+root:
+  name: date-time
+  description: An ISO 8601 formatted date-time string
+  type: complex
+  json_type:
+    type: string
+    format: date-time
+  bson_type:
+    bsonType: date
+  required: false

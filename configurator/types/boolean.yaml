@@ -1,0 +1,11 @@
+_locked: false
+file_name: boolean.yaml
+root:
+  bson_type:
+    bsonType: bool
+  description: A true or false value
+  json_type:
+    type: boolean
+  name: boolean
+  required: false
+  type: complex

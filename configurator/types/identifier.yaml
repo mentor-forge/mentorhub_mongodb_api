@@ -1,0 +1,10 @@
+root:
+  name: identifier
+  description: A unique identifier for a document
+  type: complex
+  json_type:
+    type: string
+    pattern: ^[0-9a-fA-F]{24}$
+  bson_type:
+    bsonType: objectId
+  required: false 

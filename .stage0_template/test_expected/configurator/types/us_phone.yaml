@@ -1,0 +1,8 @@
+root:
+  name: us_phone
+  description: A US phone number
+  type: simple
+  schema:
+    type: string
+    pattern: ^(\+1[0-9]{10}|[0-9]{3}-[0-9]{3}-[0-9]{4})$
+  required: false 

@@ -1,0 +1,14 @@
+_locked: false
+file_name: count.yaml
+root:
+  bson_type:
+    bsonType: int
+    minimum: 0
+  description: A integer value >= 0
+  json_type:
+    minimum: 0
+    multipleOf: 1
+    type: number
+  name: count
+  required: false
+  type: complex

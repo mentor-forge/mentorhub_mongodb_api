@@ -1,0 +1,11 @@
+root:
+  name: url
+  description: A valid URL
+  type: complex
+  json_type:
+    type: string
+    format: uri
+  bson_type:
+    bsonType: string
+    pattern: ^https?://[^\s]+$
+  required: false 

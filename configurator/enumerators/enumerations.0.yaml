@@ -1,0 +1,10 @@
+_locked: false
+file_name: enumerations.0.yaml
+version: 0
+enumerators:
+- name: default_status
+  values:
+  - description: Not Deleted
+    value: active
+  - description: Soft Delete Indicator
+    value: archived

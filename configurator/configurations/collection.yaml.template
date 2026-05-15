@@ -1,0 +1,19 @@
+file_name: {{item.name}}.yaml
+description: {{item.description}}
+versions:
+- version: 0.1.0.0
+  _locked: false
+  add_indexes: 
+  - name: Name Index
+    key:
+      name: 1
+    options:
+      unique: true
+  - name: Last Saved
+    key:
+      saved.at_time: -1
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: {{item.name}}.0.1.0.0.json
+

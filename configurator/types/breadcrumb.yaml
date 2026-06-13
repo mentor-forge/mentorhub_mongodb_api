@@ -2,18 +2,18 @@ _locked: false
 file_name: breadcrumb.yaml
 root:
   additional_properties: false
-  description: A tracking breadcrumb
+  description: A tracking breadcrumb {from_ip, by_user, at_time, correlation_id}
   name: breadcrumb
   properties:
   - description: Http Request remote IP address
     name: from_ip
     required: true
     type: ip_address
-  - description: ID Of User
+  - description: The IdP User Name claimed by the JWT
     name: by_user
     required: true
     type: word
-  - description: The date-time when last updated
+  - description: The date-time when this breadcrumb was created
     name: at_time
     required: true
     type: date-time

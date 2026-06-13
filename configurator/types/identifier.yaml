@@ -1,10 +1,12 @@
+_locked: false
+file_name: identifier.yaml
 root:
-  name: identifier
-  description: A unique identifier for a document
-  type: complex
-  json_type:
-    type: string
-    pattern: ^[0-9a-fA-F]{24}$
   bson_type:
     bsonType: objectId
-  required: false 
+  description: A MongoDB unique identifier - 24 hex characcters i.e. 507f191e810c19729de860ea
+  json_type:
+    pattern: ^[0-9a-fA-F]{24}$
+    type: string
+  name: identifier
+  required: false
+  type: complex

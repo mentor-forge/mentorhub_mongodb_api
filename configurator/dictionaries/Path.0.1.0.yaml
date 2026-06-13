@@ -1,25 +1,86 @@
+_locked: false
 file_name: Path.0.1.0.yaml
 root:
-  name: Path
+  additional_properties: false
   description: A learning path through resources
-  type: object
+  name: Path
   properties:
-  - name: _id
-    description: The unique identifier for the Path.
+  - description: The unique identifier for the Path.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The searchable name of the Learning Path
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Path.
+  - description: The description of the Path.
+    name: description
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: tags to locate learning paths
+    enums: technologies
+    name: tags
+    required: false
+    type: enum_array
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The list of top level Modules for this path
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: The Module Name
+        name: name
+        required: false
+        type: word
+      - description: A brief description of the Module
+        name: description
+        required: false
+        type: sentence
+      - description: A list of Topics in this Module
+        items:
+          additional_properties: false
+          description: Array item
+          name: item
+          properties:
+          - description: The name of the topic
+            name: name
+            required: false
+            type: word
+          - description: A brief description of the topic
+            name: description
+            required: false
+            type: sentence
+          - description: The resource _id''s of Resources for this Topic
+            items:
+              description: Array item
+              name: item
+              required: false
+              type: identifier
+            name: resources
+            required: false
+            type: array
+          required: false
+          type: object
+        name: topics
+        required: false
+        type: array
+      required: false
+      type: object
+    name: modules
+    required: false
+    type: array
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

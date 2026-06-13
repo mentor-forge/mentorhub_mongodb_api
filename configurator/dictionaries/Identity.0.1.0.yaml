@@ -1,25 +1,34 @@
+_locked: false
 file_name: Identity.0.1.0.yaml
 root:
-  name: Identity
+  additional_properties: false
   description: The IdP Identity of a person who is a user of the system.
-  type: object
+  name: Identity
   properties:
-  - name: _id
-    description: The unique identifier for the Identity.
+  - description: The unique MongoDB ID for the Identity.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The IdP provided user name
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Identity.
+  - description: 'The IdP provided user email '
+    name: email
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: Status of the identity
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The tracking breadcrumb for when the identity was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the identity was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

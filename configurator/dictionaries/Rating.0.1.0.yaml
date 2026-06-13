@@ -1,25 +1,39 @@
+_locked: false
 file_name: Rating.0.1.0.yaml
 root:
+  additional_properties: false
+  description: A rating given to a resource by a user
   name: Rating
-  description: A rating of a resource.
-  type: object
   properties:
-  - name: _id
-    description: The unique identifier for the Rating.
+  - description: The unique identifier for the Rating.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Rating.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
+  - description: The resource being rated
+    name: resource_id
+    required: false
+    type: identifier
+  - description: The profile rating the resource.
+    name: profile_id
+    required: false
+    type: identifier
+  - description: The Resource Rating
+    enums: ratings
+    name: rating
+    required: false
     type: enum
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

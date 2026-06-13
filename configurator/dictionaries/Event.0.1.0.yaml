@@ -1,25 +1,26 @@
+_locked: false
 file_name: Event.0.1.0.yaml
 root:
-  name: Event
+  additional_properties: false
   description: A meaningful event for a user.
-  type: object
+  name: Event
   properties:
-  - name: _id
-    description: The unique identifier for the Event.
+  - description: The unique identifier for the Event.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Event.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
+  - description: The event type
+    enums: events
+    name: name
+    required: false
     type: enum
-    enums: default_status
+  - description: The Context of the Event.(Event Data)
+    name: description
+    required: false
+    type: sentence
+  - description: The tracking breadcrumb for when the Event was recorded.
+    name: created
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

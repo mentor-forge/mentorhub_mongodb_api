@@ -1,25 +1,107 @@
+_locked: false
 file_name: Profile.0.1.0.yaml
 root:
-  name: Profile
+  additional_properties: false
   description: User Preferences associated with one **Identity**.
-  type: object
+  name: Profile
   properties:
-  - name: _id
-    description: The unique identifier for the Profile.
+  - description: The unique identifier for the Profile.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The IDP Username used in JWT Claims
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Profile.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
+  - description: Status of the document
+    enums: profile_status
+    name: status
+    required: false
     type: enum
-    enums: default_status
+  - description: A Comment the user adds to their profile
+    name: description
+    required: false
+    type: sentence
+  - description: The users email address
+    name: email
+    required: false
+    type: email
+  - description: Has the user verified this email
+    name: email_verified
+    required: false
+    type: boolean
+  - description: The _id of this persons Mentor
+    name: mentor_id
+    required: false
+    type: identifier
+  - description: 'The goals set by a user '
+    items:
+      description: Array item
+      name: item
+      required: false
+      type: sentence
+    name: goals
+    required: false
+    type: array
+  - description: A list of topics this person is interested in
+    enums: interests
+    name: interests
+    required: false
+    type: enum_array
+  - description: Work History - newest to oldest
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: The Company Name
+        name: company
+        required: false
+        type: sentence
+      - description: The roles this person filled at this company
+        items:
+          additional_properties: false
+          description: Array item
+          name: item
+          properties:
+          - description: Te Job Title
+            name: title
+            required: false
+            type: sentence
+          - description: Start Date
+            name: start
+            required: false
+            type: date-time
+          - description: End Date
+            name: end
+            required: false
+            type: date-time
+          - description: Description of the work, projects, responsibilities
+            name: description
+            required: false
+            type: markdown
+          - description: Technologies Used
+            enums: technologies
+            name: technologies
+            required: false
+            type: enum_array
+          required: false
+          type: object
+        name: roles
+        required: false
+        type: array
+      required: false
+      type: object
+    name: experience
+    required: false
+    type: array
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

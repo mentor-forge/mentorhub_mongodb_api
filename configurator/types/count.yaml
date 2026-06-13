@@ -3,10 +3,10 @@ file_name: count.yaml
 root:
   bson_type:
     bsonType: int
-    minimum: 0
-  description: A integer value >= 0
+    minimum: 1
+  description: A integer value greater than 0
   json_type:
-    minimum: 0
+    minimum: 1
     multipleOf: 1
     type: number
   name: count

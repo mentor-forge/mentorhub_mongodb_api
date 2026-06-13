@@ -1,0 +1,42 @@
+_locked: false
+file_name: Card.1.0.0.yaml
+root:
+  additional_properties: false
+  description: Credit Card Details
+  name: root
+  properties:
+  - description: A unique identifier for Card
+    name: _id
+    required: true
+    type: identifier
+  - description: User short name for the card
+    name: name
+    required: false
+    type: sentence
+  - description: The Credit Card Number
+    name: number
+    required: true
+    type: word
+  - description: The card expiration date
+    name: expiry
+    required: false
+    type: date-time
+  - description: The card Billing Zipcode
+    name: billing_zip
+    required: true
+    type: word
+  - description: The status of the card
+    enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: When this document was created
+    name: created
+    required: true
+    type: breadcrumb
+  - description: The last time this document was saved
+    name: last_saved
+    required: true
+    type: breadcrumb
+  required: false
+  type: object

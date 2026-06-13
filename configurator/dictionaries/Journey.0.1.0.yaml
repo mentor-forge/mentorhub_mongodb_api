@@ -1,25 +1,117 @@
+_locked: false
 file_name: Journey.0.1.0.yaml
 root:
-  name: Journey
+  additional_properties: false
   description: A learning journey for a craftsperson.
-  type: object
+  name: Journey
   properties:
-  - name: _id
-    description: The unique identifier for the Journey.
+  - description: The unique identifier for the  Learning Journey.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Journey.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: The Profile ID of the owner of this journey
+    name: profile_id
+    required: false
+    type: identifier
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The resource _id's of completed resources
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: The Resource ID
+        name: resource_id
+        required: false
+        type: identifier
+      - description: The first time the user followed the resource link
+        name: started
+        required: false
+        type: date-time
+      - description: When the user clicked "Done" to complete the resource
+        name: completed
+        required: false
+        type: date-time
+      required: false
+      type: object
+    name: library
+    required: false
+    type: array
+  - description: The resource _id's the person is currently working on
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: The Resource ID
+        name: resource_id
+        required: false
+        type: word
+      - description: When the resource was added to the Now scope
+        name: added
+        required: false
+        type: date-time
+      - description: The first time the link was followed
+        name: started
+        required: false
+        type: date-time
+      - description: The count of times the link was followed
+        name: used
+        required: false
+        type: index
+      required: false
+      type: object
+    name: now
+    required: false
+    type: array
+  - description: Resource topics that we think the person will work on next
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: The Topic Name
+        name: name
+        required: false
+        type: word
+      - description: A Description of the Topic
+        name: description
+        required: false
+        type: markdown
+      - description: Resources associated with this topic
+        items:
+          description: Array item
+          name: item
+          required: false
+          type: identifier
+        name: resources
+        required: false
+        type: array
+      required: false
+      type: object
+    name: next
+    required: false
+    type: array
+  - description: The plan _id's of plans that they might do someday
+    items:
+      description: Array item
+      name: item
+      required: false
+      type: identifier
+    name: later
+    required: false
+    type: array
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

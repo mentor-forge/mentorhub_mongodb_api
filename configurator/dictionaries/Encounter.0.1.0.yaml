@@ -17,6 +17,10 @@ root:
     name: mentee_id
     required: false
     type: identifier
+  - description: When did the encounter occur
+    name: date
+    required: false
+    type: date-time
   - description: The Encounter Plan used for this encounter
     name: plan_id
     required: false

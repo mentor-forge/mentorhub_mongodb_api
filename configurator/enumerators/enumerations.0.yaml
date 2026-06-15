@@ -78,5 +78,33 @@ enumerators:
     value: "\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F"
   - description: Four Star
     value: "\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F"
+- name: days
+  values:
+  - description: Monday
+    value: Mon
+  - description: Tuesday
+    value: Tue
+  - description: Wednesday
+    value: Wed
+  - description: Thursday
+    value: Thur
+  - description: Friday
+    value: Fri
+  - description: Saturday
+    value: Sat
+  - description: Sunday
+    value: Sun
+- name: user_roles
+  values:
+  - description: Mentor providing services
+    value: mentor
+  - description: Mentee receiving services
+    value: mentee
+  - description: Person paying for services
+    value: customer
+  - description: Matches Mentors to Mentees
+    value: coordinator
+  - description: Administrator
+    value: admin
 file_name: enumerations.0.yaml
 version: 0

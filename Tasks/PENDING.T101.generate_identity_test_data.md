@@ -1,6 +1,6 @@
-# T100 – Generate Test Data
+# T101 – Generate Identity Test Data
 
-**Status**: As Needed  
+**Status**: Pending
 **Task Type**: Feature  
 **Run Mode**: As Needed 
 
@@ -12,15 +12,19 @@ This is a reusable, parameterized task. A human should:
 
 ## User inputs (edit before running)
 
-- **Dictionary file** (single‑document schema to generate data for):  
-  - Example: `../configurator/dictionaries/CHANGEME.1.0.0.yaml`
-- **Enumerators file** (enum definitions used by the dictionary):  
-  - Default: `../configurator/enumerators/enumerations.0.yaml`
-- **Target test‑data file** (output, JSON array of documents):  
-  - Example: `../configurator/test_data/CHANGEME.1.0.0.0.json`
+- **Dictionary file** ../configurator/dictionaries/Identity.0.1.0.yaml
+- **Enumerators file** ../configurator/enumerators/enumerations.0.yaml
+- **Target test‑data file** ../configurator/test_data/Identity.0.1.0.0.json`
 - **Number of documents to generate**: `15`
-- **Special requirements** (free‑form notes for the agent/generator):  
-  - Example: “Cover every `status` enum value at least once; bias heavily toward `active`.”
+- **Special requirements** Make sure to create active identities for the following people / roles.
+Mike Storey - Admin, Mentor
+Daniel Dissler - Mentee
+Lucky Minyard - Mentee
+Mary Anderson - Mentee
+Luther Still - Mentee, Admin
+Marti Lombardi - Mentor
+Carol the Coordinator
+Cat the Customer
 
 ## Goal
 
@@ -31,7 +35,7 @@ Given a **dictionary**, its **enumerators**, and the supporting **type files**, 
 These files must be treated as **inputs** and read before implementation:
 
 - The **Dictionary** and **Enumerators** linked in the **User inputs** section.
-- The [type files](../configurator/types/) that map dictionary field types to JSON Schema fragments.
+- The [type files](../configurator/types/) that map dictionary field types to JSON/BSON Schema fragments.
 
 The agent may also consult:
 
@@ -42,8 +46,8 @@ The agent may also consult:
 For the configured dictionary + enumerators (which together describe a single document type), generate test data into the configured test‑data JSON file. Each document should conform to the inferred schema and obey the following rules:
 
 1. **EJSON encoding** for use with MongoDB  
-   - Every `_id` value (identifier type) must be wrapped as `{ "$oid": "<24-byte hex>" }`.  
-   - Every `date` value must be wrapped as `{ "$date": "<ISO-8601>" }`.  
+   - Every `_id` type value (identifier type) must be wrapped as `{ "$oid": "<24-byte hex>" }`.  
+   - Every `date-time` value must be wrapped as `{ "$date": "<ISO-8601>" }`.  
    - Reference IDs that are not the primary `_id` but still use the identifier type must also be encoded with `$oid`.
 
 2. **Schema‑driven generation**  
@@ -65,12 +69,13 @@ For the configured dictionary + enumerators (which together describe a single do
 ## Testing expectations
 
 - **Processing test**
-  - Run `make container` to verify that the MongoDB Configurator API container builds successfully.
-  - Run `make process` to call the Configure Database API (`POST /api/configurations/`) and validate the resulting event JSON with `jq`. The command should succeed with a `SUCCESS` status; if it fails, inspect the JSON for test‑data or configuration errors.
+  - Use `curl -X DELETE "http://localhost:8383/api/database/" -H "accept: application/json"` to drop the MongoDB database so it can be re-configured.
+  - Use `curl -X POST "http://localhost:8383/api/configurations/" -H "accept: application/json"` to Configure the Database 
+  - Validate the configure result passed with a `SUCCESS` status; if it fails, inspect the JSON Error message for details and update the test data accordingly. 
 
 ## Dependencies / Ordering
 
-- **None** – this task can be run whenever a dictionary + enumerators pair is ready for test‑data generation.
+- **Verify** – Before executing this task, first drop the database and configure the database using the curl commands listed above to ensure that we are starting from a clean configuration. If this test fails, stop execution and report an error message.
 
 ## Change control checklist
 

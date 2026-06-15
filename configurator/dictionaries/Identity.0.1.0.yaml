@@ -30,5 +30,10 @@ root:
     name: saved
     required: false
     type: breadcrumb
+  - description: The user roles this identity has
+    enums: user_roles
+    name: roles
+    required: false
+    type: enum_array
   required: false
   type: object

@@ -103,5 +103,19 @@ root:
     name: saved
     required: false
     type: breadcrumb
+  - additional_properties: false
+    description: When does the Mentor work with the Mentee
+    name: schedule
+    properties:
+    - description: When do meetings begin
+      name: starting
+      required: false
+      type: date-time
+    - description: Meeting repeasts every N weeks
+      name: repeats
+      required: false
+      type: count
+    required: false
+    type: object
   required: false
   type: object

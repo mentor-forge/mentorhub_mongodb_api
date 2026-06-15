@@ -1,6 +1,6 @@
 # T102 – Generate Profile Test Data
 
-**Status**: Pending
+**Status**: Shipped
 **Task Type**: Feature  
 **Run Mode**: As Needed 
 
@@ -71,14 +71,31 @@ For the configured dictionary + enumerators (which together describe a single do
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Captured concrete values in **User inputs (edit before running)**.
-- [ ] Designed and documented the solution approach in this file.
-- [ ] Implemented code or scripts to generate test data.
-- [ ] Ran `make container` successfully.
-- [ ] Ran curl commands to drop and configure database successfully.
+- [x] Reviewed all **Context / Input files**.
+- [x] Captured concrete values in **User inputs (edit before running)**.
+- [x] Designed and documented the solution approach in this file.
+- [x] Implemented code or scripts to generate test data.
+- [x] Ran `make container` successfully.
+- [x] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
+
+Generated 15 EJSON Profile documents in `configurator/test_data/Profile.0.1.0.0.json`, one per Identity in `Identity.0.1.0.0.json`.
+
+**Approach**
+
+- Mapped each Identity to a Profile with matching `name`, `email`, `status`, and breadcrumb timestamps.
+- Assigned deterministic `_id` values `A00000000000000000000001` through `A00000000000000000000015`.
+- Set `mentor_id` and `schedule` on mentee profiles (daniel, lucky, mary, luther, riley, taylor, casey), referencing mentor Identity `$oid` values.
+- Populated varied `goals`, `interests`, and `experience` data; distributed all `interests` and `technologies` enum values across the dataset.
+- Profile `status` matches Identity status (`active` for 14 records, `archived` for casey). The `suspended` profile_status value is omitted because no Identity uses that status.
+
+**Testing results**
+
+- Baseline verify: `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- With Profile test data (and Identity test data): `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- `make container` → SUCCESS.
+- Note: local dev compose exposes the configurator API on port **8385** (not 8383 as listed in this task).

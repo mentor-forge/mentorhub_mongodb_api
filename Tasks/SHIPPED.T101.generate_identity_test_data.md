@@ -1,6 +1,6 @@
 # T101 – Generate Identity Test Data
 
-**Status**: Pending
+**Status**: Shipped
 **Task Type**: Feature  
 **Run Mode**: As Needed 
 
@@ -79,14 +79,31 @@ For the configured dictionary + enumerators (which together describe a single do
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Captured concrete values in **User inputs (edit before running)**.
-- [ ] Designed and documented the solution approach in this file.
-- [ ] Implemented code or scripts to generate test data.
-- [ ] Ran `make container` successfully.
-- [ ] Ran curl commands to drop and configure database successfully.
+- [x] Reviewed all **Context / Input files**.
+- [x] Captured concrete values in **User inputs (edit before running)**.
+- [x] Designed and documented the solution approach in this file.
+- [x] Implemented code or scripts to generate test data.
+- [x] Ran `make container` successfully.
+- [x] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
+
+Generated 15 EJSON Identity documents in `configurator/test_data/Identity.0.1.0.0.json`.
+
+**Approach**
+
+- Read `Identity.0.1.0.yaml`, `enumerations.0.yaml`, and supporting type files (`identifier`, `word`, `sentence`, `breadcrumb`, `date-time`, `ip_address`).
+- Created 8 required active identities with stable `$oid` values and IdP-style `name` fields (`mike`, `daniel`, `lucky`, `mary`, `luther`, `marti`, `carol`, `cat`) mapped to the requested roles.
+- Added 7 additional identities for enum coverage and variability; `casey` uses `archived` status so both `default_status` values appear.
+- Ensured every `user_roles` enum value appears at least once across the dataset.
+- Used EJSON `$oid` for `_id` and `$date` for breadcrumb `at_time` fields.
+
+**Testing results**
+
+- Baseline verify (empty test data): `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- With generated test data: `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- `make container` → SUCCESS.
+- Note: local dev compose exposes the configurator API on port **8385** (not 8383 as listed in this task); curl tests were run against `http://localhost:8385`.

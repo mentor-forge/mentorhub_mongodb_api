@@ -1,6 +1,6 @@
 # T103 – Generate Resource Test Data
 
-**Status**: Pending
+**Status**: Shipped
 **Task Type**: Feature  
 **Run Mode**: As Needed 
 
@@ -86,14 +86,34 @@ For the configured dictionary + enumerators (which together describe a single do
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Captured concrete values in **User inputs (edit before running)**.
-- [ ] Designed and documented the solution approach in this file.
-- [ ] Implemented code or scripts to generate test data.
-- [ ] Ran `make container` successfully.
-- [ ] Ran curl commands to drop and configure database successfully.
+- [x] Reviewed all **Context / Input files**.
+- [x] Captured concrete values in **User inputs (edit before running)**.
+- [x] Designed and documented the solution approach in this file.
+- [x] Implemented code or scripts to generate test data.
+- [x] Ran `make container` successfully.
+- [x] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
+
+Generated **482** EJSON Resource documents in `configurator/test_data/Resource.0.1.0.0.json`, harvested from all 15 engineerkit module markdown files listed in **User inputs**.
+
+**Approach**
+
+- Downloaded each engineerkit module from GitHub raw (`modules/*.md`).
+- Parsed `Resources`, `Primary Resources`, and `Extended Resources` sections for markdown links in the form ``[Title `Type`](url)``.
+- Resolved relative `../resources/*.md` links to raw GitHub URLs; skipped non-HTTP links (exercises, etc.).
+- Deduplicated by URL and generated unique `word`-safe `name` slugs from titles.
+- Assigned deterministic `_id` values (`B0000000000000000000001` … `B0000000000000000000482`).
+- Mapped module topics to `interests`; inferred `technologies` from title/URL keywords.
+- Set `status` to `active` for most resources and `failed` for a small subset (3 records) to cover `resource_status` enum values.
+- Distributed all `interests` and `technologies` enum values across the dataset.
+
+**Testing results**
+
+- Baseline verify: `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- With Identity, Profile, and Resource test data loaded: `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- `make container` → SUCCESS.
+- Note: local dev compose exposes the configurator API on port **8385** (not 8383 as listed in this task).

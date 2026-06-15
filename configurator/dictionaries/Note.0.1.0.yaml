@@ -1,25 +1,38 @@
+_locked: false
 file_name: Note.0.1.0.yaml
 root:
-  name: Note
+  additional_properties: false
   description: A note about a resource.
-  type: object
+  name: Note
   properties:
-  - name: _id
-    description: The unique identifier for the Note.
+  - description: The unique identifier for the Note.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Note.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: The Resource ID this note is for
+    name: resource_id
+    required: false
+    type: identifier
+  - description: The Profile ID of the person who took this note
+    name: profile_id
+    required: false
+    type: identifier
+  - description: The text of the note
+    name: note
+    required: false
+    type: markdown
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

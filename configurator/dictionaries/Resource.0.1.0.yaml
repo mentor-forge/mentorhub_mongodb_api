@@ -1,25 +1,64 @@
+_locked: false
 file_name: Resource.0.1.0.yaml
 root:
-  name: Resource
+  additional_properties: false
   description: A learning resource (link)
-  type: object
+  name: Resource
   properties:
-  - name: _id
-    description: The unique identifier for the Resource.
+  - description: The unique identifier for the Resource.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The searchable name of the document
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Resource.
+  - description: The description of the Resource.
+    name: description
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
+  - description: The link for the resource
+    name: url
+    required: false
+    type: url
+  - description: Status of the document
+    enums: resource_status
+    name: status
+    required: false
     type: enum
-    enums: default_status
+  - description: When was this resource link last verified
+    name: last_verified
+    required: false
+    type: date-time
+  - description: The sum of all resource ratings for this resource
+    name: rating_sum
+    required: false
+    type: count
+  - description: The number of raitings this resource has
+    name: rating_count
+    required: false
+    type: count
+  - description: The number of notes this resource has
+    name: note_count
+    required: false
+    type: count
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  - description: A list of interests this resource is related to
+    enums: interests
+    name: interests
+    required: false
+    type: enum_array
+  - description: A list of technologies this resource covers
+    enums: technologies
+    name: technologies
+    required: false
+    type: enum_array
+  required: false
+  type: object

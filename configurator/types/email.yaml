@@ -1,8 +1,10 @@
+_locked: false
+file_name: email.yaml
 root:
+  description: A valid email address (user@domain)
   name: email
-  description: A valid email address
-  type: simple
-  schema:
-    type: string
-    pattern: ^[^\s@]+@[^\s@]+\.[^\s@]+$
   required: false
+  schema:
+    pattern: ^[^\s@]+@[^\s@]+\.[^\s@]+$
+    type: string
+  type: simple

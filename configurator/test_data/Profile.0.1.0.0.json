@@ -1,1 +1,751 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "name": "mike",
+    "status": "active",
+    "description": "Platform architect and mentor supporting full-stack mentorship programs.",
+    "email": "mike.storey@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Grow the mentor network",
+      "Improve onboarding materials"
+    ],
+    "interests": [
+      "ux",
+      "api"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-01-15T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "correlation_id": "save-profile-01"
+    },
+    "experience": [
+      {
+        "company": "Agile Learning Institute",
+        "roles": [
+          {
+            "title": "Principal Engineer",
+            "start": {
+              "$date": "2018-03-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-01-01T00:00:00.000Z"
+            },
+            "description": "Led platform architecture, mentoring practice, and developer education programs.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB",
+              "Python"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "name": "daniel",
+    "status": "active",
+    "description": "SPA engineer learning advanced frontend patterns and component design.",
+    "email": "daniel.dissler@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Master Vue composition patterns",
+      "Ship a portfolio SPA"
+    ],
+    "interests": [
+      "api"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-02-01T09:15:00.000Z"
+      },
+      "correlation_id": "seed-profile-02"
+    },
+    "saved": {
+      "from_ip": "192.168.1.10",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-05-20T11:45:00.000Z"
+      },
+      "correlation_id": "save-profile-02"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439006"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    },
+    "experience": [
+      {
+        "company": "Mentor Forge",
+        "roles": [
+          {
+            "title": "Frontend Developer",
+            "start": {
+              "$date": "2022-06-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-12-01T00:00:00.000Z"
+            },
+            "description": "Built Vue SPAs and shared component libraries for journey applications.",
+            "technologies": [
+              "React",
+              "HTML",
+              "CSS"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "name": "lucky",
+    "status": "active",
+    "description": "Career switcher focused on site reliability and operational excellence.",
+    "email": "lucky.minyard@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Earn SRE fundamentals certification",
+      "Automate deployment checks"
+    ],
+    "interests": [
+      "sre"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-02-15T16:20:00.000Z"
+      },
+      "correlation_id": "seed-profile-03"
+    },
+    "saved": {
+      "from_ip": "10.0.0.25",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-05-18T08:10:00.000Z"
+      },
+      "correlation_id": "save-profile-03"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439001"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 1
+    },
+    "experience": [
+      {
+        "company": "Lucky Consulting",
+        "roles": [
+          {
+            "title": "Contributor",
+            "start": {
+              "$date": "2023-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-06-01T00:00:00.000Z"
+            },
+            "description": "Applied skills while participating in the mentorship program as lucky.",
+            "technologies": [
+              "Python"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "name": "mary",
+    "status": "active",
+    "description": "Data-curious mentee building analytics and pipeline skills.",
+    "email": "mary.anderson@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Build a data pipeline project",
+      "Learn MongoDB aggregation"
+    ],
+    "interests": [
+      "data",
+      "design"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-03-01T13:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-04"
+    },
+    "saved": {
+      "from_ip": "172.16.0.5",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-05-22T17:25:00.000Z"
+      },
+      "correlation_id": "save-profile-04"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439009"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 2
+    },
+    "experience": [
+      {
+        "company": "Mary Consulting",
+        "roles": [
+          {
+            "title": "Contributor",
+            "start": {
+              "$date": "2023-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-06-01T00:00:00.000Z"
+            },
+            "description": "Applied skills while participating in the mentorship program as mary.",
+            "technologies": [
+              "TypeScript"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "name": "luther",
+    "status": "active",
+    "description": "Mentee and admin helping coordinate cohort onboarding.",
+    "email": "luther.still@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Complete mentee capstone",
+      "Support admin workflows"
+    ],
+    "interests": [
+      "design"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-03-10T11:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-05"
+    },
+    "saved": {
+      "from_ip": "192.168.1.20",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-06-10T09:00:00.000Z"
+      },
+      "correlation_id": "save-profile-05"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439001"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    },
+    "experience": [
+      {
+        "company": "Luther Consulting",
+        "roles": [
+          {
+            "title": "Contributor",
+            "start": {
+              "$date": "2023-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-06-01T00:00:00.000Z"
+            },
+            "description": "Applied skills while participating in the mentorship program as luther.",
+            "technologies": [
+              "Java"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "name": "marti",
+    "status": "active",
+    "description": "Experienced mentor guiding mentees through delivery and code review.",
+    "email": "marti.lombardi@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Mentor two active mentees",
+      "Document mentoring playbook"
+    ],
+    "interests": [
+      "games"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-04-01T08:45:00.000Z"
+      },
+      "correlation_id": "seed-profile-06"
+    },
+    "saved": {
+      "from_ip": "10.0.0.50",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-05-28T15:40:00.000Z"
+      },
+      "correlation_id": "save-profile-06"
+    },
+    "experience": [
+      {
+        "company": "Tech Coaching Collective",
+        "roles": [
+          {
+            "title": "Lead Mentor",
+            "start": {
+              "$date": "2015-01-15T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Coached developers through capstone projects and code reviews.",
+            "technologies": [
+              "Java",
+              "Python",
+              "Other"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000007"
+    },
+    "name": "carol",
+    "status": "active",
+    "description": "Coordinator matching mentors to mentees and tracking program progress.",
+    "email": "carol.coordinator@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Reduce time-to-match",
+      "Track cohort engagement"
+    ],
+    "interests": [
+      "iot",
+      "robot"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-01-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2025-06-12T10:15:00.000Z"
+      },
+      "correlation_id": "save-profile-07"
+    },
+    "experience": [
+      {
+        "company": "Carol Consulting",
+        "roles": [
+          {
+            "title": "Contributor",
+            "start": {
+              "$date": "2023-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-06-01T00:00:00.000Z"
+            },
+            "description": "Applied skills while participating in the mentorship program as carol.",
+            "technologies": [
+              "CSS"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000008"
+    },
+    "name": "cat",
+    "status": "active",
+    "description": "Customer sponsoring mentorship for a family member learning to code.",
+    "email": "cat.customer@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Find the right mentor match",
+      "Monitor learning milestones"
+    ],
+    "interests": [
+      "robot"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-05-01T14:20:00.000Z"
+      },
+      "correlation_id": "seed-profile-08"
+    },
+    "saved": {
+      "from_ip": "192.168.2.15",
+      "by_user": "cat",
+      "at_time": {
+        "$date": "2025-05-15T13:50:00.000Z"
+      },
+      "correlation_id": "save-profile-08"
+    },
+    "experience": [
+      {
+        "company": "Cat Consulting",
+        "roles": [
+          {
+            "title": "Contributor",
+            "start": {
+              "$date": "2023-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2024-06-01T00:00:00.000Z"
+            },
+            "description": "Applied skills while participating in the mentorship program as cat.",
+            "technologies": [
+              "Other"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000009"
+    },
+    "name": "jordan",
+    "status": "active",
+    "description": "Senior mentor specializing in API design and cloud-native services.",
+    "email": "jordan.mentor@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Guide API-first designs",
+      "Review mentee pull requests"
+    ],
+    "interests": [
+      "ux"
+    ],
+    "created": {
+      "from_ip": "10.0.0.12",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-06-01T10:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-09"
+    },
+    "saved": {
+      "from_ip": "10.0.0.12",
+      "by_user": "jordan",
+      "at_time": {
+        "$date": "2025-04-10T16:00:00.000Z"
+      },
+      "correlation_id": "save-profile-09"
+    },
+    "experience": [
+      {
+        "company": "Cloud Services Group",
+        "roles": [
+          {
+            "title": "API Architect",
+            "start": {
+              "$date": "2016-08-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-05-01T00:00:00.000Z"
+            },
+            "description": "Designed REST and event-driven APIs for distributed systems.",
+            "technologies": [
+              "Python",
+              "MongoDB",
+              "TypeScript"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "name": "riley",
+    "status": "active",
+    "description": "Junior developer strengthening backend and database fundamentals.",
+    "email": "riley.mentee@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Pass backend interview prep",
+      "Contribute to open source"
+    ],
+    "interests": [
+      "api"
+    ],
+    "created": {
+      "from_ip": "172.16.0.8",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-07-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-10"
+    },
+    "saved": {
+      "from_ip": "172.16.0.8",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-03-22T12:30:00.000Z"
+      },
+      "correlation_id": "save-profile-10"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439006"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 2
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000011"
+    },
+    "name": "morgan",
+    "status": "active",
+    "description": "Customer evaluating mentorship outcomes for a small business team.",
+    "email": "morgan.customer@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Measure team skill growth",
+      "Renew sponsorship plan"
+    ],
+    "interests": [
+      "sre"
+    ],
+    "created": {
+      "from_ip": "192.168.1.100",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-08-01T11:15:00.000Z"
+      },
+      "correlation_id": "seed-profile-11"
+    },
+    "saved": {
+      "from_ip": "192.168.1.100",
+      "by_user": "morgan",
+      "at_time": {
+        "$date": "2025-02-14T18:45:00.000Z"
+      },
+      "correlation_id": "save-profile-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000012"
+    },
+    "name": "alex",
+    "status": "active",
+    "description": "Backup coordinator supporting scheduling and mentor availability.",
+    "email": "alex.coordinator@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Balance coordinator workload",
+      "Improve scheduling tools"
+    ],
+    "interests": [
+      "data"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-09-10T08:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "alex",
+      "at_time": {
+        "$date": "2025-01-30T14:20:00.000Z"
+      },
+      "correlation_id": "save-profile-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000013"
+    },
+    "name": "sam",
+    "status": "active",
+    "description": "Administrator maintaining identity access and platform configuration.",
+    "email": "sam.admin@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Audit role assignments",
+      "Streamline dev login testing"
+    ],
+    "interests": [
+      "design"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-10-05T07:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-13"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "sam",
+      "at_time": {
+        "$date": "2025-06-14T09:45:00.000Z"
+      },
+      "correlation_id": "save-profile-13"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "name": "taylor",
+    "status": "active",
+    "description": "Dual-role participant mentoring newcomers while continuing to learn.",
+    "email": "taylor.dual@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Share mentoring notes",
+      "Complete advanced TypeScript course"
+    ],
+    "interests": [
+      "games"
+    ],
+    "created": {
+      "from_ip": "10.0.0.75",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-11-20T15:10:00.000Z"
+      },
+      "correlation_id": "seed-profile-14"
+    },
+    "saved": {
+      "from_ip": "10.0.0.75",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-05-05T11:00:00.000Z"
+      },
+      "correlation_id": "save-profile-14"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439001"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "name": "casey",
+    "status": "archived",
+    "description": "Former mentee whose account was archived after program completion.",
+    "email": "casey.archived@mentor-forge.dev",
+    "email_verified": false,
+    "goals": [
+      "Archive completed goals",
+      "Retain historical profile data"
+    ],
+    "interests": [
+      "iot"
+    ],
+    "created": {
+      "from_ip": "192.168.3.5",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2023-12-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-15"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-06-30T23:59:00.000Z"
+      },
+      "correlation_id": "save-profile-15"
+    },
+    "mentor_id": {
+      "$oid": "507f1f77bcf86cd799439009"
+    },
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 1
+    }
+  }
+]

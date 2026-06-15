@@ -1,25 +1,54 @@
+_locked: false
 file_name: Encounter.0.1.0.yaml
 root:
-  name: Encounter
+  additional_properties: false
   description: A learning encounter between a mentor and a craftsperson.
-  type: object
+  name: Encounter
   properties:
-  - name: _id
-    description: The unique identifier for the Encounter.
+  - description: The unique identifier for the Encounter.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Encounter.
-    type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
-    type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
-    type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: The _id of the Mentors Profile
+    name: mentor_id
+    required: false
+    type: identifier
+  - description: The _id of the Mentee's Profile
+    name: mentee_id
+    required: false
+    type: identifier
+  - description: When did the encounter occur
+    name: date
+    required: false
+    type: date-time
+  - description: The Encounter Plan used for this encounter
+    name: plan_id
+    required: false
+    type: identifier
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The meeting transcript
+    name: transcript
+    required: false
+    type: markdown
+  - description: A brief summary of the transcript
+    name: summary
+    required: false
+    type: markdown
+  - description: A one sentence summary of the encounter
+    name: tldr
+    required: false
+    type: sentence
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

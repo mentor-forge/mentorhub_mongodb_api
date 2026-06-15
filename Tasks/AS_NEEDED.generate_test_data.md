@@ -12,15 +12,20 @@ This is a reusable, parameterized task. A human should:
 
 ## User inputs (edit before running)
 
-- **Dictionary file** (single‑document schema to generate data for):  
-  - Example: `../configurator/dictionaries/CHANGEME.1.0.0.yaml`
-- **Enumerators file** (enum definitions used by the dictionary):  
-  - Default: `../configurator/enumerators/enumerations.0.yaml`
-- **Target test‑data file** (output, JSON array of documents):  
-  - Example: `../configurator/test_data/CHANGEME.1.0.0.0.json`
+- **Dictionary file** ../configurator/dictionaries/Identity.0.1.0.yaml
+- **Enumerators file** ../configurator/enumerators/enumerations.0.yaml
+- **Target test‑data file** ../configurator/test_data/Identity.0.1.0.0.json`
 - **Number of documents to generate**: `15`
-- **Special requirements** (free‑form notes for the agent/generator):  
-  - Example: “Cover every `status` enum value at least once; bias heavily toward `active`.”
+- **Special requirements** Create identities for the following
+Mike Storey - Admin, Mentor
+Daniel Dissler - Mentee
+Lucky Minyard - Mentee
+Mary Anderson - Mentee
+Luther Still - Mentee
+Marti Lombardi - Mentor
+Carol the Coordinator
+Cat the Customer
+
 
 ## Goal
 

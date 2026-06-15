@@ -1,6 +1,4 @@
 _locked: false
-file_name: enumerations.0.yaml
-version: 0
 enumerators:
 - name: default_status
   values:
@@ -8,3 +6,105 @@ enumerators:
     value: active
   - description: Soft Delete Indicator
     value: archived
+- name: profile_status
+  values:
+  - description: An Active User
+    value: active
+  - description: Soft Delete - to be removed and archived at a future date
+    value: archived
+  - description: This user account has been suspended
+    value: suspended
+- name: interests
+  values:
+  - description: Web Development
+    value: ux
+  - description: API Development
+    value: api
+  - description: Site Reliability Engineering
+    value: sre
+  - description: Data Engineering
+    value: data
+  - description: Graphic Design
+    value: design
+  - description: Game Development
+    value: games
+  - description: Internet of Things
+    value: iot
+  - description: Robotics
+    value: robot
+- name: technologies
+  values:
+  - description: ReactJS developers framework
+    value: React
+  - description: MongoDB Database Use
+    value: MongoDB
+  - description: Pythong Programming Language
+    value: Python
+  - description: TypeScript programming language
+    value: TypeScript
+  - description: Java programming Language
+    value: Java
+  - description: HTML Competency
+    value: HTML
+  - description: CSS Competency
+    value: CSS
+  - description: We will add lots more.
+    value: Other
+- name: resource_status
+  values:
+  - description: A good link that is available for use
+    value: active
+  - description: A link that returns a non-200 return code
+    value: failed
+- name: events
+  values:
+  - description: Successful login
+    value: login
+  - description: Intentional Logout
+    value: logout
+  - description: Login Failure
+    value: fail
+  - description: First sight of a user
+    value: arrived
+  - description: Completed a resource or task
+    value: completed
+- name: ratings
+  values:
+  - description: One Star
+    value: "\u2B50\uFE0F"
+  - description: Two Star
+    value: "\u2B50\uFE0F\u2B50\uFE0F"
+  - description: Three Star
+    value: "\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F"
+  - description: Four Star
+    value: "\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F\u2B50\uFE0F"
+- name: days
+  values:
+  - description: Monday
+    value: Mon
+  - description: Tuesday
+    value: Tue
+  - description: Wednesday
+    value: Wed
+  - description: Thursday
+    value: Thur
+  - description: Friday
+    value: Fri
+  - description: Saturday
+    value: Sat
+  - description: Sunday
+    value: Sun
+- name: user_roles
+  values:
+  - description: Mentor providing services
+    value: mentor
+  - description: Mentee receiving services
+    value: mentee
+  - description: Person paying for services
+    value: customer
+  - description: Matches Mentors to Mentees
+    value: coordinator
+  - description: Administrator
+    value: admin
+file_name: enumerations.0.yaml
+version: 0

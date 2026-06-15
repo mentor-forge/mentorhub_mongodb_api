@@ -1,1 +1,287 @@
-[]
+[
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439001" },
+    "name": "mike",
+    "email": "mike.storey@mentor-forge.dev",
+    "status": "active",
+    "roles": ["admin", "mentor"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-01-15T10:00:00.000Z" },
+      "correlation_id": "seed-identity-001"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": { "$date": "2025-06-01T14:30:00.000Z" },
+      "correlation_id": "save-identity-001"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439002" },
+    "name": "daniel",
+    "email": "daniel.dissler@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentee"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-02-01T09:15:00.000Z" },
+      "correlation_id": "seed-identity-002"
+    },
+    "saved": {
+      "from_ip": "192.168.1.10",
+      "by_user": "daniel",
+      "at_time": { "$date": "2025-05-20T11:45:00.000Z" },
+      "correlation_id": "save-identity-002"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439003" },
+    "name": "lucky",
+    "email": "lucky.minyard@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentee"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-02-15T16:20:00.000Z" },
+      "correlation_id": "seed-identity-003"
+    },
+    "saved": {
+      "from_ip": "10.0.0.25",
+      "by_user": "lucky",
+      "at_time": { "$date": "2025-05-18T08:10:00.000Z" },
+      "correlation_id": "save-identity-003"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439004" },
+    "name": "mary",
+    "email": "mary.anderson@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentee"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-03-01T13:00:00.000Z" },
+      "correlation_id": "seed-identity-004"
+    },
+    "saved": {
+      "from_ip": "172.16.0.5",
+      "by_user": "mary",
+      "at_time": { "$date": "2025-05-22T17:25:00.000Z" },
+      "correlation_id": "save-identity-004"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439005" },
+    "name": "luther",
+    "email": "luther.still@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentee", "admin"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-03-10T11:30:00.000Z" },
+      "correlation_id": "seed-identity-005"
+    },
+    "saved": {
+      "from_ip": "192.168.1.20",
+      "by_user": "luther",
+      "at_time": { "$date": "2025-06-10T09:00:00.000Z" },
+      "correlation_id": "save-identity-005"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439006" },
+    "name": "marti",
+    "email": "marti.lombardi@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentor"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-04-01T08:45:00.000Z" },
+      "correlation_id": "seed-identity-006"
+    },
+    "saved": {
+      "from_ip": "10.0.0.50",
+      "by_user": "marti",
+      "at_time": { "$date": "2025-05-28T15:40:00.000Z" },
+      "correlation_id": "save-identity-006"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439007" },
+    "name": "carol",
+    "email": "carol.coordinator@mentor-forge.dev",
+    "status": "active",
+    "roles": ["coordinator"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-01-20T12:00:00.000Z" },
+      "correlation_id": "seed-identity-007"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "carol",
+      "at_time": { "$date": "2025-06-12T10:15:00.000Z" },
+      "correlation_id": "save-identity-007"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439008" },
+    "name": "cat",
+    "email": "cat.customer@mentor-forge.dev",
+    "status": "active",
+    "roles": ["customer"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": { "$date": "2024-05-01T14:20:00.000Z" },
+      "correlation_id": "seed-identity-008"
+    },
+    "saved": {
+      "from_ip": "192.168.2.15",
+      "by_user": "cat",
+      "at_time": { "$date": "2025-05-15T13:50:00.000Z" },
+      "correlation_id": "save-identity-008"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439009" },
+    "name": "jordan",
+    "email": "jordan.mentor@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentor"],
+    "created": {
+      "from_ip": "10.0.0.12",
+      "by_user": "carol",
+      "at_time": { "$date": "2024-06-01T10:30:00.000Z" },
+      "correlation_id": "seed-identity-009"
+    },
+    "saved": {
+      "from_ip": "10.0.0.12",
+      "by_user": "jordan",
+      "at_time": { "$date": "2025-04-10T16:00:00.000Z" },
+      "correlation_id": "save-identity-009"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900a" },
+    "name": "riley",
+    "email": "riley.mentee@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentee"],
+    "created": {
+      "from_ip": "172.16.0.8",
+      "by_user": "carol",
+      "at_time": { "$date": "2024-07-15T09:00:00.000Z" },
+      "correlation_id": "seed-identity-00a"
+    },
+    "saved": {
+      "from_ip": "172.16.0.8",
+      "by_user": "riley",
+      "at_time": { "$date": "2025-03-22T12:30:00.000Z" },
+      "correlation_id": "save-identity-00a"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900b" },
+    "name": "morgan",
+    "email": "morgan.customer@mentor-forge.dev",
+    "status": "active",
+    "roles": ["customer"],
+    "created": {
+      "from_ip": "192.168.1.100",
+      "by_user": "carol",
+      "at_time": { "$date": "2024-08-01T11:15:00.000Z" },
+      "correlation_id": "seed-identity-00b"
+    },
+    "saved": {
+      "from_ip": "192.168.1.100",
+      "by_user": "morgan",
+      "at_time": { "$date": "2025-02-14T18:45:00.000Z" },
+      "correlation_id": "save-identity-00b"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900c" },
+    "name": "alex",
+    "email": "alex.coordinator@mentor-forge.dev",
+    "status": "active",
+    "roles": ["coordinator"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": { "$date": "2024-09-10T08:00:00.000Z" },
+      "correlation_id": "seed-identity-00c"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "alex",
+      "at_time": { "$date": "2025-01-30T14:20:00.000Z" },
+      "correlation_id": "save-identity-00c"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900d" },
+    "name": "sam",
+    "email": "sam.admin@mentor-forge.dev",
+    "status": "active",
+    "roles": ["admin"],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": { "$date": "2024-10-05T07:30:00.000Z" },
+      "correlation_id": "seed-identity-00d"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "sam",
+      "at_time": { "$date": "2025-06-14T09:45:00.000Z" },
+      "correlation_id": "save-identity-00d"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900e" },
+    "name": "taylor",
+    "email": "taylor.dual@mentor-forge.dev",
+    "status": "active",
+    "roles": ["mentor", "mentee"],
+    "created": {
+      "from_ip": "10.0.0.75",
+      "by_user": "carol",
+      "at_time": { "$date": "2024-11-20T15:10:00.000Z" },
+      "correlation_id": "seed-identity-00e"
+    },
+    "saved": {
+      "from_ip": "10.0.0.75",
+      "by_user": "taylor",
+      "at_time": { "$date": "2025-05-05T11:00:00.000Z" },
+      "correlation_id": "save-identity-00e"
+    }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd79943900f" },
+    "name": "casey",
+    "email": "casey.archived@mentor-forge.dev",
+    "status": "archived",
+    "roles": ["mentee"],
+    "created": {
+      "from_ip": "192.168.3.5",
+      "by_user": "carol",
+      "at_time": { "$date": "2023-12-01T10:00:00.000Z" },
+      "correlation_id": "seed-identity-00f"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": { "$date": "2024-06-30T23:59:00.000Z" },
+      "correlation_id": "save-identity-00f"
+    }
+  }
+]

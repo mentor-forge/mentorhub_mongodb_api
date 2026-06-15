@@ -28,6 +28,7 @@ services:
     environment:
       MONGODB_REQUIRE_TLS: False
       ENABLE_DROP_DATABASE: True
+      MONGODB_DROP_SAFETY: 500
       MONGO_DB_NAME: mentor_hub
       AUTO_PROCESS: False
       LOAD_TEST_DATA: True

@@ -92,7 +92,8 @@ For the configured dictionary + enumerators (which together describe a single do
 - [ ] Captured concrete values in **User inputs (edit before running)**.
 - [ ] Designed and documented the solution approach in this file.
 - [ ] Implemented code or scripts to generate test data.
-- [ ] Ran `make container` and `make process`; both succeeded.
+- [ ] Ran `make container` successfully.
+- [ ] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.
 
 ## Implementation notes (to be updated by the agent)

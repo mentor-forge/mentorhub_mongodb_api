@@ -1,6 +1,6 @@
 # T105 – Generate Journey Test Data
 
-**Status**: Pending
+**Status**: Shipped
 **Task Type**: Feature  
 **Run Mode**: As Needed 
 
@@ -71,14 +71,35 @@ For the configured dictionary + enumerators (which together describe a single do
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Captured concrete values in **User inputs (edit before running)**.
-- [ ] Designed and documented the solution approach in this file.
-- [ ] Implemented code or scripts to generate test data.
-- [ ] Ran `make container` successfully.
-- [ ] Ran curl commands to drop and configure database successfully.
+- [x] Reviewed all **Context / Input files**.
+- [x] Captured concrete values in **User inputs (edit before running)**.
+- [x] Designed and documented the solution approach in this file.
+- [x] Implemented code or scripts to generate test data.
+- [x] Ran `make container` successfully.
+- [x] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
+
+Generated **4** EJSON Journey documents in `configurator/test_data/Journey.0.1.0.0.json` for Daniel, Lucky, Mary, and Luther.
+
+**Approach**
+
+- Linked each journey to the corresponding Profile `$oid` (`A000...002`–`005`).
+- Used the EngineerKit path (`Path.0.1.0.0.json`, `engineerkit`) as the ordered source of topics and resource references.
+- Split each mentee's progress sequentially along the path:
+  - **library** — completed resources with `resource_id` `$oid`, `started`, and `completed` timestamps.
+  - **now** — 1–2 in-progress resources using Resource `name` values (schema type `word` for `now.resource_id`).
+  - **next** — remaining topics with only resources not already in library/now.
+- Varied progress depth per mentee (Daniel: 5+2, Lucky: 8+1, Mary: 10+2, Luther: 12+2).
+- Assigned deterministic Journey `_id` values (`D0000000000000000000001`–`4`).
+- Set Luther's journey to `archived` status for `default_status` enum coverage; others are `active`.
+
+**Testing results**
+
+- Baseline verify: `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- With full test data (Identity, Profile, Resource, Path, Journey): `DELETE /api/database/` → SUCCESS; `POST /api/configurations/` → SUCCESS.
+- `make container` → SUCCESS.
+- Note: local dev compose exposes the configurator API on port **8385** (not 8383 as listed in this task).

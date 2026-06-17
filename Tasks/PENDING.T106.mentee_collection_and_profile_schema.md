@@ -31,9 +31,10 @@ A human or orchestrator should set `Status` to `Running` before execution and re
 | Concept | Decision |
 |--------|----------|
 | **Pre-release** | Edit `Profile.0.1.0.yaml` and `Profile.0.1.0.0.json` in place. Do **not** add Profile 0.2.0/0.3.0 versions or migration pipelines. |
-| **Mentee vs Profile** | Profile holds person preferences; Mentee is the mentor’s dossier (notes, homework, schedule). |
+| **Mentee vs Profile** | Profile holds person preferences and the **current** `mentor_id` assignment. Mentee is the shared dossier for that person (notes, homework, schedule) — not tied to one mentor. |
 | **`profile_id`** | Links Mentee → Profile `_id`. One Mentee per mentee profile (unique index). |
-| **`mentor_id`** | Keep on Profile for matching; copy onto Mentee for mentor-scoped queries. |
+| **Shared notes** | Mentee `notes` (and related fields) accumulate for the **mentee Profile**, not a specific mentor. Do **not** store `mentor_id` on Mentee — when a mentee gets a new mentor (updated on Profile), the new mentor reads the same Mentee document and prior notes remain visible. |
+| **`mentor_id` on Profile only** | Keep `mentor_id` on Profile for coordinator matching and current assignment. It does not belong on Mentee. |
 | **`full_name`** | Dictionary type **`sentence`** (not `word`) so values like `Mike Storey` validate. |
 
 ## Context / Input files
@@ -67,13 +68,14 @@ In **`Profile.0.1.0.yaml`**:
 
 Create **`Mentee.0.1.0.yaml`**. Name: **Mentee**. Description: **Mentor notes about a Mentee**.
 
+Mentee notes are contributed by **any** mentor associated with the mentee over time. The document is keyed by `profile_id`, not by mentor — do **not** include `mentor_id`.
+
 | Property | Type |
 |----------|------|
 | `_id` | identifier |
 | `name` | word |
 | `description` | sentence |
 | `profile_id` | identifier |
-| `mentor_id` | identifier |
 | `notes` | markdown |
 | `focus` | sentence |
 | `homework` | markdown |
@@ -82,7 +84,7 @@ Create **`Mentee.0.1.0.yaml`**. Name: **Mentee**. Description: **Mentor notes ab
 | `status` | enum (`default_status`) |
 | `created`, `saved` | breadcrumb |
 
-Create **`configurator/configurations/Mentee.yaml`** version **0.1.0.0** with indexes: unique `name`, unique `profile_id`, `mentor_id`, `saved.at_time` (desc).
+Create **`configurator/configurations/Mentee.yaml`** version **0.1.0.0** with indexes: unique `name`, unique `profile_id`, `saved.at_time` (desc). No `mentor_id` index.
 
 ### Step 3 — Update Profile.0.1.0.0.json
 
@@ -100,18 +102,19 @@ Generate **7** EJSON documents for profiles that had both `mentor_id` and `sched
 |------|-------|
 | `_id` | `C00000000000000000000001` … `07` |
 | `profile_id` | mentee Profile `_id` |
-| `mentor_id` | copied from Profile |
 | `schedule` | moved from Profile |
 | `name` | `{profile.name}-mentoring` |
-| `notes`, `focus`, `homework` | realistic mentor content (markdown where applicable) |
+| `notes`, `focus`, `homework` | realistic mentor content (markdown where applicable); `notes` may read as a running log visible to any future mentor |
 | `next_appointment` | derived from `schedule.starting` + N × `repeats` weeks |
 | `status` | `active`, except casey → `archived` |
+
+Do **not** set `mentor_id` on Mentee documents. Current mentor assignment lives on Profile only.
 
 ## Requirements
 
 1. **EJSON encoding** — `$oid` for identifiers, `$date` for date-times (see T102).
 2. **Schema conformance** — test data matches the 0.1.0 dictionaries.
-3. **Relationship integrity** — Mentee `profile_id` and `mentor_id` reference real Profile `_id` values.
+3. **Relationship integrity** — every Mentee `profile_id` references a real mentee Profile `_id`. Profile `mentor_id` references the currently assigned mentor and may change independently of Mentee notes.
 4. **No version bumps** — do not add Profile 0.2.0/0.3.0 or migration files for this task.
 
 ## Testing expectations

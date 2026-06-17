@@ -4,7 +4,7 @@
 **Task Type**: Feature  
 **Run Mode**: Sequential (main pipeline — not “Run as needed”)
 
-This task introduces a **Mentee** collection, moves appointment scheduling off **Profile**, and adds **`full_name`** to Profile. We are **pre-release**, so edit the existing **0.1.0** dictionaries and test data directly — **no version bumps and no migrations**.
+This task introduces a **Mentee** collection, moves appointment scheduling off **Profile**, and adds `**full_name`** to Profile. We are **pre-release**, so edit the existing **0.1.0** dictionaries and test data directly — **no version bumps and no migrations**.
 
 A human or orchestrator should set `Status` to `Running` before execution and rename the file prefix when complete (`SHIPPED.T106...`).
 
@@ -22,20 +22,22 @@ A human or orchestrator should set `Status` to `Running` before execution and re
 ## Goal
 
 1. Add a **Mentee** collection — “Mentor notes about a Mentee” — linked to Profile via `profile_id`.
-2. Move **`schedule`** and **`next_appointment`** from Profile to Mentee.
-3. Add **`full_name`** to Profile for display names (distinct from IdP `name`).
+2. Move `**schedule`** and `**next_appointment**` from Profile to Mentee.
+3. Add `**full_name**` to Profile for display names (distinct from IdP `name`).
 4. Update **0.1.0 test data** to match the revised schemas and verify configure-database succeeds.
 
 ## Design decisions
 
-| Concept | Decision |
-|--------|----------|
-| **Pre-release** | Edit `Profile.0.1.0.yaml` and `Profile.0.1.0.0.json` in place. Do **not** add Profile 0.2.0/0.3.0 versions or migration pipelines. |
-| **Mentee vs Profile** | Profile holds person preferences and the **current** `mentor_id` assignment. Mentee is the shared dossier for that person (notes, homework, schedule) — not tied to one mentor. |
-| **`profile_id`** | Links Mentee → Profile `_id`. One Mentee per mentee profile (unique index). |
-| **Shared notes** | Mentee `notes` (and related fields) accumulate for the **mentee Profile**, not a specific mentor. Do **not** store `mentor_id` on Mentee — when a mentee gets a new mentor (updated on Profile), the new mentor reads the same Mentee document and prior notes remain visible. |
-| **`mentor_id` on Profile only** | Keep `mentor_id` on Profile for coordinator matching and current assignment. It does not belong on Mentee. |
-| **`full_name`** | Dictionary type **`sentence`** (not `word`) so values like `Mike Storey` validate. |
+
+| Concept                         | Decision                                                                                                                                                                                                                                                                       |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Pre-release**                 | Edit `Profile.0.1.0.yaml` and `Profile.0.1.0.0.json` in place. Do **not** add Profile 0.2.0/0.3.0 versions or migration pipelines.                                                                                                                                             |
+| **Mentee vs Profile**           | Profile holds person preferences and the **current** `mentor_id` assignment. Mentee is the shared dossier for that person (notes, homework, schedule) — not tied to one mentor.                                                                                                |
+| `**profile_id`**                | Links Mentee → Profile `_id`. One Mentee per mentee profile (unique index).                                                                                                                                                                                                    |
+| **Shared notes**                | Mentee `notes` (and related fields) accumulate for the **mentee Profile**, not a specific mentor. Do **not** store `mentor_id` on Mentee — when a mentee gets a new mentor (updated on Profile), the new mentor reads the same Mentee document and prior notes remain visible. |
+| `**mentor_id` on Profile only** | Keep `mentor_id` on Profile for coordinator matching and current assignment. It does not belong on Mentee.                                                                                                                                                                     |
+| `**full_name`**                 | Dictionary type `**sentence**` (not `word`) so values like `Mike Storey` validate.                                                                                                                                                                                             |
+
 
 ## Context / Input files
 
@@ -51,7 +53,7 @@ A human or orchestrator should set `Status` to `Running` before execution and re
 
 ### Step 1 — Update Profile.0.1.0.yaml
 
-In **`Profile.0.1.0.yaml`**:
+In `**Profile.0.1.0.yaml**`:
 
 - **Add** after `description`:
   ```yaml
@@ -66,29 +68,31 @@ In **`Profile.0.1.0.yaml`**:
 
 ### Step 2 — Create Mentee.0.1.0.yaml and configuration
 
-Create **`Mentee.0.1.0.yaml`**. Name: **Mentee**. Description: **Mentor notes about a Mentee**.
+Create `**Mentee.0.1.0.yaml`**. Name: **Mentee**. Description: **Mentor notes about a Mentee**.
 
 Mentee notes are contributed by **any** mentor associated with the mentee over time. The document is keyed by `profile_id`, not by mentor — do **not** include `mentor_id`.
 
-| Property | Type |
-|----------|------|
-| `_id` | identifier |
-| `name` | word |
-| `description` | sentence |
-| `profile_id` | identifier |
-| `notes` | markdown |
-| `focus` | sentence |
-| `homework` | markdown |
-| `schedule` | object (`starting` date-time, `repeats` count) |
-| `next_appointment` | date-time |
-| `status` | enum (`default_status`) |
-| `created`, `saved` | breadcrumb |
 
-Create **`configurator/configurations/Mentee.yaml`** version **0.1.0.0** with indexes: unique `name`, unique `profile_id`, `saved.at_time` (desc). No `mentor_id` index.
+| Property           | Type                                           |
+| ------------------ | ---------------------------------------------- |
+| `_id`              | identifier                                     |
+| `name`             | word                                           |
+| `description`      | sentence                                       |
+| `profile_id`       | identifier                                     |
+| `notes`            | markdown                                       |
+| `focus`            | sentence                                       |
+| `homework`         | markdown                                       |
+| `schedule`         | object (`starting` date-time, `repeats` count) |
+| `next_appointment` | date-time                                      |
+| `status`           | enum (`default_status`)                        |
+| `created`, `saved` | breadcrumb                                     |
+
+
+Create `**configurator/configurations/Mentee.yaml`** version **0.1.0.0** with indexes: unique `name`, unique `profile_id`, `saved.at_time` (desc). No `mentor_id` index.
 
 ### Step 3 — Update Profile.0.1.0.0.json
 
-Edit **`Profile.0.1.0.0.json`** in place:
+Edit `**Profile.0.1.0.0.json`** in place:
 
 - **Add** `full_name` to all 15 profiles (derive from Identity email / role, e.g. `mike` → `Mike Storey`, `carol` → `Carol Coordinator`).
 - **Remove** `schedule` from every profile.
@@ -98,15 +102,17 @@ Edit **`Profile.0.1.0.0.json`** in place:
 
 Generate **7** EJSON documents for profiles that had both `mentor_id` and `schedule`: daniel, lucky, mary, luther, riley, taylor, casey.
 
-| Rule | Value |
-|------|-------|
-| `_id` | `C00000000000000000000001` … `07` |
-| `profile_id` | mentee Profile `_id` |
-| `schedule` | moved from Profile |
-| `name` | `{profile.name}-mentoring` |
+
+| Rule                         | Value                                                                                                                |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `_id`                        | `C00000000000000000000001` … `07`                                                                                    |
+| `profile_id`                 | mentee Profile `_id`                                                                                                 |
+| `schedule`                   | moved from Profile                                                                                                   |
+| `name`                       | `{profile.name}-mentoring`                                                                                           |
 | `notes`, `focus`, `homework` | realistic mentor content (markdown where applicable); `notes` may read as a running log visible to any future mentor |
-| `next_appointment` | derived from `schedule.starting` + N × `repeats` weeks |
-| `status` | `active`, except casey → `archived` |
+| `next_appointment`           | derived from `schedule.starting` + N × `repeats` weeks                                                               |
+| `status`                     | `active`, except casey → `archived`                                                                                  |
+
 
 Do **not** set `mentor_id` on Mentee documents. Current mentor assignment lives on Profile only.
 
@@ -147,22 +153,17 @@ db.Mentee.countDocuments({})                                    // 7
 
 ## Change control checklist
 
-- [x] Reviewed all **Context / Input files**
-- [x] Updated Profile.0.1.0.yaml (`full_name` added, `schedule` removed)
-- [x] Created Mentee.0.1.0.yaml and Mentee.yaml configuration
-- [x] Updated Profile.0.1.0.0.json (full_name on all 15; schedule removed)
-- [x] Created Mentee.0.1.0.0.json (7 documents)
+- [ ] Reviewed all **Context / Input files**
+- [ ] Updated Profile.0.1.0.yaml (`full_name` added, `schedule` removed)
+- [ ] Created Mentee.0.1.0.yaml and Mentee.yaml configuration
+- [ ] Updated Profile.0.1.0.0.json (full_name on all 15; schedule removed)
+- [ ] Created Mentee.0.1.0.0.json (7 documents)
 - [ ] Configure database SUCCESS verified
-- [x] Commit pushed referencing T106
+- [ ] Commit pushed referencing T106
 
 ## Implementation notes
 
 **Summary of changes**
 
-- Edited **Profile.0.1.0** in place: added `full_name`, removed `schedule`.
-- Added **Mentee.0.1.0** dictionary and configuration.
-- Updated **Profile.0.1.0.0.json** and created **Mentee.0.1.0.0.json** with schedule moved to Mentee records.
-
 **Testing results**
 
-_(run configure database and record results here before marking Shipped)_

@@ -1,0 +1,275 @@
+[
+  {
+    "_id": {
+      "$oid": "C00000000000000000000001"
+    },
+    "name": "daniel-mentoring",
+    "description": "Daniel is building frontend depth with structured weekly check-ins.",
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "notes": "## Progress\nStrong Vue composition patterns; needs more backend confidence.\n\n## Observations\nResponds well to concrete homework between sessions.\n\n## Prior mentor (marti)\nHandoff note: continue API integration practice before deepening system design.",
+    "focus": "MongoDB aggregation basics for portfolio project",
+    "homework": "- Complete one API integration exercise\n- Review mentor-shared React patterns doc",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    },
+    "next_appointment": {
+      "$date": "2025-06-23T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-02-01T09:15:00.000Z"
+      },
+      "correlation_id": "seed-profile-02"
+    },
+    "saved": {
+      "from_ip": "192.168.1.10",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-05-20T11:45:00.000Z"
+      },
+      "correlation_id": "save-profile-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000002"
+    },
+    "name": "lucky-mentoring",
+    "description": "Lucky is transitioning into SRE with organic discussion sessions.",
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "notes": "## Progress\nGood automation instincts; working through reliability fundamentals.\n\n## Observations\nPrefers exploratory conversation over rigid agendas.",
+    "focus": "Deployment check automation script",
+    "homework": "- Draft runbook for weekly deployment verification",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 1
+    },
+    "next_appointment": {
+      "$date": "2025-06-16T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-02-15T16:20:00.000Z"
+      },
+      "correlation_id": "seed-profile-03"
+    },
+    "saved": {
+      "from_ip": "10.0.0.25",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-05-18T08:10:00.000Z"
+      },
+      "correlation_id": "save-profile-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000003"
+    },
+    "name": "mary-mentoring",
+    "description": "Mary is deepening full-stack skills with bi-weekly mentor sessions.",
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "notes": "## Progress\nSolid API design; growing confidence with database modeling.\n\n## Observations\nBenefits from pairing on architecture decisions.",
+    "focus": "Design REST endpoints for capstone feature",
+    "homework": "- Sketch ER diagram for capstone domain\n- Read OpenAPI path design guide",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 2
+    },
+    "next_appointment": {
+      "$date": "2025-06-23T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-03-01T13:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-04"
+    },
+    "saved": {
+      "from_ip": "172.16.0.5",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-05-22T17:25:00.000Z"
+      },
+      "correlation_id": "save-profile-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000004"
+    },
+    "name": "luther-mentoring",
+    "description": "Luther combines admin duties with mentee learning on the EngineerKit path.",
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "notes": "## Progress\nBalancing leadership work with hands-on learning goals.\n\n## Observations\nUses journey resources effectively when given clear milestones.",
+    "focus": "Complete next EngineerKit resource in journey Now section",
+    "homework": "- Finish current path resource\n- Write short reflection on blockers",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    },
+    "next_appointment": {
+      "$date": "2025-06-23T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-03-10T11:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-05"
+    },
+    "saved": {
+      "from_ip": "192.168.1.20",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-06-10T09:00:00.000Z"
+      },
+      "correlation_id": "save-profile-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000005"
+    },
+    "name": "riley-mentoring",
+    "description": "Riley is early in the program with mentor-guided exploration.",
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "notes": "## Progress\nLearning fundamentals; still discovering preferred stack areas.\n\n## Observations\nEngaged when sessions connect to real project ideas.",
+    "focus": "Choose first portfolio project theme",
+    "homework": "- List three project ideas with pros/cons\n- Set up local dev environment checklist",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 2
+    },
+    "next_appointment": {
+      "$date": "2025-06-23T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "172.16.0.8",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-07-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-10"
+    },
+    "saved": {
+      "from_ip": "172.16.0.8",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-03-22T12:30:00.000Z"
+      },
+      "correlation_id": "save-profile-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000006"
+    },
+    "name": "taylor-mentoring",
+    "description": "Taylor mentors others while continuing own growth as a dual-role participant.",
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "notes": "## Progress\nStrong peer mentoring skills; refining system design depth.\n\n## Observations\nDual role works when mentee goals stay separate from mentor commitments.",
+    "focus": "System design review for side project",
+    "homework": "- Document architecture for side project\n- Identify one scalability risk",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 3
+    },
+    "next_appointment": {
+      "$date": "2025-06-23T15:00:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "from_ip": "10.0.0.75",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-11-20T15:10:00.000Z"
+      },
+      "correlation_id": "seed-profile-14"
+    },
+    "saved": {
+      "from_ip": "10.0.0.75",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-05-05T11:00:00.000Z"
+      },
+      "correlation_id": "save-profile-14"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000007"
+    },
+    "name": "casey-mentoring",
+    "description": "Archived mentee record retained for historical mentoring notes.",
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "notes": "## Progress\nProgram completed before archival.\n\n## Observations\nRecord kept for reference; no active sessions scheduled.",
+    "focus": "N/A \u2014 archived relationship",
+    "homework": "None \u2014 archived",
+    "schedule": {
+      "starting": {
+        "$date": "2025-01-06T15:00:00.000Z"
+      },
+      "repeats": 1
+    },
+    "next_appointment": {
+      "$date": "2025-06-16T15:00:00.000Z"
+    },
+    "status": "archived",
+    "created": {
+      "from_ip": "192.168.3.5",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2023-12-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-15"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-06-30T23:59:00.000Z"
+      },
+      "correlation_id": "save-profile-15"
+    }
+  }
+]

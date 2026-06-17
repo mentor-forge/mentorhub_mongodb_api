@@ -1,0 +1,68 @@
+_locked: false
+file_name: Mentee.0.1.0.yaml
+root:
+  additional_properties: false
+  description: Mentor notes about a Mentee
+  name: Mentee
+  properties:
+  - description: The unique identifier for the Mentee document.
+    name: _id
+    required: false
+    type: identifier
+  - description: Searchable name for this mentoring record
+    name: name
+    required: false
+    type: word
+  - description: Short summary of the mentoring relationship
+    name: description
+    required: false
+    type: sentence
+  - description: The _id of the related mentee Profile document
+    name: profile_id
+    required: false
+    type: identifier
+  - description: Mentor notes about this mentee (shared across mentors over time)
+    name: notes
+    required: false
+    type: markdown
+  - description: Current mentoring focus for upcoming sessions
+    name: focus
+    required: false
+    type: sentence
+  - description: Follow-up items or homework assigned to the mentee
+    name: homework
+    required: false
+    type: markdown
+  - additional_properties: false
+    description: Recurring appointment schedule for mentor and mentee meetings
+    name: schedule
+    properties:
+    - description: When meetings begin
+      name: starting
+      required: false
+      type: date-time
+    - description: Meeting repeats every N weeks
+      name: repeats
+      required: false
+      type: count
+    required: false
+    type: object
+  - description: The next scheduled appointment date and time
+    name: next_appointment
+    required: false
+    type: date-time
+  - description: Status of the document
+    enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

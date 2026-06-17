@@ -53,7 +53,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Mike Storey"
   },
   {
     "_id": {
@@ -90,12 +91,6 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 3
-    },
     "experience": [
       {
         "company": "Mentor Forge",
@@ -117,7 +112,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Daniel Dissler"
   },
   {
     "_id": {
@@ -154,12 +150,6 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 1
-    },
     "experience": [
       {
         "company": "Lucky Consulting",
@@ -179,7 +169,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Lucky Minyard"
   },
   {
     "_id": {
@@ -217,12 +208,6 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 2
-    },
     "experience": [
       {
         "company": "Mary Consulting",
@@ -242,7 +227,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Mary Anderson"
   },
   {
     "_id": {
@@ -279,12 +265,6 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 3
-    },
     "experience": [
       {
         "company": "Luther Consulting",
@@ -304,7 +284,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Luther Still"
   },
   {
     "_id": {
@@ -359,7 +340,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Marti Lombardi"
   },
   {
     "_id": {
@@ -413,7 +395,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Carol Coordinator"
   },
   {
     "_id": {
@@ -466,7 +449,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Cat Customer"
   },
   {
     "_id": {
@@ -521,7 +505,8 @@
           }
         ]
       }
-    ]
+    ],
+    "full_name": "Jordan Mentor"
   },
   {
     "_id": {
@@ -558,12 +543,7 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 2
-    }
+    "full_name": "Riley Mentee"
   },
   {
     "_id": {
@@ -596,7 +576,8 @@
         "$date": "2025-02-14T18:45:00.000Z"
       },
       "correlation_id": "save-profile-11"
-    }
+    },
+    "full_name": "Morgan Customer"
   },
   {
     "_id": {
@@ -629,7 +610,8 @@
         "$date": "2025-01-30T14:20:00.000Z"
       },
       "correlation_id": "save-profile-12"
-    }
+    },
+    "full_name": "Alex Coordinator"
   },
   {
     "_id": {
@@ -662,7 +644,8 @@
         "$date": "2025-06-14T09:45:00.000Z"
       },
       "correlation_id": "save-profile-13"
-    }
+    },
+    "full_name": "Sam Admin"
   },
   {
     "_id": {
@@ -699,12 +682,7 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 3
-    }
+    "full_name": "Taylor Dual"
   },
   {
     "_id": {
@@ -741,11 +719,6 @@
     "mentor_id": {
       "$oid": "A00000000000000000000006"
     },
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 1
-    }
+    "full_name": "Casey Archived"
   }
 ]

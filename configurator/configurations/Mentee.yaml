@@ -1,0 +1,27 @@
+file_name: Mentee.yaml
+description: Mentor notes about a Mentee
+versions:
+- version: 0.1.0.0
+  _locked: false
+  add_indexes:
+  - name: Name Index
+    key:
+      name: 1
+    options:
+      unique: true
+  - name: Profile Index
+    key:
+      profile_id: 1
+    options:
+      unique: true
+  - name: Mentor Index
+    key:
+      mentor_id: 1
+    options: {}
+  - name: Last Saved
+    key:
+      saved.at_time: -1
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: Mentee.0.1.0.0.json

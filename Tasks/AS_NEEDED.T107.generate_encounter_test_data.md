@@ -17,7 +17,8 @@ This is a reusable, parameterized task. A human should:
 - **Target test‑data file** ../configurator/test_data/Encounter.0.1.0.0.json
 - **Number of documents to generate**: `10`
 - **Special requirements**
-  - Populate `../configurator/test_data/Plan.0.1.0.0.json` first if it is still empty. Create at least **4** encounter plans (e.g. weekly check-in, portfolio review, career planning, catch-up session) with deterministic `_id` values starting at `B00000000000000000000001`. Each plan needs `name`, `description`, `status`, and breadcrumb fields per `Plan.0.1.0.yaml`.
+  - Use the existing Plan in `../configurator/test_data/Plan.0.1.0.0.json` (`name`: `basic`, `_id`: `f00000000000000000000001`) as `plan_id` for all encounters. Do **not** modify Plan test data.
+  - For each encounter, set `agenda` to a **copy** of that Plan's `checklist`, transformed into Encounter agenda items: each checklist sentence becomes `{ "step": "<sentence>", "checked": <boolean> }`. Every Plan checklist step must appear in order; vary `checked` values to reflect meeting progress (e.g. completed sessions have most steps checked; archived sessions may have all checked).
   - Generate **10** encounter documents with deterministic `_id` values starting at `E00000000000000000000001`.
   - Use **Marti Lombardi** (`Profile` `A00000000000000000000006`) as `mentor_id` for all encounters.
   - Create encounters for these mentees (use their Profile `$oid` as `mentee_id`):
@@ -27,7 +28,6 @@ This is a reusable, parameterized task. A human should:
     - Luther Still — 2 encounters (longer-tenure mentee; one should use `archived` status for `default_status` enum coverage)
     - Riley Mentee — 1 encounter
     - Casey Archived — 1 encounter (`archived` status; historical session before archival)
-  - Set `plan_id` to one of the Plan documents created above; vary plans across encounters.
   - Set `date` to realistic past meeting times spread over the last **6 months**, aligned where possible with `next_appointment` / `schedule` in `Mentee.0.1.0.0.json`.
   - Include believable `transcript` (markdown, mentor/mentee dialogue), a shorter `summary` (markdown), and a one-line `tldr` (sentence type — no newlines or tabs).
   - Transcripts should reference EngineerKit journey progress where appropriate (see `Journey.0.1.0.0.json` and `Path.0.1.0.0.json`).
@@ -44,10 +44,11 @@ These files must be treated as **inputs** and read before implementation:
 - The [type files](../configurator/types/) that map dictionary field types to JSON/BSON Schema fragments.
 - [SHIPPED.T102.generate_profile_test_data.md](./SHIPPED.T102.generate_profile_test_data.md) — Profile `$oid` conventions and mentor/mentee relationships.
 - [SHIPPED.T105.generate_journey_test_data.md](./SHIPPED.T105.generate_journey_test_data.md) — Journey progress context for realistic transcripts.
-- `../configurator/dictionaries/Plan.0.1.0.yaml` — schema for prerequisite Plan test data.
+- `../configurator/dictionaries/Plan.0.1.0.yaml` — Plan schema (`checklist` as array of sentences).
+- `../configurator/dictionaries/Encounter.0.1.0.yaml` — Encounter schema (`agenda` as array of `{ checked, step }` objects).
 - `../configurator/test_data/Profile.0.1.0.0.json` — mentor and mentee Profile references.
 - `../configurator/test_data/Mentee.0.1.0.0.json` — schedule and mentoring notes for transcript realism.
-- `../configurator/test_data/Plan.0.1.0.0.json` — plan references for `plan_id` (seed if empty per **Special requirements**).
+- `../configurator/test_data/Plan.0.1.0.0.json` — the `basic` plan used for `plan_id` and as the source for each encounter's `agenda`.
 - `../configurator/test_data/Journey.0.1.0.0.json` — learning progress to mention in transcripts.
 
 The agent may also consult:
@@ -83,6 +84,18 @@ For the configured dictionary + enumerators (which together describe a single do
 6. **Field constraints**  
    - `transcript` and `summary` use the `markdown` type (max 4096 characters).
    - `tldr` uses the `sentence` type (no tabs or newlines; max 255 characters).
+   - `agenda` is an array of objects with `step` (sentence) and `checked` (boolean). Copy steps verbatim from the Plan `checklist`; do not add, remove, or reorder steps.
+
+7. **Plan → Encounter agenda mapping**  
+   - `plan_id` must reference `{ "$oid": "f00000000000000000000001" }` (the `basic` plan).
+   - Transform each Plan checklist string into an agenda item. Example for the first two steps of the `basic` plan:
+     ```json
+     "agenda": [
+       { "step": "Start Session Recording in Whisper", "checked": true },
+       { "step": "What do you want to focus on today?", "checked": true },
+       { "step": "How would you describe what's happening now?", "checked": false }
+     ]
+     ```
 
 ## Testing expectations
 
@@ -95,7 +108,7 @@ For the configured dictionary + enumerators (which together describe a single do
 
 - **T102 (Profile)** — must be shipped; Encounter `mentor_id` and `mentee_id` reference Profile `$oid` values.
 - **T106 (Mentee)** — Mentee schedule/notes inform realistic encounter dates and transcript content.
-- **Plan test data** — `Plan.0.1.0.0.json` must contain documents before or during this task (see **Special requirements**).
+- **Plan test data** — `Plan.0.1.0.0.json` must already contain the `basic` plan (`f00000000000000000000001`). Do not seed or modify Plan test data in this task.
 - **Verify** – Before executing this task, first drop the database and configure the database using the curl commands listed above to ensure that we are starting from a clean configuration. If this test fails, stop execution and report an error message.
 
 ## Change control checklist
@@ -103,8 +116,7 @@ For the configured dictionary + enumerators (which together describe a single do
 - [ ] Reviewed all **Context / Input files**.
 - [ ] Captured concrete values in **User inputs (edit before running)**.
 - [ ] Designed and documented the solution approach in this file.
-- [ ] Seeded Plan test data if `Plan.0.1.0.0.json` was empty.
-- [ ] Implemented Encounter test data in `Encounter.0.1.0.0.json`.
+- [ ] Implemented Encounter test data in `Encounter.0.1.0.0.json` with `plan_id` and `agenda` copied from the `basic` plan.
 - [ ] Ran `make container` successfully.
 - [ ] Ran curl commands to drop and configure database successfully.
 - [ ] Created a scoped commit referencing this task ID.

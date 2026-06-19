@@ -1,25 +1,43 @@
+_locked: false
 file_name: Plan.0.1.0.yaml
 root:
-  name: Plan
+  additional_properties: false
   description: A encounter plan.
-  type: object
+  name: Plan
   properties:
-  - name: _id
-    description: The unique identifier for the Plan.
+  - description: The unique identifier for the Plan.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The searchable name of the document
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Plan.
+  - description: The description of the Plan.
+    name: description
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
     type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
     type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: a list of things a mentor might want to do during an encounter
+    items:
+      description: Array item
+      name: item
+      required: false
+      type: sentence
+    name: checklist
+    required: false
+    type: array
+  required: false
+  type: object

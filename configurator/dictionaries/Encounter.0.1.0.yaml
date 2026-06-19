@@ -25,6 +25,25 @@ root:
     name: plan_id
     required: false
     type: identifier
+  - description: the checklist that the mentor uses
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: set to true when the step is checked
+        name: checked
+        required: false
+        type: boolean
+      - description: the step
+        name: step
+        required: false
+        type: sentence
+      required: false
+      type: object
+    name: agenda
+    required: false
+    type: array
   - description: Status of the document
     enums: default_status
     name: status

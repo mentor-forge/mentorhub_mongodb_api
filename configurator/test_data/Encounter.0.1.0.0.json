@@ -1,1 +1,752 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "E00000000000000000000001"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "date": {
+      "$date": "2025-01-08T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Good to see you, Daniel. What do you want to focus on today?\n\n**Daniel:** I want to keep pushing on Vue composition patterns. I finished several EngineerKit modules in my library section.\n\n**Marti:** How would you describe what's happening now?\n\n**Daniel:** I feel stronger on component design, but I still hesitate when wiring up API calls.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Daniel:** A concrete plan for one API integration exercise I can finish this week.\n\n**Marti:** What would you like to share next time?\n\n**Daniel:** A working fetch layer in my portfolio SPA and notes on what confused me.\n\n**Marti:** How are your discoveries making a difference?\n\n**Daniel:** I'm shipping smaller features faster and asking better questions in code review.\n\n**Marti:** Let's wrap with homework on MongoDB aggregation basics for your portfolio project.",
+    "summary": "## Summary\nDaniel completed five EngineerKit library resources and started two in-progress items. Marti encouraged him to connect frontend work to backend API patterns.\n\n## Next steps\n- Finish one API integration exercise\n- Review React patterns doc shared by mentor",
+    "tldr": "Daniel reviewed Vue composition progress and agreed to tackle API integration homework before the next session.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-01-08T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-01-08T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000002"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "date": {
+      "$date": "2025-05-20T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": false
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": false
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Welcome back. You had API integration on your homework list \u2014 how did it go?\n\n**Daniel:** I got a basic fetch layer working against a mock service. Still rough around error handling.\n\n**Marti:** What do you want to focus on today?\n\n**Daniel:** Polishing that layer and deciding what to tackle next on my journey.\n\n**Marti:** How would you describe what's happening now?\n\n**Daniel:** Frontend patterns are clicking. Backend confidence is catching up but not there yet.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Daniel:** A checklist for error handling and a pick for my next Now resource.\n\n**Marti:** What would you like to share next time?\n\n**Daniel:** Cleaner API code and a short write-up of tradeoffs I considered.\n\n**Marti:** Your EngineerKit library growth is solid \u2014 five completed modules is real momentum.",
+    "summary": "## Summary\nDaniel showed progress on API integration and discussed two in-progress EngineerKit resources in his journey Now section.\n\n## Next steps\n- Add error handling and loading states to API layer\n- Continue Shokunin and Tanners Tailors resources",
+    "tldr": "Daniel demoed a working API layer and Marti suggested deepening error handling before moving to system design topics.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-05-20T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-02"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-05-20T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000003"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "date": {
+      "$date": "2025-02-12T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Hi Lucky. What do you want to focus on today?\n\n**Lucky:** Reliability fundamentals \u2014 I want to understand how mentors think about production incidents.\n\n**Marti:** How would you describe what's happening now?\n\n**Lucky:** I'm absorbing a lot from EngineerKit but need more hands-on automation practice.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Lucky:** A simple script idea for checking deployments that I can build this week.\n\n**Marti:** What would you like to share next time?\n\n**Lucky:** A draft runbook and questions about observability tooling.\n\n**Marti:** How are your discoveries making a difference?\n\n**Lucky:** I'm noticing failure modes earlier when I read logs during labs.\n\n**Marti:** Good \u2014 wrap up with homework on the deployment check script.",
+    "summary": "## Summary\nLucky is progressing through EngineerKit with eight completed library items. Session focused on backend reliability and organic discussion of automation habits.\n\n## Next steps\n- Draft weekly deployment verification runbook\n- Continue reliability fundamentals resources",
+    "tldr": "Lucky discussed SRE reliability fundamentals and committed to drafting a deployment check automation script.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-02-12T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-03"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-02-12T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000004"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "date": {
+      "$date": "2025-06-10T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": false
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** What do you want to focus on today, Lucky?\n\n**Lucky:** Reviewing my deployment script and talking through system design for small services.\n\n**Marti:** How would you describe what's happening now?\n\n**Lucky:** The script works for happy path. I need better handling when checks fail.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Lucky:** A list of edge cases and which EngineerKit topic to read next.\n\n**Marti:** What would you like to share next time?\n\n**Lucky:** Updated script plus notes on a design tradeoff I made.\n\n**Marti:** Your journey shows eight completed library items \u2014 strong pace for an SRE transition.\n\n**Marti:** How do you want to wrap up today?\n\n**Lucky:** Homework on edge cases and finishing the current Now resource.",
+    "summary": "## Summary\nLucky shared progress on deployment automation and one in-progress EngineerKit resource. Discussion covered system design instincts for SRE work.\n\n## Next steps\n- Refine deployment check script with edge cases\n- Continue current Now resource on system design",
+    "tldr": "Lucky reviewed his automation script draft and Marti recommended pairing it with system-design reading from his current journey resource.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-10T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-04"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-10T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000005"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "date": {
+      "$date": "2025-03-05T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Mary, great to meet you properly. What do you want to focus on today?\n\n**Mary:** I'm pivoting from music education to IT and need a realistic learning plan.\n\n**Marti:** How would you describe what's happening now?\n\n**Mary:** I'm motivated but overwhelmed by how much there is to learn.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Mary:** Clarity on which EngineerKit modules matter most for entry-level roles.\n\n**Marti:** What would you like to share next time?\n\n**Mary:** Completed modules and a draft story about my career change.\n\n**Marti:** Teaching and choir direction gave you communication skills employers want.\n\n**Marti:** How are your discoveries making a difference?\n\n**Mary:** I'm seeing parallels between lesson planning and breaking down technical topics.",
+    "summary": "## Summary\nMary discussed her career pivot from music education to IT. Marti helped connect transferable skills to EngineerKit path progress.\n\n## Next steps\n- Complete next two library modules\n- Document skills translation for portfolio narrative",
+    "tldr": "Mary mapped her music-education background to IT career goals and chose foundational computing modules on her EngineerKit journey.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-03-05T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-05"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-03-05T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000006"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "date": {
+      "$date": "2025-06-05T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": false
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": false
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** What do you want to focus on today?\n\n**Mary:** Interview prep \u2014 how to talk about my pivot without sounding apologetic.\n\n**Marti:** How would you describe what's happening now?\n\n**Mary:** Ten completed journey items gives me confidence, but interviews still feel daunting.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Mary:** A two-minute pitch connecting music teaching to technical collaboration.\n\n**Marti:** What would you like to share next time?\n\n**Mary:** Practiced pitch and feedback from a mock question.\n\n**Marti:** Your EngineerKit progress is proof you can learn complex material systematically.\n\n**Marti:** How do you want to wrap up today?\n\n**Mary:** Homework to record myself answering why IT, why now.",
+    "summary": "## Summary\nMary has ten EngineerKit library completions and two in-progress resources. Session focused on portfolio narrative and interview prep.\n\n## Next steps\n- Refine career-change story for applications\n- Finish current Now resources",
+    "tldr": "Mary reported ten completed journey resources and Marti coached her on interview storytelling for her IT career pivot.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-05T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-05T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000007"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "date": {
+      "$date": "2025-04-15T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Luther, always good to catch up. What do you want to focus on today?\n\n**Luther:** I've been answering more of my own questions lately, but I value these check-ins.\n\n**Marti:** How would you describe what's happening now?\n\n**Luther:** Twelve library completions \u2014 I'm in maintenance mode more than sprint mode.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Luther:** Decide if I want a deep dive or keep broad exploration.\n\n**Marti:** What would you like to share next time?\n\n**Luther:** A reflection on what I learned this quarter.\n\n**Marti:** How are your discoveries making a difference?\n\n**Luther:** I'm mentoring juniors on my team using patterns we discussed years ago.\n\n**Marti:** That's the best sign this work is sticking.",
+    "summary": "## Summary\nLonger-tenure mentee session. Luther discussed sustaining momentum after two years of mentorship and continued EngineerKit depth.\n\n## Next steps\n- Pick one advanced topic for deep dive\n- Maintain monthly touchpoint rhythm",
+    "tldr": "Luther reviewed long-term mentorship goals and advanced EngineerKit modules while staying engaged through monthly check-ins.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-04-15T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-04-15T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000008"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "date": {
+      "$date": "2025-05-28T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "archived",
+    "transcript": "**Marti:** What do you want to focus on today?\n\n**Luther:** Wrapping up this formal cycle \u2014 what's worth capturing before we go informal?\n\n**Marti:** How would you describe what's happening now?\n\n**Luther:** I've hit the goals we set when my journey was active. Time to archive and stay in touch.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Luther:** A clean summary for my records and yours.\n\n**Marti:** What would you like to share next time?\n\n**Luther:** Just life updates \u2014 no homework unless I ask.\n\n**Marti:** How are your discoveries making a difference?\n\n**Luther:** I still bounce ideas off you because it helps me think, not because I'm stuck.\n\n**Marti:** Perfect place to land. We'll archive this encounter and keep the friendship.",
+    "summary": "## Summary\nFinal archived encounter for Luther's active mentoring cycle. Reviewed accomplishments and agreed to shift to informal monthly conversations.\n\n## Outcome\n- Encounter archived after cycle completion\n- Luther journey also marked archived",
+    "tldr": "Luther and Marti archived this encounter record after closing out a completed mentoring cycle on advanced EngineerKit topics.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-05-28T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-08"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-05-28T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000009"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "date": {
+      "$date": "2025-06-02T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": false
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Welcome, Riley. What do you want to focus on today?\n\n**Riley:** Getting oriented \u2014 I don't know what I don't know yet.\n\n**Marti:** How would you describe what's happening now?\n\n**Riley:** Excited but unsure how to prioritize the EngineerKit path.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Riley:** A simple plan for my first two weeks.\n\n**Marti:** What would you like to share next time?\n\n**Riley:** Notes from my first resources and blockers.\n\n**Marti:** How are your discoveries making a difference?\n\n**Riley:** Too early to say, but the path structure helps me feel less lost.\n\n**Marti:** How do you want to wrap up today?\n\n**Riley:** Homework on the first two modules Marti picked.",
+    "summary": "## Summary\nFirst structured encounter with Riley as a newer mentee. Established learning rhythm and initial resource focus.\n\n## Next steps\n- Complete first two assigned resources\n- Prepare questions for next weekly check-in",
+    "tldr": "Riley set goals for the first month of mentorship and started initial EngineerKit resources with Marti's guidance.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-02T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-09"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-02T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000010"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "date": {
+      "$date": "2024-06-15T15:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Session Recording in Whisper",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording and Transcribe",
+        "checked": true
+      },
+      {
+        "step": "Summarize Transcript With AI",
+        "checked": true
+      }
+    ],
+    "status": "archived",
+    "transcript": "**Marti:** Casey, thanks for making time. What do you want to focus on today?\n\n**Casey:** I need to be honest \u2014 I'm pausing mentorship for now.\n\n**Marti:** How would you describe what's happening now?\n\n**Casey:** Life got in the way and I haven't kept up with the journey.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Casey:** A clean stop without guilt \u2014 and notes if I come back later.\n\n**Marti:** What would you like to share next time?\n\n**Casey:** Maybe nothing for a while, and that's okay.\n\n**Marti:** How are your discoveries making a difference?\n\n**Casey:** What I did finish still helps me at work, even if I didn't complete the path.\n\n**Marti:** We'll archive this and leave the door open.",
+    "summary": "## Summary\nHistorical encounter predating Casey's archived profile status. Session captured closure conversation and remaining homework items.\n\n## Outcome\n- Mentorship paused\n- Profile later archived by coordinator",
+    "tldr": "Casey paused active mentorship before profile archival; Marti documented last session outcomes and handoff notes.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2024-06-15T15:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2024-06-15T16:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-10"
+    }
+  }
+]

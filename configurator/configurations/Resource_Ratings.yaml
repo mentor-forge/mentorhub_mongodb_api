@@ -1,0 +1,31 @@
+_locked: false
+description: Resource level rating and note count
+file_name: Resource_Ratings.yaml
+title: Resource_Ratings Configuration
+versions:
+- _locked: false
+  add_indexes:
+  - key:
+      name: 1
+    name: nameIndex
+    options:
+      unique: false
+  - key:
+      status: 1
+    name: statusIndex
+    options:
+      unique: false
+  - key:
+      created.at_time: 1
+    name: createdIndex
+    options:
+      unique: false
+  - key:
+      last_saved.at_time: 1
+    name: savedIndex
+    options:
+      unique: false
+  drop_indexes: []
+  migrations: []
+  test_data: Resource_Ratings.1.0.0.0.json
+  version: 1.0.0.0

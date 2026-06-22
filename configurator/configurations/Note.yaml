@@ -1,18 +1,20 @@
+_locked: false
+description: A Note about a Resource, created by a Mentee
 file_name: Note.yaml
-description: A note about a resource.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
+- _locked: false
+  add_indexes:
+  - key:
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Last Saved
-    key:
+  - key:
       saved.at_time: -1
+    name: Last Saved
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Note.0.1.0.0.json
+  version: 0.1.0.0

@@ -1,18 +1,25 @@
+_locked: false
+description: A learning resource (link, description, cost, type, etc)
 file_name: Resource.yaml
-description: A learning resource (link)
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
+- _locked: false
+  add_indexes:
+  - key:
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Last Saved
-    key:
+  - key:
       saved.at_time: -1
+    name: Last Saved
     options: {}
+  - key:
+      url: 1
+    name: URL
+    options:
+      unique: true
   drop_indexes: []
   migrations: []
   test_data: Resource.0.1.0.0.json
+  version: 0.1.0.0

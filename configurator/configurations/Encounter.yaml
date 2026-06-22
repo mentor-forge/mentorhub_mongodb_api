@@ -1,18 +1,16 @@
+_locked: false
+description: A learning encounter between a Mentor and a Mentee.
 file_name: Encounter.yaml
-description: A learning encounter between a mentor and a craftsperson.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
-      name: 1
-    options:
-      unique: true
-  - name: Last Saved
-    key:
-      saved.at_time: -1
+- _locked: false
+  add_indexes:
+  - key:
+      date: -1
+      mentor_id: 1
+    name: Mentor
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Encounter.0.1.0.0.json
+  version: 0.1.0.0

@@ -1,23 +1,25 @@
+_locked: false
+description: "Mentor information about a Mentee (notes, schedule, \u2026) "
 file_name: Mentee.yaml
-description: Mentor notes about a Mentee
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
+- _locked: false
   add_indexes:
-  - name: Name Index
-    key:
+  - key:
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Profile Index
-    key:
+  - key:
       profile_id: 1
+    name: Profile Index
     options:
       unique: true
-  - name: Last Saved
-    key:
+  - key:
       saved.at_time: -1
+    name: Last Saved
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Mentee.0.1.0.0.json
+  version: 0.1.0.0

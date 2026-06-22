@@ -9,10 +9,6 @@ root:
     name: _id
     required: false
     type: identifier
-  - description: Searchable name for this mentoring record
-    name: name
-    required: false
-    type: word
   - description: Short summary of the mentoring relationship
     name: description
     required: false

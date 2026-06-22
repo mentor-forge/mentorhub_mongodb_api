@@ -21,35 +21,21 @@ root:
     name: url
     required: false
     type: url
-  - description: Status of the document
-    enums: resource_status
-    name: status
+  - description: What type of resource
+    enums: resource_type
+    name: type
     required: false
     type: enum
-  - description: When was this resource link last verified
-    name: last_verified
+  - description: The cost to use this resource
+    enums: Costs
+    name: cost
     required: false
-    type: date-time
-  - description: The sum of all resource ratings for this resource
-    name: rating_sum
+    type: enum
+  - description: The skill level
+    enums: Skills
+    name: skill_level
     required: false
-    type: count
-  - description: The number of raitings this resource has
-    name: rating_count
-    required: false
-    type: count
-  - description: The number of notes this resource has
-    name: note_count
-    required: false
-    type: count
-  - description: The tracking breadcrumb for when the document was created.
-    name: created
-    required: false
-    type: breadcrumb
-  - description: The tracking breadcrumb for when the document was last saved.
-    name: saved
-    required: false
-    type: breadcrumb
+    type: enum
   - description: A list of interests this resource is related to
     enums: interests
     name: interests
@@ -60,5 +46,22 @@ root:
     name: technologies
     required: false
     type: enum_array
+  - description: When was this resource link last verified
+    name: last_verified
+    required: false
+    type: date-time
+  - description: Status of the document
+    enums: resource_status
+    name: status
+    required: false
+    type: enum
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
+    type: breadcrumb
   required: false
   type: object

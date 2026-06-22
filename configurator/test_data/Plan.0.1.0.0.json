@@ -8,28 +8,60 @@
         "$date": "2024-01-15T10:00:00.000Z"
       },
       "by_user": "system",
-      "correlation_id": "seed-identity-001",
+      "correlation_id": "seed-plan-001",
       "from_ip": "127.0.0.1"
     },
-    "name": "basic",
-    "description": "a basic encounter plan",
+    "name": "Standard",
+    "description": "The standard recurring encounter plan for mentor sessions.",
     "checklist": [
-      "Start Session Recording in Whisper",
+      "Start Whisper Recording",
       "What do you want to focus on today?",
       "How would you describe what's happening now?",
       "During our time together, what would you like to accomplish?",
       "What would you like to be able to share next time?",
       "How are your discoveries making a difference?",
       "How do you want to wrap up today?",
-      "Stop Recording and Transcribe",
-      "Summarize Transcript With AI"
+      "Stop Recording, Transcribe and Paste Updates"
     ],
     "saved": {
       "at_time": {
         "$date": "2025-06-01T14:30:00.000Z"
       },
       "by_user": "mike",
-      "correlation_id": "save-identity-001",
+      "correlation_id": "save-plan-001",
+      "from_ip": "127.0.0.1"
+    },
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "created": {
+      "at_time": {
+        "$date": "2024-01-15T10:00:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-plan-002",
+      "from_ip": "127.0.0.1"
+    },
+    "name": "FirstEncounter",
+    "description": "Onboarding plan for a mentee's first meeting with their mentor.",
+    "checklist": [
+      "Start Whisper Recording",
+      "Introduction - The Agile Learning Institute",
+      "Introduction - Mentor / Mentee",
+      "How many weeks are you commiting to?",
+      "What do you want to be able to say at the end of that time?",
+      "Introduce Mentee Journey interface.",
+      "Stop Recording, Transcribe, and Paste Updates"
+    ],
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-plan-002",
       "from_ip": "127.0.0.1"
     },
     "status": "active"

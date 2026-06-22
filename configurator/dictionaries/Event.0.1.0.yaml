@@ -10,7 +10,7 @@ root:
     required: false
     type: identifier
   - description: The event type
-    enums: events
+    enums: event_types
     name: name
     required: false
     type: enum

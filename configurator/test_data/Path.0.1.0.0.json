@@ -1,1 +1,4688 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "C000000000000000000000001"
+    },
+    "name": "Module1Introduction",
+    "description": "[Apache Kafka 101](https://developer.confluent.io/courses/apache-kafka/events/) online course",
+    "technologies": [
+      "Other",
+      "React"
+    ],
+    "interests": [
+      "api",
+      "ux"
+    ],
+    "modules": [
+      {
+        "name": "WhatIsApacheKafkahttpsdeveloperconfluent",
+        "description": "Module covering What Is Apache Kafka?[](https://developer.confluent.io/courses/apache-kafka/events/#what-is-apache-kafka).",
+        "topics": []
+      },
+      {
+        "name": "WhatAreEventshttpsdeveloperconfluentioco",
+        "description": "Module covering What Are Events?[](https://developer.confluent.io/courses/apache-kafka/events/#what-are-events).",
+        "topics": []
+      },
+      {
+        "name": "KafkaandEventsKeyValuePairshttpsdevelope",
+        "description": "Module covering Kafka and Events \u2013 Key/Value Pairs[](https://developer.confluent.io/courses/apache-kafka/events/#kafka-and-events--keyvalue-pairs).",
+        "topics": []
+      },
+      {
+        "name": "HowPartitioningWorkshttpsdeveloperconflu",
+        "description": "Module covering How Partitioning Works[](https://developer.confluent.io/courses/apache-kafka/partitions/#how-partitioning-works).",
+        "topics": []
+      },
+      {
+        "name": "ProducerExamplehttpsdeveloperconfluentio",
+        "description": "Module covering Producer Example[](https://developer.confluent.io/courses/apache-kafka/producers/#producer-example).",
+        "topics": []
+      },
+      {
+        "name": "WhatDoesKafkaConnectDohttpsdeveloperconf",
+        "description": "Module covering What Does Kafka Connect Do?[](https://developer.confluent.io/courses/apache-kafka/kafka-connect/#what-does-kafka-connect-do).",
+        "topics": []
+      },
+      {
+        "name": "HowKafkaConnectWorkshttpsdeveloperconflu",
+        "description": "Module covering [How Kafka Connect Works](https://developer.confluent.io/courses/apache-kafka/kafka-connect/#how-kafka-connect-works).",
+        "topics": []
+      },
+      {
+        "name": "BenefitsofKafkaConnecthttpsdeveloperconf",
+        "description": "Module covering [Benefits of Kafka Connect](https://developer.confluent.io/courses/apache-kafka/kafka-connect/#benefits-of-kafka-connect).",
+        "topics": []
+      },
+      {
+        "name": "WhatIsSchemaRegistryhttpsdeveloperconflu",
+        "description": "Module covering [What Is Schema Registry?](https://developer.confluent.io/courses/apache-kafka/schema-registry/#what-is-schema-registry) [YouTube](https://www.youtube.com/watch?v=_x9RacHDQY0).",
+        "topics": []
+      },
+      {
+        "name": "WhatisKafkaStreamshttpsdeveloperconfluen",
+        "description": "Module covering [What is Kafka Streams?](https://developer.confluent.io/courses/apache-kafka/kafka-streams/#what-is-kafka-streams).",
+        "topics": []
+      },
+      {
+        "name": "StreamAPIExamplehttpsdeveloperconfluenti",
+        "description": "Module covering Stream API Example[](https://developer.confluent.io/courses/apache-kafka/kafka-streams/#stream-api-example).",
+        "topics": []
+      }
+    ],
+    "status": "archived",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-001",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000002"
+    },
+    "name": "ApacheKafkaFundamentals",
+    "description": "Learning path for Apache Kafka Fundamentals.",
+    "technologies": [
+      "Other",
+      "MongoDB"
+    ],
+    "interests": [
+      "api"
+    ],
+    "modules": [
+      {
+        "name": "Skills",
+        "description": "Module covering Skills.",
+        "topics": []
+      },
+      {
+        "name": "Resources",
+        "description": "Module covering Resources.",
+        "topics": []
+      },
+      {
+        "name": "Notes",
+        "description": "Module covering Notes.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-002",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000003"
+    },
+    "name": "CypressTesting",
+    "description": "Learning path for Cypress Testing.",
+    "technologies": [
+      "Other",
+      "Python"
+    ],
+    "interests": [
+      "api",
+      "sre"
+    ],
+    "modules": [
+      {
+        "name": "Introduction",
+        "description": "Module covering Introduction.",
+        "topics": [
+          {
+            "name": "RequirementsGathering",
+            "description": "With this topic, you'll learn how to gather requirements for features, bugs, and other tasks so that you know what to build.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000571"
+              },
+              {
+                "$oid": "B000000000000000000000572"
+              },
+              {
+                "$oid": "B000000000000000000000573"
+              },
+              {
+                "$oid": "B000000000000000000000574"
+              },
+              {
+                "$oid": "B000000000000000000000575"
+              },
+              {
+                "$oid": "B000000000000000000000576"
+              },
+              {
+                "$oid": "B000000000000000000000577"
+              },
+              {
+                "$oid": "B000000000000000000000578"
+              },
+              {
+                "$oid": "B000000000000000000000579"
+              }
+            ]
+          },
+          {
+            "name": "GettingStartedwithCypress",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "CypressCoreConcepts",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000136"
+              },
+              {
+                "$oid": "B000000000000000000000137"
+              },
+              {
+                "$oid": "B000000000000000000000138"
+              },
+              {
+                "$oid": "B000000000000000000000139"
+              },
+              {
+                "$oid": "B000000000000000000000140"
+              },
+              {
+                "$oid": "B000000000000000000000141"
+              },
+              {
+                "$oid": "B000000000000000000000142"
+              },
+              {
+                "$oid": "B000000000000000000000143"
+              },
+              {
+                "$oid": "B000000000000000000000144"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CypressE2ETesting",
+        "description": "Module covering Cypress E2E Testing.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-003",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000004"
+    },
+    "name": "Databases",
+    "description": "Learning path for Databases.",
+    "technologies": [
+      "Other",
+      "TypeScript"
+    ],
+    "interests": [
+      "api",
+      "data"
+    ],
+    "modules": [
+      {
+        "name": "RelationalDatabases",
+        "description": "Module covering Relational Databases.",
+        "topics": []
+      },
+      {
+        "name": "DocumentDatabases",
+        "description": "Module covering Document Databases.",
+        "topics": [
+          {
+            "name": "elasticsearchELK",
+            "description": "Elastic search, optimized, database, and related connectors",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000714"
+              },
+              {
+                "$oid": "B000000000000000000000715"
+              },
+              {
+                "$oid": "B000000000000000000000716"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-004",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000005"
+    },
+    "name": "Design",
+    "description": "Learning path for Design.",
+    "technologies": [
+      "Other",
+      "Java"
+    ],
+    "interests": [
+      "design"
+    ],
+    "modules": [
+      {
+        "name": "UIDesignFigma",
+        "description": "Module covering UI Design - Figma.",
+        "topics": [
+          {
+            "name": "FIgma",
+            "description": "Figma is a popular tool for graphic design, UI prototyping, and colaboration. It is widely used in the industry and many UI positions will need these skills.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000228"
+              },
+              {
+                "$oid": "B000000000000000000000229"
+              },
+              {
+                "$oid": "B000000000000000000000230"
+              },
+              {
+                "$oid": "B000000000000000000000231"
+              },
+              {
+                "$oid": "B000000000000000000000232"
+              },
+              {
+                "$oid": "B000000000000000000000233"
+              },
+              {
+                "$oid": "B000000000000000000000234"
+              },
+              {
+                "$oid": "B000000000000000000000235"
+              },
+              {
+                "$oid": "B000000000000000000000236"
+              },
+              {
+                "$oid": "B000000000000000000000237"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MaterialDesign",
+        "description": "Module covering Material Design.",
+        "topics": [
+          {
+            "name": "MaterialDesignFoundations",
+            "description": "Material Design is a [[Design Systems]] from Google that is commonly used in developing Web or Mobile UI's.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000443"
+              },
+              {
+                "$oid": "B000000000000000000000444"
+              },
+              {
+                "$oid": "B000000000000000000000445"
+              },
+              {
+                "$oid": "B000000000000000000000446"
+              },
+              {
+                "$oid": "B000000000000000000000447"
+              },
+              {
+                "$oid": "B000000000000000000000448"
+              },
+              {
+                "$oid": "B000000000000000000000449"
+              },
+              {
+                "$oid": "B000000000000000000000450"
+              },
+              {
+                "$oid": "B000000000000000000000451"
+              },
+              {
+                "$oid": "B000000000000000000000452"
+              }
+            ]
+          },
+          {
+            "name": "MaterialDesignStyles",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000453"
+              },
+              {
+                "$oid": "B000000000000000000000454"
+              },
+              {
+                "$oid": "B000000000000000000000455"
+              },
+              {
+                "$oid": "B000000000000000000000456"
+              },
+              {
+                "$oid": "B000000000000000000000457"
+              },
+              {
+                "$oid": "B000000000000000000000458"
+              }
+            ]
+          },
+          {
+            "name": "ComponentsActions",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000113"
+              },
+              {
+                "$oid": "B000000000000000000000114"
+              },
+              {
+                "$oid": "B000000000000000000000115"
+              },
+              {
+                "$oid": "B000000000000000000000116"
+              },
+              {
+                "$oid": "B000000000000000000000117"
+              }
+            ]
+          },
+          {
+            "name": "Communication",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000109"
+              },
+              {
+                "$oid": "B000000000000000000000110"
+              },
+              {
+                "$oid": "B000000000000000000000111"
+              },
+              {
+                "$oid": "B000000000000000000000112"
+              }
+            ]
+          },
+          {
+            "name": "Containment",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000118"
+              },
+              {
+                "$oid": "B000000000000000000000119"
+              },
+              {
+                "$oid": "B000000000000000000000120"
+              },
+              {
+                "$oid": "B000000000000000000000121"
+              },
+              {
+                "$oid": "B000000000000000000000122"
+              },
+              {
+                "$oid": "B000000000000000000000123"
+              },
+              {
+                "$oid": "B000000000000000000000124"
+              }
+            ]
+          },
+          {
+            "name": "Navigation",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000459"
+              },
+              {
+                "$oid": "B000000000000000000000460"
+              },
+              {
+                "$oid": "B000000000000000000000461"
+              },
+              {
+                "$oid": "B000000000000000000000462"
+              },
+              {
+                "$oid": "B000000000000000000000463"
+              },
+              {
+                "$oid": "B000000000000000000000464"
+              },
+              {
+                "$oid": "B000000000000000000000465"
+              }
+            ]
+          },
+          {
+            "name": "Selection",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000613"
+              },
+              {
+                "$oid": "B000000000000000000000614"
+              },
+              {
+                "$oid": "B000000000000000000000615"
+              },
+              {
+                "$oid": "B000000000000000000000616"
+              },
+              {
+                "$oid": "B000000000000000000000617"
+              },
+              {
+                "$oid": "B000000000000000000000618"
+              },
+              {
+                "$oid": "B000000000000000000000619"
+              },
+              {
+                "$oid": "B000000000000000000000620"
+              }
+            ]
+          },
+          {
+            "name": "TextInputs",
+            "description": "Brief Description",
+            "resources": []
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-005",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000006"
+    },
+    "name": "EngineerKit",
+    "description": "Learning path for EngineerKit.",
+    "technologies": [
+      "Other",
+      "HTML"
+    ],
+    "interests": [
+      "api",
+      "games"
+    ],
+    "modules": [
+      {
+        "name": "Architecture",
+        "description": "Module covering Architecture.",
+        "topics": [
+          {
+            "name": "CommonTechStacks",
+            "description": "With this topic, you'll learn about common tech stacks used on projects worldwide.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000107"
+              },
+              {
+                "$oid": "B000000000000000000000108"
+              }
+            ]
+          },
+          {
+            "name": "AssemblingaTechStack",
+            "description": "With this topic, you'll learn how to put together a tech stack that balances the needs of an application and the team building it.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000007"
+              },
+              {
+                "$oid": "B000000000000000000000008"
+              }
+            ]
+          },
+          {
+            "name": "TechStackRamping",
+            "description": "With this topic, you'll learn about techniques that enable you to quickly ramp up on new tech stacks and start shipping new features.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000633"
+              }
+            ]
+          },
+          {
+            "name": "LivingDocumentation",
+            "description": "With this topic, you'll learn how to create helpful documentation that evolves along with the system it describes.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000403"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Automatedtesting",
+        "description": "Module covering Automated-testing.",
+        "topics": [
+          {
+            "name": "RequirementsGathering",
+            "description": "With this topic, you'll learn how to gather requirements for features, bugs, and other tasks so that you know what to build.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000571"
+              },
+              {
+                "$oid": "B000000000000000000000572"
+              },
+              {
+                "$oid": "B000000000000000000000573"
+              },
+              {
+                "$oid": "B000000000000000000000574"
+              },
+              {
+                "$oid": "B000000000000000000000575"
+              },
+              {
+                "$oid": "B000000000000000000000576"
+              },
+              {
+                "$oid": "B000000000000000000000577"
+              },
+              {
+                "$oid": "B000000000000000000000578"
+              },
+              {
+                "$oid": "B000000000000000000000579"
+              }
+            ]
+          },
+          {
+            "name": "TestingStrategies",
+            "description": "With this topic, you'll learn about test-driven development, the testing pyramid, and how to apply unit, integration, and end-to-end testing when creating software.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000656"
+              },
+              {
+                "$oid": "B000000000000000000000657"
+              },
+              {
+                "$oid": "B000000000000000000000658"
+              },
+              {
+                "$oid": "B000000000000000000000659"
+              },
+              {
+                "$oid": "B000000000000000000000660"
+              },
+              {
+                "$oid": "B000000000000000000000661"
+              },
+              {
+                "$oid": "B000000000000000000000662"
+              },
+              {
+                "$oid": "B000000000000000000000663"
+              },
+              {
+                "$oid": "B000000000000000000000664"
+              },
+              {
+                "$oid": "B000000000000000000000665"
+              },
+              {
+                "$oid": "B000000000000000000000666"
+              },
+              {
+                "$oid": "B000000000000000000000667"
+              },
+              {
+                "$oid": "B000000000000000000000668"
+              },
+              {
+                "$oid": "B000000000000000000000669"
+              },
+              {
+                "$oid": "B000000000000000000000670"
+              },
+              {
+                "$oid": "B000000000000000000000671"
+              },
+              {
+                "$oid": "B000000000000000000000672"
+              }
+            ]
+          },
+          {
+            "name": "TestPatterns",
+            "description": "With this topic, you'll learn about common test patterns such as the four-phase test, inside-out testing, and other practical techniques to make writing automated tests more efficient and enjoyable.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000641"
+              },
+              {
+                "$oid": "B000000000000000000000642"
+              },
+              {
+                "$oid": "B000000000000000000000643"
+              },
+              {
+                "$oid": "B000000000000000000000644"
+              },
+              {
+                "$oid": "B000000000000000000000645"
+              },
+              {
+                "$oid": "B000000000000000000000646"
+              }
+            ]
+          },
+          {
+            "name": "TestDoubles",
+            "description": "With this topic, you'll learn about test doubles (stubs, spies, and mocks), how they can be used in your project, and when to use them in your tests.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000634"
+              },
+              {
+                "$oid": "B000000000000000000000635"
+              },
+              {
+                "$oid": "B000000000000000000000636"
+              },
+              {
+                "$oid": "B000000000000000000000637"
+              },
+              {
+                "$oid": "B000000000000000000000638"
+              },
+              {
+                "$oid": "B000000000000000000000639"
+              },
+              {
+                "$oid": "B000000000000000000000640"
+              }
+            ]
+          },
+          {
+            "name": "TestSmellsandFlakiness",
+            "description": "With this topic, you'll learn about common anti-patterns when writing automated tests and some techniques to help your test suite run soundly every time.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000647"
+              },
+              {
+                "$oid": "B000000000000000000000648"
+              },
+              {
+                "$oid": "B000000000000000000000649"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "CleanCode",
+        "description": "Module covering Clean Code.",
+        "topics": [
+          {
+            "name": "CodeQuality",
+            "description": "With this topic, you'll learn why the quality of your code is important and how it affects the safety and reliability of your codebase.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000066"
+              },
+              {
+                "$oid": "B000000000000000000000067"
+              },
+              {
+                "$oid": "B000000000000000000000068"
+              }
+            ]
+          },
+          {
+            "name": "CodeSmells",
+            "description": "With this topic, you'll learn about signals in your codebase that can indicate poor design or the lack of best practices.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000069"
+              },
+              {
+                "$oid": "B000000000000000000000070"
+              }
+            ]
+          },
+          {
+            "name": "FourRulesofSimpleDesign",
+            "description": "With this topic, you'll learn about writing simple code that is tested, singular, and easy to understand.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000239"
+              },
+              {
+                "$oid": "B000000000000000000000240"
+              },
+              {
+                "$oid": "B000000000000000000000241"
+              },
+              {
+                "$oid": "B000000000000000000000242"
+              }
+            ]
+          },
+          {
+            "name": "DesignPatterns",
+            "description": "With this topic, you'll learn about typical solutions to common problems in software design.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000176"
+              },
+              {
+                "$oid": "B000000000000000000000177"
+              },
+              {
+                "$oid": "B000000000000000000000178"
+              },
+              {
+                "$oid": "B000000000000000000000179"
+              },
+              {
+                "$oid": "B000000000000000000000180"
+              },
+              {
+                "$oid": "B000000000000000000000181"
+              },
+              {
+                "$oid": "B000000000000000000000182"
+              }
+            ]
+          },
+          {
+            "name": "RefactoringTechniques",
+            "description": "With this topic, you'll learn about common ways to better restructure existing code without changing its underlying behavior.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000563"
+              },
+              {
+                "$oid": "B000000000000000000000564"
+              },
+              {
+                "$oid": "B000000000000000000000565"
+              },
+              {
+                "$oid": "B000000000000000000000566"
+              },
+              {
+                "$oid": "B000000000000000000000567"
+              },
+              {
+                "$oid": "B000000000000000000000568"
+              },
+              {
+                "$oid": "B000000000000000000000569"
+              },
+              {
+                "$oid": "B000000000000000000000570"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Computing",
+        "description": "Module covering Computing.",
+        "topics": [
+          {
+            "name": "HistoryofComputing",
+            "description": "With this topic, you'll learn about the history of computing and some of the most important events that shaped the Information Age.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000264"
+              },
+              {
+                "$oid": "B000000000000000000000265"
+              },
+              {
+                "$oid": "B000000000000000000000266"
+              },
+              {
+                "$oid": "B000000000000000000000267"
+              },
+              {
+                "$oid": "B000000000000000000000268"
+              },
+              {
+                "$oid": "B000000000000000000000269"
+              },
+              {
+                "$oid": "B000000000000000000000270"
+              }
+            ]
+          },
+          {
+            "name": "Hardware",
+            "description": "With this topic, you will learn about the essential computer components and the different roles they play.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000258"
+              },
+              {
+                "$oid": "B000000000000000000000259"
+              },
+              {
+                "$oid": "B000000000000000000000260"
+              },
+              {
+                "$oid": "B000000000000000000000261"
+              },
+              {
+                "$oid": "B000000000000000000000262"
+              },
+              {
+                "$oid": "B000000000000000000000263"
+              }
+            ]
+          },
+          {
+            "name": "OperatingSystems",
+            "description": "With this topic, you will learn about the underlying software that coordinates the different components of a computer.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000062"
+              },
+              {
+                "$oid": "B000000000000000000000511"
+              },
+              {
+                "$oid": "B000000000000000000000512"
+              },
+              {
+                "$oid": "B000000000000000000000513"
+              },
+              {
+                "$oid": "B000000000000000000000514"
+              },
+              {
+                "$oid": "B000000000000000000000515"
+              },
+              {
+                "$oid": "B000000000000000000000516"
+              },
+              {
+                "$oid": "B000000000000000000000517"
+              }
+            ]
+          },
+          {
+            "name": "Runtimes",
+            "description": "With this topic, you will learn about the process of turning human-readable code into commands that the computer can understand.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000585"
+              },
+              {
+                "$oid": "B000000000000000000000586"
+              },
+              {
+                "$oid": "B000000000000000000000587"
+              },
+              {
+                "$oid": "B000000000000000000000588"
+              },
+              {
+                "$oid": "B000000000000000000000589"
+              },
+              {
+                "$oid": "B000000000000000000000590"
+              },
+              {
+                "$oid": "B000000000000000000000591"
+              },
+              {
+                "$oid": "B000000000000000000000592"
+              },
+              {
+                "$oid": "B000000000000000000000593"
+              }
+            ]
+          },
+          {
+            "name": "SpectrumofPlatforms",
+            "description": "With this topic, you will learn about the different combinations of hardware, operating systems, and runtimes used to run software applications.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000621"
+              },
+              {
+                "$oid": "B000000000000000000000622"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Craftsmanship",
+        "description": "Module covering Craftsmanship.",
+        "topics": [
+          {
+            "name": "HistoryofCraftsmanship",
+            "description": "With this topic, you'll learn about how craftsmanship has been applied across different trades, cultures, and periods in human history.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000271"
+              },
+              {
+                "$oid": "B000000000000000000000272"
+              },
+              {
+                "$oid": "B000000000000000000000273"
+              },
+              {
+                "$oid": "B000000000000000000000274"
+              },
+              {
+                "$oid": "B000000000000000000000275"
+              },
+              {
+                "$oid": "B000000000000000000000276"
+              },
+              {
+                "$oid": "B000000000000000000000277"
+              },
+              {
+                "$oid": "B000000000000000000000278"
+              }
+            ]
+          },
+          {
+            "name": "PrinciplesofModernCraftsmanship",
+            "description": "With this topic, you'll learn about the principles of modern craftsmanship and how they can be utilized in any occupation.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000543"
+              },
+              {
+                "$oid": "B000000000000000000000544"
+              },
+              {
+                "$oid": "B000000000000000000000545"
+              },
+              {
+                "$oid": "B000000000000000000000546"
+              },
+              {
+                "$oid": "B000000000000000000000547"
+              },
+              {
+                "$oid": "B000000000000000000000548"
+              }
+            ]
+          },
+          {
+            "name": "TheSoftwareCraftsmanshipMovement",
+            "description": "With this topic, you'll learn about the software craftsmanship movement and how it can be applicable far into the future.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000675"
+              },
+              {
+                "$oid": "B000000000000000000000676"
+              },
+              {
+                "$oid": "B000000000000000000000677"
+              },
+              {
+                "$oid": "B000000000000000000000579"
+              }
+            ]
+          },
+          {
+            "name": "LearningasanApprentice",
+            "description": "With this topic, you'll learn patterns and techniques to learn new topics and effectively build skills as an apprentice.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000394"
+              },
+              {
+                "$oid": "B000000000000000000000395"
+              },
+              {
+                "$oid": "B000000000000000000000396"
+              },
+              {
+                "$oid": "B000000000000000000000397"
+              },
+              {
+                "$oid": "B000000000000000000000398"
+              },
+              {
+                "$oid": "B000000000000000000000399"
+              },
+              {
+                "$oid": "B000000000000000000000400"
+              },
+              {
+                "$oid": "B000000000000000000000401"
+              },
+              {
+                "$oid": "B000000000000000000000402"
+              }
+            ]
+          },
+          {
+            "name": "CoachingasaMentor",
+            "description": "With this topic, you'll learn about patterns and techniques to mentor an apprentice in their journey to graduation effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000060"
+              },
+              {
+                "$oid": "B000000000000000000000061"
+              },
+              {
+                "$oid": "B000000000000000000000062"
+              },
+              {
+                "$oid": "B000000000000000000000063"
+              },
+              {
+                "$oid": "B000000000000000000000064"
+              },
+              {
+                "$oid": "B000000000000000000000065"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data",
+        "description": "Module covering Data.",
+        "topics": [
+          {
+            "name": "TypesofData",
+            "description": "With this topic, you'll learn about the spectrum of unstructured to structured data types and how to classify data correctly.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000678"
+              }
+            ]
+          },
+          {
+            "name": "DataStorage",
+            "description": "With this topic, you'll learn techniques to store data of all types for usage in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000153"
+              },
+              {
+                "$oid": "B000000000000000000000154"
+              },
+              {
+                "$oid": "B000000000000000000000155"
+              },
+              {
+                "$oid": "B000000000000000000000156"
+              }
+            ]
+          },
+          {
+            "name": "DataManipulation",
+            "description": "With this topic, you'll learn how to interact with and manipulate data from storage providers using techniques such as SQL or SSH.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000145"
+              },
+              {
+                "$oid": "B000000000000000000000146"
+              },
+              {
+                "$oid": "B000000000000000000000147"
+              },
+              {
+                "$oid": "B000000000000000000000148"
+              },
+              {
+                "$oid": "B000000000000000000000149"
+              },
+              {
+                "$oid": "B000000000000000000000150"
+              },
+              {
+                "$oid": "B000000000000000000000151"
+              },
+              {
+                "$oid": "B000000000000000000000152"
+              }
+            ]
+          },
+          {
+            "name": "DataWrangling",
+            "description": "With this topic, you'll learn to convert data from one type to another using data wrangling techniques.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000157"
+              },
+              {
+                "$oid": "B000000000000000000000158"
+              },
+              {
+                "$oid": "B000000000000000000000159"
+              }
+            ]
+          },
+          {
+            "name": "ManagingState",
+            "description": "With this topic, you'll learn about effectively using different patterns to manage the state in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000424"
+              },
+              {
+                "$oid": "B000000000000000000000425"
+              },
+              {
+                "$oid": "B000000000000000000000426"
+              },
+              {
+                "$oid": "B000000000000000000000427"
+              },
+              {
+                "$oid": "B000000000000000000000428"
+              },
+              {
+                "$oid": "B000000000000000000000429"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "HumanExperience",
+        "description": "Module covering Human Experience.",
+        "topics": [
+          {
+            "name": "DesignFundamentals",
+            "description": "Learn to use basic design terminology, and have an understanding of human experience design as it relates to their work.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000171"
+              },
+              {
+                "$oid": "B000000000000000000000172"
+              },
+              {
+                "$oid": "B000000000000000000000173"
+              },
+              {
+                "$oid": "B000000000000000000000174"
+              },
+              {
+                "$oid": "B000000000000000000000175"
+              }
+            ]
+          },
+          {
+            "name": "IntroductiontoDesignThinking",
+            "description": "Build an understanding of each phase of the design thinking methodology, enough to help and support software teams in their problem-solving processes.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000363"
+              },
+              {
+                "$oid": "B000000000000000000000364"
+              },
+              {
+                "$oid": "B000000000000000000000365"
+              },
+              {
+                "$oid": "B000000000000000000000366"
+              },
+              {
+                "$oid": "B000000000000000000000314"
+              },
+              {
+                "$oid": "B000000000000000000000367"
+              }
+            ]
+          },
+          {
+            "name": "DesignSystems",
+            "description": "Learn how to use, contribute to, and maintain a design system for building web applications.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000183"
+              },
+              {
+                "$oid": "B000000000000000000000184"
+              },
+              {
+                "$oid": "B000000000000000000000185"
+              },
+              {
+                "$oid": "B000000000000000000000186"
+              },
+              {
+                "$oid": "B000000000000000000000187"
+              },
+              {
+                "$oid": "B000000000000000000000188"
+              },
+              {
+                "$oid": "B000000000000000000000189"
+              }
+            ]
+          },
+          {
+            "name": "AccessibilityandUniversalDesignFundament",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000001"
+              },
+              {
+                "$oid": "B000000000000000000000002"
+              },
+              {
+                "$oid": "B000000000000000000000003"
+              },
+              {
+                "$oid": "B000000000000000000000004"
+              },
+              {
+                "$oid": "B000000000000000000000005"
+              },
+              {
+                "$oid": "B000000000000000000000006"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithDigitalProductDesigners",
+            "description": "Learn how to collaborate with designers in the field by understanding the role they play in the creation of quality software.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000702"
+              },
+              {
+                "$oid": "B000000000000000000000703"
+              },
+              {
+                "$oid": "B000000000000000000000704"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Infrastructure",
+        "description": "Module covering Infrastructure.",
+        "topics": [
+          {
+            "name": "CloudProviders",
+            "description": "With this topic, you'll learn about cloud computing and the wide range of services an application can use with this topic.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000051"
+              },
+              {
+                "$oid": "B000000000000000000000052"
+              },
+              {
+                "$oid": "B000000000000000000000053"
+              },
+              {
+                "$oid": "B000000000000000000000054"
+              },
+              {
+                "$oid": "B000000000000000000000055"
+              },
+              {
+                "$oid": "B000000000000000000000056"
+              },
+              {
+                "$oid": "B000000000000000000000057"
+              },
+              {
+                "$oid": "B000000000000000000000058"
+              },
+              {
+                "$oid": "B000000000000000000000059"
+              }
+            ]
+          },
+          {
+            "name": "InfrastructureasCode",
+            "description": "With this topic, you'll learn how to provision cloud services quickly and reliably using infrastructure as code techniques.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000291"
+              },
+              {
+                "$oid": "B000000000000000000000292"
+              },
+              {
+                "$oid": "B000000000000000000000293"
+              },
+              {
+                "$oid": "B000000000000000000000294"
+              }
+            ]
+          },
+          {
+            "name": "BackingServices",
+            "description": "With this topic, you'll learn how to work with the attached services required for an application to run.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000029"
+              }
+            ]
+          },
+          {
+            "name": "ManagingMultipleEnvironments",
+            "description": "With this topic, you'll learn how to manage multiple environments such as dev, staging, and production for an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000409"
+              },
+              {
+                "$oid": "B000000000000000000000410"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithCloudEngineers",
+            "description": "With this topic, you'll learn about the role of a cloud engineer and how to work with them on your team effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000699"
+              },
+              {
+                "$oid": "B000000000000000000000700"
+              },
+              {
+                "$oid": "B000000000000000000000701"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Internet",
+        "description": "Module covering Internet.",
+        "topics": [
+          {
+            "name": "HistoryoftheInternet",
+            "description": "With this topic, you'll learn about the history of the internet and how connected computing changed humanity forever.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000279"
+              },
+              {
+                "$oid": "B000000000000000000000280"
+              },
+              {
+                "$oid": "B000000000000000000000281"
+              },
+              {
+                "$oid": "B000000000000000000000282"
+              },
+              {
+                "$oid": "B000000000000000000000283"
+              },
+              {
+                "$oid": "B000000000000000000000284"
+              },
+              {
+                "$oid": "B000000000000000000000285"
+              },
+              {
+                "$oid": "B000000000000000000000286"
+              }
+            ]
+          },
+          {
+            "name": "InternetProtocols",
+            "description": "With this topic, you'll learn about the TCP/IP protocol suite that powers the internet and how it practically applies to the software you create.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000342"
+              },
+              {
+                "$oid": "B000000000000000000000343"
+              },
+              {
+                "$oid": "B000000000000000000000344"
+              },
+              {
+                "$oid": "B000000000000000000000345"
+              },
+              {
+                "$oid": "B000000000000000000000346"
+              },
+              {
+                "$oid": "B000000000000000000000347"
+              },
+              {
+                "$oid": "B000000000000000000000348"
+              },
+              {
+                "$oid": "B000000000000000000000349"
+              },
+              {
+                "$oid": "B000000000000000000000350"
+              },
+              {
+                "$oid": "B000000000000000000000351"
+              },
+              {
+                "$oid": "B000000000000000000000352"
+              },
+              {
+                "$oid": "B000000000000000000000353"
+              }
+            ]
+          },
+          {
+            "name": "NetworkConfiguration",
+            "description": "With this topic, you'll learn about the basics of configuring networks, including setting up firewall rules, subnets, and assigning static IPs to machines.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000466"
+              },
+              {
+                "$oid": "B000000000000000000000467"
+              }
+            ]
+          },
+          {
+            "name": "DomainsandDNS",
+            "description": "With this topic, you'll learn how the DNS system works and create DNS records connecting domains to web services.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000190"
+              },
+              {
+                "$oid": "B000000000000000000000191"
+              },
+              {
+                "$oid": "B000000000000000000000192"
+              },
+              {
+                "$oid": "B000000000000000000000193"
+              },
+              {
+                "$oid": "B000000000000000000000194"
+              },
+              {
+                "$oid": "B000000000000000000000195"
+              },
+              {
+                "$oid": "B000000000000000000000196"
+              }
+            ]
+          },
+          {
+            "name": "SSLCertificates",
+            "description": "With this topic, you'll learn about the certificate authorities and how to encrypt traffic to web services using TLS/SSL certificates.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000594"
+              },
+              {
+                "$oid": "B000000000000000000000595"
+              },
+              {
+                "$oid": "B000000000000000000000596"
+              },
+              {
+                "$oid": "B000000000000000000000597"
+              },
+              {
+                "$oid": "B000000000000000000000598"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Monitoring",
+        "description": "Module covering Monitoring.",
+        "topics": [
+          {
+            "name": "CollectingLogsErrorsMetricsandTraces",
+            "description": "With this topic, you'll learn about the different types of telemetry data that can be collected in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000071"
+              },
+              {
+                "$oid": "B000000000000000000000072"
+              },
+              {
+                "$oid": "B000000000000000000000073"
+              },
+              {
+                "$oid": "B000000000000000000000074"
+              },
+              {
+                "$oid": "B000000000000000000000075"
+              },
+              {
+                "$oid": "B000000000000000000000076"
+              },
+              {
+                "$oid": "B000000000000000000000077"
+              },
+              {
+                "$oid": "B000000000000000000000078"
+              }
+            ]
+          },
+          {
+            "name": "TheGoldenSignals",
+            "description": "With this topic, you'll learn about four valuable metrics to measure the health of an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000673"
+              },
+              {
+                "$oid": "B000000000000000000000674"
+              }
+            ]
+          },
+          {
+            "name": "EffectiveAlerting",
+            "description": "With this topic, you'll learn about signal vs. noise and how to create valuable alerts that raise the alarm when something goes wrong in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000211"
+              },
+              {
+                "$oid": "B000000000000000000000212"
+              },
+              {
+                "$oid": "B000000000000000000000213"
+              },
+              {
+                "$oid": "B000000000000000000000214"
+              }
+            ]
+          },
+          {
+            "name": "Debugging",
+            "description": "With this topic, you'll learn about techniques to debug and resolve application issues using telemetry data.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000160"
+              },
+              {
+                "$oid": "B000000000000000000000161"
+              }
+            ]
+          },
+          {
+            "name": "ImprovingPerformance",
+            "description": "With this topic, you'll learn how to improve the scalability and reliability of an application based on its utilization.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000287"
+              },
+              {
+                "$oid": "B000000000000000000000288"
+              },
+              {
+                "$oid": "B000000000000000000000289"
+              },
+              {
+                "$oid": "B000000000000000000000290"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Operations",
+        "description": "Module covering Operations.",
+        "topics": [
+          {
+            "name": "ManagingReleases",
+            "description": "With this topic, you'll learn about change management and how to release new versions of an application with as little downtime as possible.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000411"
+              },
+              {
+                "$oid": "B000000000000000000000412"
+              },
+              {
+                "$oid": "B000000000000000000000413"
+              },
+              {
+                "$oid": "B000000000000000000000414"
+              },
+              {
+                "$oid": "B000000000000000000000415"
+              },
+              {
+                "$oid": "B000000000000000000000416"
+              }
+            ]
+          },
+          {
+            "name": "ManagingIncidents",
+            "description": "With this topic, you'll learn to keep calm under the stress of resolving production application incidents.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000404"
+              },
+              {
+                "$oid": "B000000000000000000000405"
+              },
+              {
+                "$oid": "B000000000000000000000406"
+              },
+              {
+                "$oid": "B000000000000000000000407"
+              },
+              {
+                "$oid": "B000000000000000000000408"
+              }
+            ]
+          },
+          {
+            "name": "ContinuousIntegrationandDeployment",
+            "description": "With this topic, you'll learn to automate the release process using continuous integration and deployment (CI/CD) pipelines.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000125"
+              },
+              {
+                "$oid": "B000000000000000000000126"
+              },
+              {
+                "$oid": "B000000000000000000000127"
+              },
+              {
+                "$oid": "B000000000000000000000128"
+              },
+              {
+                "$oid": "B000000000000000000000129"
+              },
+              {
+                "$oid": "B000000000000000000000130"
+              },
+              {
+                "$oid": "B000000000000000000000131"
+              },
+              {
+                "$oid": "B000000000000000000000132"
+              }
+            ]
+          },
+          {
+            "name": "PerformanceTesting",
+            "description": "With this topic, you'll learn how to verify the performance of an application using load tests, smoke tests, and black-box testing.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000530"
+              },
+              {
+                "$oid": "B000000000000000000000531"
+              },
+              {
+                "$oid": "B000000000000000000000532"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithSiteReliabilityEngineers",
+            "description": "With this topic, you'll learn about the role of a site reliability engineer and how to work with them on your team effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000709"
+              },
+              {
+                "$oid": "B000000000000000000000710"
+              },
+              {
+                "$oid": "B000000000000000000000711"
+              },
+              {
+                "$oid": "B000000000000000000000712"
+              },
+              {
+                "$oid": "B000000000000000000000713"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ProductLifeCycle",
+        "description": "Module covering Product Life Cycle.",
+        "topics": [
+          {
+            "name": "ProductMarketFitPMF",
+            "description": "With this topic, you'll learn the influence product-market fit has on the overarching mission of a business.",
+            "resources": []
+          },
+          {
+            "name": "StagesofaCompany",
+            "description": "With this topic you'll learn how to correlate the stages of a company to its journey toward product-market fit.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000623"
+              },
+              {
+                "$oid": "B000000000000000000000624"
+              },
+              {
+                "$oid": "B000000000000000000000625"
+              },
+              {
+                "$oid": "B000000000000000000000358"
+              },
+              {
+                "$oid": "B000000000000000000000626"
+              },
+              {
+                "$oid": "B000000000000000000000359"
+              },
+              {
+                "$oid": "B000000000000000000000627"
+              },
+              {
+                "$oid": "B000000000000000000000628"
+              },
+              {
+                "$oid": "B000000000000000000000629"
+              },
+              {
+                "$oid": "B000000000000000000000630"
+              },
+              {
+                "$oid": "B000000000000000000000631"
+              },
+              {
+                "$oid": "B000000000000000000000632"
+              }
+            ]
+          },
+          {
+            "name": "ProductLifeCycleStages",
+            "description": "With this topic, you'll learn how a software engineer's focus may change as the goals of a product change.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000549"
+              },
+              {
+                "$oid": "B000000000000000000000550"
+              }
+            ]
+          },
+          {
+            "name": "InterteamCoordination",
+            "description": "With this topic, you'll learn how most companies coordinate software development between their product teams and the surrounding business.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000295"
+              },
+              {
+                "$oid": "B000000000000000000000296"
+              },
+              {
+                "$oid": "B000000000000000000000297"
+              },
+              {
+                "$oid": "B000000000000000000000298"
+              },
+              {
+                "$oid": "B000000000000000000000299"
+              },
+              {
+                "$oid": "B000000000000000000000300"
+              },
+              {
+                "$oid": "B000000000000000000000301"
+              },
+              {
+                "$oid": "B000000000000000000000302"
+              },
+              {
+                "$oid": "B000000000000000000000303"
+              },
+              {
+                "$oid": "B000000000000000000000304"
+              },
+              {
+                "$oid": "B000000000000000000000305"
+              },
+              {
+                "$oid": "B000000000000000000000306"
+              },
+              {
+                "$oid": "B000000000000000000000307"
+              },
+              {
+                "$oid": "B000000000000000000000308"
+              },
+              {
+                "$oid": "B000000000000000000000309"
+              },
+              {
+                "$oid": "B000000000000000000000310"
+              },
+              {
+                "$oid": "B000000000000000000000311"
+              },
+              {
+                "$oid": "B000000000000000000000312"
+              },
+              {
+                "$oid": "B000000000000000000000313"
+              },
+              {
+                "$oid": "B000000000000000000000314"
+              },
+              {
+                "$oid": "B000000000000000000000315"
+              },
+              {
+                "$oid": "B000000000000000000000316"
+              },
+              {
+                "$oid": "B000000000000000000000317"
+              },
+              {
+                "$oid": "B000000000000000000000318"
+              },
+              {
+                "$oid": "B000000000000000000000319"
+              },
+              {
+                "$oid": "B000000000000000000000320"
+              },
+              {
+                "$oid": "B000000000000000000000321"
+              },
+              {
+                "$oid": "B000000000000000000000322"
+              },
+              {
+                "$oid": "B000000000000000000000323"
+              },
+              {
+                "$oid": "B000000000000000000000324"
+              }
+            ]
+          },
+          {
+            "name": "IntrateamCoordination",
+            "description": "With this topic, you'll learn how most product teams organize their composition of skill sets within the team and how a software engineer can work specifically with a product manager on their team.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000305"
+              },
+              {
+                "$oid": "B000000000000000000000354"
+              },
+              {
+                "$oid": "B000000000000000000000355"
+              },
+              {
+                "$oid": "B000000000000000000000356"
+              },
+              {
+                "$oid": "B000000000000000000000314"
+              },
+              {
+                "$oid": "B000000000000000000000357"
+              },
+              {
+                "$oid": "B000000000000000000000358"
+              },
+              {
+                "$oid": "B000000000000000000000359"
+              },
+              {
+                "$oid": "B000000000000000000000360"
+              },
+              {
+                "$oid": "B000000000000000000000361"
+              },
+              {
+                "$oid": "B000000000000000000000362"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ProgrammingLanguages",
+        "description": "Module covering Programming Languages.",
+        "topics": [
+          {
+            "name": "TypesofLanguages",
+            "description": "With this topic, you'll learn about the landscape of programming languages, their common features, and how to recognize them regardless of syntax.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000679"
+              },
+              {
+                "$oid": "B000000000000000000000680"
+              },
+              {
+                "$oid": "B000000000000000000000681"
+              },
+              {
+                "$oid": "B000000000000000000000682"
+              }
+            ]
+          },
+          {
+            "name": "DeepLanguageLearning",
+            "description": "With this topic, you'll learn how to gain fluency in a programming language and develop a deep understanding of its functionality and idiosyncrasies.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000162"
+              },
+              {
+                "$oid": "B000000000000000000000163"
+              },
+              {
+                "$oid": "B000000000000000000000164"
+              },
+              {
+                "$oid": "B000000000000000000000165"
+              }
+            ]
+          },
+          {
+            "name": "PolyglotLearning",
+            "description": "With this topic, you'll learn how to adapt your understanding of one programming language to gain proficiency in another.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000533"
+              },
+              {
+                "$oid": "B000000000000000000000534"
+              },
+              {
+                "$oid": "B000000000000000000000535"
+              },
+              {
+                "$oid": "B000000000000000000000536"
+              },
+              {
+                "$oid": "B000000000000000000000537"
+              }
+            ]
+          },
+          {
+            "name": "Dependencies",
+            "description": "With this topic, you'll learn about package management and the ecosystem of third-party dependencies for a programming language.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000166"
+              },
+              {
+                "$oid": "B000000000000000000000167"
+              },
+              {
+                "$oid": "B000000000000000000000168"
+              },
+              {
+                "$oid": "B000000000000000000000169"
+              },
+              {
+                "$oid": "B000000000000000000000170"
+              }
+            ]
+          },
+          {
+            "name": "PowerofPairProgramming",
+            "description": "With this topic, you'll learn how to solve problems with other software engineers (and have fun while doing it) using pair programming techniques.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000538"
+              },
+              {
+                "$oid": "B000000000000000000000539"
+              },
+              {
+                "$oid": "B000000000000000000000540"
+              },
+              {
+                "$oid": "B000000000000000000000541"
+              },
+              {
+                "$oid": "B000000000000000000000542"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Security",
+        "description": "Module covering Security.",
+        "topics": [
+          {
+            "name": "OWASPTop10",
+            "description": "With this topic, you'll learn about the most common application security issues and how to mitigate them.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000468"
+              },
+              {
+                "$oid": "B000000000000000000000469"
+              },
+              {
+                "$oid": "B000000000000000000000470"
+              },
+              {
+                "$oid": "B000000000000000000000471"
+              }
+            ]
+          },
+          {
+            "name": "AuthenticationandAuthorization",
+            "description": "With this topic, you'll learn about identity providers and how to use OAuth 2.0 to manage authentication and authorization in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000013"
+              },
+              {
+                "$oid": "B000000000000000000000014"
+              },
+              {
+                "$oid": "B000000000000000000000015"
+              },
+              {
+                "$oid": "B000000000000000000000016"
+              },
+              {
+                "$oid": "B000000000000000000000017"
+              },
+              {
+                "$oid": "B000000000000000000000018"
+              },
+              {
+                "$oid": "B000000000000000000000019"
+              },
+              {
+                "$oid": "B000000000000000000000020"
+              },
+              {
+                "$oid": "B000000000000000000000021"
+              },
+              {
+                "$oid": "B000000000000000000000022"
+              },
+              {
+                "$oid": "B000000000000000000000023"
+              },
+              {
+                "$oid": "B000000000000000000000024"
+              },
+              {
+                "$oid": "B000000000000000000000025"
+              }
+            ]
+          },
+          {
+            "name": "ManagingSecrets",
+            "description": "With this topic, you'll learn about application secrets and how to manage them effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000417"
+              },
+              {
+                "$oid": "B000000000000000000000418"
+              },
+              {
+                "$oid": "B000000000000000000000419"
+              },
+              {
+                "$oid": "B000000000000000000000420"
+              },
+              {
+                "$oid": "B000000000000000000000421"
+              },
+              {
+                "$oid": "B000000000000000000000422"
+              },
+              {
+                "$oid": "B000000000000000000000423"
+              }
+            ]
+          },
+          {
+            "name": "ContinuousSecurity",
+            "description": "With this topic, you'll learn about methods to integrate security scanning into a project CI/CD pipeline.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000133"
+              },
+              {
+                "$oid": "B000000000000000000000134"
+              },
+              {
+                "$oid": "B000000000000000000000135"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithSecurityEngineers",
+            "description": "With this topic, you'll learn about the role of a security engineer and how to work with them on your team effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000705"
+              },
+              {
+                "$oid": "B000000000000000000000706"
+              },
+              {
+                "$oid": "B000000000000000000000707"
+              },
+              {
+                "$oid": "B000000000000000000000708"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tooling",
+        "description": "Module covering Tooling.",
+        "topics": [
+          {
+            "name": "EditorsandIDEs",
+            "description": "With this topic, you'll learn about the landscape of editors, IDEs, and how to choose an editor and make it your own.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000197"
+              },
+              {
+                "$oid": "B000000000000000000000198"
+              },
+              {
+                "$oid": "B000000000000000000000199"
+              },
+              {
+                "$oid": "B000000000000000000000200"
+              },
+              {
+                "$oid": "B000000000000000000000201"
+              },
+              {
+                "$oid": "B000000000000000000000202"
+              },
+              {
+                "$oid": "B000000000000000000000203"
+              },
+              {
+                "$oid": "B000000000000000000000204"
+              },
+              {
+                "$oid": "B000000000000000000000205"
+              },
+              {
+                "$oid": "B000000000000000000000206"
+              },
+              {
+                "$oid": "B000000000000000000000207"
+              },
+              {
+                "$oid": "B000000000000000000000208"
+              },
+              {
+                "$oid": "B000000000000000000000209"
+              },
+              {
+                "$oid": "B000000000000000000000210"
+              }
+            ]
+          },
+          {
+            "name": "CommandLine",
+            "description": "With this topic, you'll learn how to use the command line (also known as the shell) and create scripts to make running complex commands easier.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000079"
+              },
+              {
+                "$oid": "B000000000000000000000080"
+              },
+              {
+                "$oid": "B000000000000000000000081"
+              },
+              {
+                "$oid": "B000000000000000000000082"
+              },
+              {
+                "$oid": "B000000000000000000000083"
+              },
+              {
+                "$oid": "B000000000000000000000084"
+              },
+              {
+                "$oid": "B000000000000000000000085"
+              },
+              {
+                "$oid": "B000000000000000000000086"
+              },
+              {
+                "$oid": "B000000000000000000000087"
+              },
+              {
+                "$oid": "B000000000000000000000088"
+              },
+              {
+                "$oid": "B000000000000000000000089"
+              },
+              {
+                "$oid": "B000000000000000000000090"
+              },
+              {
+                "$oid": "B000000000000000000000091"
+              },
+              {
+                "$oid": "B000000000000000000000092"
+              },
+              {
+                "$oid": "B000000000000000000000093"
+              },
+              {
+                "$oid": "B000000000000000000000094"
+              }
+            ]
+          },
+          {
+            "name": "VersionControl",
+            "description": "With this topic, you'll learn about the importance of source control, Git commands, handling merge conflicts, popular branching strategies, and more.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000683"
+              },
+              {
+                "$oid": "B000000000000000000000684"
+              },
+              {
+                "$oid": "B000000000000000000000685"
+              },
+              {
+                "$oid": "B000000000000000000000686"
+              },
+              {
+                "$oid": "B000000000000000000000687"
+              },
+              {
+                "$oid": "B000000000000000000000688"
+              },
+              {
+                "$oid": "B000000000000000000000689"
+              },
+              {
+                "$oid": "B000000000000000000000690"
+              },
+              {
+                "$oid": "B000000000000000000000691"
+              },
+              {
+                "$oid": "B000000000000000000000692"
+              },
+              {
+                "$oid": "B000000000000000000000693"
+              },
+              {
+                "$oid": "B000000000000000000000694"
+              },
+              {
+                "$oid": "B000000000000000000000695"
+              },
+              {
+                "$oid": "B000000000000000000000696"
+              },
+              {
+                "$oid": "B000000000000000000000697"
+              },
+              {
+                "$oid": "B000000000000000000000698"
+              }
+            ]
+          },
+          {
+            "name": "Productivity",
+            "description": "With this topic, you'll learn about some productivity tools and how to estimate work effectively to set proper expectations with stakeholders.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000551"
+              },
+              {
+                "$oid": "B000000000000000000000552"
+              },
+              {
+                "$oid": "B000000000000000000000553"
+              },
+              {
+                "$oid": "B000000000000000000000554"
+              },
+              {
+                "$oid": "B000000000000000000000555"
+              },
+              {
+                "$oid": "B000000000000000000000556"
+              },
+              {
+                "$oid": "B000000000000000000000557"
+              },
+              {
+                "$oid": "B000000000000000000000558"
+              },
+              {
+                "$oid": "B000000000000000000000559"
+              }
+            ]
+          },
+          {
+            "name": "ManagingyourLocalEnvironment",
+            "description": "With this topic, you'll learn how to set up your local environment and streamline it to increase your productivity.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000430"
+              },
+              {
+                "$oid": "B000000000000000000000431"
+              },
+              {
+                "$oid": "B000000000000000000000432"
+              },
+              {
+                "$oid": "B000000000000000000000433"
+              },
+              {
+                "$oid": "B000000000000000000000434"
+              },
+              {
+                "$oid": "B000000000000000000000435"
+              },
+              {
+                "$oid": "B000000000000000000000436"
+              },
+              {
+                "$oid": "B000000000000000000000437"
+              },
+              {
+                "$oid": "B000000000000000000000438"
+              },
+              {
+                "$oid": "B000000000000000000000439"
+              },
+              {
+                "$oid": "B000000000000000000000440"
+              },
+              {
+                "$oid": "B000000000000000000000441"
+              },
+              {
+                "$oid": "B000000000000000000000442"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-006",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000007"
+    },
+    "name": "LearnApacheKafka",
+    "description": "Learning path for Learn Apache Kafka.",
+    "technologies": [
+      "Other",
+      "CSS"
+    ],
+    "interests": [
+      "api",
+      "iot"
+    ],
+    "modules": [
+      {
+        "name": "ApacheKafkaFundamentals",
+        "description": "Module covering Apache Kafka Fundamentals.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-007",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000008"
+    },
+    "name": "Odin",
+    "description": "Learning path for Odin.",
+    "technologies": [
+      "Other"
+    ],
+    "interests": [
+      "api",
+      "robot"
+    ],
+    "modules": [
+      {
+        "name": "Foundations",
+        "description": "Module covering Foundations.",
+        "topics": [
+          {
+            "name": "OdinFoundationsIntroduction",
+            "description": "- [ ] [How This Course Will Work](https://www.theodinproject.com/lessons/foundations-how-this-course-will-work)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000475"
+              },
+              {
+                "$oid": "B000000000000000000000476"
+              },
+              {
+                "$oid": "B000000000000000000000477"
+              },
+              {
+                "$oid": "B000000000000000000000478"
+              },
+              {
+                "$oid": "B000000000000000000000479"
+              }
+            ]
+          },
+          {
+            "name": "OdinPrerequisites",
+            "description": "- [ ] [Computer Basics](https://www.theodinproject.com/lessons/foundations-computer-basics)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000482"
+              },
+              {
+                "$oid": "B000000000000000000000483"
+              },
+              {
+                "$oid": "B000000000000000000000484"
+              },
+              {
+                "$oid": "B000000000000000000000485"
+              },
+              {
+                "$oid": "B000000000000000000000486"
+              },
+              {
+                "$oid": "B000000000000000000000487"
+              },
+              {
+                "$oid": "B000000000000000000000488"
+              }
+            ]
+          },
+          {
+            "name": "GitBasics",
+            "description": "- [ ] [Introduction to Git](https://www.theodinproject.com/lessons/foundations-introduction-to-git)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000245"
+              },
+              {
+                "$oid": "B000000000000000000000246"
+              }
+            ]
+          },
+          {
+            "name": "HTMLFoundations",
+            "description": "- [ ] [Introduction to HTML and CSS](https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000250"
+              },
+              {
+                "$oid": "B000000000000000000000251"
+              },
+              {
+                "$oid": "B000000000000000000000252"
+              },
+              {
+                "$oid": "B000000000000000000000253"
+              },
+              {
+                "$oid": "B000000000000000000000254"
+              },
+              {
+                "$oid": "B000000000000000000000255"
+              },
+              {
+                "$oid": "B000000000000000000000256"
+              },
+              {
+                "$oid": "B000000000000000000000257"
+              }
+            ]
+          },
+          {
+            "name": "CSSFoundations",
+            "description": "Oding CSS Coundations",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000040"
+              },
+              {
+                "$oid": "B000000000000000000000041"
+              },
+              {
+                "$oid": "B000000000000000000000042"
+              },
+              {
+                "$oid": "B000000000000000000000043"
+              },
+              {
+                "$oid": "B000000000000000000000044"
+              }
+            ]
+          },
+          {
+            "name": "CSSFlexbox",
+            "description": "- [ ] [Introduction to Flexbox](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000035"
+              },
+              {
+                "$oid": "B000000000000000000000036"
+              },
+              {
+                "$oid": "B000000000000000000000037"
+              },
+              {
+                "$oid": "B000000000000000000000038"
+              },
+              {
+                "$oid": "B000000000000000000000039"
+              }
+            ]
+          },
+          {
+            "name": "JavaScriptBasics",
+            "description": "- [ ] [Variables and Operators](https://www.theodinproject.com/lessons/foundations-variables-and-operators)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000374"
+              },
+              {
+                "$oid": "B000000000000000000000375"
+              },
+              {
+                "$oid": "B000000000000000000000376"
+              },
+              {
+                "$oid": "B000000000000000000000377"
+              },
+              {
+                "$oid": "B000000000000000000000378"
+              },
+              {
+                "$oid": "B000000000000000000000379"
+              },
+              {
+                "$oid": "B000000000000000000000380"
+              },
+              {
+                "$oid": "B000000000000000000000381"
+              },
+              {
+                "$oid": "B000000000000000000000382"
+              },
+              {
+                "$oid": "B000000000000000000000383"
+              },
+              {
+                "$oid": "B000000000000000000000384"
+              },
+              {
+                "$oid": "B000000000000000000000385"
+              },
+              {
+                "$oid": "B000000000000000000000386"
+              },
+              {
+                "$oid": "B000000000000000000000387"
+              },
+              {
+                "$oid": "B000000000000000000000388"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "IntermediateHTMLandCSS",
+        "description": "Module covering Intermediate HTML and CSS.",
+        "topics": [
+          {
+            "name": "IntermediateHTMLConcepts",
+            "description": "- [ ] [Introduction](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-introduction)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000338"
+              },
+              {
+                "$oid": "B000000000000000000000339"
+              },
+              {
+                "$oid": "B000000000000000000000340"
+              },
+              {
+                "$oid": "B000000000000000000000341"
+              }
+            ]
+          },
+          {
+            "name": "IntermediateCSSConcepts",
+            "description": "- [ ] [Default Styles](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-default-styles)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000325"
+              },
+              {
+                "$oid": "B000000000000000000000326"
+              },
+              {
+                "$oid": "B000000000000000000000327"
+              },
+              {
+                "$oid": "B000000000000000000000328"
+              },
+              {
+                "$oid": "B000000000000000000000329"
+              },
+              {
+                "$oid": "B000000000000000000000330"
+              },
+              {
+                "$oid": "B000000000000000000000331"
+              },
+              {
+                "$oid": "B000000000000000000000332"
+              },
+              {
+                "$oid": "B000000000000000000000333"
+              },
+              {
+                "$oid": "B000000000000000000000334"
+              }
+            ]
+          },
+          {
+            "name": "HTMLForms",
+            "description": "- [ ] [Form Basics](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-form-basics)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000247"
+              },
+              {
+                "$oid": "B000000000000000000000248"
+              },
+              {
+                "$oid": "B000000000000000000000249"
+              }
+            ]
+          },
+          {
+            "name": "CSSGrid",
+            "description": "- [ ] [Introduction to Grid](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-introduction-to-grid)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000045"
+              },
+              {
+                "$oid": "B000000000000000000000046"
+              },
+              {
+                "$oid": "B000000000000000000000047"
+              },
+              {
+                "$oid": "B000000000000000000000048"
+              },
+              {
+                "$oid": "B000000000000000000000049"
+              },
+              {
+                "$oid": "B000000000000000000000050"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "description": "Module covering JavaScript.",
+        "topics": [
+          {
+            "name": "JavaScriptIntroduction",
+            "description": "Odin Project",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000389"
+              },
+              {
+                "$oid": "B000000000000000000000390"
+              }
+            ]
+          },
+          {
+            "name": "OrganizingYourJavascriptCode",
+            "description": "- [ ] [Organizing Your Javascript Code Introduction](https://www.theodinproject.com/lessons/node-path-javascript-organizing-your-javascript-code-introduction)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000518"
+              },
+              {
+                "$oid": "B000000000000000000000519"
+              },
+              {
+                "$oid": "B000000000000000000000520"
+              },
+              {
+                "$oid": "B000000000000000000000521"
+              },
+              {
+                "$oid": "B000000000000000000000522"
+              },
+              {
+                "$oid": "B000000000000000000000523"
+              },
+              {
+                "$oid": "B000000000000000000000524"
+              },
+              {
+                "$oid": "B000000000000000000000525"
+              },
+              {
+                "$oid": "B000000000000000000000526"
+              },
+              {
+                "$oid": "B000000000000000000000527"
+              },
+              {
+                "$oid": "B000000000000000000000528"
+              },
+              {
+                "$oid": "B000000000000000000000529"
+              }
+            ]
+          },
+          {
+            "name": "JavaScriptintheRealWorld",
+            "description": "- [ ] [Linting](https://www.theodinproject.com/lessons/node-path-javascript-linting)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000391"
+              },
+              {
+                "$oid": "B000000000000000000000392"
+              },
+              {
+                "$oid": "B000000000000000000000393"
+              }
+            ]
+          },
+          {
+            "name": "AsynchronousJavaScriptandAPIs",
+            "description": "- [ ] [Asynchronous Code](https://www.theodinproject.com/lessons/node-path-javascript-asynchronous-code)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000009"
+              },
+              {
+                "$oid": "B000000000000000000000010"
+              },
+              {
+                "$oid": "B000000000000000000000011"
+              },
+              {
+                "$oid": "B000000000000000000000012"
+              }
+            ]
+          },
+          {
+            "name": "OdinonComputerScience",
+            "description": "- [ ] [A Very Brief Intro to CS](https://www.theodinproject.com/lessons/javascript-a-very-brief-intro-to-cs)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000500"
+              },
+              {
+                "$oid": "B000000000000000000000501"
+              },
+              {
+                "$oid": "B000000000000000000000502"
+              },
+              {
+                "$oid": "B000000000000000000000503"
+              },
+              {
+                "$oid": "B000000000000000000000504"
+              },
+              {
+                "$oid": "B000000000000000000000505"
+              },
+              {
+                "$oid": "B000000000000000000000506"
+              },
+              {
+                "$oid": "B000000000000000000000507"
+              },
+              {
+                "$oid": "B000000000000000000000508"
+              },
+              {
+                "$oid": "B000000000000000000000509"
+              },
+              {
+                "$oid": "B000000000000000000000510"
+              }
+            ]
+          },
+          {
+            "name": "IntermediateGit",
+            "description": "- [ ] [A Deeper Look at Git](https://www.theodinproject.com/lessons/javascript-a-deeper-look-at-git)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000335"
+              },
+              {
+                "$oid": "B000000000000000000000336"
+              },
+              {
+                "$oid": "B000000000000000000000337"
+              }
+            ]
+          },
+          {
+            "name": "TestingJavaScript",
+            "description": "- [ ] [Testing Basics](https://www.theodinproject.com/lessons/node-path-javascript-testing-basics)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000652"
+              },
+              {
+                "$oid": "B000000000000000000000653"
+              },
+              {
+                "$oid": "B000000000000000000000654"
+              },
+              {
+                "$oid": "B000000000000000000000655"
+              }
+            ]
+          },
+          {
+            "name": "FinishingUpwithOdinJavaScript",
+            "description": "- [ ] [Conclusion](https://www.theodinproject.com/lessons/node-path-javascript-conclusion)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000238"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "AdvancedHTMLandCSS",
+        "description": "Module covering Advanced HTML and CSS.",
+        "topics": [
+          {
+            "name": "OdinonCSSAnimation",
+            "description": "- [ ] [Transforms](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-transforms)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000497"
+              },
+              {
+                "$oid": "B000000000000000000000498"
+              },
+              {
+                "$oid": "B000000000000000000000499"
+              }
+            ]
+          },
+          {
+            "name": "OdinonAccessibility",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000489"
+              },
+              {
+                "$oid": "B000000000000000000000490"
+              },
+              {
+                "$oid": "B000000000000000000000491"
+              },
+              {
+                "$oid": "B000000000000000000000492"
+              },
+              {
+                "$oid": "B000000000000000000000493"
+              },
+              {
+                "$oid": "B000000000000000000000494"
+              },
+              {
+                "$oid": "B000000000000000000000495"
+              },
+              {
+                "$oid": "B000000000000000000000496"
+              }
+            ]
+          },
+          {
+            "name": "ResponsiveDesign",
+            "description": "- [ ] [Introduction to Responsive Design](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-introduction-to-responsive-design)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000580"
+              },
+              {
+                "$oid": "B000000000000000000000581"
+              },
+              {
+                "$oid": "B000000000000000000000582"
+              },
+              {
+                "$oid": "B000000000000000000000583"
+              },
+              {
+                "$oid": "B000000000000000000000584"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "React",
+        "description": "Module covering React.",
+        "topics": [
+          {
+            "name": "IntroductiontoReact",
+            "description": "Odin Project",
+            "resources": []
+          },
+          {
+            "name": "GettingStartedWithReact",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "StatesAndEffects",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "ReactClassComponents",
+            "description": "s.",
+            "resources": []
+          },
+          {
+            "name": "ReactTesting",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "TheReactEcosystem",
+            "description": "Odin Project",
+            "resources": []
+          },
+          {
+            "name": "MoreReactConcepts",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "ReactConclusion",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "description": "Module covering NodeJS.",
+        "topics": [
+          {
+            "name": "IntroductiontoNodeJS",
+            "description": "Odin Project",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000368"
+              },
+              {
+                "$oid": "B000000000000000000000369"
+              },
+              {
+                "$oid": "B000000000000000000000370"
+              },
+              {
+                "$oid": "B000000000000000000000371"
+              },
+              {
+                "$oid": "B000000000000000000000372"
+              },
+              {
+                "$oid": "B000000000000000000000373"
+              }
+            ]
+          },
+          {
+            "name": "MongoDBforOdin",
+            "description": "Odin Project",
+            "resources": []
+          },
+          {
+            "name": "ExpressMongoose",
+            "description": "Odin Full Stack Javascript",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000219"
+              },
+              {
+                "$oid": "B000000000000000000000220"
+              },
+              {
+                "$oid": "B000000000000000000000221"
+              },
+              {
+                "$oid": "B000000000000000000000222"
+              },
+              {
+                "$oid": "B000000000000000000000223"
+              },
+              {
+                "$oid": "B000000000000000000000224"
+              },
+              {
+                "$oid": "B000000000000000000000225"
+              },
+              {
+                "$oid": "B000000000000000000000226"
+              },
+              {
+                "$oid": "B000000000000000000000227"
+              }
+            ]
+          },
+          {
+            "name": "Authentication",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000026"
+              },
+              {
+                "$oid": "B000000000000000000000027"
+              },
+              {
+                "$oid": "B000000000000000000000028"
+              }
+            ]
+          },
+          {
+            "name": "OdinAPIs",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000472"
+              },
+              {
+                "$oid": "B000000000000000000000473"
+              },
+              {
+                "$oid": "B000000000000000000000474"
+              }
+            ]
+          },
+          {
+            "name": "TestingExpress",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000650"
+              },
+              {
+                "$oid": "B000000000000000000000651"
+              }
+            ]
+          },
+          {
+            "name": "FullStackProjects",
+            "description": "Odin Project",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000243"
+              },
+              {
+                "$oid": "B000000000000000000000244"
+              }
+            ]
+          },
+          {
+            "name": "OdinNodejsFinalProject",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000480"
+              },
+              {
+                "$oid": "B000000000000000000000481"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GettingHired",
+        "description": "Module covering Getting Hired.",
+        "topics": [
+          {
+            "name": "PreparingforYourJobSearch",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "ApplyingtoandInterviewingforJobs",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-008",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000009"
+    },
+    "name": "Python",
+    "description": "Learning path for Python.",
+    "technologies": [
+      "Python"
+    ],
+    "interests": [
+      "data"
+    ],
+    "modules": [
+      {
+        "name": "Installingpythonandpipenv",
+        "description": "Module covering Installing python and pipenv.",
+        "topics": []
+      },
+      {
+        "name": "Basics",
+        "description": "Module covering Basics.",
+        "topics": [
+          {
+            "name": "BasicPythonSyntax",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": []
+          },
+          {
+            "name": "PythonVariables",
+            "description": "Python",
+            "resources": []
+          },
+          {
+            "name": "PythonConditionals",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "PythonTypecastingExceptions",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "PythonFunctions",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "PythonListsTuplesSetsandDictionaries",
+            "description": "Brief Description",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "OOP",
+        "description": "Module covering OOP.",
+        "topics": [
+          {
+            "name": "PythonObjectOrientedProgrammingOOPOvervi",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000560"
+              },
+              {
+                "$oid": "B000000000000000000000561"
+              },
+              {
+                "$oid": "B000000000000000000000562"
+              }
+            ]
+          },
+          {
+            "name": "PythonOOPClasses",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "PythonOOPInheritance",
+            "description": "Brief Description",
+            "resources": []
+          },
+          {
+            "name": "PythonOOPMethodsandDunder",
+            "description": "Brief Description",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "DataStructuresandAlgorithms",
+        "description": "Module covering Data Structures and Algorithms.",
+        "topics": [
+          {
+            "name": "PythonDataStructuresandAlgorithms",
+            "description": "A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem. Learning data structures and algorithms allow us to write efficient and optimized computer programs.",
+            "resources": []
+          },
+          {
+            "name": "PythonArraysandLinkedLists",
+            "description": "Arrays store elements in contiguous memory locations, resulting in easily calculable addresses for the elements stored and this allows faster access to an element at a specific index. Linked lists are less rigid in their storage structure and elements are usually not stored in contiguous locations, hence they need to be stored with additional tags giving a reference to the next element. This difference in the data storage scheme decides which data structure would be more suitable for a given sit",
+            "resources": []
+          },
+          {
+            "name": "PythonHeapsStacksandQueues",
+            "description": "**Stacks:**\u00a0Operations are performed LIFO (last in, first out), which means that the last element added will be the first one removed. A stack can be implemented using an array or a linked list. If the stack runs out of memory, it\u2019s called a stack overflow.",
+            "resources": []
+          },
+          {
+            "name": "PythonHashTables",
+            "description": "Hash Table, Map, HashMap, Dictionary or Associative are all the names of the same data structure. It is a data structure that implements a set abstract data type, a structure that can map keys to values.",
+            "resources": []
+          },
+          {
+            "name": "PythonBinarySearchTrees",
+            "description": "A binary search tree, also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node\u2019s left subtree and less than the ones in its right subtree",
+            "resources": []
+          },
+          {
+            "name": "PythonRecursion",
+            "description": "Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem. Recursion solves such recursive problems by using functions that call themselves from within their own code.",
+            "resources": []
+          },
+          {
+            "name": "SortingAlgorithmsinPython",
+            "description": "Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order.",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "AdvancedTopics",
+        "description": "Module covering Advanced Topics.",
+        "topics": [
+          {
+            "name": "PythonIterators",
+            "description": "An iterator is an object that contains a countable number of values. An iterator is an object that can be iterated upon, meaning that you can traverse through all the values. Technically, in Python, an iterator is an object which implements the iterator protocol, which consist of the methods\u00a0**iter**() and\u00a0**next**() .",
+            "resources": []
+          },
+          {
+            "name": "PythonRegularExpressions",
+            "description": "A regular expression is a sequence of characters that specifies a search pattern in text. Usually such patterns are used by string-searching algorithms for \u201cfind\u201d or \u201cfind and replace\u201d operations on strings, or for input validation.",
+            "resources": []
+          },
+          {
+            "name": "PythonDecorators",
+            "description": "decorator is a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. Decorators are usually called before the definition of a function you want to decorate.",
+            "resources": []
+          },
+          {
+            "name": "PythonLambdas",
+            "description": "Python Lambda Functions are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python.",
+            "resources": []
+          },
+          {
+            "name": "PythonListComprehensions",
+            "description": "List comprehensions are a concise way to create a list using a single line of code in Python. They are a powerful tool for creating and manipulating lists, and they can be used to simplify and shorten code.",
+            "resources": []
+          },
+          {
+            "name": "PythonGeneratorExpressions",
+            "description": "Generator expressions are a concise way to create a generator using a single line of code in Python. They are similar to list comprehensions, but instead of creating a list, they create a generator object that produces the values on-demand, as they are needed.",
+            "resources": []
+          },
+          {
+            "name": "PythonParadigms",
+            "description": "Python is a multi-paradigm programming language, which means that it supports several programming paradigms. Some of the main paradigms supported by Python are:",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "Modules",
+        "description": "Module covering Modules.",
+        "topics": []
+      },
+      {
+        "name": "PackageManagers",
+        "description": "Module covering Package Managers.",
+        "topics": []
+      },
+      {
+        "name": "Testing",
+        "description": "Module covering Testing.",
+        "topics": []
+      },
+      {
+        "name": "Frameworks",
+        "description": "Module covering Frameworks.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-009",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000010"
+    },
+    "name": "Salesforce",
+    "description": "Learning path for Salesforce.",
+    "technologies": [
+      "Other"
+    ],
+    "interests": [
+      "api"
+    ],
+    "modules": [
+      {
+        "name": "Consultanttrail",
+        "description": "Module covering Consultant trail.",
+        "topics": [
+          {
+            "name": "SalesforceProjectManagementEssentials",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000599"
+              },
+              {
+                "$oid": "B000000000000000000000600"
+              },
+              {
+                "$oid": "B000000000000000000000601"
+              },
+              {
+                "$oid": "B000000000000000000000602"
+              }
+            ]
+          },
+          {
+            "name": "BestPracticesforProjectManagement",
+            "description": "Salesforce",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000030"
+              },
+              {
+                "$oid": "B000000000000000000000031"
+              },
+              {
+                "$oid": "B000000000000000000000032"
+              },
+              {
+                "$oid": "B000000000000000000000033"
+              },
+              {
+                "$oid": "B000000000000000000000034"
+              }
+            ]
+          },
+          {
+            "name": "SalesforceSkillsandExperienceBuilding",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000608"
+              },
+              {
+                "$oid": "B000000000000000000000609"
+              },
+              {
+                "$oid": "B000000000000000000000610"
+              },
+              {
+                "$oid": "B000000000000000000000611"
+              },
+              {
+                "$oid": "B000000000000000000000612"
+              }
+            ]
+          },
+          {
+            "name": "EthicsandIntegrityforSalesforcePartners",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000215"
+              },
+              {
+                "$oid": "B000000000000000000000216"
+              },
+              {
+                "$oid": "B000000000000000000000217"
+              },
+              {
+                "$oid": "B000000000000000000000218"
+              }
+            ]
+          },
+          {
+            "name": "SalesforceReleaseReadinessStrategies",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000603"
+              },
+              {
+                "$oid": "B000000000000000000000604"
+              },
+              {
+                "$oid": "B000000000000000000000605"
+              },
+              {
+                "$oid": "B000000000000000000000606"
+              },
+              {
+                "$oid": "B000000000000000000000607"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Developertrail",
+        "description": "Module covering Developer trail.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-010",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000011"
+    },
+    "name": "Sitereliabilityengineering",
+    "description": "Learning path for Site reliability engineering.",
+    "technologies": [
+      "Other"
+    ],
+    "interests": [
+      "sre"
+    ],
+    "modules": [
+      {
+        "name": "Observability",
+        "description": "Module covering Observability.",
+        "topics": [
+          {
+            "name": "elasticsearchELK",
+            "description": "Elastic search, optimized, database, and related connectors",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000714"
+              },
+              {
+                "$oid": "B000000000000000000000715"
+              },
+              {
+                "$oid": "B000000000000000000000716"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "InfrastructureasCode",
+        "description": "Module covering Infrastructure as Code.",
+        "topics": []
+      },
+      {
+        "name": "DisasterRecovery",
+        "description": "Module covering Disaster Recovery.",
+        "topics": []
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-011",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000012"
+    },
+    "name": "PractitionerSRE",
+    "description": "Practitioner-level Site Reliability Engineering path combining cloud platform memberships with observability, operations, and infrastructure-as-code topics.",
+    "technologies": [
+      "Python",
+      "Other"
+    ],
+    "interests": [
+      "sre",
+      "api",
+      "data"
+    ],
+    "modules": [
+      {
+        "name": "CloudPlatformMastery",
+        "description": "Cloud infrastructure and platform engineering foundations.",
+        "topics": [
+          {
+            "name": "CloudPlatformMasteryMemberships",
+            "description": "Platform memberships supporting CloudPlatformMastery.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000718"
+              }
+            ]
+          },
+          {
+            "name": "CloudProviders",
+            "description": "With this topic, you'll learn about cloud computing and the wide range of services an application can use with this topic.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000051"
+              },
+              {
+                "$oid": "B000000000000000000000052"
+              },
+              {
+                "$oid": "B000000000000000000000053"
+              },
+              {
+                "$oid": "B000000000000000000000054"
+              },
+              {
+                "$oid": "B000000000000000000000055"
+              },
+              {
+                "$oid": "B000000000000000000000056"
+              },
+              {
+                "$oid": "B000000000000000000000057"
+              },
+              {
+                "$oid": "B000000000000000000000058"
+              },
+              {
+                "$oid": "B000000000000000000000059"
+              }
+            ]
+          },
+          {
+            "name": "InfrastructureasCode",
+            "description": "With this topic, you'll learn how to provision cloud services quickly and reliably using infrastructure as code techniques.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000291"
+              },
+              {
+                "$oid": "B000000000000000000000292"
+              },
+              {
+                "$oid": "B000000000000000000000293"
+              },
+              {
+                "$oid": "B000000000000000000000294"
+              }
+            ]
+          },
+          {
+            "name": "BackingServices",
+            "description": "With this topic, you'll learn how to work with the attached services required for an application to run.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000029"
+              }
+            ]
+          },
+          {
+            "name": "ManagingMultipleEnvironments",
+            "description": "With this topic, you'll learn how to manage multiple environments such as dev, staging, and production for an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000409"
+              },
+              {
+                "$oid": "B000000000000000000000410"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Observability",
+        "description": "Monitoring, logging, metrics, and alerting practices.",
+        "topics": [
+          {
+            "name": "CollectingLogsErrorsMetricsandTraces",
+            "description": "With this topic, you'll learn about the different types of telemetry data that can be collected in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000071"
+              },
+              {
+                "$oid": "B000000000000000000000072"
+              },
+              {
+                "$oid": "B000000000000000000000073"
+              },
+              {
+                "$oid": "B000000000000000000000074"
+              },
+              {
+                "$oid": "B000000000000000000000075"
+              },
+              {
+                "$oid": "B000000000000000000000076"
+              },
+              {
+                "$oid": "B000000000000000000000077"
+              },
+              {
+                "$oid": "B000000000000000000000078"
+              }
+            ]
+          },
+          {
+            "name": "TheGoldenSignals",
+            "description": "With this topic, you'll learn about four valuable metrics to measure the health of an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000673"
+              },
+              {
+                "$oid": "B000000000000000000000674"
+              }
+            ]
+          },
+          {
+            "name": "EffectiveAlerting",
+            "description": "With this topic, you'll learn about signal vs. noise and how to create valuable alerts that raise the alarm when something goes wrong in an application.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000211"
+              },
+              {
+                "$oid": "B000000000000000000000212"
+              },
+              {
+                "$oid": "B000000000000000000000213"
+              },
+              {
+                "$oid": "B000000000000000000000214"
+              }
+            ]
+          },
+          {
+            "name": "elasticsearchELK",
+            "description": "Elastic search, optimized, database, and related connectors",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000714"
+              },
+              {
+                "$oid": "B000000000000000000000715"
+              },
+              {
+                "$oid": "B000000000000000000000716"
+              }
+            ]
+          },
+          {
+            "name": "Debugging",
+            "description": "With this topic, you'll learn about techniques to debug and resolve application issues using telemetry data.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000160"
+              },
+              {
+                "$oid": "B000000000000000000000161"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ReliabilityOperations",
+        "description": "Release engineering, incidents, and SRE collaboration.",
+        "topics": [
+          {
+            "name": "ManagingIncidents",
+            "description": "With this topic, you'll learn to keep calm under the stress of resolving production application incidents.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000404"
+              },
+              {
+                "$oid": "B000000000000000000000405"
+              },
+              {
+                "$oid": "B000000000000000000000406"
+              },
+              {
+                "$oid": "B000000000000000000000407"
+              },
+              {
+                "$oid": "B000000000000000000000408"
+              }
+            ]
+          },
+          {
+            "name": "ManagingReleases",
+            "description": "With this topic, you'll learn about change management and how to release new versions of an application with as little downtime as possible.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000411"
+              },
+              {
+                "$oid": "B000000000000000000000412"
+              },
+              {
+                "$oid": "B000000000000000000000413"
+              },
+              {
+                "$oid": "B000000000000000000000414"
+              },
+              {
+                "$oid": "B000000000000000000000415"
+              },
+              {
+                "$oid": "B000000000000000000000416"
+              }
+            ]
+          },
+          {
+            "name": "ContinuousIntegrationandDeployment",
+            "description": "With this topic, you'll learn to automate the release process using continuous integration and deployment (CI/CD) pipelines.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000125"
+              },
+              {
+                "$oid": "B000000000000000000000126"
+              },
+              {
+                "$oid": "B000000000000000000000127"
+              },
+              {
+                "$oid": "B000000000000000000000128"
+              },
+              {
+                "$oid": "B000000000000000000000129"
+              },
+              {
+                "$oid": "B000000000000000000000130"
+              },
+              {
+                "$oid": "B000000000000000000000131"
+              },
+              {
+                "$oid": "B000000000000000000000132"
+              }
+            ]
+          },
+          {
+            "name": "PerformanceTesting",
+            "description": "With this topic, you'll learn how to verify the performance of an application using load tests, smoke tests, and black-box testing.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000530"
+              },
+              {
+                "$oid": "B000000000000000000000531"
+              },
+              {
+                "$oid": "B000000000000000000000532"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithSiteReliabilityEngineers",
+            "description": "With this topic, you'll learn about the role of a site reliability engineer and how to work with them on your team effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000709"
+              },
+              {
+                "$oid": "B000000000000000000000710"
+              },
+              {
+                "$oid": "B000000000000000000000711"
+              },
+              {
+                "$oid": "B000000000000000000000712"
+              },
+              {
+                "$oid": "B000000000000000000000713"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "AutomationAndIaC",
+        "description": "Secrets, security automation, Python tooling, and IaC practice.",
+        "topics": [
+          {
+            "name": "AutomationAndIaCMemberships",
+            "description": "Platform memberships supporting AutomationAndIaC.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000719"
+              },
+              {
+                "$oid": "B000000000000000000000717"
+              }
+            ]
+          },
+          {
+            "name": "ManagingSecrets",
+            "description": "With this topic, you'll learn about application secrets and how to manage them effectively.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000417"
+              },
+              {
+                "$oid": "B000000000000000000000418"
+              },
+              {
+                "$oid": "B000000000000000000000419"
+              },
+              {
+                "$oid": "B000000000000000000000420"
+              },
+              {
+                "$oid": "B000000000000000000000421"
+              },
+              {
+                "$oid": "B000000000000000000000422"
+              },
+              {
+                "$oid": "B000000000000000000000423"
+              }
+            ]
+          },
+          {
+            "name": "ContinuousSecurity",
+            "description": "With this topic, you'll learn about methods to integrate security scanning into a project CI/CD pipeline.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000133"
+              },
+              {
+                "$oid": "B000000000000000000000134"
+              },
+              {
+                "$oid": "B000000000000000000000135"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-practitioner-sre",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-practitioner-sre",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "C000000000000000000000013"
+    },
+    "name": "PractitionerUIUXEngineer",
+    "description": "Practitioner-level UI and UX engineering path covering design fundamentals, Figma prototyping, Material Design systems, responsive CSS, and Vue.js front-end mastery.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Other"
+    ],
+    "interests": [
+      "ux",
+      "design"
+    ],
+    "modules": [
+      {
+        "name": "DesignFoundations",
+        "description": "Human-centered design principles and UX fundamentals.",
+        "topics": [
+          {
+            "name": "DesignFoundationsResources",
+            "description": "Curated resources for DesignFoundations.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000721"
+              }
+            ]
+          },
+          {
+            "name": "DesignFundamentals",
+            "description": "Learn to use basic design terminology, and have an understanding of human experience design as it relates to their work.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000171"
+              },
+              {
+                "$oid": "B000000000000000000000172"
+              },
+              {
+                "$oid": "B000000000000000000000173"
+              },
+              {
+                "$oid": "B000000000000000000000174"
+              },
+              {
+                "$oid": "B000000000000000000000175"
+              }
+            ]
+          },
+          {
+            "name": "IntroductiontoDesignThinking",
+            "description": "Build an understanding of each phase of the design thinking methodology, enough to help and support software teams in their problem-solving processes.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000363"
+              },
+              {
+                "$oid": "B000000000000000000000364"
+              },
+              {
+                "$oid": "B000000000000000000000365"
+              },
+              {
+                "$oid": "B000000000000000000000366"
+              },
+              {
+                "$oid": "B000000000000000000000314"
+              },
+              {
+                "$oid": "B000000000000000000000367"
+              }
+            ]
+          },
+          {
+            "name": "DesignSystems",
+            "description": "Learn how to use, contribute to, and maintain a design system for building web applications.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000183"
+              },
+              {
+                "$oid": "B000000000000000000000184"
+              },
+              {
+                "$oid": "B000000000000000000000185"
+              },
+              {
+                "$oid": "B000000000000000000000186"
+              },
+              {
+                "$oid": "B000000000000000000000187"
+              },
+              {
+                "$oid": "B000000000000000000000188"
+              },
+              {
+                "$oid": "B000000000000000000000189"
+              }
+            ]
+          },
+          {
+            "name": "AccessibilityandUniversalDesignFundament",
+            "description": "Learn how to build software that meets the accessibility needs of its users.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000001"
+              },
+              {
+                "$oid": "B000000000000000000000002"
+              },
+              {
+                "$oid": "B000000000000000000000003"
+              },
+              {
+                "$oid": "B000000000000000000000004"
+              },
+              {
+                "$oid": "B000000000000000000000005"
+              },
+              {
+                "$oid": "B000000000000000000000006"
+              }
+            ]
+          },
+          {
+            "name": "WorkingwithDigitalProductDesigners",
+            "description": "Learn how to collaborate with designers in the field by understanding the role they play in the creation of quality software.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000702"
+              },
+              {
+                "$oid": "B000000000000000000000703"
+              },
+              {
+                "$oid": "B000000000000000000000704"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "UIDesignTools",
+        "description": "Prototyping and visual design tooling.",
+        "topics": [
+          {
+            "name": "FIgma",
+            "description": "Figma is a popular tool for graphic design, UI prototyping, and colaboration. It is widely used in the industry and many UI positions will need these skills.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000228"
+              },
+              {
+                "$oid": "B000000000000000000000229"
+              },
+              {
+                "$oid": "B000000000000000000000230"
+              },
+              {
+                "$oid": "B000000000000000000000231"
+              },
+              {
+                "$oid": "B000000000000000000000232"
+              },
+              {
+                "$oid": "B000000000000000000000233"
+              },
+              {
+                "$oid": "B000000000000000000000234"
+              },
+              {
+                "$oid": "B000000000000000000000235"
+              },
+              {
+                "$oid": "B000000000000000000000236"
+              },
+              {
+                "$oid": "B000000000000000000000237"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MaterialDesign",
+        "description": "Google Material Design system components and patterns.",
+        "topics": [
+          {
+            "name": "MaterialDesignResources",
+            "description": "Curated resources for MaterialDesign.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000723"
+              }
+            ]
+          },
+          {
+            "name": "MaterialDesignFoundations",
+            "description": "Material Design is a [[Design Systems]] from Google that is commonly used in developing Web or Mobile UI's.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000443"
+              },
+              {
+                "$oid": "B000000000000000000000444"
+              },
+              {
+                "$oid": "B000000000000000000000445"
+              },
+              {
+                "$oid": "B000000000000000000000446"
+              },
+              {
+                "$oid": "B000000000000000000000447"
+              },
+              {
+                "$oid": "B000000000000000000000448"
+              },
+              {
+                "$oid": "B000000000000000000000449"
+              },
+              {
+                "$oid": "B000000000000000000000450"
+              },
+              {
+                "$oid": "B000000000000000000000451"
+              },
+              {
+                "$oid": "B000000000000000000000452"
+              }
+            ]
+          },
+          {
+            "name": "MaterialDesignStyles",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000453"
+              },
+              {
+                "$oid": "B000000000000000000000454"
+              },
+              {
+                "$oid": "B000000000000000000000455"
+              },
+              {
+                "$oid": "B000000000000000000000456"
+              },
+              {
+                "$oid": "B000000000000000000000457"
+              },
+              {
+                "$oid": "B000000000000000000000458"
+              }
+            ]
+          },
+          {
+            "name": "ComponentsActions",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000113"
+              },
+              {
+                "$oid": "B000000000000000000000114"
+              },
+              {
+                "$oid": "B000000000000000000000115"
+              },
+              {
+                "$oid": "B000000000000000000000116"
+              },
+              {
+                "$oid": "B000000000000000000000117"
+              }
+            ]
+          },
+          {
+            "name": "Communication",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000109"
+              },
+              {
+                "$oid": "B000000000000000000000110"
+              },
+              {
+                "$oid": "B000000000000000000000111"
+              },
+              {
+                "$oid": "B000000000000000000000112"
+              }
+            ]
+          },
+          {
+            "name": "Containment",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000118"
+              },
+              {
+                "$oid": "B000000000000000000000119"
+              },
+              {
+                "$oid": "B000000000000000000000120"
+              },
+              {
+                "$oid": "B000000000000000000000121"
+              },
+              {
+                "$oid": "B000000000000000000000122"
+              },
+              {
+                "$oid": "B000000000000000000000123"
+              },
+              {
+                "$oid": "B000000000000000000000124"
+              }
+            ]
+          },
+          {
+            "name": "Navigation",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000459"
+              },
+              {
+                "$oid": "B000000000000000000000460"
+              },
+              {
+                "$oid": "B000000000000000000000461"
+              },
+              {
+                "$oid": "B000000000000000000000462"
+              },
+              {
+                "$oid": "B000000000000000000000463"
+              },
+              {
+                "$oid": "B000000000000000000000464"
+              },
+              {
+                "$oid": "B000000000000000000000465"
+              }
+            ]
+          },
+          {
+            "name": "Selection",
+            "description": "Brief Description",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000613"
+              },
+              {
+                "$oid": "B000000000000000000000614"
+              },
+              {
+                "$oid": "B000000000000000000000615"
+              },
+              {
+                "$oid": "B000000000000000000000616"
+              },
+              {
+                "$oid": "B000000000000000000000617"
+              },
+              {
+                "$oid": "B000000000000000000000618"
+              },
+              {
+                "$oid": "B000000000000000000000619"
+              },
+              {
+                "$oid": "B000000000000000000000620"
+              }
+            ]
+          },
+          {
+            "name": "TextInputs",
+            "description": "Brief Description",
+            "resources": []
+          }
+        ]
+      },
+      {
+        "name": "ResponsiveFrontEnd",
+        "description": "Layout, responsiveness, and CSS craft.",
+        "topics": [
+          {
+            "name": "ResponsiveFrontEndResources",
+            "description": "Curated resources for ResponsiveFrontEnd.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000722"
+              }
+            ]
+          },
+          {
+            "name": "ResponsiveDesign",
+            "description": "- [ ] [Introduction to Responsive Design](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-introduction-to-responsive-design)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000580"
+              },
+              {
+                "$oid": "B000000000000000000000581"
+              },
+              {
+                "$oid": "B000000000000000000000582"
+              },
+              {
+                "$oid": "B000000000000000000000583"
+              },
+              {
+                "$oid": "B000000000000000000000584"
+              }
+            ]
+          },
+          {
+            "name": "CSSFlexbox",
+            "description": "- [ ] [Introduction to Flexbox](https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000035"
+              },
+              {
+                "$oid": "B000000000000000000000036"
+              },
+              {
+                "$oid": "B000000000000000000000037"
+              },
+              {
+                "$oid": "B000000000000000000000038"
+              },
+              {
+                "$oid": "B000000000000000000000039"
+              }
+            ]
+          },
+          {
+            "name": "CSSGrid",
+            "description": "- [ ] [Introduction to Grid](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-introduction-to-grid)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000045"
+              },
+              {
+                "$oid": "B000000000000000000000046"
+              },
+              {
+                "$oid": "B000000000000000000000047"
+              },
+              {
+                "$oid": "B000000000000000000000048"
+              },
+              {
+                "$oid": "B000000000000000000000049"
+              },
+              {
+                "$oid": "B000000000000000000000050"
+              }
+            ]
+          },
+          {
+            "name": "IntermediateCSSConcepts",
+            "description": "- [ ] [Default Styles](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-default-styles)",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000325"
+              },
+              {
+                "$oid": "B000000000000000000000326"
+              },
+              {
+                "$oid": "B000000000000000000000327"
+              },
+              {
+                "$oid": "B000000000000000000000328"
+              },
+              {
+                "$oid": "B000000000000000000000329"
+              },
+              {
+                "$oid": "B000000000000000000000330"
+              },
+              {
+                "$oid": "B000000000000000000000331"
+              },
+              {
+                "$oid": "B000000000000000000000332"
+              },
+              {
+                "$oid": "B000000000000000000000333"
+              },
+              {
+                "$oid": "B000000000000000000000334"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "VueEngineering",
+        "description": "Vue.js front-end engineering with structured course progression.",
+        "topics": [
+          {
+            "name": "VueMasteryLearningPath",
+            "description": "Vue Mastery subscription with Intro to Vue 3, Real World Vue 3, Vue Router, Pinia, TypeScript, Vite, and Nuxt 3 courses.",
+            "resources": [
+              {
+                "$oid": "B000000000000000000000720"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-path-practitioner-uiux",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-path-practitioner-uiux",
+      "from_ip": "127.0.0.1"
+    }
+  }
+]

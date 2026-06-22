@@ -1,0 +1,16 @@
+_locked: false
+file_name: rating.yaml
+root:
+  bson_type:
+    bsonType: int
+    maximum: 4
+    minimum: 1
+  description: A star rating between one and four
+  json_type:
+    maximum: 4
+    minimum: 1
+    multipleOf: 1
+    type: number
+  name: rating
+  required: false
+  type: complex

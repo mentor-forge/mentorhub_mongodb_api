@@ -1,0 +1,10 @@
+_locked: false
+file_name: duration.yaml
+root:
+  description: A ISO-8601 Duration (i.e. P3DT4H30M for 3 Days, 4 Hours, 30 Minutes)
+  name: duration
+  required: false
+  schema:
+    pattern: ^P(?!$)(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(\d+H)?(\d+M)?(\d+(\.\d+)?S)?)?$
+    type: string
+  type: simple

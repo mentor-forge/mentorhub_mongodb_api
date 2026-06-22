@@ -56,7 +56,7 @@ enumerators:
     value: active
   - description: A link that returns a non-200 return code
     value: failed
-- name: events
+- name: event_types
   values:
   - description: Successful login
     value: login
@@ -64,10 +64,21 @@ enumerators:
     value: logout
   - description: Login Failure
     value: fail
-  - description: First sight of a user
+  - description: Profile created
     value: arrived
-  - description: Completed a resource or task
+  - description: When a mentee marks a resource complete
     value: completed
+  - description: The first time a resource link is followed
+    value: started
+  - description: A mentor and mentee have completed an encounter
+    value: encounter
+  - description: A note was created
+    value: note
+  - description: A resource link was clicked
+    value: link
+  - description: A user promoted a resource from one part of their learning roadmap
+      to another
+    value: advanced
 - name: ratings
   values:
   - description: One Star

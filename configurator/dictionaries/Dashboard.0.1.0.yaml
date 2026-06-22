@@ -1,25 +1,38 @@
+_locked: false
 file_name: Dashboard.0.1.0.yaml
 root:
-  name: Dashboard
+  additional_properties: false
   description: Dashboard configuration for a customer.
-  type: object
+  name: Dashboard
   properties:
-  - name: _id
-    description: The unique identifier for the Dashboard.
+  - description: The unique identifier for the Dashboard.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
+  - description: The searchable name of the document
+    name: name
+    required: false
     type: word
-  - name: description
-    description: The description of the Dashboard.
+  - description: The description of the Dashboard.
+    name: description
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
     type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
     type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: The customer this dashboard supports
+    name: customer_id
+    required: false
+    type: identifier
+  required: false
+  type: object

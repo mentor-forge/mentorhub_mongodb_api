@@ -1,18 +1,17 @@
+_locked: false
+description: Dashboard configuration for a customer dashboard (widgets, layout)
 file_name: Dashboard.yaml
-description: Dashboard configuration for a customer.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
+- _locked: false
+  add_indexes:
+  - key:
+      customer_id: 1
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Last Saved
-    key:
-      saved.at_time: -1
-    options: {}
   drop_indexes: []
   migrations: []
   test_data: Dashboard.0.1.0.0.json
+  version: 0.1.0.0

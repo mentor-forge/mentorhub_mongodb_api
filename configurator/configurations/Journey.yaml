@@ -1,18 +1,21 @@
+_locked: false
+description: 'A learning roadmap for a Mentee (Now, Next, Later) and a library of
+  completed resources '
 file_name: Journey.yaml
-description: A learning journey for a craftsperson.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
+- _locked: false
+  add_indexes:
+  - key:
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Last Saved
-    key:
+  - key:
       saved.at_time: -1
+    name: Last Saved
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Journey.0.1.0.0.json
+  version: 0.1.0.0

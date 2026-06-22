@@ -19,14 +19,14 @@ root:
     type: sentence
   - description: tags to locate learning paths
     enums: technologies
-    name: tags
+    name: technologies
     required: false
     type: enum_array
-  - description: Status of the document
-    enums: default_status
-    name: status
+  - description: Tags to help locate a Path
+    enums: interests
+    name: interests
     required: false
-    type: enum
+    type: enum_array
   - description: The list of top level Modules for this path
     items:
       additional_properties: false
@@ -74,6 +74,11 @@ root:
     name: modules
     required: false
     type: array
+  - description: Status of the document
+    enums: default_status
+    name: status
+    required: false
+    type: enum
   - description: The tracking breadcrumb for when the document was created.
     name: created
     required: false

@@ -7,61 +7,53 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000002"
+      "$oid": "A00000000000000000000004"
     },
     "date": {
-      "$date": "2025-01-08T15:00:00.000Z"
+      "$date": "2026-05-05T09:31:00.000Z"
     },
     "plan_id": {
-      "$oid": "f00000000000000000000001"
+      "$oid": "f00000000000000000000002"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
-        "step": "What do you want to focus on today?",
+        "step": "Introduction - The Agile Learning Institute",
         "checked": true
       },
       {
-        "step": "How would you describe what's happening now?",
+        "step": "Introduction - Mentor / Mentee",
         "checked": true
       },
       {
-        "step": "During our time together, what would you like to accomplish?",
+        "step": "How many weeks are you commiting to?",
         "checked": true
       },
       {
-        "step": "What would you like to be able to share next time?",
+        "step": "What do you want to be able to say at the end of that time?",
         "checked": true
       },
       {
-        "step": "How are your discoveries making a difference?",
+        "step": "Introduce Mentee Journey interface.",
         "checked": true
       },
       {
-        "step": "How do you want to wrap up today?",
-        "checked": true
-      },
-      {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe, and Paste Updates",
         "checked": true
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Good to see you, Daniel. What do you want to focus on today?\n\n**Daniel:** I want to keep pushing on Vue composition patterns. I finished several EngineerKit modules in my library section.\n\n**Marti:** How would you describe what's happening now?\n\n**Daniel:** I feel stronger on component design, but I still hesitate when wiring up API calls.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Daniel:** A concrete plan for one API integration exercise I can finish this week.\n\n**Marti:** What would you like to share next time?\n\n**Daniel:** A working fetch layer in my portfolio SPA and notes on what confused me.\n\n**Marti:** How are your discoveries making a difference?\n\n**Daniel:** I'm shipping smaller features faster and asking better questions in code review.\n\n**Marti:** Let's wrap with homework on MongoDB aggregation basics for your portfolio project.",
-    "summary": "## Summary\nDaniel completed five EngineerKit library resources and started two in-progress items. Marti encouraged him to connect frontend work to backend API patterns.\n\n## Next steps\n- Finish one API integration exercise\n- Review React patterns doc shared by mentor",
-    "tldr": "Daniel reviewed Vue composition progress and agreed to tackle API integration homework before the next session.",
+    "transcript": "**Marti:** Okay, so I've shared your curriculum with you, and I've added the manifestos for you to read before next week at this time. And they're very, very short manifestos.\n\n**Mary:** Okay.\n\n**Marti:** So I want you to go back to them a couple of times. And I want you to keep in mind and look at them and compare and contrast. How are they the same? How are they different? as you work through your work, read them often enough this coming week that it makes you think about it while you're learning other things. You know what I mean?\n\n**Mary:** Yeah, I get it.\n\n**Marti:** Okay.\n\n**Mary:** Yes, sir.\n\n**Marti:** Yeah. I think those will be good. The other thing I want you to know about this mentorship time is it's going to be very much for you. So I didn't do it today, but the beginning of our conversation and mentor each week is probably going to be What would you like to focus on today?\n\n**Mary:** Yes, sir. Okay.\n\n**Marti:** Okay, so this time really is about you. And so we'll look at how things are going for you on the job. We'll look at how things are going for you, even personally, if you want. You're not under pressure to share anything you don't want to share.\n\n**Mary:** Yes sir.\n\n**Marti:** But I'm here to help you navigate a career in IT. And that's what this is all about. And if you remember the article on the T-shaped engineer, that's really close to my heart. And on the Mentor Hub project, we're going to work on your vertical, the thing where you're going to get deep skills. And in our mentoring time, we're going to work on the horizontal, the top of the T.\n\n**Mary:** Okay.\n\n**Marti:** So how's it going? What do you think about, I mean, this is only day two, but you've had a little bit of time now to dig into a few things. and start to get your bearings. What do you think?\n\n**Mary:** Um, everything like this is, even though it's challenging, but I love challenges.\n\n_[Transcript truncated for schema limit.]_\n\n**Marti:** Thank you.\n\n**Mary:** i really need this and i'm looking forward to going even further after the 12 weeks so there's something even more to look forward to\n\n**Marti:** I am extremely excited to be working with you. And I have a very high degree of confidence that you're going to learn a lot and learn fast. I really am looking forward to it. I'm going to enjoy watching you learn some of the things that we're going to be learning. This first week is going to feel like it's all over the place.\n\n**Mary:** you\n\n**Marti:** You're learning about Markdown and you're learning about Docker and you're learning about YAML. And it's just going to be all over the place. Starting next week, we're really going to focus in on MongoDB. And we're going to take some free training classes that at the end of the free training classes, you should be able to take a certification exam and get a certification if you want to.\n\n**Mary:** Okay. Okay. Okay.\n\n**Marti:** There's a cost associated with the exam. I think you'll get a, when you finish the free training, you get like a 50% off the cost of the exam. And that'll make the exam like 50 bucks or something like that.\n\n**Mary:** okay\n\n**Marti:** So after you finish the course, if you want to take the certification exam, we can pay for your certification exam.\n\n**Mary:** okay thank you\n\n**Marti:** I'm excited. I have a very high, you make me feel confident that we're going to succeed. I don't know how to explain it other than that. Just working with you, I feel confident. So, all right.\n\n**Mary:** Thank you.\n\n**Marti:** So for our mentorship meeting next week, you're going to do the two manifestos and you're going to visit them multiple times during the week. And you're going to continue to use Obsidian. So I think we're in good place.\n\n**Mary:** I think so too.\n\n**Marti:** alright well I will see you at lunchtime\n\n**Mary:** Okay.\n\n**Marti:** alright peace\n\n**Mary:** Peace.",
+    "summary": "## Summary\nMike welcomed Mary to the mentorship program, shared the curriculum and short manifestos to be reviewed repeatedly, and explained that the weekly sessions will be driven by her interests and needs. He emphasized a balanced focus on deep technical skills (the vertical of the T\u2011shaped engineer) and broader knowledge (the horizontal). Mike introduced the use of Obsidian for daily note\u2011taking, demonstrated basic markdown syntax, link creation, bullet/numbered lists, and how notes interconnect via the graph view. He pointed Mary to the Obsidian Discord community for additional help and walked her through creating and navigating vaults, daily notes, and linked notes. The conversation also covered practical tools: using markdown in GitHub README files, Discord messages, and AI workflows (e.g., Whisper for audio transcription and AI summarisation). Mike shared his personal experience with AI use and mental health, stressing the importance of \u201cAI safety\u201d and mindful usage. He outlined the upcoming learning plan\u2014Docker, YAML, then a deep dive into MongoDB with free training that can lead to a discounted certification exam (the cost can be covered). Mary expressed nervousness but enthusiasm, and both affirmed the plan to revisit the manifestos and continue using Obsidian throughout the week.",
+    "tldr": "set up Obsidian, basic markdown, and the mentorship framework, while outlining a roadmap that includes MongoDB training and a possible certification.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-01-08T15:00:00.000Z"
+        "$date": "2026-05-05T09:31:00.000Z"
       },
       "correlation_id": "seed-encounter-01"
     },
@@ -69,7 +61,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-01-08T16:00:00.000Z"
+        "$date": "2026-05-05T09:31:00.000Z"
       },
       "correlation_id": "save-encounter-01"
     }
@@ -85,58 +77,50 @@
       "$oid": "A00000000000000000000002"
     },
     "date": {
-      "$date": "2025-05-20T15:00:00.000Z"
+      "$date": "2026-05-06T09:58:00.000Z"
     },
     "plan_id": {
-      "$oid": "f00000000000000000000001"
+      "$oid": "f00000000000000000000002"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
-        "step": "What do you want to focus on today?",
+        "step": "Introduction - The Agile Learning Institute",
         "checked": true
       },
       {
-        "step": "How would you describe what's happening now?",
+        "step": "Introduction - Mentor / Mentee",
         "checked": true
       },
       {
-        "step": "During our time together, what would you like to accomplish?",
+        "step": "How many weeks are you commiting to?",
         "checked": true
       },
       {
-        "step": "What would you like to be able to share next time?",
+        "step": "What do you want to be able to say at the end of that time?",
         "checked": true
       },
       {
-        "step": "How are your discoveries making a difference?",
+        "step": "Introduce Mentee Journey interface.",
         "checked": true
       },
       {
-        "step": "How do you want to wrap up today?",
+        "step": "Stop Recording, Transcribe, and Paste Updates",
         "checked": true
-      },
-      {
-        "step": "Stop Recording and Transcribe",
-        "checked": false
-      },
-      {
-        "step": "Summarize Transcript With AI",
-        "checked": false
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Welcome back. You had API integration on your homework list \u2014 how did it go?\n\n**Daniel:** I got a basic fetch layer working against a mock service. Still rough around error handling.\n\n**Marti:** What do you want to focus on today?\n\n**Daniel:** Polishing that layer and deciding what to tackle next on my journey.\n\n**Marti:** How would you describe what's happening now?\n\n**Daniel:** Frontend patterns are clicking. Backend confidence is catching up but not there yet.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Daniel:** A checklist for error handling and a pick for my next Now resource.\n\n**Marti:** What would you like to share next time?\n\n**Daniel:** Cleaner API code and a short write-up of tradeoffs I considered.\n\n**Marti:** Your EngineerKit library growth is solid \u2014 five completed modules is real momentum.",
-    "summary": "## Summary\nDaniel showed progress on API integration and discussed two in-progress EngineerKit resources in his journey Now section.\n\n## Next steps\n- Add error handling and loading states to API layer\n- Continue Shokunin and Tanners Tailors resources",
-    "tldr": "Daniel demoed a working API layer and Marti suggested deepening error handling before moving to system design topics.",
+    "transcript": "",
+    "summary": "## Summary\nShare curriculum, he had internet speed problems and the importance of email calendar updates.",
+    "tldr": "Share curriculum, he had internet speed problems and the importance of email calendar updates.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-05-20T15:00:00.000Z"
+        "$date": "2026-05-06T09:58:00.000Z"
       },
       "correlation_id": "seed-encounter-02"
     },
@@ -144,7 +128,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-05-20T16:00:00.000Z"
+        "$date": "2026-05-06T09:58:00.000Z"
       },
       "correlation_id": "save-encounter-02"
     }
@@ -157,61 +141,53 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000003"
+      "$oid": "A00000000000000000000005"
     },
     "date": {
-      "$date": "2025-02-12T15:00:00.000Z"
+      "$date": "2026-05-07T09:31:00.000Z"
     },
     "plan_id": {
-      "$oid": "f00000000000000000000001"
+      "$oid": "f00000000000000000000002"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
-        "step": "What do you want to focus on today?",
+        "step": "Introduction - The Agile Learning Institute",
         "checked": true
       },
       {
-        "step": "How would you describe what's happening now?",
+        "step": "Introduction - Mentor / Mentee",
         "checked": true
       },
       {
-        "step": "During our time together, what would you like to accomplish?",
+        "step": "How many weeks are you commiting to?",
         "checked": true
       },
       {
-        "step": "What would you like to be able to share next time?",
+        "step": "What do you want to be able to say at the end of that time?",
         "checked": true
       },
       {
-        "step": "How are your discoveries making a difference?",
+        "step": "Introduce Mentee Journey interface.",
         "checked": true
       },
       {
-        "step": "How do you want to wrap up today?",
-        "checked": true
-      },
-      {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe, and Paste Updates",
         "checked": true
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Hi Lucky. What do you want to focus on today?\n\n**Lucky:** Reliability fundamentals \u2014 I want to understand how mentors think about production incidents.\n\n**Marti:** How would you describe what's happening now?\n\n**Lucky:** I'm absorbing a lot from EngineerKit but need more hands-on automation practice.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Lucky:** A simple script idea for checking deployments that I can build this week.\n\n**Marti:** What would you like to share next time?\n\n**Lucky:** A draft runbook and questions about observability tooling.\n\n**Marti:** How are your discoveries making a difference?\n\n**Lucky:** I'm noticing failure modes earlier when I read logs during labs.\n\n**Marti:** Good \u2014 wrap up with homework on the deployment check script.",
-    "summary": "## Summary\nLucky is progressing through EngineerKit with eight completed library items. Session focused on backend reliability and organic discussion of automation habits.\n\n## Next steps\n- Draft weekly deployment verification runbook\n- Continue reliability fundamentals resources",
-    "tldr": "Lucky discussed SRE reliability fundamentals and committed to drafting a deployment check automation script.",
+    "transcript": "**Marti:** Okay. So this time each week, this hour is about you. It's not about MentorHub. It's not about the rest of the team. It's just your chance and my chance to meet and kind of work on.\n\n**Luke:** Okay.\n\n**Marti:** You remember the article about the T-shaped engineer?\n\n**Luke:** Okay. Uh-huh.\n\n**Marti:** On MentorHub, you're going to be building deep technical skills. In our mentorship time, you're going to be building the top of the T, the broad, shallow skills.\n\n**Luke:** Okay.\n\n**Marti:** So we're going to learn a lot about a lot of different things.\n\n**Luke:** okay\n\n**Marti:** The other thing to keep in mind is your experience as a mentee meeting with your mentor is one of the use cases that needs to be supported by the new MentorHub platform.\n\n**Luke:** okay\n\n**Marti:** So everything we do here, everything you do in preparation or in follow-up from these meetings, the things I do to prepare and follow-up, all of that is going to be part of the use case of the MentorHub platform.\n\n**Luke:** okay\n\n**Marti:** So you're kind of getting two for one here.\n\n**Luke:** Okay, excellent.\n\n**Marti:** Let's see. I've created a curriculum document for you. Let me share this with you.\n\n**Luke:** Okay. Okay.\n\n**Marti:** There it is. Put that there. And that. Let me just get a link and put here. okay so in our voice meeting chat I added a link for you to the document\n\n**Luke:** Okay. I think I'm in the wrong I'm looking at the wrong spot\n\n**Marti:** so go to the voice channel where we're talking right now\n\n**Luke:** uh-huh\n\n**Marti:** and click on the little chat icon in the upper right. And you should see a series of posts and the bottom one is the link\n\n**Luke:** okay\n\n**Marti:** for you.\n\n**Luke:** Okay. Google Docs, you need access.\n\n**Marti:** You shouldn't.\n\n**Luke:** Okay.\n\n**Marti:** I gave you access already. which one did you click on?\n\n**Luke:** Let's see.\n\n**Marti:** Did you click on the bottom one or the second to the bottom one?\n\n**Luke:** Let me go back. No, I guess I hit the very bottom one.\n\n_[Transcript truncated for schema limit.]_\n\n**Luke:** I got you yeah\n\n**Marti:** nobody had three years experience with kubernetes if you had three years experience with kubernetes you were part of the original google team that wrote the product okay so that means you're never\n\n**Luke:** yeah right\n\n**Marti:** more than a few years behind the curve. That means everybody's always learning.\n\n**Luke:** yeah\n\n**Marti:** And wherever you decide to get in, you're no more than a few years behind.\n\n**Luke:** yeah yeah and that that does kind of give you a little bit of peace of mind but that world is, it's a complicated area, you know.\n\n**Marti:** We have to get into the proper mindset of always learning.\n\n**Luke:** Yeah.\n\n**Marti:** A lot of people, I talk to people that go to code school that think, I'm going to learn how to do this, and then I'm just going to do it. Kind of like a mechanic. I'm going to go to school and learn how to work on Fords, and then I'm just going to work on Fords.\n\n**Luke:** Right?\n\n**Marti:** Number one, the guy at the Ford dealership goes back to school every year.\n\n**Luke:** Yeah. Yeah.\n\n**Marti:** He's continuously learning. So sometimes it's a little hard to make people understand that learning is not, you don't get a degree and then quit learning, right?\n\n**Luke:** Right, right.\n\n**Marti:** You don't go to code school and then quit learning.\n\n**Luke:** Yeah.\n\n**Marti:** You are in a career where lifelong learning is the skill.\n\n**Luke:** Yeah.\n\n**Marti:** Your valuable skill is not JavaScript, is not HTML. Your valuable skill is the ability to learn.\n\n**Luke:** Yeah. Right. I got you.\n\n**Marti:** all right well I will let you go and let you go jump on the voice channel with the team and tell them that I'll be there in about five or ten minutes and we'll go through the markdown tutorial\n\n**Luke:** Okay.\n\n**Marti:** together and set a goal for stuff to finish before our lunchtime meeting all right\n\n**Luke:** Okay. Okay. Okay. I'll see you in a minute. Thanks. Appreciate it.",
+    "summary": "## Summary\nMike spent the meeting outlining Luke\u2019s mentorship structure and the broader goals for the MentorHub project. He introduced the T\u2011shaped engineer model, explaining that Luke will deepen technical skills on MentorHub while using the mentorship sessions to broaden his knowledge (the \u201ctop of the T\u201d). Mike shared a curriculum document organized into\u202fNow,\u202fNext,\u202fLater\u202fsections and instructed Luke how to access it via Google Docs, emphasizing the \u201ccelebrated\u201d section for completed work.  \n\nThe conversation then shifted to SRE fundamentals, the difference between DevOps and SRE, and how Google\u2019s invention of containers (Docker) and Kubernetes reshaped IT operations. Mike described the incident\u2011response role, the need to support teammates (Daniel, Mary, etc.) by understanding their tech stacks, and the importance of cloud deployment on AWS.  \n\nPractical concerns were addressed: Luke\u2019s trouble accessing the curriculum (Google account/profile mix\u2011up), an Apple account recovery that\u2019s delaying his phone setup, and the need to get a proper mouse for better navigation. Mike walked Luke through using the Cursor editor to open a local \u201cstorefront\u201d project, import files, and experiment with generating book\u2011cover images via AI prompts. They also discussed upcoming tutorials (Markdown, Bash) and a plan to reconvene after a short voice\u2011channel session.  \n\nTeam dynamics were touched on, noting the current three\u2011person crew is stable for now, with a fourth hire likely focused on marketing later. Mike reinforced that lifelong learning\u2014rather than any single language\u2014is the core skill for a successful SRE/engineer.",
+    "tldr": "Mike guided Luke through his mentorship roadmap, SRE concepts, and hands\u2011on tooling while sorting out access issues and planning next steps.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-02-12T15:00:00.000Z"
+        "$date": "2026-05-07T09:31:00.000Z"
       },
       "correlation_id": "seed-encounter-03"
     },
@@ -219,7 +195,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-02-12T16:00:00.000Z"
+        "$date": "2026-05-07T09:31:00.000Z"
       },
       "correlation_id": "save-encounter-03"
     }
@@ -232,17 +208,17 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000003"
+      "$oid": "A00000000000000000000004"
     },
     "date": {
-      "$date": "2025-06-10T15:00:00.000Z"
+      "$date": "2026-05-12T09:50:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -270,23 +246,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
+        "step": "Stop Recording, Transcribe and Paste Updates",
         "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
-        "checked": false
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** What do you want to focus on today, Lucky?\n\n**Lucky:** Reviewing my deployment script and talking through system design for small services.\n\n**Marti:** How would you describe what's happening now?\n\n**Lucky:** The script works for happy path. I need better handling when checks fail.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Lucky:** A list of edge cases and which EngineerKit topic to read next.\n\n**Marti:** What would you like to share next time?\n\n**Lucky:** Updated script plus notes on a design tradeoff I made.\n\n**Marti:** Your journey shows eight completed library items \u2014 strong pace for an SRE transition.\n\n**Marti:** How do you want to wrap up today?\n\n**Lucky:** Homework on edge cases and finishing the current Now resource.",
-    "summary": "## Summary\nLucky shared progress on deployment automation and one in-progress EngineerKit resource. Discussion covered system design instincts for SRE work.\n\n## Next steps\n- Refine deployment check script with edge cases\n- Continue current Now resource on system design",
-    "tldr": "Lucky reviewed his automation script draft and Marti recommended pairing it with system-design reading from his current journey resource.",
+    "transcript": "",
+    "summary": "## Summary\nMentorship session notes captured from transcript.",
+    "tldr": "Mentorship session between mentor and mentee.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-10T15:00:00.000Z"
+        "$date": "2026-05-12T09:50:00.000Z"
       },
       "correlation_id": "seed-encounter-04"
     },
@@ -294,7 +266,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-10T16:00:00.000Z"
+        "$date": "2026-05-12T09:50:00.000Z"
       },
       "correlation_id": "save-encounter-04"
     }
@@ -307,17 +279,17 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000004"
+      "$oid": "A00000000000000000000005"
     },
     "date": {
-      "$date": "2025-03-05T15:00:00.000Z"
+      "$date": "2026-05-28T10:33:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -345,23 +317,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe and Paste Updates",
         "checked": true
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Mary, great to meet you properly. What do you want to focus on today?\n\n**Mary:** I'm pivoting from music education to IT and need a realistic learning plan.\n\n**Marti:** How would you describe what's happening now?\n\n**Mary:** I'm motivated but overwhelmed by how much there is to learn.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Mary:** Clarity on which EngineerKit modules matter most for entry-level roles.\n\n**Marti:** What would you like to share next time?\n\n**Mary:** Completed modules and a draft story about my career change.\n\n**Marti:** Teaching and choir direction gave you communication skills employers want.\n\n**Marti:** How are your discoveries making a difference?\n\n**Mary:** I'm seeing parallels between lesson planning and breaking down technical topics.",
-    "summary": "## Summary\nMary discussed her career pivot from music education to IT. Marti helped connect transferable skills to EngineerKit path progress.\n\n## Next steps\n- Complete next two library modules\n- Document skills translation for portfolio narrative",
-    "tldr": "Mary mapped her music-education background to IT career goals and chose foundational computing modules on her EngineerKit journey.",
+    "transcript": "**Marti:** Yeah. Okay. So, it's only been a week, but I haven't seen you at all in a week. How's things going?\n\n**Luke:** uh it's okay we we've all kind of been doing our our normal procedures you know we meet up like normal in the morning it's kind of talk back and forth discuss plans and we're trying to get a feel for uh lucky um trying to see how that dynamics going uh and then but other than that it's just been everybody kind of rearing off doing their tutorial stuff and um it's been okay like i had uh like i i guess you saw my text and where i got good luck with my phone and i got my phone back so that's back in and that that was a positive um but other than that it's just kind of been the same\n\n**Marti:** Yeah.\n\n**Luke:** um i do have some some little highlights i was wanting to share and see if you could get some some feedback from you um okay um yesterday um me and mary was talking about her linkedin and\n\n**Marti:** Absolutely. Interested in anything you want to talk about. This is your hour.\n\n**Luke:** her new uh professional photo and so i thought man i'd like to do something like that because my photo was just uh you know it was like an oxford button down and and when i saw the other uh pictures and photos i thought man everybody's in suit and ties and everybody looks more professional so i went and uh i was wanting to see if you wouldn't mind jumping on and just looking at that Of course, the photo is not really the main thing I want to ask you about. But like, you know, with this Python course, I've been adding those certificates to the LinkedIn.\n\n**Marti:** Right.\n\n**Luke:** Right. And I've got all these small certificates. And I was going to ask you, do you think it's better to do like one major certification like on that Python? or would you do all those individuals\n\n**Marti:** I did all the individuals, but I did them on Discord, not on LinkedIn. Or did I? Let me go look at my profile. Hang on a second.\n\n_[Transcript truncated for schema limit.]_\n\n**Luke:** no I guess not I just need to do a lot of reviewing of this and I'll jump in\n\n**Marti:** The engineer kit stuff is intended to be kind of after hours, personal development stuff. So I don't expect you to move through it fastly.\n\n**Luke:** Okay. Okay.\n\n**Marti:** We've got that history of craftsmanship, which is probably seven links. And if you read each of those seven links between now and next week, you will have done wonderfully. If you don't, if you don't, no sweat. Our coaching, this development\n\n**Luke:** Okay.\n\n**Marti:** stuff is kind of for you. It's not for me. It's not for Mentor Hub. It's not for any of that. It's just your personal career development stuff. And you're working really hard on Mentor Hub.\n\n**Luke:** Okay.\n\n**Marti:** This is second priority, not top priority. And I'll never say anything about, oh, you didn't do that?\n\n**Luke:** Okay, got\n\n**Marti:** No, no. The other thing, this is your curriculum, so make of it what you will.\n\n**Luke:** Yeah.\n\n**Marti:** One thing that's going to be good for you to remember is this Mentor Hub session is one of the events that the Mentor Hub platform needs to support, this mentoring session of when I'm meeting with you.\n\n**Luke:** Yeah.\n\n**Marti:** The curriculum of resources that you can use to learn things and the history of what you've learned and the notes you've taken, your curriculum document, that's another thing that we want to replace with the MentorHub platform. You won't have a Google Doc for curriculum anymore, right? So that is one of the things that's for MentorHub is learning what the mentee experience is and how we can create a platform that improves that experience.\n\n**Luke:** yeah\n\n**Marti:** alright well I'm going to jump over to the Mentor Hub voice channel here in just a second\n\n**Luke:** okay\n\n**Marti:** but looking good and I'll talk to you over lunch if not before\n\n**Luke:** that worked okay thanks I appreciate your help\n\n**Marti:** alright peace we'll talk to you soon\n\n**Luke:** okay",
+    "summary": "## Summary\nReviewed LinkedIn profile updates, discuss Python and SRE plans, touch on AI\u2011edited photos, typing practice, podcasts, and the differences between Agile and Software Craftsmanship manifestos",
+    "tldr": "Reviewed LinkedIn profile updates, discuss Python and SRE plans, touch on AI\u2011edited photos, typing practice, podcasts, and the differences between Agile and Software Craftsmanship manifestos",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-03-05T15:00:00.000Z"
+        "$date": "2026-05-28T10:33:00.000Z"
       },
       "correlation_id": "seed-encounter-05"
     },
@@ -369,7 +337,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-03-05T16:00:00.000Z"
+        "$date": "2026-05-28T10:33:00.000Z"
       },
       "correlation_id": "save-encounter-05"
     }
@@ -382,17 +350,17 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000004"
+      "$oid": "A00000000000000000000002"
     },
     "date": {
-      "$date": "2025-06-05T15:00:00.000Z"
+      "$date": "2026-06-03T09:22:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -420,23 +388,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
-        "checked": false
-      },
-      {
-        "step": "Summarize Transcript With AI",
-        "checked": false
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** What do you want to focus on today?\n\n**Mary:** Interview prep \u2014 how to talk about my pivot without sounding apologetic.\n\n**Marti:** How would you describe what's happening now?\n\n**Mary:** Ten completed journey items gives me confidence, but interviews still feel daunting.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Mary:** A two-minute pitch connecting music teaching to technical collaboration.\n\n**Marti:** What would you like to share next time?\n\n**Mary:** Practiced pitch and feedback from a mock question.\n\n**Marti:** Your EngineerKit progress is proof you can learn complex material systematically.\n\n**Marti:** How do you want to wrap up today?\n\n**Mary:** Homework to record myself answering why IT, why now.",
-    "summary": "## Summary\nMary has ten EngineerKit library completions and two in-progress resources. Session focused on portfolio narrative and interview prep.\n\n## Next steps\n- Refine career-change story for applications\n- Finish current Now resources",
-    "tldr": "Mary reported ten completed journey resources and Marti coached her on interview storytelling for her IT career pivot.",
+    "transcript": "",
+    "summary": "## Summary\nNo show",
+    "tldr": "No show",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-05T15:00:00.000Z"
+        "$date": "2026-06-03T09:22:00.000Z"
       },
       "correlation_id": "seed-encounter-06"
     },
@@ -444,7 +408,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-05T16:00:00.000Z"
+        "$date": "2026-06-03T09:22:00.000Z"
       },
       "correlation_id": "save-encounter-06"
     }
@@ -460,14 +424,14 @@
       "$oid": "A00000000000000000000005"
     },
     "date": {
-      "$date": "2025-04-15T15:00:00.000Z"
+      "$date": "2026-06-04T10:02:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -495,23 +459,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe and Paste Updates",
         "checked": true
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Luther, always good to catch up. What do you want to focus on today?\n\n**Luther:** I've been answering more of my own questions lately, but I value these check-ins.\n\n**Marti:** How would you describe what's happening now?\n\n**Luther:** Twelve library completions \u2014 I'm in maintenance mode more than sprint mode.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Luther:** Decide if I want a deep dive or keep broad exploration.\n\n**Marti:** What would you like to share next time?\n\n**Luther:** A reflection on what I learned this quarter.\n\n**Marti:** How are your discoveries making a difference?\n\n**Luther:** I'm mentoring juniors on my team using patterns we discussed years ago.\n\n**Marti:** That's the best sign this work is sticking.",
-    "summary": "## Summary\nLonger-tenure mentee session. Luther discussed sustaining momentum after two years of mentorship and continued EngineerKit depth.\n\n## Next steps\n- Pick one advanced topic for deep dive\n- Maintain monthly touchpoint rhythm",
-    "tldr": "Luther reviewed long-term mentorship goals and advanced EngineerKit modules while staying engaged through monthly check-ins.",
+    "transcript": "**Marti:** All right. What would you like to focus on today, Luke?\n\n**Luke:** well you got me to thinking about something yesterday afternoon you know when we were talking about some of the changes that were going to be needed and that kind of thing and so i was sitting there trying to soak in everything and i thought man when you were talking about the recorded conversations and uh i thought i could really use something like that and where i could go back and maybe listen so like i know the team's been using voice to text and i have not i've i've actually just been typing mine still and uh i i need to see i guess how to do that just in case that i ever want to run into so voice to text i was wondering if you could help me with that\n\n**Marti:** Voice.\n\n**Luke:** and i'm sure it's just a couple of key clicks right\n\n**Marti:** I'm not a Windows user. On the Mac, I push a button to start it, and I push a button to stop it. On Windows, it's called voice typing.\n\n**Luke:** Okay.\n\n**Marti:** Let me get you the official Windows support page. Use voice typing to talk instead of type. That's the one I was looking for. There's the information about voice typing on Windows.\n\n**Luke:** Okay. Okay, so that's perfect. I can go in there and pull that.\n\n**Luke:** So I know you were saying that you use Whisper for Discord. Is that a complicated thing to do or is that something that would benefit, you think, for me?\n\n**Marti:** Oh, hang on just a second. Now, about the Whisper app.\n\n**Luke:** Uh-huh.\n\n**Marti:** It does a great job of recording app audio, microphone audio. There's a lot of different ways you can use it to record voice. And then it transcribes that using an AI model.\n\n**Luke:** OK.\n\n**Marti:** And my Mac has lots of juice.\n\n**Luke:** Yeah. Yeah.\n\n**Marti:** And so I can transcribe a one-hour audio in about five or six minutes.\n\n**Luke:** Okay.\n\n**Marti:** I doubt your PC will even run the transcription\n\n**Luke:** Okay. Well, that's about right.\n\n_[Transcript truncated for schema limit.]_\n\n**Luke:** Yeah. Didn't the average used to be seven years and you would change to another? It was something like that. I don't know what it is.\n\n**Marti:** I think I averaged like three or four years for a long time.\n\n**Luke:** Really? Yeah. Wow.\n\n**Marti:** And, you know, the other thing is if it doesn't feel right, then you can move on. So I had a couple of jobs where I was there like less than four months.\n\n**Luke:** Yeah.\n\n**Marti:** And I was like, I can't work with these people or I don't want to build what they're building.\n\n**Luke:** Oh, wow.\n\n**Luke:** Yeah.\n\n**Marti:** And so once you've got, you know, a few years under your belt, it becomes much easier to move around.\n\n**Luke:** yeah right all right well i appreciate it that's awesome i've enjoyed it i this is one of those\n\n**Marti:** All right.\n\n**Luke:** times where i wish i had that recorded you know that conversation that'd be great i appreciate that\n\n**Marti:** I'll give you a copy of the transcript. There is a Discord bot. I'm trying to remember what it's called, Alan or something like that,\n\n**Luke:** yeah\n\n**Marti:** that you can use to record a Discord channel.\n\n**Luke:** Oh, okay.\n\n**Marti:** And you invite your Discord bot, and they record, and then when they're done, you can download the audio files from them.\n\n**Luke:** Okay. Oh.\n\n**Marti:** And then you can upload those audio files to the Spark and use the Whisper LLM to transcribe them.\n\n**Luke:** Yeah.\n\n**Marti:** So there's lots of options here on how we do this. And I think it would be really, and I think probably not in the MVP, but in a future release of Mentor Hub, I see Zero Claw being able to record audio in a voice message and transcribe it and put it in our database, right?\n\n**Luke:** Yeah, that'd be cool.\n\n**Marti:** Okay.\n\n**Luke:** Yeah.\n\n**Marti:** Oh yeah, we'll get there.\n\n**Luke:** Yeah.\n\n**Marti:** All right, I'm going to go ahead. Let's see. I'm going to...",
+    "summary": "## Summary\nLuke asked Mike for practical ways to record and transcribe meetings so he can revisit them later. Mike pointed Luke to Windows\u202fVoice\u202fTyping, shared a link to Microsoft\u2019s support page, and explained how the Whisper AI model can be used to turn audio (e.g., from a Discord bot) into text\u2014either locally if the PC has enough GPU power or by uploading to their Spark server. They discussed pricing tiers for Whisper, the possibility of integrating voice\u2011to\u2011text into their Mentor\u202fHub product, and how to set up the recording workflow. The conversation then shifted to career\u2011related topics. Luke wanted insight into Mike\u2019s own journey and advice for a junior developer. Mike recounted his early exposure to computers through his father\u2019s IBM work, his diverse roles (troubleshooter at Candle and IBM, state\u2011government projects, consulting, and contractor positions), and highlighted that his hardest challenges were people\u2011related rather than technical. He emphasized the value of learning core fundamentals, building layered knowledge, and using AI tools to stay competitive. Mike advised Luke to take any first job, then gradually target \u201cperfect\u201d roles that match his interests, and to acquire niche skills (e.g., familiarity with a specific platform like IBM\u202fAIX) that give an edge. He also touched on work\u2011life balance, the impact of mental health on productivity, the importance of NPS metrics, and how large companies structure benefits and hiring pipelines.",
+    "tldr": "Luke wants a reliable way to record and transcribe conversations; Mike recommends Windows voice typing, Whisper (local or via Spark), and shares career lessons about building fundamentals, leveraging AI, and targeting niche skills.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-04-15T15:00:00.000Z"
+        "$date": "2026-06-04T10:02:00.000Z"
       },
       "correlation_id": "seed-encounter-07"
     },
@@ -519,7 +479,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-04-15T16:00:00.000Z"
+        "$date": "2026-06-04T10:02:00.000Z"
       },
       "correlation_id": "save-encounter-07"
     }
@@ -532,61 +492,53 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000005"
+      "$oid": "A00000000000000000000003"
     },
     "date": {
-      "$date": "2025-05-28T15:00:00.000Z"
+      "$date": "2026-06-08T09:33:00.000Z"
     },
     "plan_id": {
-      "$oid": "f00000000000000000000001"
+      "$oid": "f00000000000000000000002"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
-        "step": "What do you want to focus on today?",
+        "step": "Introduction - The Agile Learning Institute",
         "checked": true
       },
       {
-        "step": "How would you describe what's happening now?",
+        "step": "Introduction - Mentor / Mentee",
         "checked": true
       },
       {
-        "step": "During our time together, what would you like to accomplish?",
+        "step": "How many weeks are you commiting to?",
         "checked": true
       },
       {
-        "step": "What would you like to be able to share next time?",
+        "step": "What do you want to be able to say at the end of that time?",
         "checked": true
       },
       {
-        "step": "How are your discoveries making a difference?",
+        "step": "Introduce Mentee Journey interface.",
         "checked": true
       },
       {
-        "step": "How do you want to wrap up today?",
-        "checked": true
-      },
-      {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe, and Paste Updates",
         "checked": true
       }
     ],
-    "status": "archived",
-    "transcript": "**Marti:** What do you want to focus on today?\n\n**Luther:** Wrapping up this formal cycle \u2014 what's worth capturing before we go informal?\n\n**Marti:** How would you describe what's happening now?\n\n**Luther:** I've hit the goals we set when my journey was active. Time to archive and stay in touch.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Luther:** A clean summary for my records and yours.\n\n**Marti:** What would you like to share next time?\n\n**Luther:** Just life updates \u2014 no homework unless I ask.\n\n**Marti:** How are your discoveries making a difference?\n\n**Luther:** I still bounce ideas off you because it helps me think, not because I'm stuck.\n\n**Marti:** Perfect place to land. We'll archive this encounter and keep the friendship.",
-    "summary": "## Summary\nFinal archived encounter for Luther's active mentoring cycle. Reviewed accomplishments and agreed to shift to informal monthly conversations.\n\n## Outcome\n- Encounter archived after cycle completion\n- Luther journey also marked archived",
-    "tldr": "Luther and Marti archived this encounter record after closing out a completed mentoring cycle on advanced EngineerKit topics.",
+    "status": "active",
+    "transcript": "**Marti:** Hello, Lucky.\n\n**Lucky:** Hello there.\n\n**Marti:** Okay, so, finally, welcome Fulia Board. I know your onboarding has been a little bit haphazard. So this is your time with me as a mentor and a mentee. This is not anything to do with Mentor Hub. This is just our time together as a mentor and a mentee.\n\n**Lucky:** Okay. All right.\n\n**Marti:** As you go through these Mentor-Mentee sessions, be thinking about the Mentor Hub application and how it might improve your experience in these sessions and around this work. Let me go create you a curriculum document. real quick. Where is that? There it is.\n\n**Lucky:** Plan dot in D. I've been looking at it for about an hour now. It's very intricately built. I like the idea. Um, but we'll talk about that at some other time. We'll talk about that later.\n\n**Marti:** We'll talk about that after our meeting. That's what's coming up next.\n\n**Lucky:** Right.\n\n**Marti:** This is going to be Lucky Mignard Curriculum.\n\n**Lucky:** Yeah. Okay.\n\n**Marti:** Open that so we can share it.\n\n**Lucky:** oh with your big\n\n**Marti:** Air.\n\n**Lucky:** over there\n\n**Marti:** And you should have just gotten an email link to a Google Doc document.\n\n**Lucky:** Google Doc documents in Google documents\n\n**Marti:** in your email.\n\n**Lucky:** in my work email or my other email let me see\n\n**Marti:** I will always deal with your work email.\n\n**Lucky:** I just don't see it\n\n**Marti:** If you go to Google Docs, you should see it, if you just go to Google Docs.\n\n**Lucky:** uh okay i got you open agile curriculum open it off gotcha all right let's see here\n\n_[Transcript truncated for schema limit.]_\n\n**Marti:** That's okay. That's why we're looking at it is so you can look at it and try to understand it and ask me any questions about it.\n\n**Lucky:** This is basically the same thing as you showed me before in the other diagram except it has the AWS SES service. What did that SMTP stand for? I can't remember. I've seen that before somewhere.\n\n**Marti:** Simple mail transport protocol. It's an email gateway if you wanted to think of it that way. So go back to the local one.\n\n**Lucky:** The local diagram, right?\n\n**Marti:** the local SVG.\n\n**Lucky:** Right.\n\n**Marti:** So now down at the bottom, it says, what does it say that is?\n\n**Lucky:** That's mail hog, right? So that's what we'll use locally.\n\n**Marti:** Okay, so that's what we'll use locally when we're developing and testing locally.\n\n**Lucky:** Then we go to put on production and go to AWS.\n\n**Marti:** And you click back on the, yep, yep.\n\n**Lucky:** Gotcha.\n\n**Lucky:** Okay.\n\n**Marti:** When we deploy to AWS, instead of using MailHog, we use AWS SES. Notice on here we have Cognito instead of the Welcome page.\n\n**Lucky:** All right.\n\n**Marti:** Also notice on here that there's no runbook. And there's no front end for the MongoDB API configurator.\n\n**Lucky:** Thank you.\n\n**Marti:** And so all of those containers will be running inside of an Amazon ECS service. The database is not going to be run in a container anymore. It's going to be using the AWS DocumentDB service. We've added an AWS API gateway on the front end. The two VPC boxes represent virtual private clouds, and I'm not sure I've drawn the lines exactly right, but they capture the idea that you have a public cloud with access to the SPAs and a private cloud that prevents the outside world from getting directly to the APIs. The APIs have to go through a reverse proxy on the SPA.\n\n**Lucky:** Wow. It's actually pretty neat. Yes, just a little bit.\n\n**Marti:** Starting to make a little bit of sense? Okay. so I think we're good for the day I'm going to stop recording",
+    "summary": "## Summary\nMike welcomes Lucky to the mentorship, clarifies that this is a separate mentor\u2011mentee relationship from the Mentor\u202fHub project, and creates a curriculum document for Lucky. - He outlines the weekly meeting rhythm, the dual roadmaps (personal mentoring vs. Mentor\u202fHub work), and the first\u2011week task: read two short manifestos several times and think about their meaning. - Mike introduces the \u201cT\u2011shaped engineer\u201d concept\u2014broad, shallow knowledge across many areas plus deep expertise in one specialty\u2014and explains why specialization matters while still being able to communicate with other specialists. - He shares his own background (long IT career, many languages, SRE focus) and stresses lifelong learning and the goal of helping Lucky secure permanent employment. - The pair discusses how to use AI coding tools effectively, including prompting strategies and avoiding over\u2011automation. - Mike reviews a recent miscommunication about a Python training assignment and suggests a \u201cspeed\u2011run\u201d of the basics if Lucky already knows the material. - He then guides Lucky through technical setup: opening the Mentor\u202fHub repository in VS\u202fCode (Cursor), cleaning up duplicate folders, creating a workspace that includes all relevant repos, and saving it for future use. - Mike walks Lucky through the file\u2011system layout (source vs. dev folders), terminal commands (cd, ls, rm), and how to navigate the workspace UI (file \u2192 add folder, collapse/expand, save workspace). - Finally, they examine the architecture diagrams (local and AWS deployment) showing the various SPAs, APIs, Docker containers, MongoDB, Cognito, Stripe, SES, MailHog, and how they map to the codebase, ensuring Lucky understands the overall system layout. - The session ends with Mike confirming that the day\u2019s objectives are covered.",
+    "tldr": "Mike walks Lucky through the mentorship onboarding, explains the T\u2011shaped engineer model, assigns first\u2011week reading, discusses AI\u2011assisted coding, and helps set up the Mentor Hub code workspace and review the system architecture diagrams.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-05-28T15:00:00.000Z"
+        "$date": "2026-06-08T09:33:00.000Z"
       },
       "correlation_id": "seed-encounter-08"
     },
@@ -594,7 +546,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-05-28T16:00:00.000Z"
+        "$date": "2026-06-08T09:33:00.000Z"
       },
       "correlation_id": "save-encounter-08"
     }
@@ -607,17 +559,17 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000010"
+      "$oid": "A00000000000000000000004"
     },
     "date": {
-      "$date": "2025-06-02T15:00:00.000Z"
+      "$date": "2026-06-09T09:58:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -645,23 +597,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
+        "step": "Stop Recording, Transcribe and Paste Updates",
         "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
-        "checked": false
       }
     ],
     "status": "active",
-    "transcript": "**Marti:** Welcome, Riley. What do you want to focus on today?\n\n**Riley:** Getting oriented \u2014 I don't know what I don't know yet.\n\n**Marti:** How would you describe what's happening now?\n\n**Riley:** Excited but unsure how to prioritize the EngineerKit path.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Riley:** A simple plan for my first two weeks.\n\n**Marti:** What would you like to share next time?\n\n**Riley:** Notes from my first resources and blockers.\n\n**Marti:** How are your discoveries making a difference?\n\n**Riley:** Too early to say, but the path structure helps me feel less lost.\n\n**Marti:** How do you want to wrap up today?\n\n**Riley:** Homework on the first two modules Marti picked.",
-    "summary": "## Summary\nFirst structured encounter with Riley as a newer mentee. Established learning rhythm and initial resource focus.\n\n## Next steps\n- Complete first two assigned resources\n- Prepare questions for next weekly check-in",
-    "tldr": "Riley set goals for the first month of mentorship and started initial EngineerKit resources with Marti's guidance.",
+    "transcript": "**Marti:** Hello, Mary.\n\n**Mary:** morning again\n\n**Marti:** How are you?\n\n**Mary:** i'm here\n\n**Marti:** It must be chilly to have a coat on in Texas.\n\n**Mary:** yeah it's uh he's very particular um now the temperature there's it was like a little dispute\n\n**Mary:** last time i um not touched his thermostat and it was the winter time and he had frozen so i haven't seen this guy since january so i had to bring him up to speed on my diabetes and you know having to\n\n**Marti:** Yeah.\n\n**Mary:** inject myself and i had to check my sugar this morning it was uh 107 it's slowly spiking but i you know i'm not where i can eat i need to eat and i'm not drinking a lot of water i'm drinking more sugar\n\n**Marti:** Drink water. You can always drink water. You can't tell me you're somewhere you can't drink water. Okay. So, this is our mentor time. This is about you and your career. What would you like to focus on today?\n\n**Mary:** Can we go over what I was referring to\n\n**Mary:** about what I took notes about yesterday in Obsidian.\n\n**Marti:** Sure.\n\n**Mary:** Okay, so I'm going to share my screen. So I know I probably overthought it, but like I was saying, it was a moment.\n\n**Marti:** It's okay.\n\n**Mary:** okay so go to my obsidian photo and expand it so I'm go all the way to the top I take notes on everything okay so\n\n**Mary:** let's see did I\n\n**Marti:** Thank you.\n\n**Mary:** I'm trying to figure out I guess I didn't catch it all because it was it was something I put out you know what I think okay so I'm going to start from the beginning because\n\n**Marti:** Okay.\n\n**Mary:** Okay, so this is the form.\n\n**Marti:** This is the intake form, yep.\n\n**Mary:** Okay, so what I did was I took this, copied it to full screen, and I pasted it into cursor.\n\n**Marti:** You can probably, yeah. Yep.\n\n**Mary:** Okay, I'm like hot and cold. Okay, I put it into a cursor and I said, how would I put this inside of this?\n\n**Marti:** Right. Inside of the profile, right.\n\n**Mary:** Yes. But I think I couldn't copy it the correct way.\n\n_[Transcript truncated for schema limit.]_\n\n**Marti:** That's the only PO? They don't have any in the DFW area?\n\n**Mary:** and they give me information on the parole office um the officer name the address you know the location, I have to go to the one that was printed out on the paperwork coming from Tennessee.\n\n**Marti:** Okay. Well, definitely go. You've got to see your PO tomorrow regardless. Have you arranged for transportation to see your PO?\n\n**Mary:** Courtney said she was taking care of that.\n\n**Marti:** Okay. So check in with Courtney, make sure your I's are dotted and your T's are crossed because you don't want to be panicking.\n\n**Mary:** Okay. So call her.\n\n**Marti:** You don't, well, I would call the number about housing first, but I would definitely call her sometime today and say, I just want to make sure everything is set up for transportation.\n\n**Mary:** Okay.\n\n**Marti:** Who do I need to call? When do I need to call them? What do we need to do to arrange this?\n\n**Mary:** Yes\n\n**Marti:** I need to be out there at 11. It's going to take some amount of time. I'm going to need a ride back. So since that's tomorrow, let's make sure we connect with Courtney today and make sure that we have all the details we need.\n\n**Mary:** Okay\n\n**Marti:** All right. So housing first, make those phone calls. Arranging for transportation with Courtney. Then we've got our interview coming up in an hour with Marty. And then you can spend the afternoon working on the schemas.\n\n**Mary:** Okay. Okay. okay okay\n\n**Marti:** And then after five, my time, four, your time this evening, after our stand-up, we can go through how do you commit your changes and push them up so that I can pull them down and review them.\n\n**Mary:** okay\n\n**Marti:** And then I can be taking a look at your stuff as you work on it.\n\n**Mary:** Okay.\n\n**Marti:** All right. So I'll let you go to go make these phone calls, and I'll see you in an hour at the \u2013 a little under an hour for the Marty interview.\n\n**Mary:** Yeah. All right.\n\n**Marti:** alright peace\n\n**Mary:** ",
+    "summary": "## Summary\n**Summary:** Mike and Mary held a mentoring session that blended technical guidance with personal check\u2011ins. After a brief health update (Mary\u2019s blood\u2011sugar and diabetes management), Mike steered the conversation toward working on Mary\u2019s Obsidian notes and the Cursor schema editor. They walked through adding and editing properties (e.g., email, state program), using enums, creating polymorphic lists, handling data types, rearranging fields, and managing versions, indexes, and test data. Mike emphasized manual schema construction for profile, resource, and learning\u2011path dictionaries before relying on Cursor automation. They also discussed workflow tips (undo, commits, source\u2011control) and the importance of understanding UI controls. Toward the end, the dialogue shifted to Mary\u2019s personal challenges\u2014housing, parole\u2011office logistics, a pending transfer to Tennessee, disability benefits, and transportation\u2014where Mike offered support, outlined next steps (call Courtney for housing, confirm PO meeting, finish schema work), and encouraged continued mentorship.",
+    "tldr": "Mike guided Mary through building and refining data schemas in Cursor while also supporting her health, housing, and parole\u2011office logistics.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-02T15:00:00.000Z"
+        "$date": "2026-06-09T09:58:00.000Z"
       },
       "correlation_id": "seed-encounter-09"
     },
@@ -669,7 +617,7 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2025-06-02T16:00:00.000Z"
+        "$date": "2026-06-09T09:58:00.000Z"
       },
       "correlation_id": "save-encounter-09"
     }
@@ -682,17 +630,17 @@
       "$oid": "A00000000000000000000006"
     },
     "mentee_id": {
-      "$oid": "A00000000000000000000015"
+      "$oid": "A00000000000000000000005"
     },
     "date": {
-      "$date": "2024-06-15T15:00:00.000Z"
+      "$date": "2026-06-11T09:46:00.000Z"
     },
     "plan_id": {
       "$oid": "f00000000000000000000001"
     },
     "agenda": [
       {
-        "step": "Start Session Recording in Whisper",
+        "step": "Start Whisper Recording",
         "checked": true
       },
       {
@@ -720,23 +668,19 @@
         "checked": true
       },
       {
-        "step": "Stop Recording and Transcribe",
-        "checked": true
-      },
-      {
-        "step": "Summarize Transcript With AI",
+        "step": "Stop Recording, Transcribe and Paste Updates",
         "checked": true
       }
     ],
-    "status": "archived",
-    "transcript": "**Marti:** Casey, thanks for making time. What do you want to focus on today?\n\n**Casey:** I need to be honest \u2014 I'm pausing mentorship for now.\n\n**Marti:** How would you describe what's happening now?\n\n**Casey:** Life got in the way and I haven't kept up with the journey.\n\n**Marti:** During our time together, what would you like to accomplish?\n\n**Casey:** A clean stop without guilt \u2014 and notes if I come back later.\n\n**Marti:** What would you like to share next time?\n\n**Casey:** Maybe nothing for a while, and that's okay.\n\n**Marti:** How are your discoveries making a difference?\n\n**Casey:** What I did finish still helps me at work, even if I didn't complete the path.\n\n**Marti:** We'll archive this and leave the door open.",
-    "summary": "## Summary\nHistorical encounter predating Casey's archived profile status. Session captured closure conversation and remaining homework items.\n\n## Outcome\n- Mentorship paused\n- Profile later archived by coordinator",
-    "tldr": "Casey paused active mentorship before profile archival; Marti documented last session outcomes and handoff notes.",
+    "status": "active",
+    "transcript": "**Luke:** Ice cream before bedtime and that was a mistake\n\n**Marti:** Oh, maybe a little, it's not gluten, it's lactose, yeah.\n\n**Luke:** it's the lactose yeah and you know it's weird because I guess as I'm getting\n\n**Marti:** A little lactose intolerance showing up.\n\n**Luke:** older that that is a problem the older I get the lactose and my spouse she was\n\n**Luke:** sitting there telling me about it and i was just like yeah i gotta come to reality it i can't be doing the stuff i used to do you know but anyway\n\n**Marti:** ice cream hasn't bothered me yet. Um, but the other week my neighbor made fresh chocolate chip cookies. And so I had a glass of milk and cookies and a glass of milk was not a good idea.\n\n**Luke:** oh right and that's a shame too because i love ice cream i love milk you know just all the goodies and it's a shame\n\n**Marti:** Yeah. Yep. I don't just drink milk very often, but I do cook with it a lot. I make pepper gravy or waffles or stuff like that that uses milk.\n\n**Luke:** oh okay\n\n**Marti:** So I usually have some milk around the house.\n\n**Luke:** are you a cheese guy\n\n**Marti:** Am I a cheese guy?\n\n**Luke:** Yeah.\n\n**Marti:** Yeah. I have cut way back on my cheeses just because they're not really that good for you.\n\n**Luke:** Yeah.\n\n**Marti:** But it's not because of the lactose thing.\n\n**Luke:** I love them.\n\n**Marti:** I haven't had lactose problems. And I cook with cheese. Personally, I make a really banging mac and cheese with about three different types of cheese in it.\n\n**Luke:** Oh, nice. Yeah.\n\n**Marti:** So I make Italian mac and cheese.\n\n**Luke:** Yeah. I got you. I don't know that I have tried that in the in the oven that I mean, it's more like a casserole type.\n\n**Marti:** It goes in the oven. If you make mac and cheese on the stove, you did it wrong. It's mac and cheese that will have a crispy crust on the top of it.\n\n**Luke:** Kind of.\n\n**Marti:** So I guess casserole type.\n\n**Luke:** Yeah. Yeah.\n\n_[Transcript truncated for schema limit.]_\n\n**Luke:** Yeah.\n\n**Marti:** But the state of North Carolina has a 10 years and out retirement plan.\n\n**Luke:** Oh, okay.\n\n**Marti:** And I would have been eligible for full retirement 30 years ago.\n\n**Luke:** Yeah. Oh, man. Yeah. yeah and I guess it all depends on what what is important to the individual you know as far as that as far as benefits and and you were looking long-term so\n\n**Marti:** Yeah.\n\n**Luke:** yeah that\n\n**Marti:** And most of those employers I talked about provide pretty decent benefits for IT folks.\n\n**Luke:** oh okay\n\n**Marti:** Small software shops, definitely. You go to one of those small software shops, 10, 15, 20 people, everybody has good health care, good insurance, good dental coverage, paid vacations.\n\n**Luke:** I've never even thought about that yeah\n\n**Marti:** Yeah, all of those things. If you're at an enterprise, really solid coverage. If you're at a startup, it's kind of 50-50. If they've got an angel investor, then yeah, you're probably going to have insurance and paid vacation and paid sick leave and all that stuff.\n\n**Luke:** yeah right right well Mike I appreciate you talking I always enjoy our conversations even though\n\n**Luke:** sometimes we're we're a little off of our topic sometimes but I enjoy talking with you it's uh I like listening to your stories and your insight because you've got so much experience and life experience. So I appreciate that, even though it might. I don't know if this is something that is acceptable in our mentor talks.\n\n**Marti:** It's all about what you want, so it's absolutely acceptable.\n\n**Luke:** OK. OK. Awesome. Well, I appreciate the talk. so yeah\n\n**Marti:** Yeah, no problem. Anything else you wanted to hit in our last few minutes?\n\n**Luke:** no everything I think yeah I jotted down\n\n**Luke:** some stuff last night but we've really covered a lot of ground so I appreciate that yeah\n\n**Marti:** All right. Well, let me see. Let me stop this recording and",
+    "summary": "## Summary\n**Summary:** Luke and Mike started by chatting about lactose intolerance and food cravings, then moved to cooking tips and mac\u2011and\u2011cheese recipes. The conversation shifted to professional advice: Mike recommended posting story\u2011focused LinkedIn updates that link to a GitHub\u2011hosted portfolio rather than just showcasing projects, and he explained how to manage technical debt from dependencies. They discussed gaming development paths, highlighting JavaScript frameworks like Phaser for casual web games and Unity for full\u2011scale 3D titles, and suggested Luke try both. The dialogue then covered AI\u2019s role in software and creative work\u2014how developers use AI to speed up coding, while graphic designers may or may not adopt it, and the broader industry impact on art, music, and job security. Mike contrasted web\u2011app design (short, task\u2011focused interactions) with website design (long\u2011form engagement) and stressed the importance of aligning intent with UX. They examined ageism and salary expectations in hiring, the varying employment models (large enterprises, consulting firms, small custom shops, startups), and the value of senior roles like solution architects. Throughout, they exchanged personal anecdotes and reaffirmed the mentorship relationship.",
+    "tldr": "Mike gave Luke practical advice on LinkedIn/GitHub portfolios, gaming career routes, AI as a tool, and navigating different software\u2011employment models while balancing personal interests and industry realities.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2024-06-15T15:00:00.000Z"
+        "$date": "2026-06-11T09:46:00.000Z"
       },
       "correlation_id": "seed-encounter-10"
     },
@@ -744,9 +688,364 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2024-06-15T16:00:00.000Z"
+        "$date": "2026-06-11T09:46:00.000Z"
       },
       "correlation_id": "save-encounter-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000011"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "date": {
+      "$date": "2026-06-15T09:58:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Let's see. What would you like to focus on today?\n\n**Lucky:** I want to understand how this API... I did the API key thing with that movie database thing that I made.\n\n**Lucky:** This is going to be separate API connections, correct? Because that's what it's called, mold. What is it? We've got to work for it anyway.\n\n**Marti:** Okay. repo. One API will support one SPA. So are there multiple APIs? Yes. Does a web app use multiple\n\n**Lucky:** Right? Okay. Right.\n\n**Marti:** APIs? No. No.\n\n**Lucky:** Okay. you\n\n**Marti:** That is one of the things we really try to keep very one-to-one. One SPA, one front-end, one API, one back-end. And then there are some rules we follow in the database to keep this database segregated along the same lines.\n\n**Lucky:** but we do that to make it easier if something breaks we know what section it broke in and we to go to that particular section instead of looking at everything all at once is that why\n\n**Lucky:** it's connected the white white design that way to easier fix\n\n**Marti:** So a microservice architecture has a lot of different advantages. And probably in my mind, some of the most specific advantages have to do with scalability and maintainability. So, if we had this entire system in one repository, a big monolithic repository, and we had one single page app and one gigantic API and one database configuration,\n\n**Lucky:** All right. Okay.\n\n**Marti:** and everybody was working in the same repository. How often do you think we'd run across things like merge conflicts?\n\n**Lucky:** Okay.\n\n**Marti:** By separating it out and creating clear boundaries that say, these are the clear boundaries around this thing, and one person can own this, now we've eliminated even the potential for merge conflicts.\n\n**Lucky:** Thank you.\n\n_[Transcript truncated for schema limit.]_\n\n**Lucky:** I got you, right.\n\n**Marti:** So I don't put a deadline on it. There's not a due date on any of those things. Now, for the work we're doing on Mentor Hub, yeah, there's a lot to learn and a lot to do.\n\n**Lucky:** you\n\n**Marti:** And I would say we need to focus today towards the end of the day on setting our goals for the week. And that's going to be your only deadline is the goals for the week.\n\n**Lucky:** so really my goals for the week starting out now is to continue and strike\n\n**Lucky:** look at the mongodb part of it download compass and get familiar with that again and get the aws installed by cli whatever as part of this week's goals\n\n**Marti:** Yeah, I think that's definitely part of this week's goals.\n\n**Lucky:** correct during this week i'll probably pick up 100 more but that's the life of coder\n\n**Marti:** Yep. Well, we'll try to pick up a limited number this afternoon when the whole team is together and we're setting goals for the team for the week.\n\n**Lucky:** Okay.\n\n**Marti:** And I think that we've got some opportunity to set some good goals. And I'm going to get together with the whole team after our call here this morning and go over a bunch of stuff for everybody.\n\n**Lucky:** some of your time back then how's that i bet you don't hear that from everybody\n\n**Marti:** That, well, it happens from time to time. It happens from time to time. So with regard to your curriculum, the only thing we have in the NowScope is for you to review the engineer kit content. Like I said, don't leave GitHub. When you're looking at that, look at the module pages and don't go any deeper than that.\n\n**Lucky:** good\n\n**Marti:** All right. Well, I appreciate the time back, and I will see you probably in about five to ten minutes in the Mentor Hub general channel.\n\n**Lucky:** yes sir yes sir thank you for your time\n\n**Marti:** All right. We'll talk to you soon. Peace.\n\n**Lucky:** peace",
+    "summary": "## Summary\n**Summary:** - Mike introduced the benefits of a one\u2011to\u2011one microservice setup (separate SPA, API, and database) for easier debugging, independent deployment, scalability, and clearer AI context. - He contrasted this with monolithic designs, noting the higher risk of merge conflicts, slower scaling, and tighter coupling. - The conversation covered practical tooling: Lucky should reinstall MongoDB Compass for DB inspection, install the AWS CLI and authenticate daily, and use CodeArtifact as the proxy for all npm/pip dependencies, especially the shared \u201cAPI utils\u201d package. - Mike clarified how CodeArtifact version\u2011locks libraries, protects against external registry outages, and requires a one\u2011time daily AWS login. - They reviewed the mentor\u2011mentee workflow, emphasizing that Lucky\u2019s curriculum is a learning path (modules \u2192 topics \u2192 resources) and that he should skim module overviews without diving too deep yet. - Lucky expressed feeling behind despite being on track; Mike reassured him that there are no hard deadlines except the weekly goal\u2011setting. - The agreed weekly objectives for Lucky are: revisit MongoDB (download Compass and explore), install and configure the AWS CLI, and become comfortable with the CodeArtifact workflow, while continuing to explore the Engineer Kit modules. - Mike will sync with the broader team later and keep the mentorship focused on Lucky\u2019s career growth and the Mentor Hub project.",
+    "tldr": "Mike explained to Lucky why a microservice architecture (one SPA per API) is preferred over a monolith, walked through the tools they need (MongoDB Compass, AWS CLI, CodeArtifact), and helped set concrete weekly goals for Lucky\u2019s learning and Mentor Hu...",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-15T09:58:00.000Z"
+      },
+      "correlation_id": "seed-encounter-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-15T09:58:00.000Z"
+      },
+      "correlation_id": "save-encounter-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000012"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "date": {
+      "$date": "2026-06-16T10:08:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Mary:** hello I guess I'm in the wrong oh I'm in right here okay oh you was in a direct\n\n**Marti:** Hey, Mary. No, you're in the right channel.\n\n**Mary:** message call okay I was over there in your channel in the Institute channel\n\n**Marti:** Yeah. That was probably the right place. I just opened a DM with you. My bad, you were in the right place.\n\n**Mary:** Okay. How are you doing this morning?\n\n**Marti:** Oh, so. I am tired and I shouldn't be as tired as I am but yesterday was a long day\n\n**Mary:** It was.\n\n**Marti:** so what would you like to focus on today?\n\n**Mary:** I would like, I know I've missed that on a few days of where we are supposed to have our one-on-one with about the data, the test data.\n\n**Marti:** ... Oh, that's okay. We did it live yesterday.\n\n**Mary:** But I feel like it's more you want to say, but I want to...\n\n**Mary:** I feel nervous sometimes in front of other people trying to figure things out.\n\n**Mary:** I don't want to feel stupid in front of everyone.\n\n**Marti:** Okay. Okay, so we probably need to work on that because Daniel doesn't want to feel stupid in front of everyone.\n\n**Mary:** this\n\n**Marti:** And Lucky doesn't want to feel stupid in front of everyone. And when we get together for a meeting and we're working through something and you don't quite understand it, but you don't want to feel stupid so you don't say anything, We all are stupid because we all didn't get a chance to learn from your question.\n\n**Mary:** Okay.\n\n**Marti:** Lucky recognized that this morning about some of the stuff we did yesterday. And he said, I was just saying, yes, I understood it because I had a general idea, but I didn't really understand it. And I did a disservice to you and everybody else by not asking questions. So we're all catching up. We're all learning new stuff.\n\n**Mary:** Yes, sir.\n\n**Marti:** None of us wants to look stupid. But at the end of the day, we all are ignorant of a lot of things. And the way we get better is by asking questions, not by hiding our ignorance.\n\n_[Transcript truncated for schema limit.]_\n\n**Marti:** Well, this is wonderful. Things are all starting to snap together.\n\n**Mary:** Yes, it's like the more you talk with us, it's like pieces are coming together in my head.\n\n**Mary:** And I'm like, what was this years ago?\n\n**Marti:** You're getting there. You're getting there. All right. Well, that's about all the time we have today. And we're going to meet up with the team on the group channel.\n\n**Mary:** Okay.\n\n**Marti:** I'm going to take a little break, about a half hour, and then I'm going to join everybody on that channel. And we'll pick up Lucky should have finished making his updates.\n\n**Mary:** okay\n\n**Marti:** And so we'll do the PR and merge the PR for Lucky.\n\n**Mary:** okay\n\n**Marti:** And then we'll switch over to Daniel. And Lucky and Daniel both now have worked with your database that has the test data in it.\n\n**Mary:** Okay.\n\n**Marti:** So that is another thing I would do in cursor is I would go look at those shipped tasks.\n\n**Mary:** Okay.\n\n**Marti:** And you'll find that when you read the tasks from about the top 30 lines down, they're all identical. So you'll read the first one all the way through. And the second one, you see the top is a little bit different. And then the bottom, oh, I've already read this. But read those ship tasks that we use to generate the test data. And I think that you'll see how I was using cursor to do the test data. And so that's the other piece from early yesterday that you should definitely pick up. But that's it for now.\n\n**Mary:** Okay.\n\n**Marti:** I'll see you in a half hour. Tell the gang I said hi.\n\n**Mary:** Okay.\n\n**Marti:** And I'm going to take a break. Alright, see you in a little bit.\n\n**Mary:** All right.",
+    "summary": "## Summary\nMary and Mike started by confirming they were in the right Slack channel and then moved into a one\u2011on\u2011one about the Mentor Hub project. Mary expressed nervousness about asking questions in front of the team, and Mike reassured her that asking questions is essential for learning and that no question is \u201cstupid.\u201d They reviewed the test\u2011data generation workflow, the MongoDB\u202fAPI tasks folder, and identified the \u201cjourney\u201d collection as the database counterpart to Mary\u2019s Google\u2011Doc curriculum. Mike walked Mary through the ERD, explaining the relationships between identity, profile, journey, resources, mentors, mentees, and the independent system tables (events, enumerators, versions). He clarified how the dashboard, subscription, and card collections will store user\u2011customized UI settings and payment info. Mary shared her personal background and how coding helped her after incarceration; Mike praised her progress and encouraged continued curiosity. They wrapped up with action items: Mary will explore the shipped tasks, review the journey schema, and spend a few focused hours each week on the curriculum, while Mike takes a short break before rejoining the team channel.",
+    "tldr": "Mike reassured Mary that asking questions is valued, clarified the Mentor Hub data model and curriculum migration, and set clear next steps for her to explore the MongoDB tasks and journey schema.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-16T10:08:00.000Z"
+      },
+      "correlation_id": "seed-encounter-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-16T10:08:00.000Z"
+      },
+      "correlation_id": "save-encounter-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000013"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "date": {
+      "$date": "2026-06-17T09:58:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "**Marti:** Okay. Okay.\n\n**Daniel:** It's been a while since we've had one of these.\n\n**Marti:** Yeah, I think we missed ours last week. It's maybe been a couple of weeks.\n\n**Daniel:** Yeah, we did.\n\n**Marti:** So, yeah.\n\n**Daniel:** But I've been busy, busy, busy.\n\n**Marti:** What would you like to focus on today?\n\n**Daniel:** Uh, I don't really.\n\n**Daniel:** You know me, I'm just kind of a leaf on the river type guy. I'm just, I go with the flow. So, but coating wise, yeah, I'm pretty, I'm getting, actually, I'm getting more comfortable.\n\n**Daniel:** I mean, I thought I wouldn't, but I am, but that's what scares me.\n\n**Marti:** Okay.\n\n**Daniel:** It's like, now you're getting comfortable. Now the snake's going to come out from under the grass and get my ankle.\n\n**Marti:** we're all here if something comes out to get you from the grass\n\n**Daniel:** Okay.\n\n**Marti:** we're all here to help make it work so\n\n**Daniel:** Yeah, it's a.\n\n**Marti:** so your curriculum document have you even had a look at it in the last two weeks\n\n**Daniel:** Honestly, probably not, because the first time that that first time that.\n\n**Marti:** okay\n\n**Daniel:** I think it was just last week was the first time I actually saw it. So it's an arson's the first time I saw it.\n\n**Marti:** yeah\n\n**Daniel:** So it's the only second time I looked at it.\n\n**Marti:** so\n\n**Daniel:** I don't even remember where it's at.\n\n**Marti:** let's take a look at that together so go to Google Drive\n\n**Daniel:** Google Drive.\n\n**Marti:** if you look at the nine dots\n\n**Daniel:** Hold on. I got to bring up Chrome.\n\n**Marti:** Chrome\n\n**Daniel:** Yeah. And I was in the middle of this in the podcast.\n\n**Marti:** So you want to be\n\n**Daniel:** Okay. There.\n\n**Marti:** logged into Google Drive using your work email.\n\n**Daniel:** oh so i got switch um wait a minute wait a minute drive nope i'm still signed in and white way no i just changed it\n\n**Marti:** That's okay. Right now where you're looking at the screen, you're looking at the drive for your personal email.\n\n_[Transcript truncated for schema limit.]_\n\n**Daniel:** and that's pretty much everything that's associated\n\n**Marti:** right\n\n**Daniel:** everything that's for the mentor though\n\n**Marti:** that's what the mentor is looking for information about the mentee and so in my thing\n\n**Daniel:** okay\n\n**Marti:** I have some information from their profile I have a place for me to take notes and I have a list of all the encounters I've had with that person and the short summary of the encounter notes So you'll see that in the screenshots that I shared. And so that should inspire you about what we want to build. And I think we'll probably have expand collapse sections in there,\n\n**Daniel:** Yeah.\n\n**Marti:** but I'll let you kind of draw up some pencil sketches of what you think that new page should look like. What's there now is just name and description and the last saved stuff. So it's just a starter page. And we're going to be thinking about, as Marty the mentor, he opened the dashboard page. He saw these were her mentees. He clicked on one. She sees the details about that mentee. What details does she want to see? And on my details page, I've got a button that I click to create a new encounter. So she definitely needs that way to create a new encounter, whether it's a button or whatever. But I think that would be a good place to be. I'm going to jump on with the whole team here in about 10, 12 minutes.\n\n**Daniel:** yeah\n\n**Marti:** And we're going to talk about what we want to do for this week, for the remainder of the week.\n\n**Daniel:** Yeah, I see.\n\n**Marti:** But that's kind of where I'm leaning is that's the next natural progression is to work on that detail page.\n\n**Daniel:** Okay.\n\n**Marti:** All right. I'll see you over there and see you over there at 10 or 15.\n\n**Daniel:** We can do that. I see. I can say 10 minutes. That way I can get one smoke in.\n\n**Marti:** let's call it at least 15 minutes\n\n**Daniel:** Okay.\n\n**Marti:** and I'll see you over there\n\n**Daniel:** All right. Have a good, see you in a bit, Mik",
+    "summary": "## Summary\nMike and Daniel met for their regular mentorship session. They spent time locating and navigating Daniel\u2019s curriculum document in Google Drive, reviewing the Agile Software Development Manifesto and the Software Craftsmanship Manifesto, and comparing their core values. Mike highlighted how both emphasize learning by doing and helping others, while noting the craftsmanship manifesto adds a focus on code quality and peer collaboration. They then moved on to the \u201cEngineer Kit\u201d resources, selecting \u201cHuman Experience\u201d and \u201cDesign Fundamentals\u201d as priority topics for Daniel to read and watch before the next meeting. The conversation shifted to practical matters: Daniel\u2019s personal progress (job, rent, driver\u2019s license), his difficulty logging into Discord, and the need for alternative career plans if the MentorHub internship doesn\u2019t result in paid work. Mike encouraged Daniel, affirmed his senior\u2011level craft, and set the next task: sketch a profile\u2011detail page for the MentorHub dashboard, with a plan to discuss it in their next call.",
+    "tldr": "Mike guided Daniel through curriculum navigation, manifesto comparison, resource selection, and next\u2011step design work while addressing personal logistics and career\u2011contingency planning.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-17T09:58:00.000Z"
+      },
+      "correlation_id": "seed-encounter-13"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-17T09:58:00.000Z"
+      },
+      "correlation_id": "save-encounter-13"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000014"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "date": {
+      "$date": "2026-06-18T10:05:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "",
+    "summary": "## Summary\nMentorship session notes captured from transcript.",
+    "tldr": "Mentorship session between mentor and mentee.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-18T10:05:00.000Z"
+      },
+      "correlation_id": "seed-encounter-14"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-18T10:05:00.000Z"
+      },
+      "correlation_id": "save-encounter-14"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000015"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "date": {
+      "$date": "2026-06-22T10:00:00.000Z"
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "active",
+    "transcript": "",
+    "summary": "## Summary\nMentorship session notes captured from transcript.",
+    "tldr": "Mentorship session between mentor and mentee.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-22T10:00:00.000Z"
+      },
+      "correlation_id": "seed-encounter-15"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-22T10:00:00.000Z"
+      },
+      "correlation_id": "save-encounter-15"
     }
   }
 ]

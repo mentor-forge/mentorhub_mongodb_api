@@ -26896,5 +26896,79 @@
       "correlation_id": "save-membership-batch",
       "from_ip": "127.0.0.1"
     }
+  },
+  {
+    "_id": {
+      "$oid": "B00000000000000000000724"
+    },
+    "name": "AgileLearningInstitute",
+    "description": "Agile Learning Institute \u2014 a 501(c)(3) educational nonprofit providing free mentorship and one-on-one coaching for software engineers.",
+    "url": "https://agile-learning.institute",
+    "type": "article",
+    "cost": "free",
+    "skill_level": "Apprentice",
+    "interests": [
+      "api"
+    ],
+    "technologies": [
+      "Other"
+    ],
+    "last_verified": {
+      "$date": "2025-06-01T14:30:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-onboarding-AgileLearningInstitute",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-onboarding-batch",
+      "from_ip": "127.0.0.1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "B00000000000000000000725"
+    },
+    "name": "AgileLearningInitiatives",
+    "description": "Agile Learning Institute initiatives \u2014 partnership programs and articles including Persevere Partnership, Building T-Shaped Engineers, and The Power of Agile Mentorship.",
+    "url": "https://agile-learning.institute/initiatives",
+    "type": "article",
+    "cost": "free",
+    "skill_level": "Apprentice",
+    "interests": [
+      "api"
+    ],
+    "technologies": [
+      "Other"
+    ],
+    "last_verified": {
+      "$date": "2025-06-01T14:30:00.000Z"
+    },
+    "status": "active",
+    "created": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "system",
+      "correlation_id": "seed-onboarding-AgileLearningInitiatives",
+      "from_ip": "127.0.0.1"
+    },
+    "saved": {
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "by_user": "mike",
+      "correlation_id": "save-onboarding-batch",
+      "from_ip": "127.0.0.1"
+    }
   }
 ]

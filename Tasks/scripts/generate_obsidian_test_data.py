@@ -6,7 +6,6 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
-from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
@@ -34,11 +33,11 @@ PLACEHOLDER_TOPICS = {"topic name", "segment name"}
 
 
 def oid(n: int) -> dict:
-    return {"$oid": f"B{n:024d}"}
+    return {"$oid": f"B{n:023d}"}
 
 
 def path_oid(n: int) -> dict:
-    return {"$oid": f"C{n:024d}"}
+    return {"$oid": f"C{n:023d}"}
 
 
 def date_iso() -> dict:
@@ -46,10 +45,11 @@ def date_iso() -> dict:
 
 
 def breadcrumb(prefix: str, user: str = "system") -> dict:
+    cid = re.sub(r"\s+", "", prefix)[:40]
     return {
         "at_time": date_iso(),
         "by_user": user,
-        "correlation_id": prefix,
+        "correlation_id": cid,
         "from_ip": "127.0.0.1",
     }
 
@@ -272,7 +272,7 @@ def generate_resources() -> tuple[list[dict], dict[str, str], dict[str, list[str
             skill = infer_skill(topic_title, title)
             name = word_name(title, used_names)
             desc = f"{title} — supports learning in {topic_title}."
-            oid_str = f"B{seq:024d}"
+            oid_str = f"B{seq:023d}"
             seq += 1
             url_to_oid[url] = oid_str
             topic_oids.append(oid_str)
@@ -352,12 +352,19 @@ def generate_resources() -> tuple[list[dict], dict[str, str], dict[str, list[str
     return resources, url_to_oid, topic_resources
 
 
+def fix_sentence(s: str, max_len: int = 255) -> str:
+    s = re.sub(r"[\t\n]+", " ", s or "").strip()
+    if len(s) > max_len:
+        s = s[: max_len - 3].rstrip() + "..."
+    return s
+
+
 def topic_entry(name: str, desc: str, oids: list[str]) -> dict:
     used: set[str] = set()
     wname = word_name(name, used)
     return {
         "name": wname,
-        "description": desc[:500] if desc else f"Topic covering {name}.",
+        "description": fix_sentence(desc or f"Topic covering {name}."),
         "resources": [{"$oid": o} for o in oids],
     }
 
@@ -434,7 +441,7 @@ def append_membership(resources: list[dict], start_seq: int, specs: list[dict]) 
         if existing:
             name_to_oid[spec["name"]] = existing["_id"]["$oid"]
             continue
-        oid_str = f"B{seq:024d}"
+        oid_str = f"B{seq:023d}"
         seq += 1
         doc = {
             "_id": {"$oid": oid_str},

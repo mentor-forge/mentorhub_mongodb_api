@@ -36,6 +36,10 @@ root:
         name: completed
         required: false
         type: date-time
+      - description: The count of times the link has been followed
+        name: used
+        required: false
+        type: count
       required: false
       type: object
     name: library
@@ -62,33 +66,52 @@ root:
       - description: The count of times the link was followed
         name: used
         required: false
-        type: index
+        type: count
       required: false
       type: object
     name: now
     required: false
     type: array
-  - description: Resource topics that we think the person will work on next
+  - description: Resources Modules that we think the Mentee will work on next
     items:
       additional_properties: false
       description: Array item
       name: item
       properties:
-      - description: The Topic Name
+      - description: The Module Name
         name: name
         required: false
         type: word
-      - description: A Description of the Topic
+      - description: A Description of the Module
         name: description
         required: false
-        type: markdown
-      - description: Resources associated with this topic
+        type: sentence
+      - description: The Topics of this Module
         items:
+          additional_properties: false
           description: Array item
           name: item
+          properties:
+          - description: The Topic Name
+            name: name
+            required: false
+            type: word
+          - description: A Description of the Topic
+            name: description
+            required: false
+            type: sentence
+          - description: The Resources _ID's for this Topic
+            items:
+              description: Array item
+              name: item
+              required: false
+              type: identifier
+            name: resources
+            required: false
+            type: array
           required: false
-          type: identifier
-        name: resources
+          type: object
+        name: topics
         required: false
         type: array
       required: false
@@ -96,7 +119,7 @@ root:
     name: next
     required: false
     type: array
-  - description: The plan _id's of plans that they might do someday
+  - description: The path _id's of paths that a Mentee might work on someday
     items:
       description: Array item
       name: item

@@ -40,7 +40,7 @@ Share the task file on branch feature/event-test-data-tasks for review.
 Do not orchestrate or implement until I confirm with you.
 ```
 
-**PR for task review:** _(link after push)_
+**PR for task review:** https://github.com/mentor-forge/mentorhub_mongodb_api/pull/13
 
 I've **not** run "Orchestrate all pending tasks" yet — waiting for your OK on the task definition first.
 

@@ -119,7 +119,7 @@ root:
     name: next
     required: false
     type: array
-  - description: The plan _id's of plans that a Mentee might do someday
+  - description: The path _id's of paths that a Mentee might work on someday
     items:
       description: Array item
       name: item

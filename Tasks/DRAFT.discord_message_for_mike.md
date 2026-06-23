@@ -1,14 +1,23 @@
-# Draft Discord message for Mike (review before executing tasks)
-
-**Copy/paste to Discord:**
+# Discord message for Mike — copy/paste below the line
 
 ---
 
-Hi Mike — I'm following the Build-a-Feature workflow for **Event test data** (next item in `mentorhub/Specifications/features.md` Data features, after Journey T115–T118).
+Hi Mike,
 
-**Feature branch:** `feature/event-test-data-tasks` on `mentorhub_mongodb_api`
+I'm working through the **Build-a-Feature** workflow for the next **Data** item in `Specifications/features.md`:
 
-**Cursor prompt I used to draft the task** (please review before I run orchestration):
+**Event test data** — *"Create a series of events related to resource aggregation, driven by journey test data"* (depends on Journey T115–T118, which is shipped).
+
+**Branch:** `feature/event-test-data-tasks` on `mentorhub_mongodb_api`  
+**PR (task review only — no test data generated yet):** https://github.com/mentor-forge/mentorhub_mongodb_api/pull/13
+
+### What I need from you
+
+Please review the **Cursor prompt** below and the task file **`Tasks/PENDING.T119.generate_event_test_data.md`** on that branch **before** I run orchestration.
+
+I have **not** run *"Orchestrate all pending tasks"* yet.
+
+### Cursor prompt (for your review)
 
 ```
 Review @mentorhub/DeveloperEdition/standards/data_standards.md,
@@ -19,29 +28,20 @@ Review @mentorhub/DeveloperEdition/standards/data_standards.md,
 @mentorhub_mongodb_api/configurator/enumerators/enumerations.0.yaml,
 @mentorhub_mongodb_api/configurator/test_data/Journey.0.1.0.0.json,
 @mentorhub_mongodb_api/Tasks/SHIPPED.T118.generate_mentee_journey_test_data.md,
-and create one PENDING task file following our Tasks conventions:
+and create PENDING.T119.generate_event_test_data.md following our Tasks conventions.
 
-PENDING.T119.generate_event_test_data.md
-
-Goal: generate Event test data driven by Journey progress (library/now/next),
-related to resource engagement for aggregation downstream.
-
-Requirements:
-- Target Event.0.1.0.0.json (currently empty)
-- Use event_types enum; ensure every type appears at least once where realistic
-- Focus on started, completed, advanced, link, and encounter events tied to
-  mentee profiles and EngineerKit resources from Journey test data
-- Include a few login/logout/arrived events for realism
-- EJSON encoding ($oid, $date, breadcrumbs)
-- Do NOT execute the task yet — task definition only
-- Reference T118 mentee journeys and Profile ids
-
-Share the task file on branch feature/event-test-data-tasks for review.
-Do not orchestrate or implement until I confirm with you.
+Goal: Event test data driven by Journey library/now/next progress.
+Target: Event.0.1.0.0.json. EJSON. event_types enum coverage.
+Task definition only — do not execute until I confirm with you.
 ```
 
-**PR for task review:** https://github.com/mentor-forge/mentorhub_mongodb_api/pull/13
+(Full prompt also in `Tasks/DRAFT.cursor_prompt_T119.md` on the branch.)
 
-I've **not** run "Orchestrate all pending tasks" yet — waiting for your OK on the task definition first.
+### After you OK it
+
+I'll run orchestration, test with `make container` / configure database, then open an implementation PR.
+
+Thanks,  
+Mary
 
 ---

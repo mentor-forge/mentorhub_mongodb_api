@@ -92,7 +92,7 @@ Generated **312** EJSON Event documents in `configurator/test_data/Event.0.1.0.0
 - Added one `note` event per mentee tied to their latest library completion.
 - Added **15** `encounter` events aligned to `Encounter.0.1.0.0.json` dates and mentee profiles.
 - Added auth/lifecycle events (`login`, `logout`, `arrived`, `fail`) for enum coverage.
-- Assigned deterministic `_id` values `F00000000000000000000001` through `F00000000000000000000312` sorted by timestamp.
+- Assigned deterministic `_id` values `F00000000000000000000001` through `F00000000000000000000312` (19-char prefix + 5-digit serial, 24-char hex ObjectIds) sorted by timestamp.
 - Event density scales with journey progress (luther/mary highest, daniel/riley lower).
 
 **Event type counts**
@@ -113,6 +113,6 @@ Generated **312** EJSON Event documents in `configurator/test_data/Event.0.1.0.0
 **Testing results**
 
 - `POST /api/configurations/` → SUCCESS (with full test data including Events).
-- `DELETE /api/database/` → FAILURE in this session (configure still succeeded).
+- `CFG-05-Event.yaml` and `Event.0.1.0.0.json` load → SUCCESS after ObjectId fix (IDs 100+ were 25 chars; corrected to 24-char hex).
 - `make container` → SUCCESS.
 - Note: local dev compose exposes the configurator API on port **8385**.

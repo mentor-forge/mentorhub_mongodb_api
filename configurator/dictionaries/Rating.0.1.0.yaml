@@ -18,10 +18,9 @@ root:
     required: false
     type: identifier
   - description: The Resource Rating
-    enums: ratings
     name: rating
     required: false
-    type: enum
+    type: rating
   - description: Status of the document
     enums: default_status
     name: status
@@ -29,10 +28,6 @@ root:
     type: enum
   - description: The tracking breadcrumb for when the document was created.
     name: created
-    required: false
-    type: breadcrumb
-  - description: The tracking breadcrumb for when the document was last saved.
-    name: saved
     required: false
     type: breadcrumb
   required: false

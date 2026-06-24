@@ -1,18 +1,20 @@
+_locked: false
+description: A rating, given to a Resource upon completion. Required to mark a resource
+  complete
 file_name: Rating.yaml
-description: A rating of a resource.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
-      name: 1
-    options:
-      unique: true
-  - name: Last Saved
-    key:
-      saved.at_time: -1
+- _locked: false
+  add_indexes:
+  - key:
+      created.at_time: -1
+    name: Created
+    options: {}
+  - key:
+      resource_id: 1
+    name: Resource
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Rating.0.1.0.0.json
+  version: 0.1.0.0

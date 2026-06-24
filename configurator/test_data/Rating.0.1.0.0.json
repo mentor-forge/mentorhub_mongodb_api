@@ -1,1 +1,1850 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "G00000000000000000000001"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "rating": 1,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-daniel-001"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000002"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-lucky-002"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000003"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-mary-003"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000004"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-luther-004"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000005"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "rating": 1,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-riley-005"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000006"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-taylor-006"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000007"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-11T14:15:00.000Z"
+      },
+      "correlation_id": "rating-casey-007"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000008"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "rating": 1,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-daniel-008"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000009"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-lucky-009"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000010"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-mary-010"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000011"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-luther-011"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000012"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-riley-012"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000013"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-taylor-013"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000014"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000108"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-13T14:22:00.000Z"
+      },
+      "correlation_id": "rating-casey-014"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000015"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "rating": 1,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-daniel-015"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000016"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-lucky-016"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000017"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-mary-017"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000018"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-luther-018"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000019"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-riley-019"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000020"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-taylor-020"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000021"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-15T14:29:00.000Z"
+      },
+      "correlation_id": "rating-casey-021"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000022"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "rating": 1,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-daniel-022"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000023"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-lucky-023"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000024"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-mary-024"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000025"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-luther-025"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000026"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-riley-026"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000027"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-taylor-027"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000028"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-17T14:36:00.000Z"
+      },
+      "correlation_id": "rating-casey-028"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000029"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000633"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-19T14:43:00.000Z"
+      },
+      "correlation_id": "rating-lucky-029"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000030"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000633"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-19T14:43:00.000Z"
+      },
+      "correlation_id": "rating-mary-030"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000031"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000633"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-19T14:43:00.000Z"
+      },
+      "correlation_id": "rating-luther-031"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000032"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000633"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-19T14:43:00.000Z"
+      },
+      "correlation_id": "rating-taylor-032"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000033"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000633"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-19T14:43:00.000Z"
+      },
+      "correlation_id": "rating-casey-033"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000034"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-21T14:50:00.000Z"
+      },
+      "correlation_id": "rating-lucky-034"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000035"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-21T14:50:00.000Z"
+      },
+      "correlation_id": "rating-mary-035"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000036"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-21T14:50:00.000Z"
+      },
+      "correlation_id": "rating-luther-036"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000037"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-21T14:50:00.000Z"
+      },
+      "correlation_id": "rating-taylor-037"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000038"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-21T14:50:00.000Z"
+      },
+      "correlation_id": "rating-casey-038"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000039"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-23T14:57:00.000Z"
+      },
+      "correlation_id": "rating-lucky-039"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000040"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-23T14:57:00.000Z"
+      },
+      "correlation_id": "rating-mary-040"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000041"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-23T14:57:00.000Z"
+      },
+      "correlation_id": "rating-luther-041"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000042"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-23T14:57:00.000Z"
+      },
+      "correlation_id": "rating-taylor-042"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000043"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-23T14:57:00.000Z"
+      },
+      "correlation_id": "rating-casey-043"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000044"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-25T15:04:00.000Z"
+      },
+      "correlation_id": "rating-lucky-044"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000045"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-25T15:04:00.000Z"
+      },
+      "correlation_id": "rating-mary-045"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000046"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-25T15:04:00.000Z"
+      },
+      "correlation_id": "rating-luther-046"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000047"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-25T15:04:00.000Z"
+      },
+      "correlation_id": "rating-taylor-047"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000048"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-25T15:04:00.000Z"
+      },
+      "correlation_id": "rating-casey-048"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000049"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-27T15:11:00.000Z"
+      },
+      "correlation_id": "rating-lucky-049"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000050"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-27T15:11:00.000Z"
+      },
+      "correlation_id": "rating-mary-050"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000051"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-27T15:11:00.000Z"
+      },
+      "correlation_id": "rating-luther-051"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000052"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-27T15:11:00.000Z"
+      },
+      "correlation_id": "rating-taylor-052"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000053"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-27T15:11:00.000Z"
+      },
+      "correlation_id": "rating-casey-053"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000054"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "rating": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-29T15:18:00.000Z"
+      },
+      "correlation_id": "rating-lucky-054"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000055"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-29T15:18:00.000Z"
+      },
+      "correlation_id": "rating-mary-055"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000056"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-29T15:18:00.000Z"
+      },
+      "correlation_id": "rating-luther-056"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000057"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-29T15:18:00.000Z"
+      },
+      "correlation_id": "rating-taylor-057"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000058"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-29T15:18:00.000Z"
+      },
+      "correlation_id": "rating-casey-058"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000059"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000575"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-31T15:25:00.000Z"
+      },
+      "correlation_id": "rating-mary-059"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000060"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000575"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-31T15:25:00.000Z"
+      },
+      "correlation_id": "rating-luther-060"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000061"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000575"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-31T15:25:00.000Z"
+      },
+      "correlation_id": "rating-casey-061"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000062"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000576"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-02T15:32:00.000Z"
+      },
+      "correlation_id": "rating-mary-062"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000063"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000576"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-02T15:32:00.000Z"
+      },
+      "correlation_id": "rating-luther-063"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000064"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000576"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "rating": 1,
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-02-02T15:32:00.000Z"
+      },
+      "correlation_id": "rating-casey-064"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000065"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000577"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-04T15:39:00.000Z"
+      },
+      "correlation_id": "rating-mary-065"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000066"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000577"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-04T15:39:00.000Z"
+      },
+      "correlation_id": "rating-luther-066"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000067"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000578"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-06T15:46:00.000Z"
+      },
+      "correlation_id": "rating-mary-067"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000068"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000578"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-06T15:46:00.000Z"
+      },
+      "correlation_id": "rating-luther-068"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000069"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000579"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-08T15:53:00.000Z"
+      },
+      "correlation_id": "rating-mary-069"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000070"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000579"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 3,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-08T15:53:00.000Z"
+      },
+      "correlation_id": "rating-luther-070"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000071"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000656"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-10T16:00:00.000Z"
+      },
+      "correlation_id": "rating-mary-071"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000072"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000656"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-10T16:00:00.000Z"
+      },
+      "correlation_id": "rating-luther-072"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000073"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000657"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-12T16:07:00.000Z"
+      },
+      "correlation_id": "rating-mary-073"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000074"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000657"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-12T16:07:00.000Z"
+      },
+      "correlation_id": "rating-luther-074"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000075"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000658"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-14T16:14:00.000Z"
+      },
+      "correlation_id": "rating-mary-075"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000076"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000658"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-14T16:14:00.000Z"
+      },
+      "correlation_id": "rating-luther-076"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000077"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000659"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-16T16:21:00.000Z"
+      },
+      "correlation_id": "rating-luther-077"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000078"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000660"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-18T16:28:00.000Z"
+      },
+      "correlation_id": "rating-luther-078"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000079"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000661"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-20T16:35:00.000Z"
+      },
+      "correlation_id": "rating-luther-079"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000080"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000662"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-22T16:42:00.000Z"
+      },
+      "correlation_id": "rating-luther-080"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000081"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000663"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-24T16:49:00.000Z"
+      },
+      "correlation_id": "rating-luther-081"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000082"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000664"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-26T16:56:00.000Z"
+      },
+      "correlation_id": "rating-luther-082"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000083"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000665"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-28T17:03:00.000Z"
+      },
+      "correlation_id": "rating-luther-083"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000084"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000666"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-02T17:10:00.000Z"
+      },
+      "correlation_id": "rating-luther-084"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000085"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000667"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-04T17:17:00.000Z"
+      },
+      "correlation_id": "rating-luther-085"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000086"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000668"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-06T17:24:00.000Z"
+      },
+      "correlation_id": "rating-luther-086"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000087"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000669"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-08T17:31:00.000Z"
+      },
+      "correlation_id": "rating-luther-087"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "G00000000000000000000088"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000670"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "rating": 4,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-10T17:38:00.000Z"
+      },
+      "correlation_id": "rating-luther-088"
+    }
+  }
+]

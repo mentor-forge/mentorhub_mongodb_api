@@ -1,0 +1,49 @@
+_locked: false
+file_name: Resource_Ratings.1.0.0.yaml
+root:
+  additional_properties: false
+  description: Resource level rating and note count
+  name: root
+  properties:
+  - description: A unique identifier for Resource_Ratings
+    name: _id
+    required: true
+    type: identifier
+  - description: The Resource that is rated
+    name: resource_id
+    required: true
+    type: identifier
+  - description: The number of notes left on this resource
+    name: note_count
+    required: false
+    type: count
+  - description: The number of times this resource has been completed
+    name: completions
+    required: false
+    type: count
+  - description: 'The number of times this URL has been clicked. '
+    name: hits
+    required: false
+    type: count
+  - description: The total duration of all completions
+    name: duration
+    required: false
+    type: duration
+  - description: The Number of Ratings (should = completions)
+    name: rating_count
+    required: false
+    type: count
+  - description: The sum of all ratings
+    name: rating_sum
+    required: true
+    type: count
+  - description: When this document was created
+    name: created
+    required: true
+    type: breadcrumb
+  - description: The last time this document was saved
+    name: last_saved
+    required: true
+    type: breadcrumb
+  required: false
+  type: object

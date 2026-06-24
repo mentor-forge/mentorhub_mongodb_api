@@ -1,18 +1,20 @@
+_locked: false
+description: User Information (Preferences, goals, skills, experience, identity, etc.)
 file_name: Profile.yaml
-description: User Preferences associated with one **Identity**.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
+- _locked: false
+  add_indexes:
+  - key:
       name: 1
+    name: Name Index
     options:
       unique: true
-  - name: Last Saved
-    key:
+  - key:
       saved.at_time: -1
+    name: Last Saved
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Profile.0.1.0.0.json
+  version: 0.1.0.0

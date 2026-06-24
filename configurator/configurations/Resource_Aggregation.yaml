@@ -12,5 +12,5 @@ versions:
       unique: false
   drop_indexes: []
   migrations: []
-  test_data: Resource_Aggregation.1.0.0.0.json
-  version: 1.0.0.0
+  test_data: Resource_Aggregation.0.1.0.0.json
+  version: 0.1.0.0

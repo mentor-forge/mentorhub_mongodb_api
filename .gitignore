@@ -1,3 +1,6 @@
 # Generated Schema Files
 .schemas/
 schemas/
+
+# Local output from make process
+artifacts/

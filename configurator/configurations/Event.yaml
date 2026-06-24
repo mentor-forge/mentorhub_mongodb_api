@@ -1,18 +1,15 @@
+_locked: false
+description: A meaningful event in the system.
 file_name: Event.yaml
-description: A meaningful event for a user.
+title: ''
 versions:
-- version: 0.1.0.0
-  _locked: false
-  add_indexes: 
-  - name: Name Index
-    key:
-      name: 1
-    options:
-      unique: true
-  - name: Last Saved
-    key:
-      saved.at_time: -1
+- _locked: false
+  add_indexes:
+  - key:
+      created.at_time: -1
+    name: Created
     options: {}
   drop_indexes: []
   migrations: []
   test_data: Event.0.1.0.0.json
+  version: 0.1.0.0

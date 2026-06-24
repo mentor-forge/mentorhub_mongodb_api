@@ -117,5 +117,61 @@ enumerators:
     value: coordinator
   - description: Administrator
     value: admin
+- name: Skills
+  values:
+  - description: Apprentice-candidate
+    value: Candidate
+  - description: Apprenice Engineer
+    value: Apprentice
+  - description: Practioneer Engineer
+    value: Practioneer
+  - description: Craftsperson Engineer
+    value: Craftsperson
+  - description: Master Engineer
+    value: Master
+  - description: Distinguished Engineer
+    value: Distinguished
+- name: Costs
+  values:
+  - description: No cost to use this resource
+    value: free
+  - description: 1-Time Low Cost (< $25)
+    value: $
+  - description: 1-Time Medium Cost (< $100)
+    value: $$
+  - description: 1-Time High Cost (> $100)
+    value: $$$
+  - description: Subscription - Low Cost (< $100/yr)
+    value: S$
+  - description: Subscription - Medium Cost (< $300/yr)
+    value: S$$
+  - description: Subscription - High Cost (> $300/yr)
+    value: S$$$
+- name: resource_type
+  values:
+  - description: A web article, blog post, or other short form on-line content
+    value: article
+  - description: A video
+    value: video
+  - description: A printed book
+    value: book
+  - description: An audio book
+    value: audio
+  - description: An on-line book-sized resource
+    value: manual
+  - description: A subscription or membership
+    value: membership
+  - description: A follow-the-leader style tutorial
+    value: tutorial
+  - description: A lesson with goals and learning outcomes
+    value: lesson
+  - description: An official product "Getting Started" guide or tutorial
+    value: getting-started
+  - description: On-Line Self Paced class
+    value: online-class
+  - description: On-Line Instructor Led class
+    value: online-instructor
+  - description: In Person Instructor Led class
+    value: in-person
 file_name: enumerations.0.yaml
 version: 0

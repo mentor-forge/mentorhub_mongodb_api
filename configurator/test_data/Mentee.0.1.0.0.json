@@ -1,9 +1,8 @@
 [
   {
     "_id": {
-      "$oid": "C00000000000000000000001"
+      "$oid": "CC0000000000000000000001"
     },
-    "name": "daniel-mentoring",
     "description": "Daniel is building frontend depth with structured weekly check-ins.",
     "profile_id": {
       "$oid": "A00000000000000000000002"
@@ -40,9 +39,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000002"
+      "$oid": "CC0000000000000000000002"
     },
-    "name": "lucky-mentoring",
     "description": "Lucky is transitioning into SRE with organic discussion sessions.",
     "profile_id": {
       "$oid": "A00000000000000000000003"
@@ -79,9 +77,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000003"
+      "$oid": "CC0000000000000000000003"
     },
-    "name": "mary-mentoring",
     "description": "Mary is deepening full-stack skills with bi-weekly mentor sessions.",
     "profile_id": {
       "$oid": "A00000000000000000000004"
@@ -118,9 +115,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000004"
+      "$oid": "CC0000000000000000000004"
     },
-    "name": "luther-mentoring",
     "description": "Luther combines admin duties with mentee learning on the EngineerKit path.",
     "profile_id": {
       "$oid": "A00000000000000000000005"
@@ -157,9 +153,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000005"
+      "$oid": "CC0000000000000000000005"
     },
-    "name": "riley-mentoring",
     "description": "Riley is early in the program with mentor-guided exploration.",
     "profile_id": {
       "$oid": "A00000000000000000000010"
@@ -196,9 +191,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000006"
+      "$oid": "CC0000000000000000000006"
     },
-    "name": "taylor-mentoring",
     "description": "Taylor mentors others while continuing own growth as a dual-role participant.",
     "profile_id": {
       "$oid": "A00000000000000000000014"
@@ -235,9 +229,8 @@
   },
   {
     "_id": {
-      "$oid": "C00000000000000000000007"
+      "$oid": "CC0000000000000000000007"
     },
-    "name": "casey-mentoring",
     "description": "Archived mentee record retained for historical mentoring notes.",
     "profile_id": {
       "$oid": "A00000000000000000000015"

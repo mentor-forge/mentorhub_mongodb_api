@@ -75,7 +75,7 @@ TYPE_RANK = {
 
 
 def rating_oid(serial: int) -> dict[str, str]:
-    return {"$oid": f"G{serial:023d}"}
+    return {"$oid": f"D{serial + 7:023d}"}
 
 
 def parse_date(value: dict) -> datetime:

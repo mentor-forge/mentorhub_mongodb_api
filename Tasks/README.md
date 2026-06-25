@@ -9,8 +9,8 @@ For multi-task pipelines, use an **orchestration agent** that spawns a **fresh a
    - The task file path
    - Paths to input/context files listed in the task
    - Any outputs from prior tasks (e.g. "R160 complete; template_service.py updated")
-3. **Sub-agent** executes only that task: read context, implement, test, update task notes, commit.
-4. **Orchestrator** moves to the next task. On failure, it can retry or skip and continue.
+3. **Sub-agent** executes only that task: read context, implement, test, update task notes.
+4. **Orchestrator** validates testing, and makes the commit message before moving to the next task. On failure, processing should halt.
 
 **Benefits**: Fresh context per task (no drift), clear boundaries, easier retries, dependency-aware ordering. Independent tasks (e.g. R100, R150, R160) can be run in parallel if the orchestrator supports it.
 

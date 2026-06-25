@@ -12,15 +12,15 @@
 - **Number of documents to generate**: `35` (minimum; add more if needed for realistic coverage)
 - **Special requirements**
   - Drive notes from **Journey test data** in `Journey.0.1.0.0.json` (T117 template + T118 mentee journeys).
-  - Create notes for resources in each mentee's **`library`** (completed resources) and optionally **`now`** (in-progress resources).
+  - Create notes for resources in each mentee's **`library`** (completed resources) only. In-progress (`now`) resources do **not** need notes.
   - Skip the T117 template journey (`ffff00000000000000000001`).
-  - Tie `profile_id` to the journey owner and `resource_id` to the Resource `$oid` for that library/now entry.
+  - Tie `profile_id` to the journey owner and `resource_id` to the Resource `$oid` for that library entry.
   - Include **at least two notes per active mentee** and **at least one note per mentee overall**; higher-progress mentees (luther, mary) should have more notes.
   - `note` text must be valid **markdown** (per `markdown.yaml`, max 4096 chars); vary tone and length — short takeaways, questions, and reflections.
   - Include `default_status` enum coverage (`active` for nearly all; at least one `archived` note for **casey**).
-  - Use deterministic `_id` values starting at `H00000000000000000000001` (24-char hex ObjectIds throughout).
-  - Set `created.at_time` to align with (or shortly after) the resource's `completed` or `started` date where possible; set `saved.at_time` equal to or later than `created`.
-  - Do **not** invent resources — only note resources already on each mentee's Journey `library` or `now`.
+  - Use deterministic `_id` values starting at `E00000000000000000000001` (24-char hex ObjectIds throughout; prefix must be `0-9` or `A-F`).
+  - Set `created.at_time` to align with (or shortly after) the resource's `completed` date where possible; set `saved.at_time` equal to or later than `created`.
+  - Do **not** invent resources — only note resources already on each mentee's Journey `library`.
   - Notes should be **consistent with T120 ratings** where both exist for the same profile/resource pair (e.g. low ratings → critical or confused notes; high ratings → positive takeaways).
 
 ## Goal
@@ -84,6 +84,7 @@ These files must be treated as **inputs** and read before implementation:
 
 ## Testing expectations
 
+- If the API is not running, you can use `make dev` to start it.
 - Run `make container` — build succeeds.
 - `curl -X DELETE "http://localhost:8385/api/database/"` → SUCCESS
 - `curl -X POST "http://localhost:8385/api/configurations/"` → SUCCESS

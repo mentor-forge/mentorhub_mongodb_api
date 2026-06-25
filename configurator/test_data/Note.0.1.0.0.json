@@ -1,1 +1,1017 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "E00000000000000000000001"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "note": "**Stackshare** felt dense for where I am. The article format helped, yet I walked away with more questions than answers.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-daniel-001"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-daniel-001-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000002"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "note": "**Stackshare** felt dense for where I am. The article format helped, yet I walked away with more questions than answers.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-lucky-002"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-lucky-002-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000003"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "Strong article: **Stackshare**. I liked how it connected back to earlier modules \u2014 best completion this month.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-mary-003"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-mary-003-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000004"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "**Stackshare** was worth the time \u2014 good balance of theory and practice. I'll try applying one idea this week.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-luther-004"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-luther-004-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000005"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "note": "**Stackshare** felt dense for where I am. The article format helped, yet I walked away with more questions than answers.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-riley-005"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-riley-005-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000006"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "note": "**Stackshare** was worth the time \u2014 good balance of theory and practice. I'll try applying one idea this week.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-taylor-006"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-taylor-006-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000007"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000107"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "note": "Archived note on **Stackshare** from earlier progress. Still a useful reference even though my journey is inactive.",
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-11T14:30:00.000Z"
+      },
+      "correlation_id": "note-casey-007"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-11T16:30:00.000Z"
+      },
+      "correlation_id": "note-casey-007-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000008"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "note": "Finished **DemystifyingConwaysLaw** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-15T14:52:00.000Z"
+      },
+      "correlation_id": "note-daniel-008"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-15T18:52:00.000Z"
+      },
+      "correlation_id": "note-daniel-008-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000009"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000007"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "note": "Finished **DemystifyingConwaysLaw** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-15T14:52:00.000Z"
+      },
+      "correlation_id": "note-riley-009"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-15T18:52:00.000Z"
+      },
+      "correlation_id": "note-riley-009-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000010"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "note": "Finished **AgileInceptionDeck** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-daniel-010"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-daniel-010-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000011"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "note": "Finished **AgileInceptionDeck** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-lucky-011"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-lucky-011-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000012"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "**AgileInceptionDeck** clicked for me. Clear explanation and a practical frame I can reuse on real work.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-mary-012"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-mary-012-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000013"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Solid intro via **AgileInceptionDeck**. Useful context on Agile Inception Deck \u2014 supports learning in Assembling a Tech Stack., though I want one more example before I move on.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-luther-013"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-luther-013-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000014"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "note": "Finished **AgileInceptionDeck** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-riley-014"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "riley",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-riley-014-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000015"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000008"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "note": "Solid intro via **AgileInceptionDeck**. Useful context on Agile Inception Deck \u2014 supports learning in Assembling a Tech Stack., though I want one more example before I move on.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-17T15:03:00.000Z"
+      },
+      "correlation_id": "note-taylor-015"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-17T20:03:00.000Z"
+      },
+      "correlation_id": "note-taylor-015-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000016"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000403"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Solid intro via **Swagger**. Useful context on Swagger \u2014 supports learning in Living Documentation., though I want one more example before I move on.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-21T15:25:00.000Z"
+      },
+      "correlation_id": "note-luther-016"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-21T22:25:00.000Z"
+      },
+      "correlation_id": "note-luther-016-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000017"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "note": "**AcceptanceCriteriaforUserStoriesPurposes** felt dense for where I am. The article format helped, yet I walked away with more questions than answers.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-23T15:36:00.000Z"
+      },
+      "correlation_id": "note-lucky-017"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-23T23:36:00.000Z"
+      },
+      "correlation_id": "note-lucky-017-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000018"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "note": "**AcceptanceCriteriaforUserStoriesPurposes** was worth the time \u2014 good balance of theory and practice. I'll try applying one idea this week.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-23T15:36:00.000Z"
+      },
+      "correlation_id": "note-taylor-018"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-23T23:36:00.000Z"
+      },
+      "correlation_id": "note-taylor-018-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000019"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000571"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "note": "Archived note on **AcceptanceCriteriaforUserStoriesPurposes** from earlier progress. Still a useful reference even though my journey is inactive.",
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-23T15:36:00.000Z"
+      },
+      "correlation_id": "note-casey-019"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-01-23T23:36:00.000Z"
+      },
+      "correlation_id": "note-casey-019-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000020"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000572"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "Finished **DefinitionofDoneWhatProductManagersNeedt** feeling much clearer. Keeping this as a reference when I mentor others on the topic.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-25T15:47:00.000Z"
+      },
+      "correlation_id": "note-mary-020"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-26T00:47:00.000Z"
+      },
+      "correlation_id": "note-mary-020-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000021"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000573"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **Gatheringrequirementsgoawayplease**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-27T15:58:00.000Z"
+      },
+      "correlation_id": "note-luther-021"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-01-28T01:58:00.000Z"
+      },
+      "correlation_id": "note-luther-021-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000022"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "note": "Marked **IntroductiononhowtowriteUserStories** complete, but I'm not confident I absorbed it. What part should I re-read first?",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-29T16:09:00.000Z"
+      },
+      "correlation_id": "note-lucky-022"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-30T03:09:00.000Z"
+      },
+      "correlation_id": "note-lucky-022-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000023"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000574"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "note": "Helpful video (**IntroductiononhowtowriteUserStories**). I captured a few bullets; still comparing it with other EngineerKit resources.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-29T16:09:00.000Z"
+      },
+      "correlation_id": "note-taylor-023"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "taylor",
+      "at_time": {
+        "$date": "2025-01-30T03:09:00.000Z"
+      },
+      "correlation_id": "note-taylor-023-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000024"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000575"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "Finished **Howtoknowwhattotest** feeling much clearer. Keeping this as a reference when I mentor others on the topic.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-31T16:20:00.000Z"
+      },
+      "correlation_id": "note-mary-024"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-01T04:20:00.000Z"
+      },
+      "correlation_id": "note-mary-024-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000025"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000576"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **UserStories**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-02T16:31:00.000Z"
+      },
+      "correlation_id": "note-luther-025"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-03T05:31:00.000Z"
+      },
+      "correlation_id": "note-luther-025-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000026"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000576"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "note": "Archived note on **UserStories** from earlier progress. Still a useful reference even though my journey is inactive.",
+    "status": "archived",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-02-02T16:31:00.000Z"
+      },
+      "correlation_id": "note-casey-026"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "casey",
+      "at_time": {
+        "$date": "2025-02-03T05:31:00.000Z"
+      },
+      "correlation_id": "note-casey-026-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000027"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000578"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **WhatisAcceptanceCriteria**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-06T16:53:00.000Z"
+      },
+      "correlation_id": "note-luther-027"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-07T07:53:00.000Z"
+      },
+      "correlation_id": "note-luther-027-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000028"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000579"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "**TheCleanCoder** clicked for me. Clear explanation and a practical frame I can reuse on real work.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-08T17:04:00.000Z"
+      },
+      "correlation_id": "note-mary-028"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-09T09:04:00.000Z"
+      },
+      "correlation_id": "note-mary-028-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000029"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000657"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **ConfidentlyShippingCode**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-12T17:26:00.000Z"
+      },
+      "correlation_id": "note-luther-029"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-13T11:26:00.000Z"
+      },
+      "correlation_id": "note-luther-029-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000030"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000658"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "note": "Strong video: **FundamentalsofTDD**. I liked how it connected back to earlier modules \u2014 best completion this month.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-14T17:37:00.000Z"
+      },
+      "correlation_id": "note-mary-030"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-02-15T12:37:00.000Z"
+      },
+      "correlation_id": "note-mary-030-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000031"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000659"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **IntegratedTestsAreAScam**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-16T17:48:00.000Z"
+      },
+      "correlation_id": "note-luther-031"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-17T13:48:00.000Z"
+      },
+      "correlation_id": "note-luther-031-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000032"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000662"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **TDD**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-22T18:21:00.000Z"
+      },
+      "correlation_id": "note-luther-032"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-23T17:21:00.000Z"
+      },
+      "correlation_id": "note-luther-032-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000033"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000665"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **TheTestingTrophy**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-02-28T18:54:00.000Z"
+      },
+      "correlation_id": "note-luther-033"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-01T20:54:00.000Z"
+      },
+      "correlation_id": "note-luther-033-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000034"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000667"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **WritetestsNottoomanyMostlyintegrationArt**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-04T19:16:00.000Z"
+      },
+      "correlation_id": "note-luther-034"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-05T23:16:00.000Z"
+      },
+      "correlation_id": "note-luther-034-saved"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000035"
+    },
+    "resource_id": {
+      "$oid": "B00000000000000000000670"
+    },
+    "profile_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "note": "Deep dive on **CleanCodersTDD**. This one rewards a second pass \u2014 I added examples from recent sprint work and tied it to our team's testing strategy.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-10T19:49:00.000Z"
+      },
+      "correlation_id": "note-luther-035"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "luther",
+      "at_time": {
+        "$date": "2025-03-12T02:49:00.000Z"
+      },
+      "correlation_id": "note-luther-035-saved"
+    }
+  }
+]

@@ -1,6 +1,6 @@
 # T121 – Generate Note Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Task Type**: Feature  
 **Run Mode**: Sequential  
 
@@ -98,19 +98,48 @@ These files must be treated as **inputs** and read before implementation:
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Designed approach documented in this file.
-- [ ] Implemented `Note.0.1.0.0.json`.
-- [ ] Ran `make container` successfully.
-- [ ] Ran configure-database curl commands successfully.
-- [ ] Created a scoped commit referencing T121.
+- [x] Reviewed all **Context / Input files**.
+- [x] Designed approach documented in this file.
+- [x] Implemented `Note.0.1.0.0.json`.
+- [x] Ran `make container` successfully.
+- [x] Ran configure-database curl commands successfully.
+- [x] Created a scoped commit referencing T121.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
 
-(To be filled in after implementation.)
+Generated **35** EJSON Note documents in `configurator/test_data/Note.0.1.0.0.json` via `Tasks/scripts/generate_note_test_data.py`.
+
+**Approach**
+
+- Walked each mentee Journey (T118) and selected library resources only (no `now` notes).
+- Assigned deterministic `_id` values `E00000000000000000000001` through `E00000000000000000000035`, sorted by library `completed` date.
+- Set `created.at_time` shortly after each library `completed` date; `saved.at_time` 2+ hours later.
+- Varied markdown note tone using T120 ratings (low → critical/confused; high → positive takeaways).
+- All **casey** notes use `archived` status.
+
+**Note counts by mentee**
+
+| Mentee | Notes |
+| --- | --- |
+| daniel | 3 |
+| lucky | 4 |
+| mary | 6 |
+| luther | 12 |
+| riley | 3 |
+| taylor | 4 |
+| casey | 3 |
+
+**Status counts**
+
+| Status | Count |
+| --- | --- |
+| active | 32 |
+| archived | 3 (all casey) |
 
 **Testing results**
 
-(To be filled in after testing.)
+- `make container` → SUCCESS.
+- `DELETE /api/database/` on port 8385 → 200.
+- `POST /api/configurations/` on port 8385 → SUCCESS.

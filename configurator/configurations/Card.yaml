@@ -27,5 +27,5 @@ versions:
       unique: false
   drop_indexes: []
   migrations: []
-  test_data: Card.1.0.0.0.json
-  version: 1.0.0.0
+  test_data: Card.0.1.0.0.json
+  version: 0.1.0.0

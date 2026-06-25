@@ -1,6 +1,6 @@
 # T122 – Generate Resource Aggregation Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Task Type**: Feature  
 **Run Mode**: Sequential  
 
@@ -104,20 +104,38 @@ These files must be treated as **inputs** and read before implementation:
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Designed approach documented in this file.
-- [ ] Implemented `Resource_Aggregation.0.1.0.0.json` (and generator script if used).
-- [ ] Ran `make container` successfully.
-- [ ] Ran configure-database curl commands successfully.
-- [ ] Created a scoped commit referencing T122.
+- [x] Reviewed all **Context / Input files**.
+- [x] Designed approach documented in this file.
+- [x] Implemented `Resource_Aggregation.0.1.0.0.json` (and generator script if used).
+- [x] Ran `make container` successfully.
+- [x] Ran configure-database curl commands successfully.
+- [x] Created a scoped commit referencing T122.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
-- _Pending — to be filled when task is executed._
+
+Generated **456** EJSON Resource_Aggregation documents in `configurator/test_data/Resource_Aggregation.0.1.0.0.json` via `Tasks/scripts/generate_resource_aggregation_test_data.py`.
+
+**Approach**
+
+- Collected unique Resource `$oid` values from mentee Journey `library`, `now`, and `next` sections (T118); skipped the T117 template.
+- Derived `note_count`, `completions`, `rating_count`, and `rating_sum` by grouping T121 Notes, Journey library entries, and T120 Ratings.
+- Computed `hits` from T119 `link` events with a deterministic offset so `hits > completions` always holds (link counts equal completions for library resources).
+- Assigned deterministic `_id` values `H00000000000000000000001` through `H00000000000000000000456`, sorted by `resource_id`.
+- Set `duration` via seeded pseudo-random values between `PT15M` and `PT4H`.
+- Set `created.at_time` shortly after each Resource's `created` timestamp; `last_saved.at_time` 1–45 days later.
 
 **Derived metric spot-checks**
-- _Document sample `note_count`, `completions`, `hits`, `rating_count`, and `rating_sum` for a few shared EngineerKit resources and for a `next`-only resource._
+
+| Resource `$oid` | Role | note_count | completions | hits | rating_count | rating_sum | duration |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `B00000000000000000000107` (Stackshare) | Shared EngineerKit | 7 | 7 | 10 | 7 | 15 | PT26M |
+| `B00000000000000000000108` (StackOverflow survey) | Shared EngineerKit | 0 | 7 | 11 | 7 | 16 | PT1H |
+| `B00000000000000000000001` (A11y) | Next-only | 0 | 0 | 5 | 0 | 0 | PT3H12M |
 
 **Testing results**
-- _Pending — `make container`, configure-database curl commands._
+
+- `make container` → SUCCESS.
+- `DELETE /api/database/` on port 8385 → SUCCESS.
+- `POST /api/configurations/` on port 8385 → SUCCESS.

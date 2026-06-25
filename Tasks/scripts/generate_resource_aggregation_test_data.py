@@ -22,7 +22,7 @@ MAX_DURATION_MINUTES = 240
 
 
 def aggregation_oid(serial: int) -> dict[str, str]:
-    return {"$oid": f"H{serial:023d}"}
+    return {"$oid": f"C{serial:023d}"}
 
 
 def seed_int(value: str, salt: str = "") -> int:

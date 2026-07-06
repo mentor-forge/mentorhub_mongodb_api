@@ -13,16 +13,7 @@
     },
     "name": "Standard",
     "description": "The standard recurring encounter plan for mentor sessions.",
-    "checklist": [
-      "Start Whisper Recording",
-      "What do you want to focus on today?",
-      "How would you describe what's happening now?",
-      "During our time together, what would you like to accomplish?",
-      "What would you like to be able to share next time?",
-      "How are your discoveries making a difference?",
-      "How do you want to wrap up today?",
-      "Stop Recording, Transcribe and Paste Updates"
-    ],
+    "checklist": [],
     "saved": {
       "at_time": {
         "$date": "2025-06-01T14:30:00.000Z"
@@ -47,15 +38,7 @@
     },
     "name": "FirstEncounter",
     "description": "Onboarding plan for a mentee's first meeting with their mentor.",
-    "checklist": [
-      "Start Whisper Recording",
-      "Introduction - The Agile Learning Institute",
-      "Introduction - Mentor / Mentee",
-      "How many weeks are you commiting to?",
-      "What do you want to be able to say at the end of that time?",
-      "Introduce Mentee Journey interface.",
-      "Stop Recording, Transcribe, and Paste Updates"
-    ],
+    "checklist": [],
     "saved": {
       "at_time": {
         "$date": "2025-06-01T14:30:00.000Z"

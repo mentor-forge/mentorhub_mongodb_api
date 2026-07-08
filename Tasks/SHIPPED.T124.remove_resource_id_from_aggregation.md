@@ -1,6 +1,6 @@
 # T124 – Remove resource_id from Resource_Aggregation
 
-**Status**: Pending  
+**Status**: Shipped  
 **Task Type**: Refactor  
 **Run Mode**: Sequential  
 
@@ -75,20 +75,23 @@ These files must be treated as **inputs** and read before implementation:
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Designed approach documented in this file.
-- [ ] Updated `Resource_Aggregation.0.1.0.yaml` (removed `resource_id`, fixed metadata).
-- [ ] Updated `Resource_Aggregation.yaml` (removed `resource_id` index).
-- [ ] Ran `make container` successfully.
-- [ ] Documented configure-database result (pass or expected fail pending T125).
-- [ ] Created a scoped commit referencing T124.
+- [x] Reviewed all **Context / Input files**.
+- [x] Designed approach documented in this file.
+- [x] Updated `Resource_Aggregation.0.1.0.yaml` (removed `resource_id`, fixed metadata).
+- [x] Updated `Resource_Aggregation.yaml` (removed `resource_id` index).
+- [x] Ran `make container` successfully.
+- [x] Documented configure-database result (pass or expected fail pending T125).
+- [x] Created a scoped commit referencing T124.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
 
-_To be filled in by the executing agent._
+- Removed `resource_id` from `configurator/dictionaries/Resource_Aggregation.0.1.0.yaml`.
+- Fixed dictionary metadata: `file_name`, `root.name` (`Resource_Aggregation`), and description.
+- Removed the `resource_id` index from `configurator/configurations/Resource_Aggregation.yaml` (MongoDB indexes `_id` by default).
 
 **Testing results**
 
-_To be filled in by the executing agent._
+- `make container` → SUCCESS.
+- `POST /api/configurations/` → Resource_Aggregation **FAILURE** as expected: test data still contains `resource_id` (`additionalProperties` validation error on document `c00000000000000000000001`). T125 will migrate test data.

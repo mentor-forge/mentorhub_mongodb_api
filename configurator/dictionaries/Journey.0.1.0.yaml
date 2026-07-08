@@ -40,6 +40,10 @@ root:
         name: used
         required: false
         type: count
+      - description: The mentee's star rating for this completed resource
+        name: rating
+        required: false
+        type: rating
       required: false
       type: object
     name: library

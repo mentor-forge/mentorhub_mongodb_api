@@ -1,6 +1,6 @@
 # T125 – Align Journey Ratings and Resource_Aggregation Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Task Type**: Feature  
 **Run Mode**: Sequential  
 
@@ -34,8 +34,8 @@ These files must be treated as **inputs** and read before implementation:
 - [SHIPPED.T118.generate_mentee_journey_test_data.md](./SHIPPED.T118.generate_mentee_journey_test_data.md)
 - [SHIPPED.T120.generate_rating_test_data.md](./SHIPPED.T120.generate_rating_test_data.md)
 - [SHIPPED.T122.generate_resource_aggregation_test_data.md](./SHIPPED.T122.generate_resource_aggregation_test_data.md)
-- [PENDING.T123.add_journey_library_rating.md](./PENDING.T123.add_journey_library_rating.md) — must be shipped first
-- [PENDING.T124.remove_resource_id_from_aggregation.md](./PENDING.T124.remove_resource_id_from_aggregation.md) — must be shipped first
+- [SHIPPED.T123.add_journey_library_rating.md](./SHIPPED.T123.add_journey_library_rating.md) — must be shipped first
+- [SHIPPED.T124.remove_resource_id_from_aggregation.md](./SHIPPED.T124.remove_resource_id_from_aggregation.md) — must be shipped first
 
 ### Rating alignment rule
 
@@ -149,30 +149,44 @@ Run a quick local validation (Python or `jq`) that asserts:
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Designed approach documented in this file.
-- [ ] Updated `Journey.0.1.0.0.json` with `library.rating` on all 88 completed entries.
-- [ ] Migrated `Resource_Aggregation.0.1.0.0.json` (`_id` = Resource `$oid`, no `resource_id`).
-- [ ] Verified `rating_sum` alignment between Journey library and aggregations.
-- [ ] Updated generator script(s) as needed.
-- [ ] Ran `make container` successfully.
-- [ ] Ran configure-database curl commands successfully.
-- [ ] Created a scoped commit referencing T125.
+- [x] Reviewed all **Context / Input files**.
+- [x] Designed approach documented in this file.
+- [x] Updated `Journey.0.1.0.0.json` with `library.rating` on all 88 completed entries.
+- [x] Migrated `Resource_Aggregation.0.1.0.0.json` (`_id` = Resource `$oid`, no `resource_id`).
+- [x] Verified `rating_sum` alignment between Journey library and aggregations.
+- [x] Updated generator script(s) as needed.
+- [x] Ran `make container` successfully.
+- [x] Ran configure-database curl commands successfully.
+- [x] Created a scoped commit referencing T125.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
 
-_To be filled in by the executing agent._
+- Applied 88 T120 rating values onto Journey `library` entries via `Tasks/scripts/apply_journey_library_ratings_from_rating.py`.
+- Regenerated 456 Resource_Aggregation documents via updated `Tasks/scripts/generate_resource_aggregation_test_data.py` (`_id` = Resource `$oid`, no `resource_id`; ratings derived from Journey library).
+- Updated `Tasks/scripts/generate_rating_test_data.py` to write ratings onto Journey library entries (legacy `Rating.0.1.0.0.json` no longer generated).
+- Left `Rating.0.1.0.0.json` unchanged.
 
 **Rating alignment summary**
 
 | Metric | Value |
 | --- | --- |
-| Library entries with `rating` | |
-| Total `rating_sum` (all aggregations) | |
-| Resources with `rating_count` > 0 | |
+| Library entries with `rating` | 88 |
+| Total `rating_sum` (all aggregations) | 252 |
+| Resources with `rating_count` > 0 | 30 |
+
+**Spot-checks**
+
+| Resource `$oid` | completions | rating_count | rating_sum |
+| --- | --- | --- | --- |
+| `B00000000000000000000107` (Stackshare) | 7 | 7 | 15 |
+| `B00000000000000000000108` (StackOverflow survey) | 7 | 7 | 16 |
+| `B00000000000000000000001` (A11y) | 0 | 0 | 0 |
 
 **Testing results**
 
-_To be filled in by the executing agent._
+- Local validation script → all assertions passed.
+- `make container` → SUCCESS.
+- `DELETE /api/database/` on port 8385 → SUCCESS.
+- `POST /api/configurations/` on port 8385 → SUCCESS.

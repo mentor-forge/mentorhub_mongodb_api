@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Resource_Aggregation test data from Journey and related collections (T122)."""
+"""Generate Resource_Aggregation test data from Journey and related collections (T122/T125)."""
 
 from __future__ import annotations
 
@@ -13,16 +13,11 @@ REPO = Path(__file__).resolve().parents[2]
 JOURNEY_PATH = REPO / "configurator" / "test_data" / "Journey.0.1.0.0.json"
 RESOURCE_PATH = REPO / "configurator" / "test_data" / "Resource.0.1.0.0.json"
 NOTE_PATH = REPO / "configurator" / "test_data" / "Note.0.1.0.0.json"
-RATING_PATH = REPO / "configurator" / "test_data" / "Rating.0.1.0.0.json"
 EVENT_PATH = REPO / "configurator" / "test_data" / "Event.0.1.0.0.json"
 OUTPUT_PATH = REPO / "configurator" / "test_data" / "Resource_Aggregation.0.1.0.0.json"
 
 MIN_DURATION_MINUTES = 15
 MAX_DURATION_MINUTES = 240
-
-
-def aggregation_oid(serial: int) -> dict[str, str]:
-    return {"$oid": f"C{serial:023d}"}
 
 
 def seed_int(value: str, salt: str = "") -> int:
@@ -61,9 +56,11 @@ def hits_for(resource_id: str, completions: int, link_hits: int) -> int:
 
 def collect_journey_resources(
     journeys: list[dict], name_to_oid: dict[str, str]
-) -> tuple[set[str], Counter]:
+) -> tuple[set[str], Counter, Counter, defaultdict[str, int]]:
     resources: set[str] = set()
     completions: Counter = Counter()
+    rating_counts: Counter = Counter()
+    rating_sums: defaultdict[str, int] = defaultdict(int)
 
     for journey in journeys:
         if not journey.get("profile_id"):
@@ -73,6 +70,9 @@ def collect_journey_resources(
             resource_id = item["resource_id"]["$oid"]
             resources.add(resource_id)
             completions[resource_id] += 1
+            if "rating" in item:
+                rating_counts[resource_id] += 1
+                rating_sums[resource_id] += item["rating"]
 
         for item in journey.get("now", []):
             resource_ref = item.get("resource_id")
@@ -96,7 +96,7 @@ def collect_journey_resources(
                     if resource_id:
                         resources.add(resource_id)
 
-    return resources, completions
+    return resources, completions, rating_counts, rating_sums
 
 
 def count_link_events(events: list[dict]) -> Counter:
@@ -117,25 +117,18 @@ def main() -> None:
         journeys = json.load(handle)
     with NOTE_PATH.open(encoding="utf-8") as handle:
         notes = json.load(handle)
-    with RATING_PATH.open(encoding="utf-8") as handle:
-        ratings = json.load(handle)
     with EVENT_PATH.open(encoding="utf-8") as handle:
         events = json.load(handle)
 
     name_to_oid = {item["name"]: oid for oid, item in resources.items()}
-    journey_resources, completions = collect_journey_resources(journeys, name_to_oid)
+    journey_resources, completions, rating_counts, rating_sums = collect_journey_resources(
+        journeys, name_to_oid
+    )
     missing = sorted(resource_id for resource_id in journey_resources if resource_id not in resources)
     if missing:
         raise SystemExit(f"Journey references unknown resources: {missing[:5]}")
 
     note_counts = Counter(note["resource_id"]["$oid"] for note in notes)
-    rating_counts: Counter = Counter()
-    rating_sums: defaultdict[str, int] = defaultdict(int)
-    for rating in ratings:
-        resource_id = rating["resource_id"]["$oid"]
-        rating_counts[resource_id] += 1
-        rating_sums[resource_id] += rating["rating"]
-
     link_hits = count_link_events(events)
 
     documents = []
@@ -152,16 +145,22 @@ def main() -> None:
         if hit_count <= completion_count:
             raise SystemExit(f"hits must exceed completions for {resource_id}")
 
+        rating_count = rating_counts[resource_id]
+        rating_sum = rating_sums[resource_id]
+        if rating_count != completion_count and completion_count > 0:
+            raise SystemExit(
+                f"rating_count {rating_count} != completions {completion_count} for {resource_id}"
+            )
+
         documents.append(
             {
-                "_id": aggregation_oid(serial),
-                "resource_id": {"$oid": resource_id},
+                "_id": {"$oid": resource_id},
                 "note_count": note_counts[resource_id],
                 "completions": completion_count,
                 "hits": hit_count,
                 "duration": duration_for(resource_id),
-                "rating_count": rating_counts[resource_id],
-                "rating_sum": rating_sums[resource_id],
+                "rating_count": rating_count,
+                "rating_sum": rating_sum,
                 "created": {
                     "from_ip": "127.0.0.1",
                     "by_user": "system",

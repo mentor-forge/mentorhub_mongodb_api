@@ -1,16 +1,12 @@
 _locked: false
-file_name: Resource_Ratings.1.0.0.yaml
+file_name: Resource_Aggregation.0.1.0.yaml
 root:
   additional_properties: false
-  description: Resource level rating and note count
-  name: root
+  description: Resource level rating, duration, and note metrics
+  name: Resource_Aggregation
   properties:
-  - description: A unique identifier for Resource_Ratings
+  - description: A unique identifier for Resource_Aggregation (the Resource $oid)
     name: _id
-    required: true
-    type: identifier
-  - description: The Resource that is rated
-    name: resource_id
     required: true
     type: identifier
   - description: The number of notes left on this resource

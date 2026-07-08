@@ -1,6 +1,6 @@
 # T123 – Add Rating to Journey Library Items
 
-**Status**: Pending  
+**Status**: Shipped  
 **Task Type**: Feature  
 **Run Mode**: Sequential  
 
@@ -67,19 +67,21 @@ These files must be treated as **inputs** and read before implementation:
 
 ## Change control checklist
 
-- [ ] Reviewed all **Context / Input files**.
-- [ ] Designed approach documented in this file.
-- [ ] Updated `Journey.0.1.0.yaml` with `library.rating`.
-- [ ] Ran `make container` successfully.
-- [ ] Ran configure-database curl commands successfully.
-- [ ] Created a scoped commit referencing T123.
+- [x] Reviewed all **Context / Input files**.
+- [x] Designed approach documented in this file.
+- [x] Updated `Journey.0.1.0.yaml` with `library.rating`.
+- [x] Ran `make container` successfully.
+- [x] Ran configure-database curl commands successfully.
+- [x] Created a scoped commit referencing T123.
 
 ## Implementation notes (to be updated by the agent)
 
 **Summary of changes**
 
-_To be filled in by the executing agent._
+Added optional `rating` property (type `rating`, int 1–4) to `library.items.properties` in `configurator/dictionaries/Journey.0.1.0.yaml`, placed after `used`. No test data changes in this task.
 
 **Testing results**
 
-_To be filled in by the executing agent._
+- `make container` → SUCCESS.
+- `DELETE /api/database/` on port 8385 → SUCCESS.
+- `POST /api/configurations/` on port 8385 → SUCCESS (existing Journey test data imports without `library.rating` until T125).

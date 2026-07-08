@@ -4,12 +4,7 @@ file_name: Resource_Aggregation.yaml
 title: Resource_Aggregations Configuration
 versions:
 - _locked: false
-  add_indexes:
-  - key:
-      resource_id: 1
-    name: Resource
-    options:
-      unique: false
+  add_indexes: []
   drop_indexes: []
   migrations: []
   test_data: Resource_Aggregation.0.1.0.0.json

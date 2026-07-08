@@ -107,5 +107,9 @@ root:
     name: saved
     required: false
     type: breadcrumb
+  - description: the customer this profile is associated with
+    name: customer_id
+    required: false
+    type: identifier
   required: false
   type: object

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Generate Rating test data from Journey library entries (T120)."""
+"""Compute and apply library ratings onto Journey documents (T120/T125).
+
+DEPRECATED for Rating.0.1.0.0.json: ratings now live on Journey library entries.
+Use apply_journey_library_ratings_from_rating.py to copy existing T120 Rating values,
+or run this script to recompute ratings directly onto Journey library entries.
+"""
 
 from __future__ import annotations
 
@@ -11,7 +16,6 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 JOURNEY_PATH = REPO / "configurator" / "test_data" / "Journey.0.1.0.0.json"
 RESOURCE_PATH = REPO / "configurator" / "test_data" / "Resource.0.1.0.0.json"
-OUTPUT_PATH = REPO / "configurator" / "test_data" / "Rating.0.1.0.0.json"
 
 PROFILE_NAMES = {
     "A00000000000000000000002": "daniel",
@@ -185,34 +189,33 @@ def main() -> None:
 
     ensure_resource_spread(entries)
     ensure_scale_coverage(entries)
-    entries.sort(key=lambda entry: entry["created_time"])
 
-    documents = []
-    for serial, entry in enumerate(entries, start=1):
-        documents.append(
-            {
-                "_id": rating_oid(serial),
-                "resource_id": {"$oid": entry["resource_id"]},
-                "profile_id": {"$oid": entry["profile_id"]},
-                "rating": entry["rating"],
-                "status": entry["status"],
-                "created": {
-                    "from_ip": "127.0.0.1",
-                    "by_user": entry["profile_name"],
-                    "at_time": {"$date": format_date(entry["created_time"])},
-                    "correlation_id": f"rating-{entry['profile_name']}-{serial:03d}",
-                },
-            }
-        )
+    rating_by_key = {
+        (entry["profile_id"], entry["resource_id"]): entry["rating"] for entry in entries
+    }
 
-    distribution = Counter(document["rating"] for document in documents)
-    status_counts = Counter(document["status"] for document in documents)
-    print(f"Generated {len(documents)} ratings")
+    applied = 0
+    for journey in journeys:
+        profile_id = journey.get("profile_id", {}).get("$oid")
+        if not profile_id:
+            continue
+        for library_entry in journey.get("library", []):
+            resource_id = library_entry["resource_id"]["$oid"]
+            key = (profile_id, resource_id)
+            if key not in rating_by_key:
+                raise SystemExit(f"No computed rating for profile={profile_id} resource={resource_id}")
+            library_entry["rating"] = rating_by_key[key]
+            applied += 1
+
+    if applied != 88:
+        raise SystemExit(f"Expected 88 library ratings, applied {applied}")
+
+    distribution = Counter(entry["rating"] for entry in entries)
+    print(f"Applied {applied} ratings to Journey library entries")
     print(f"Rating distribution: {dict(sorted(distribution.items()))}")
-    print(f"Status distribution: {dict(status_counts)}")
 
-    with OUTPUT_PATH.open("w", encoding="utf-8") as handle:
-        json.dump(documents, handle, indent=2)
+    with JOURNEY_PATH.open("w", encoding="utf-8") as handle:
+        json.dump(journeys, handle, indent=2)
         handle.write("\n")
 
 

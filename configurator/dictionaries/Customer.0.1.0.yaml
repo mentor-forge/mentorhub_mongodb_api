@@ -1,25 +1,43 @@
+_locked: false
 file_name: Customer.0.1.0.yaml
 root:
-  name: Customer
+  additional_properties: false
   description: An customer who pays for the service for a craftsperson.
-  type: object
+  name: Customer
   properties:
-  - name: _id
-    description: The unique identifier for the Customer.
+  - description: The unique identifier for the Customer.
+    name: _id
+    required: false
     type: identifier
-  - name: name
-    description: The searchable name of the document
-    type: word
-  - name: description
-    description: The description of the Customer.
+  - description: The searchable name of the document
+    name: name
+    required: false
     type: sentence
-  - name: created
-    description: The tracking breadcrumb for when the document was created.
+  - description: The description of the Customer.
+    name: description
+    required: false
+    type: sentence
+  - description: The tracking breadcrumb for when the document was created.
+    name: created
+    required: false
     type: breadcrumb
-  - name: saved
-    description: The tracking breadcrumb for when the document was last saved.
+  - description: The tracking breadcrumb for when the document was last saved.
+    name: saved
+    required: false
     type: breadcrumb
-  - name: status
-    description: Status of the document
-    type: enum
+  - description: Status of the document
     enums: default_status
+    name: status
+    required: false
+    type: enum
+  - description: id of the mentees that the customer is paying for
+    items:
+      description: Array item
+      name: item
+      required: false
+      type: identifier
+    name: mentees
+    required: false
+    type: array
+  required: false
+  type: object

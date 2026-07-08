@@ -56,6 +56,8 @@ enumerators:
     value: active
   - description: A link that returns a non-200 return code
     value: failed
+  - description: An archived resource
+    value: archived
 - name: event_types
   values:
   - description: Successful login

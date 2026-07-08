@@ -1,1 +1,153 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "D00000000000000000000001"
+    },
+    "name": "cat",
+    "description": "Cat Customer sponsoring mentorship for a family member learning to code.",
+    "status": "active",
+    "mentees": [
+      {
+        "$oid": "CC0000000000000000000005"
+      }
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-05-01T14:20:00.000Z"
+      },
+      "correlation_id": "seed-customer-001"
+    },
+    "saved": {
+      "from_ip": "192.168.2.15",
+      "by_user": "cat",
+      "at_time": {
+        "$date": "2025-05-15T13:50:00.000Z"
+      },
+      "correlation_id": "save-customer-001"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "name": "morgan",
+    "description": "Morgan Customer evaluating mentorship outcomes for a small business team.",
+    "status": "active",
+    "mentees": [
+      {
+        "$oid": "CC0000000000000000000001"
+      },
+      {
+        "$oid": "CC0000000000000000000002"
+      },
+      {
+        "$oid": "CC0000000000000000000003"
+      }
+    ],
+    "created": {
+      "from_ip": "192.168.1.100",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-08-01T11:15:00.000Z"
+      },
+      "correlation_id": "seed-customer-002"
+    },
+    "saved": {
+      "from_ip": "192.168.1.100",
+      "by_user": "morgan",
+      "at_time": {
+        "$date": "2025-02-14T18:45:00.000Z"
+      },
+      "correlation_id": "save-customer-002"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000003"
+    },
+    "name": "greenfield-dev",
+    "description": "Greenfield Dev Co sponsoring a senior engineer upskilling on platform architecture.",
+    "status": "active",
+    "mentees": [
+      {
+        "$oid": "CC0000000000000000000004"
+      }
+    ],
+    "created": {
+      "from_ip": "10.0.0.30",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-09-20T10:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-003"
+    },
+    "saved": {
+      "from_ip": "10.0.0.30",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2025-04-01T16:20:00.000Z"
+      },
+      "correlation_id": "save-customer-003"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000004"
+    },
+    "name": "acme-startup",
+    "description": "Acme Startup funding dual-role mentorship for a team lead growing as mentor and mentee.",
+    "status": "active",
+    "mentees": [
+      {
+        "$oid": "CC0000000000000000000006"
+      }
+    ],
+    "created": {
+      "from_ip": "172.16.0.20",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2024-11-25T09:30:00.000Z"
+      },
+      "correlation_id": "seed-customer-004"
+    },
+    "saved": {
+      "from_ip": "172.16.0.20",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2025-05-10T11:00:00.000Z"
+      },
+      "correlation_id": "save-customer-004"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000005"
+    },
+    "name": "legacy-corp",
+    "description": "Legacy Corp archived sponsorship from a completed pilot program.",
+    "status": "archived",
+    "mentees": [
+      {
+        "$oid": "CC0000000000000000000007"
+      }
+    ],
+    "created": {
+      "from_ip": "192.168.3.5",
+      "by_user": "carol",
+      "at_time": {
+        "$date": "2023-11-15T08:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-005"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-06-30T23:59:00.000Z"
+      },
+      "correlation_id": "save-customer-005"
+    }
+  }
+]

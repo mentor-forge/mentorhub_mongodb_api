@@ -2,7 +2,7 @@ _locked: false
 file_name: Profile.0.1.0.yaml
 root:
   additional_properties: false
-  description: User Preferences associated with one **Identity**.
+  description: Authoritative person record - IdP username in JWT claims, roles and customer sponsorship on Profile.
   name: Profile
   properties:
   - description: The unique identifier for the Profile.
@@ -111,5 +111,10 @@ root:
     name: customer_id
     required: false
     type: identifier
+  - description: The user roles this profile has
+    enums: user_roles
+    name: roles
+    required: false
+    type: enum_array
   required: false
   type: object

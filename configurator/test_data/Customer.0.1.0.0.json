@@ -9,6 +9,9 @@
     "mentees": [
       {
         "$oid": "CC0000000000000000000005"
+      },
+      {
+        "$oid": "CC0000000000000000000006"
       }
     ],
     "created": {
@@ -32,8 +35,8 @@
     "_id": {
       "$oid": "D00000000000000000000002"
     },
-    "name": "morgan",
-    "description": "Morgan Customer evaluating mentorship outcomes for a small business team.",
+    "name": "persevere-now",
+    "description": "Persevere Now — sponsoring mentorship for justice-involved graduates of their programs.",
     "status": "active",
     "mentees": [
       {
@@ -44,6 +47,9 @@
       },
       {
         "$oid": "CC0000000000000000000003"
+      },
+      {
+        "$oid": "CC0000000000000000000004"
       }
     ],
     "created": {
@@ -56,7 +62,7 @@
     },
     "saved": {
       "from_ip": "192.168.1.100",
-      "by_user": "morgan",
+      "by_user": "carol",
       "at_time": {
         "$date": "2025-02-14T18:45:00.000Z"
       },
@@ -70,11 +76,7 @@
     "name": "greenfield-dev",
     "description": "Greenfield Dev Co sponsoring a senior engineer upskilling on platform architecture.",
     "status": "active",
-    "mentees": [
-      {
-        "$oid": "CC0000000000000000000004"
-      }
-    ],
+    "mentees": [],
     "created": {
       "from_ip": "10.0.0.30",
       "by_user": "carol",
@@ -99,11 +101,7 @@
     "name": "acme-startup",
     "description": "Acme Startup funding dual-role mentorship for a team lead growing as mentor and mentee.",
     "status": "active",
-    "mentees": [
-      {
-        "$oid": "CC0000000000000000000006"
-      }
-    ],
+    "mentees": [],
     "created": {
       "from_ip": "172.16.0.20",
       "by_user": "carol",
@@ -148,6 +146,31 @@
         "$date": "2024-06-30T23:59:00.000Z"
       },
       "correlation_id": "save-customer-005"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000006"
+    },
+    "name": "agile-learning-institute",
+    "description": "Agile Learning Institute — platform operator sponsoring admin and coordinator access.",
+    "status": "active",
+    "mentees": [],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-01-15T10:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-006"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2025-06-01T14:30:00.000Z"
+      },
+      "correlation_id": "save-customer-006"
     }
   }
 ]

@@ -6,8 +6,8 @@ versions:
 - _locked: false
   add_indexes:
   - key:
-      name: 1
-    name: Name Index
+      full_name: 1
+    name: Full Name Index
     options:
       unique: true
   - key:

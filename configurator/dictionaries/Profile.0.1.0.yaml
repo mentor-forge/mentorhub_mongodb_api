@@ -2,7 +2,7 @@ _locked: false
 file_name: Profile.0.1.0.yaml
 root:
   additional_properties: false
-  description: User Preferences associated with one **Identity**.
+  description: User profile with preferences, roles, and JWT claim fields.
   name: Profile
   properties:
   - description: The unique identifier for the Profile.
@@ -34,6 +34,11 @@ root:
     name: email_verified
     required: false
     type: boolean
+  - description: The user roles this profile has for JWT claims
+    enums: user_roles
+    name: roles
+    required: false
+    type: enum_array
   - description: The _id of this persons Mentor
     name: mentor_id
     required: false

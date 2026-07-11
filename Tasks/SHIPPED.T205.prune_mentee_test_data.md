@@ -1,6 +1,6 @@
 # T205 – Prune Mentee Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T204  
 **Description**: Remove Mentee seed documents for pruned profiles (riley, casey) so Mentee `profile_id` references remain valid.
@@ -75,4 +75,14 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Pruned `configurator/test_data/Mentee.0.1.0.0.json` from seven records to five.
+- Removed Mentee records for pruned Profile IDs `A00000000000000000000010` (riley) and `A00000000000000000000015` (casey).
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS.
+- MongoDB spot checks: `Mentee` count = 5; removed profile references = 0.
+- `make down && make container && mh up mongodb` -> SUCCESS.

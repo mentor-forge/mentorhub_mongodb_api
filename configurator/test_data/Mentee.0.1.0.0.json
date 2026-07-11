@@ -153,44 +153,6 @@
   },
   {
     "_id": {
-      "$oid": "CC0000000000000000000005"
-    },
-    "description": "Riley is early in the program with mentor-guided exploration.",
-    "profile_id": {
-      "$oid": "A00000000000000000000010"
-    },
-    "notes": "## Progress\nLearning fundamentals; still discovering preferred stack areas.\n\n## Observations\nEngaged when sessions connect to real project ideas.",
-    "focus": "Choose first portfolio project theme",
-    "homework": "- List three project ideas with pros/cons\n- Set up local dev environment checklist",
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 2
-    },
-    "next_appointment": {
-      "$date": "2025-06-23T15:00:00.000Z"
-    },
-    "status": "active",
-    "created": {
-      "from_ip": "172.16.0.8",
-      "by_user": "carol",
-      "at_time": {
-        "$date": "2024-07-15T09:00:00.000Z"
-      },
-      "correlation_id": "seed-profile-10"
-    },
-    "saved": {
-      "from_ip": "172.16.0.8",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-03-22T12:30:00.000Z"
-      },
-      "correlation_id": "save-profile-10"
-    }
-  },
-  {
-    "_id": {
       "$oid": "CC0000000000000000000006"
     },
     "description": "Taylor mentors others while continuing own growth as a dual-role participant.",
@@ -225,44 +187,6 @@
         "$date": "2025-05-05T11:00:00.000Z"
       },
       "correlation_id": "save-profile-14"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "CC0000000000000000000007"
-    },
-    "description": "Archived mentee record retained for historical mentoring notes.",
-    "profile_id": {
-      "$oid": "A00000000000000000000015"
-    },
-    "notes": "## Progress\nProgram completed before archival.\n\n## Observations\nRecord kept for reference; no active sessions scheduled.",
-    "focus": "N/A \u2014 archived relationship",
-    "homework": "None \u2014 archived",
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 1
-    },
-    "next_appointment": {
-      "$date": "2025-06-16T15:00:00.000Z"
-    },
-    "status": "archived",
-    "created": {
-      "from_ip": "192.168.3.5",
-      "by_user": "carol",
-      "at_time": {
-        "$date": "2023-12-01T10:00:00.000Z"
-      },
-      "correlation_id": "seed-profile-15"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mike",
-      "at_time": {
-        "$date": "2024-06-30T23:59:00.000Z"
-      },
-      "correlation_id": "save-profile-15"
     }
   }
 ]

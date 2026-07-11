@@ -1,6 +1,6 @@
 # T200 – Remove Identity Collection
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: none  
 **Description**: Remove the Identity dictionary, configuration, and test data now that JWT claims and user roles live on Profile.
@@ -63,4 +63,14 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Deleted `configurator/dictionaries/Identity.0.1.0.yaml`.
+- Deleted `configurator/configurations/Identity.yaml`.
+- Deleted `configurator/test_data/Identity.0.1.0.0.json`.
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS.
+- `make down && make container && mh up mongodb` -> SUCCESS.

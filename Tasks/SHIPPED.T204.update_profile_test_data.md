@@ -1,6 +1,6 @@
 # T204 – Update Profile Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T201, T203  
 **Description**: Prune Profile seed data to ten personas, add `roles` and `customer_id`, and align with the JWT-claims identity model.
@@ -123,4 +123,16 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Pruned `configurator/test_data/Profile.0.1.0.0.json` from 15 profiles to 10 retained personas.
+- Added Profile `roles` to all retained profiles; `mike` and `sam` have all `user_roles` values.
+- Added or corrected `customer_id` values for customer, mentee, coordinator, and admin profiles.
+- Removed stale profiles: `jordan`, `riley`, `morgan`, `alex`, and `casey`.
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS.
+- MongoDB spot checks: `Profile` count = 10; profiles with `roles` = 10; removed profile names = 0.
+- `make down && make container && mh up mongodb` -> SUCCESS.

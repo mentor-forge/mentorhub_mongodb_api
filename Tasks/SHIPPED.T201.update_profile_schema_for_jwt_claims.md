@@ -1,6 +1,6 @@
 # T201 – Update Profile Schema for JWT Claims
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T200  
 **Description**: Add `roles` to Profile, retarget the unique search index to `full_name`, and update the collection description for the Identity-free model.
@@ -70,4 +70,14 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Updated `configurator/dictionaries/Profile.0.1.0.yaml` description for the Identity-free Profile model.
+- Added Profile `roles` as `enum_array` using `user_roles`.
+- Updated `configurator/configurations/Profile.yaml` to use a unique `full_name` index instead of the unique `name` index.
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS after T204 Profile test data updates.
+- `make down && make container && mh up mongodb` -> SUCCESS.

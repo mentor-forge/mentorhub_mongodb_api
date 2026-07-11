@@ -1,6 +1,6 @@
 # T202 – Remove Customer mentees Property
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: none  
 **Description**: Remove the `mentees[]` property from the Customer dictionary; sponsorship is expressed via Profile `customer_id` instead.
@@ -57,4 +57,13 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Removed `mentees` from `configurator/dictionaries/Customer.0.1.0.yaml`.
+- Sponsorship now resolves from Profile `customer_id`.
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS after T203 Customer test data updates.
+- `make down && make container && mh up mongodb` -> SUCCESS.

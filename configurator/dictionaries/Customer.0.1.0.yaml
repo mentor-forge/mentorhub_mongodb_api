@@ -30,14 +30,5 @@ root:
     name: status
     required: false
     type: enum
-  - description: id of the mentees that the customer is paying for
-    items:
-      description: Array item
-      name: item
-      required: false
-      type: identifier
-    name: mentees
-    required: false
-    type: array
   required: false
   type: object

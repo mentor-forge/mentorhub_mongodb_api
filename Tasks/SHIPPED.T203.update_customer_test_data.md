@@ -1,6 +1,6 @@
 # T203 – Update Customer Test Data
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T202  
 **Description**: Rebuild Customer seed data for the sponsorship model — add Agile Learning Institute, rename morgan to Persevere Now, remove `mentees[]`, and drop obsolete customer records.
@@ -82,4 +82,15 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Summary of changes**
+
+- Rebuilt `configurator/test_data/Customer.0.1.0.0.json` with three customers: `cat`, `Persevere Now`, and `Agile Learning Institute`.
+- Removed all Customer `mentees` arrays.
+- Removed obsolete `greenfield-dev`, `acme-startup`, and `legacy-corp` customer records.
+
+**Testing results**
+
+- `curl -X DELETE http://localhost:8385/api/database/` -> HTTP 200, SUCCESS.
+- `curl -X POST http://localhost:8385/api/configurations/` -> HTTP 200, SUCCESS.
+- MongoDB spot checks: `Customer` count = 3; customers with `mentees` = 0.
+- `make down && make container && mh up mongodb` -> SUCCESS.

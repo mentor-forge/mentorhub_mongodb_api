@@ -58,7 +58,7 @@ root:
       - description: The Resource ID
         name: resource_id
         required: false
-        type: word
+        type: identifier
       - description: When the resource was added to the Now scope
         name: added
         required: false

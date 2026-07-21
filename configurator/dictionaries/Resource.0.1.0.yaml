@@ -12,11 +12,11 @@ root:
   - description: The searchable name of the document
     name: name
     required: false
-    type: word
+    type: sentence
   - description: The description of the Resource.
     name: description
     required: false
-    type: sentence
+    type: markdown
   - description: The link for the resource
     name: url
     required: false

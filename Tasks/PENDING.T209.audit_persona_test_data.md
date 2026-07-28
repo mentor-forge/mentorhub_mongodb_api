@@ -16,7 +16,8 @@ All paths are relative to **this API repository root** (the directory that conta
 ## Context
 
 - `../mentorhub/DeveloperEdition/standards/data_standards.md`
-- `./Tasks/_PLANNING.md` — Persona test data workflow (T209–T218)
+- `./Tasks/_PLANNING.md`
+- `./Tasks/_ORCHESTRATION.md`
 - `./README.md`
 - `configurator/test_data/*.json` — all current seed collections
 - `configurator/enumerators/enumerations.0.yaml` — `user_roles`, `event_types`, etc.

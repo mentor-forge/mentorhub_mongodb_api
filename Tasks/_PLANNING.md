@@ -107,21 +107,14 @@ Do **not** reference paths under any domain API repos, SPAs, or CloudFormation r
 
 When planning external follow-on work, create an **`ISSUE.<repo>.<description>.md`** file (see [Naming Conventions](#naming-conventions)) containing a copy-paste GitHub issue body. Record the filed issue URL in that file's **Execution Notes** after a human creates it.
 
-## Persona test data workflow (T209–T218)
+## Feature workflows
 
-Persistent **Developer Edition personas** drive MongoDB seed data, JWT claims on `login.html`, and manual SPA testing. Execute tasks in dependency order:
+This file and `_ORCHESTRATION.md` are **reusable framework guides**. Do not embed feature-specific task lists or execution plans in either document.
 
-| Task | Purpose |
-| --- | --- |
-| **T209** | Audit existing test data vs target persona matrix; propose `_id` map, gaps, and removals |
-| **T210** | Rebuild Customer seed data (Mary, Persevere, ALI, SuperSoft) |
-| **T211** | Rebuild Profile seed data with roles, `customer_id`, and mentor assignments |
-| **T212** | Align Mentee dossiers to persona mentees |
-| **T213** | Realign Encounter records to mentor–mentee relationships (incl. compensated encounters) |
-| **T214** | Realign Journey / Path progress per mentee persona |
-| **T215** | Realign Event trails per persona activity |
-| **T216** | Realign Note and Rating references to persona profiles |
-| **T217** | Document the persona matrix in `README.md` |
-| **ISSUE.mentorhub.login_html** | Issue prompt for `mentorhub/login.html` + `welcome-auth.js` (human-run in sibling repo) |
+When planning a feature:
 
-**Stable `_id` rule:** Once T209 assigns Profile `A000…` and Customer `D000…` values, downstream tasks must preserve them so Journey, Encounter, and Event references stay valid across incremental updates.
+1. Create one task file per unit of work, following the [Task File Layout](#task-file-layout) above.
+2. Chain in-repo tasks with **Depends On** so the orchestrator can derive execution order.
+3. Record cross-task conventions (stable `_id` values, shared assignment tables, audit handoff notes) in the **first** or **audit** task's **Context** / **Execution Notes**, not in `_PLANNING.md`.
+4. Add **`ISSUE.<repo>.<description>.md`** files for sibling-repo work that humans file and track separately.
+5. Run the pipeline via `_ORCHESTRATION.md` — it discovers `PENDING.*` tasks and respects **Depends On** automatically.

@@ -90,6 +90,11 @@ Dictionary schema tasks and test-data tasks are often **separate**, but plan the
     - `PENDING.T010.update_profile_schema.md`
     - `RUNNING.T021.update_profile_test_data.md`
     - `SHIPPED.T020.update_profile_indexes.md`
+- **External follow-on work** (GitHub issue prompts for sibling repos — not orchestrated from this folder):
+  - `ISSUE.<repo>.<description>.md`
+  - `<repo>` is the sibling repository slug (e.g. `mentorhub`, `mentorhub_mentor_spa`).
+  - Example: `ISSUE.mentorhub.login_html_persona_alignment.md`
+  - Do **not** use `AS_NEEDED.EXTERNAL.*` or other prefixes for external issue prompts.
 
 ## External repository boundaries
 
@@ -99,6 +104,8 @@ Task planning and execution in **this API repo** (`mentorhub_mongodb_api`) must 
 - **`../mentorhub_api_utils`** — shared Python MongoIO utilities used by domain APIs
 
 Do **not** reference paths under any domain API repos, SPAs, or CloudFormation repos in task **Context** or **Goals**. If work in another repository is a prerequisite, describe it as an **external prerequisite** in prose (e.g. “MongoDB dictionary must include field X”) and set **Status** to `Blocked` until a human confirms it — do not link to or read files in that repo.
+
+When planning external follow-on work, create an **`ISSUE.<repo>.<description>.md`** file (see [Naming Conventions](#naming-conventions)) containing a copy-paste GitHub issue body. Record the filed issue URL in that file's **Execution Notes** after a human creates it.
 
 ## Persona test data workflow (T209–T218)
 
@@ -115,6 +122,6 @@ Persistent **Developer Edition personas** drive MongoDB seed data, JWT claims on
 | **T215** | Realign Event trails per persona activity |
 | **T216** | Realign Note and Rating references to persona profiles |
 | **T217** | Document the persona matrix in `README.md` |
-| **EXTERNAL.login_html** | Issue prompt for `mentorhub/login.html` + `welcome-auth.js` (human-run in sibling repo) |
+| **ISSUE.mentorhub.login_html** | Issue prompt for `mentorhub/login.html` + `welcome-auth.js` (human-run in sibling repo) |
 
 **Stable `_id` rule:** Once T209 assigns Profile `A000…` and Customer `D000…` values, downstream tasks must preserve them so Journey, Encounter, and Event references stay valid across incremental updates.

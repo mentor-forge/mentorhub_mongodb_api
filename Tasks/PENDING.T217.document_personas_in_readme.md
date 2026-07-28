@@ -17,7 +17,7 @@ All paths are relative to **this API repository root** (the directory that conta
 - `./Tasks/_PLANNING.md`
 - `Tasks/PENDING.T209.audit_persona_test_data.md` — final `_id` map (authoritative after audit ships)
 - `Tasks/PENDING.T211.rebuild_profile_test_data_for_personas.md` — shipped profile data
-- External sync target: `../mentorhub/login.html` + `../mentorhub/welcome-auth.js` (document cross-reference; updated via separate issue — see `AS_NEEDED.EXTERNAL.login_html_persona_alignment.md`)
+- External sync target: `../mentorhub/login.html` + `../mentorhub/welcome-auth.js` (document cross-reference; updated via separate issue — see `ISSUE.mentorhub.login_html_persona_alignment.md`)
 
 ## Goals
 

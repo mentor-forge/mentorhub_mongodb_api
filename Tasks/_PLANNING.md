@@ -99,3 +99,22 @@ Task planning and execution in **this API repo** (`mentorhub_mongodb_api`) must 
 - **`../mentorhub_api_utils`** — shared Python MongoIO utilities used by domain APIs
 
 Do **not** reference paths under any domain API repos, SPAs, or CloudFormation repos in task **Context** or **Goals**. If work in another repository is a prerequisite, describe it as an **external prerequisite** in prose (e.g. “MongoDB dictionary must include field X”) and set **Status** to `Blocked` until a human confirms it — do not link to or read files in that repo.
+
+## Persona test data workflow (T209–T218)
+
+Persistent **Developer Edition personas** drive MongoDB seed data, JWT claims on `login.html`, and manual SPA testing. Execute tasks in dependency order:
+
+| Task | Purpose |
+| --- | --- |
+| **T209** | Audit existing test data vs target persona matrix; propose `_id` map, gaps, and removals |
+| **T210** | Rebuild Customer seed data (Mary, Persevere, ALI, SuperSoft) |
+| **T211** | Rebuild Profile seed data with roles, `customer_id`, and mentor assignments |
+| **T212** | Align Mentee dossiers to persona mentees |
+| **T213** | Realign Encounter records to mentor–mentee relationships (incl. compensated encounters) |
+| **T214** | Realign Journey / Path progress per mentee persona |
+| **T215** | Realign Event trails per persona activity |
+| **T216** | Realign Note and Rating references to persona profiles |
+| **T217** | Document the persona matrix in `README.md` |
+| **EXTERNAL.login_html** | Issue prompt for `mentorhub/login.html` + `welcome-auth.js` (human-run in sibling repo) |
+
+**Stable `_id` rule:** Once T209 assigns Profile `A000…` and Customer `D000…` values, downstream tasks must preserve them so Journey, Encounter, and Event references stay valid across incremental updates.

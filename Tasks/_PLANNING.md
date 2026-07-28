@@ -5,7 +5,7 @@ This folder contains coding tasks that an orchestration agent can execute, based
 - **Context** Before creating any task files you should review the following files for context:
 - ../mentorhub/DeveloperEdition/standards/data_standards.md
 - ./README.md
-- ./Tasks/_ORCHESTRATION.md
+- ./Tasks/_ORCHESTRATE.md
 - ./Tasks/_PLANNING.md (this file)
 
 ## Task File Layout
@@ -77,6 +77,7 @@ mh up mongodb
 
 Dictionary schema tasks and test-data tasks are often **separate**, but plan them together.
 
+- **Pre-release** (see `README.md`): edit existing **0.1.0** dictionaries, configurations, and test data in place. Do **not** plan version bumps or configurator migration pipelines unless release status changes.
 - **Schema-only tasks without test-data changes** are appropriate only when the schema update **relaxes** constraints — for example adding an optional property, widening an enum, or loosening validation so existing documents still pass.
 - **Tightening constraints** — removing a property, changing a type, setting `additional_properties: false` on a field that test data still carries, or making a field required — almost always requires **test data updates in the same pipeline** before the work can be marked complete.
 - **Removing a property** from a dictionary is a common case: existing EJSON in `configurator/test_data/` will fail configure-database until that property is stripped from every document. Do not treat “dictionary change only” as shippable when `make process` / `POST /api/configurations/` will fail; either include test-data files in **Outputs** or add a dependent test-data task and document the expected configure failure only as an interim state between tasks.
@@ -90,6 +91,11 @@ Dictionary schema tasks and test-data tasks are often **separate**, but plan the
     - `PENDING.T010.update_profile_schema.md`
     - `RUNNING.T021.update_profile_test_data.md`
     - `SHIPPED.T020.update_profile_indexes.md`
+- **External follow-on work** (GitHub issue prompts for sibling repos — not orchestrated from this folder):
+  - `ISSUE.<repo>.<description>.md`
+  - `<repo>` is the sibling repository slug (e.g. `mentorhub`, `mentorhub_mentor_spa`).
+  - Example: `ISSUE.mentorhub.login_html_persona_alignment.md`
+  - Do **not** use `AS_NEEDED.EXTERNAL.*` or other prefixes for external issue prompts.
 
 ## External repository boundaries
 
@@ -99,3 +105,17 @@ Task planning and execution in **this API repo** (`mentorhub_mongodb_api`) must 
 - **`../mentorhub_api_utils`** — shared Python MongoIO utilities used by domain APIs
 
 Do **not** reference paths under any domain API repos, SPAs, or CloudFormation repos in task **Context** or **Goals**. If work in another repository is a prerequisite, describe it as an **external prerequisite** in prose (e.g. “MongoDB dictionary must include field X”) and set **Status** to `Blocked` until a human confirms it — do not link to or read files in that repo.
+
+When planning external follow-on work, create an **`ISSUE.<repo>.<description>.md`** file (see [Naming Conventions](#naming-conventions)) containing a copy-paste GitHub issue body. Record the filed issue URL in that file's **Execution Notes** after a human creates it.
+
+## Feature workflows
+
+This file and `_ORCHESTRATE.md` are **reusable framework guides**. Do not embed feature-specific task lists or execution plans in either document.
+
+When planning a feature:
+
+1. Create one task file per unit of work, following the [Task File Layout](#task-file-layout) above.
+2. Chain in-repo tasks with **Depends On** so the orchestrator can derive execution order.
+3. Record cross-task conventions (stable `_id` values, shared assignment tables, audit handoff notes) in the **first** or **audit** task's **Context** / **Execution Notes**, not in `_PLANNING.md`.
+4. Add **`ISSUE.<repo>.<description>.md`** files for sibling-repo work that humans file and track separately.
+5. Run the pipeline via `_ORCHESTRATE.md` — it discovers `PENDING.*` tasks and respects **Depends On** automatically.

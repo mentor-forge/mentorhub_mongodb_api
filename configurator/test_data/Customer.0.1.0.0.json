@@ -3,8 +3,8 @@
     "_id": {
       "$oid": "D00000000000000000000001"
     },
-    "name": "cat",
-    "description": "Cat Customer sponsoring mentorship for a family member learning to code.",
+    "name": "mary",
+    "description": "Mary Anderson — self-funded apprenticeship sponsorship",
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
@@ -16,7 +16,7 @@
     },
     "saved": {
       "from_ip": "192.168.2.15",
-      "by_user": "cat",
+      "by_user": "mary",
       "at_time": {
         "$date": "2025-05-15T13:50:00.000Z"
       },
@@ -27,8 +27,8 @@
     "_id": {
       "$oid": "D00000000000000000000002"
     },
-    "name": "Persevere Now",
-    "description": "Persevere Now - sponsoring mentorship for just involved graduates of their programs.",
+    "name": "persevere",
+    "description": "Persevere Now — graduate mentorship programs",
     "status": "active",
     "created": {
       "from_ip": "192.168.1.100",
@@ -51,8 +51,8 @@
     "_id": {
       "$oid": "D00000000000000000000006"
     },
-    "name": "Agile Learning Institute",
-    "description": "Agile Learning Institute \u2014 platform operator sponsoring admin and coordinator users.",
+    "name": "ali",
+    "description": "Agile Learning Institute — platform operator",
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
@@ -69,6 +69,54 @@
         "$date": "2025-06-01T14:30:00.000Z"
       },
       "correlation_id": "save-customer-006"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000007"
+    },
+    "name": "supersoft",
+    "description": "SuperSoft — startup engineering mentorship",
+    "status": "active",
+    "created": {
+      "from_ip": "10.0.0.42",
+      "by_user": "alex",
+      "at_time": {
+        "$date": "2024-11-12T09:30:00.000Z"
+      },
+      "correlation_id": "seed-customer-007"
+    },
+    "saved": {
+      "from_ip": "10.0.0.42",
+      "by_user": "alex",
+      "at_time": {
+        "$date": "2025-07-01T16:20:00.000Z"
+      },
+      "correlation_id": "save-customer-007"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000008"
+    },
+    "name": "scamsoft",
+    "description": "ScamSoft — past-due subscription customer",
+    "status": "active",
+    "created": {
+      "from_ip": "203.0.113.88",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-08T08:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-008"
+    },
+    "saved": {
+      "from_ip": "203.0.113.88",
+      "by_user": "billing-bot",
+      "at_time": {
+        "$date": "2025-04-22T11:05:00.000Z"
+      },
+      "correlation_id": "save-customer-008"
     }
   }
 ]

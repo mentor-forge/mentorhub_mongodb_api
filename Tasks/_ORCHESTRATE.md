@@ -2,6 +2,8 @@
 
 This folder contains coding tasks that an orchestration agent can execute, based on the context and instructions in each task file. All of these tasks will only make changes in this API repo. The agent will first help to plan tasks, and then orchestrate execution of all Pending Tasks to implement a Feature.
 
+This file is a **reusable orchestration guide**. Feature-specific task sequences live in individual task files (**Depends On** chains and **Execution Notes**), not here. See `_PLANNING.md` for how to create those plans.
+
 ## Orchestration model: Feature Workflow
 
 Before starting the workflow, check to make sure you are not on the main branch, and that you can push on the branch you are on. If you fail this test, pause and ask the developer how you should proceed, and then select or create a branch as instructed before starting the first task.

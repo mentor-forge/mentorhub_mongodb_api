@@ -1,6 +1,6 @@
 # T216 – Realign Note and Rating Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T211  
 **Description**: Update Note and Rating seed data so authors and subjects reference persona profiles only.

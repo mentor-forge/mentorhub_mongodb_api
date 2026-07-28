@@ -5,7 +5,7 @@ This folder contains coding tasks that an orchestration agent can execute, based
 - **Context** Before creating any task files you should review the following files for context:
 - ../mentorhub/DeveloperEdition/standards/data_standards.md
 - ./README.md
-- ./Tasks/_ORCHESTRATION.md
+- ./Tasks/_ORCHESTRATE.md
 - ./Tasks/_PLANNING.md (this file)
 
 ## Task File Layout
@@ -110,7 +110,7 @@ When planning external follow-on work, create an **`ISSUE.<repo>.<description>.m
 
 ## Feature workflows
 
-This file and `_ORCHESTRATION.md` are **reusable framework guides**. Do not embed feature-specific task lists or execution plans in either document.
+This file and `_ORCHESTRATE.md` are **reusable framework guides**. Do not embed feature-specific task lists or execution plans in either document.
 
 When planning a feature:
 
@@ -118,4 +118,4 @@ When planning a feature:
 2. Chain in-repo tasks with **Depends On** so the orchestrator can derive execution order.
 3. Record cross-task conventions (stable `_id` values, shared assignment tables, audit handoff notes) in the **first** or **audit** task's **Context** / **Execution Notes**, not in `_PLANNING.md`.
 4. Add **`ISSUE.<repo>.<description>.md`** files for sibling-repo work that humans file and track separately.
-5. Run the pipeline via `_ORCHESTRATION.md` — it discovers `PENDING.*` tasks and respects **Depends On** automatically.
+5. Run the pipeline via `_ORCHESTRATE.md` — it discovers `PENDING.*` tasks and respects **Depends On** automatically.

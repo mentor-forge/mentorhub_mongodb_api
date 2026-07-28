@@ -41,7 +41,57 @@ make down
 ## Test Data
 
 - Test data is just json files in the [test_data](./configurator/test_data/) folder.
-- This repo includes a **Tasks framework** under the `Tasks/` folder; see `Tasks/README.md` for instructions on how to discover and run tasks, and use agents to generate schema‑compliant test data from dictionaries, enumerators, and type definitions.
+- This repo includes a **Tasks framework** under the `Tasks/` folder; see `Tasks/_PLANNING.md` and `Tasks/_ORCHESTRATE.md` for instructions on planning and orchestrating schema‑compliant test data work.
+
+## Test Personas
+
+Persistent **Developer Edition personas** in seed data support manual SPA testing and JWT claims on [`login.html`](https://github.com/mentor-forge/mentorhub/blob/main/login.html) (synced via `welcome-auth.js` in the `mentorhub` repo — see `Tasks/ISSUE.mentorhub.login_html_persona_alignment.md`).
+
+### Customer organizations
+
+| `_id` | Slug | Display name | Sponsored personas |
+| --- | --- | --- | --- |
+| `D00000000000000000000001` | `mary` | Mary | Mary (self-funded) |
+| `D00000000000000000000002` | `persevere` | Persevere Now | Stacey, Emma, Margaret, Daniel |
+| `D00000000000000000000006` | `ali` | Agile Learning Institute | Mike, Marti, Paula, Elon, Melinda, Linda |
+| `D00000000000000000000007` | `supersoft` | SuperSoft | Eddy, Danny, Lucky |
+| `D00000000000000000000008` | `scamsoft` | ScamSoft | Donny |
+
+### Persona matrix
+
+| Persona | Slug | `full_name` | Profile `_id` | Roles | Customer | Mentor |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mike the Admin | `mike` | Mike Storey | `A00000000000000000000001` | admin | ALI | — |
+| Daniel the Mentee | `daniel` | Daniel Dissler | `A00000000000000000000002` | mentee | Persevere | Paula |
+| Lucky the Mentee | `lucky` | Lucky Minyard | `A00000000000000000000003` | mentee | SuperSoft | Danny |
+| Mary the Super Mentee | `mary` | Mary Anderson | `A00000000000000000000004` | customer, coordinator, mentee | Mary | Marti |
+| Linda the Archived Mentee | `linda` | Linda Left | `A00000000000000000000005` | mentee (archived) | ALI | Marti |
+| Marti the Mentor | `marti` | Marti Lombardi | `A00000000000000000000006` | mentor | — | — |
+| Emma the Coordinator | `emma` | Emma Coordinator | `A00000000000000000000007` | coordinator | Persevere | — |
+| Stacey the CEO | `stacey` | Stacey CEO | `A00000000000000000000008` | customer | Persevere | — |
+| Margaret the Coordinator | `margaret` | Margaret Coordinator | `A00000000000000000000009` | coordinator (suspended) | Persevere | — |
+| Paula the Persevere Mentor | `paula` | Paula Persevere | `A00000000000000000000010` | mentor | ALI | — |
+| Elon the Money Mentor | `elon` | Elon Money | `A00000000000000000000011` | mentor | ALI | — |
+| Eddy the Entrepreneur | `eddy` | Eddy Entrepreneur | `A00000000000000000000012` | customer | SuperSoft | — |
+| Donny the Deadbeat | `donny` | Donny Deadbeat | `A00000000000000000000013` | customer | ScamSoft | — |
+| Danny the Dev Lead | `danny` | Danny Dev Lead | `A00000000000000000000014` | coordinator, mentor | SuperSoft | — |
+| Melinda the Multi Customer Mentor | `melinda` | Melinda Multi | `A00000000000000000000015` | mentor | ALI | — |
+
+### Mentor–mentee relationships
+
+| Mentee | Primary mentor | Notes |
+| --- | --- | --- |
+| Daniel | Paula | Persevere-exclusive mentoring |
+| Lucky | Danny | SuperSoft coordinator-mentor |
+| Mary | Marti | Self-funded apprentice |
+| Linda | Marti | Archived; historical sessions only |
+
+| Mentor | Mentees | Notes |
+| --- | --- | --- |
+| Elon | Daniel, Lucky | Compensated encounters (noted in encounter narrative) |
+| Melinda | Persevere + compensated cases | Multi-customer mentor persona |
+
+**Stable ID policy:** Profile and Customer `_id` values are fixtures. Changing them requires updating Journey, Encounter, Event, Note, Rating seed data and `welcome-auth.js` in the `mentorhub` repo.
 
 ## Configure Database (non-interactive)
 

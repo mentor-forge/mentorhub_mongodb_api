@@ -1,6 +1,6 @@
 # T210 – Update Customer Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T209  
 **Description**: Rebuild Customer seed data for four sponsorship organizations aligned with the persona matrix (Mary, Persevere, ALI, SuperSoft).

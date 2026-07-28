@@ -1,6 +1,6 @@
 # T215 – Realign Event Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T213, T214  
 **Description**: Regenerate Event seed data so activity trails exist for all persona mentees and key coordinator/customer personas.

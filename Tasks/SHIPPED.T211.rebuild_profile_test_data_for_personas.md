@@ -1,6 +1,6 @@
 # T211 – Rebuild Profile Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T210  
 **Description**: Rebuild Profile seed data for twelve persistent personas with correct `roles`, `customer_id`, `mentor_id`, and stable `_id` values.

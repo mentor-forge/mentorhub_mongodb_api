@@ -1,6 +1,6 @@
 # T209 – Audit Test Data for Persona Alignment
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: none  
 **Description**: Audit all MongoDB seed data and Developer Edition auth mappings against the target persona matrix; produce a concrete test-data realignment plan for T210–T217.
@@ -17,7 +17,7 @@ All paths are relative to **this API repository root** (the directory that conta
 
 - `../mentorhub/DeveloperEdition/standards/data_standards.md`
 - `./Tasks/_PLANNING.md`
-- `./Tasks/_ORCHESTRATION.md`
+- `./Tasks/_ORCHESTRATE.md`
 - `./README.md`
 - `configurator/test_data/*.json` — all current seed collections
 - `configurator/enumerators/enumerations.0.yaml` — `user_roles`, `event_types`, etc.
@@ -155,4 +155,37 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for audit agent: baseline counts, gap analysis, final `_id` map, and per-task handoff notes for T210–T217.)_
+**Baseline configure (2026-07-28):** `DELETE` + `POST` → **SUCCESS**
+
+| Collection | Baseline count |
+| --- | --- |
+| Customer | 3 |
+| Profile | 10 |
+| Mentee | 5 |
+| Journey | 6 |
+| Encounter | 15 |
+| Event | 258 |
+| Note | 35 |
+| Rating | 88 |
+
+**Pre-release:** No dictionary version bumps or configurator migrations required.
+
+**Deprecated slugs → replacement:**
+
+| Old | New |
+| --- | --- |
+| `luther` (A05) | `linda` (archived mentee, same `_id`) |
+| `carol` (A07) | `emma` |
+| `cat` (A08) | `stacey` (profile); customer slot → `mary` (D01) |
+| `sam` (A13) | `donny` |
+| `taylor` (A14) | `danny` |
+
+**Final counts:** 5 customers, 15 profiles, 4 mentee dossiers, 5 journeys (1 template + 4 mentees).
+
+**Stable `_id` map:** see `Tasks/scripts/persona_ids.json` for handoff to T210–T217.
+
+**Encounter plan:** Daniel→Paula×2, Lucky→Danny×2, Mary→Marti×2, Elon→Daniel+Lucky×1 each (compensated noted in narrative), Linda→Marti×1 archived.
+
+**Event density:** mary > daniel ≈ lucky > linda; coordinator/customer login events for emma, danny, margaret, stacey, eddy.
+
+**Role coverage:** all `user_roles` values covered; `suspended` via margaret; `archived` profile via linda.

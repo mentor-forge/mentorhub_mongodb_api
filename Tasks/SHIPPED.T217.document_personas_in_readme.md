@@ -1,6 +1,6 @@
 # T217 – Document Personas in README
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T211  
 **Description**: Add a persistent **Test Personas** section to `README.md` documenting the Developer Edition persona matrix, customers, and mentor relationships. Preserve the existing **Pre-release** section.

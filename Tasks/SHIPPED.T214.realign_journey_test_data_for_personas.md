@@ -1,6 +1,6 @@
 # T214 – Realign Journey Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T211, T212  
 **Description**: Reassign mentee Journey documents to persona mentees and adjust progress stories for Daniel, Lucky, and Mary.

@@ -3,13 +3,13 @@
     "_id": {
       "$oid": "CC0000000000000000000001"
     },
-    "description": "Daniel is building frontend depth with structured weekly check-ins.",
+    "description": "Daniel is a Persevere graduate deepening frontend and Vue skills with Paula.",
     "profile_id": {
       "$oid": "A00000000000000000000002"
     },
-    "notes": "## Progress\nStrong Vue composition patterns; needs more backend confidence.\n\n## Observations\nResponds well to concrete homework between sessions.\n\n## Prior mentor (marti)\nHandoff note: continue API integration practice before deepening system design.",
-    "focus": "MongoDB aggregation basics for portfolio project",
-    "homework": "- Complete one API integration exercise\n- Review mentor-shared React patterns doc",
+    "notes": "## Progress\nStrong Vue composition patterns; building portfolio SPA for Persevere cohort.\n\n## Observations\nResponds well to concrete homework between sessions with Paula.\n\n## Mentor (paula)\nPersevere-exclusive mentor; continue API integration practice alongside Vue component design.",
+    "focus": "Vue composition API patterns for Persevere capstone SPA",
+    "homework": "- Complete one API integration exercise in Vue\n- Review mentor-shared component library patterns",
     "schedule": {
       "starting": {
         "$date": "2025-01-06T15:00:00.000Z"
@@ -41,13 +41,13 @@
     "_id": {
       "$oid": "CC0000000000000000000002"
     },
-    "description": "Lucky is transitioning into SRE with organic discussion sessions.",
+    "description": "Lucky is a SuperSoft engineering apprentice building SRE and backend depth with Danny.",
     "profile_id": {
       "$oid": "A00000000000000000000003"
     },
-    "notes": "## Progress\nGood automation instincts; working through reliability fundamentals.\n\n## Observations\nPrefers exploratory conversation over rigid agendas.",
-    "focus": "Deployment check automation script",
-    "homework": "- Draft runbook for weekly deployment verification",
+    "notes": "## Progress\nGood automation instincts; working through reliability and backend service fundamentals.\n\n## Observations\nPrefers exploratory conversation with Danny over rigid agendas.\n\n## Mentor (danny)\nSuperSoft coordinator-mentor; emphasize deployment pipelines and on-call readiness.",
+    "focus": "Backend service hardening and deployment check automation",
+    "homework": "- Draft runbook for weekly deployment verification\n- Prototype one health-check script for SuperSoft stack",
     "schedule": {
       "starting": {
         "$date": "2025-01-06T15:00:00.000Z"
@@ -79,12 +79,12 @@
     "_id": {
       "$oid": "CC0000000000000000000003"
     },
-    "description": "Mary is deepening full-stack skills with bi-weekly mentor sessions.",
+    "description": "Mary is a self-funded apprentice deepening full-stack skills with bi-weekly Marti sessions.",
     "profile_id": {
       "$oid": "A00000000000000000000004"
     },
-    "notes": "## Progress\nSolid API design; growing confidence with database modeling.\n\n## Observations\nBenefits from pairing on architecture decisions.",
-    "focus": "Design REST endpoints for capstone feature",
+    "notes": "## Progress\nSolid API design; growing confidence with database modeling on her own sponsorship.\n\n## Observations\nBenefits from pairing with Marti on architecture decisions.\n\n## Mentor (marti)\nALI volunteer mentor; balance coordinator duties with mentee learning goals.",
+    "focus": "Design REST endpoints for self-funded capstone feature",
     "homework": "- Sketch ER diagram for capstone domain\n- Read OpenAPI path design guide",
     "schedule": {
       "starting": {
@@ -117,13 +117,13 @@
     "_id": {
       "$oid": "CC0000000000000000000004"
     },
-    "description": "Luther combines admin duties with mentee learning on the EngineerKit path.",
+    "description": "Linda completed her ALI mentee program and left active learning; dossier retained for archive.",
     "profile_id": {
       "$oid": "A00000000000000000000005"
     },
-    "notes": "## Progress\nBalancing leadership work with hands-on learning goals.\n\n## Observations\nUses journey resources effectively when given clear milestones.",
-    "focus": "Complete next EngineerKit resource in journey Now section",
-    "homework": "- Finish current path resource\n- Write short reflection on blockers",
+    "notes": "## Progress\nClosed out capstone work with Marti before transitioning to alumni status.\n\n## Observations\nArchived mentee record kept for historical mentor notes.\n\n## Mentor (marti)\nFinal handoff completed; no further sessions scheduled.",
+    "focus": "Archive completed journey artifacts",
+    "homework": "- N/A — mentee archived",
     "schedule": {
       "starting": {
         "$date": "2025-01-06T15:00:00.000Z"
@@ -131,9 +131,9 @@
       "repeats": 3
     },
     "next_appointment": {
-      "$date": "2025-06-23T15:00:00.000Z"
+      "$date": "2024-06-01T00:00:00.000Z"
     },
-    "status": "active",
+    "status": "archived",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "system",
@@ -144,49 +144,11 @@
     },
     "saved": {
       "from_ip": "192.168.1.20",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-06-10T09:00:00.000Z"
       },
       "correlation_id": "save-profile-05"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "CC0000000000000000000006"
-    },
-    "description": "Taylor mentors others while continuing own growth as a dual-role participant.",
-    "profile_id": {
-      "$oid": "A00000000000000000000014"
-    },
-    "notes": "## Progress\nStrong peer mentoring skills; refining system design depth.\n\n## Observations\nDual role works when mentee goals stay separate from mentor commitments.",
-    "focus": "System design review for side project",
-    "homework": "- Document architecture for side project\n- Identify one scalability risk",
-    "schedule": {
-      "starting": {
-        "$date": "2025-01-06T15:00:00.000Z"
-      },
-      "repeats": 3
-    },
-    "next_appointment": {
-      "$date": "2025-06-23T15:00:00.000Z"
-    },
-    "status": "active",
-    "created": {
-      "from_ip": "10.0.0.75",
-      "by_user": "carol",
-      "at_time": {
-        "$date": "2024-11-20T15:10:00.000Z"
-      },
-      "correlation_id": "seed-profile-14"
-    },
-    "saved": {
-      "from_ip": "10.0.0.75",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-05-05T11:00:00.000Z"
-      },
-      "correlation_id": "save-profile-14"
     }
   }
 ]

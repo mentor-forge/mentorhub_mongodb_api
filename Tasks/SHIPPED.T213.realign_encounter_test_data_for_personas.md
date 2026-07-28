@@ -1,6 +1,6 @@
 # T213 – Realign Encounter Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T211, T212  
 **Description**: Rebuild Encounter seed data so sessions reflect persona mentor–mentee relationships, including compensated encounters for Money Mentor.
@@ -86,4 +86,15 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for task execution agent.)_
+**2026-07-28:** Rebuilt `Encounter.0.1.0.0.json` with **9** documents (E01–E09). All use `plan_id` `f00000000000000000000001` (Standard/basic checklist agenda). Removed all Marti-for-all, Luther, Taylor, and Luke references.
+
+| E-id | Mentor | Mentee | Status |
+| --- | --- | --- | --- |
+| E01–E02 | Paula (A10) | Daniel (A02) | active |
+| E03–E04 | Danny (A14) | Lucky (A03) | active |
+| E05–E06 | Marti (A06) | Mary (A04) | active |
+| E07 | Elon (A11) | Daniel (A02) | active, compensated (noted in summary/tldr) |
+| E08 | Elon (A11) | Lucky (A03) | active, compensated (noted in summary/tldr) |
+| E09 | Marti (A06) | Linda (A05) | archived |
+
+`DELETE` + `POST /api/configurations/` on port **8385** → **SUCCESS**.

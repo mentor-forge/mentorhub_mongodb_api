@@ -1,6 +1,6 @@
 # T212 – Update Mentee Test Data for Personas
 
-**Status**: Pending  
+**Status**: Shipped  
 **Type**: Feature  
 **Depends On**: T211  
 **Description**: Align Mentee dossiers to persona mentees (Daniel, Lucky, Mary) and remove dossiers for deprecated profiles.

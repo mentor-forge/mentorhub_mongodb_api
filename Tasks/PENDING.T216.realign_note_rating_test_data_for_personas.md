@@ -22,7 +22,7 @@ All paths are relative to **this API repository root** (the directory that conta
 - `Tasks/SHIPPED.T121.generate_note_test_data.md`
 - `Tasks/SHIPPED.T120.generate_rating_test_data.md`
 
-### Migration rules
+### Update rules
 
 - Replace profile references to deprecated slugs (`luther`, `sam`, `carol`, `cat`, `taylor`) with appropriate persona profiles.
 - Notes authored by mentors should use Marti, Special, Sr. Dev, or Money as appropriate.

@@ -17,7 +17,7 @@ All paths are relative to **this API repository root** (the directory that conta
 - `../mentorhub/DeveloperEdition/standards/data_standards.md`
 - `./Tasks/_PLANNING.md`
 - `./README.md`
-- `Tasks/PENDING.T209.audit_persona_test_data.md` — `_id` map and migration plan
+- `Tasks/PENDING.T209.audit_persona_test_data.md` — `_id` map and realignment plan
 - `Tasks/PENDING.T210.update_customer_test_data_for_personas.md` — Customer `$oid` references
 - `configurator/enumerators/enumerations.0.yaml` — `user_roles`, `profile_status`
 

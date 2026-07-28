@@ -45,7 +45,7 @@ Optional: one historical Marti → Daniel encounter if product needs cross-mento
 - Deterministic Encounter `_id` prefix `E000…` (renumber if document count changes).
 - Remove encounters referencing deprecated profile `_id` values (luther, taylor, etc.).
 - Set `mentor_id` / `mentee_id` to persona Profile `$oid` values.
-- If Encounter schema supports compensation/billing fields, set them on Money Mentor sessions per dictionary.
+- If Encounter schema supports compensation/billing fields, set them on Money Mentor sessions using **existing** dictionary fields only (pre-release: do not add schema versions or migrations).
 - Realistic `transcript`, `summary`, `tldr` referencing persona names and journey progress.
 - Spread `date` over last 6 months; align with Mentee `schedule` / `next_appointment`.
 - Cover `default_status` enum (`active`, `archived`) — use archived session for audit-approved archived mentee if present.

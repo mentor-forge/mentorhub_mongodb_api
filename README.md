@@ -1,6 +1,16 @@
 # Mentor Hub MongoDB configurator API
 
-This repo contains the MongoDB database configurations for the Mentor Hub system. You can use the following commands to test, edit, and package these configurations. Note that the configuration files are just yaml files in the configurator folder - after you have made and tested changes you still need to commit your changes to a branch, and merge a PR to make them available to the other developers. 
+This repo contains the MongoDB database configurations for the Mentor Hub system. You can use the following commands to test, edit, and package these configurations. Note that the configuration files are just yaml files in the configurator folder - after you have made and tested changes you still need to commit your changes to a branch, and merge a PR to make them available to the other developers.
+
+## Pre-release
+
+This project is in **pre-release**. Dictionary and configuration work stays on the existing **0.1.0** versions:
+
+- Edit `configurator/dictionaries/*.0.1.0.yaml`, matching `configurator/configurations/*.yaml`, and `configurator/test_data/*.0.1.0.0.json` **in place**.
+- Do **not** bump dictionary or configuration version numbers.
+- Do **not** add configurator migration pipelines or multi-version upgrade paths.
+
+When schema or seed data needs to change, update the current 0.1.0 artifacts and test data together. After GA, version bumps and migrations will follow the release process documented in platform standards.
 
 ## Prerequisites
 

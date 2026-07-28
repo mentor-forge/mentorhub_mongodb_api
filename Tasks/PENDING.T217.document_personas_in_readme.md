@@ -3,7 +3,7 @@
 **Status**: Pending  
 **Type**: Feature  
 **Depends On**: T211  
-**Description**: Add a persistent **Test Personas** section to `README.md` documenting the Developer Edition persona matrix, customers, and mentor relationships.
+**Description**: Add a persistent **Test Personas** section to `README.md` documenting the Developer Edition persona matrix, customers, and mentor relationships. Preserve the existing **Pre-release** section.
 
 ## Path Anchoring
 
@@ -23,6 +23,7 @@ All paths are relative to **this API repository root** (the directory that conta
 
 Add a **Test Personas** section to `README.md` that includes:
 
+0. **Pre-release** — keep the existing section; do not add version-bump or migration guidance to persona docs.
 1. **Purpose** — personas are stable fixtures for configure-database seed data, manual SPA testing, and JWT claims on the Developer Edition sign-in page.
 2. **Customer organizations** — table with `_id`, slug, display name, and sponsored personas.
 3. **Persona matrix** — table with columns: Persona label, Profile `name` slug, `full_name`, Profile `_id`, Roles, Customer, Primary mentor (if mentee), Explanation.

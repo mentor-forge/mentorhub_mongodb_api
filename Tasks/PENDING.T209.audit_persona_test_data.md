@@ -3,7 +3,7 @@
 **Status**: Pending  
 **Type**: Feature  
 **Depends On**: none  
-**Description**: Audit all MongoDB seed data and Developer Edition auth mappings against the target persona matrix; produce a concrete migration plan for T210–T217.
+**Description**: Audit all MongoDB seed data and Developer Edition auth mappings against the target persona matrix; produce a concrete test-data realignment plan for T210–T217.
 
 ## Path Anchoring
 
@@ -25,22 +25,29 @@ All paths are relative to **this API repository root** (the directory that conta
 - `Tasks/SHIPPED.T204.update_profile_test_data.md` — current ten-profile model
 - `../mentorhub/welcome-auth.js` — static JWT persona map (must stay in sync with Profile seed data)
 
+### Pre-release
+
+This pipeline is **test-data and documentation only**. Do not plan dictionary version bumps, new configuration versions, or configurator migration pipelines. Edit existing **0.1.0** artifacts in place only if a schema gap blocks seed data (unlikely for this feature). See `README.md` **Pre-release**.
+
 ### Target persona matrix (starting point)
 
 | Persona | `name` (slug) | Roles | Explanation | Customer |
 | --- | --- | --- | --- | --- |
 | Mary the Super Mentee | `mary` | customer, coordinator, mentee | Self-funded apprentice; owns her sponsorship | Mary |
 | Stacey the CEO | `stacey` | customer | Big-time CEO; may check on mentees; super busy | Persevere |
+| Margaret the Coordinator | coordinator | Suspended Status | Persevere | 
 | Emma the Coordinator | `emma` | coordinator | Matches mentees with mentors | Persevere |
-| Daniel | `daniel` | mentee | Mentee from Persevere | Persevere |
-| Marti the Mentor | `marti` | mentor | Primary ALI mentor | ALI |
-| Mike the Admin | `mike` | admin, customer, coordinator, mentor, mentee | Platform SRE / super-user | ALI |
-| Special Mentor | `special` | mentor | Mentors **only** Persevere mentees (Daniel) | ALI |
-| Money Mentor | `money` | mentor | Compensated encounters only | ALI |
-| Entrepreneur | `entrepreneur` | customer | Startup CEO for SuperSoft | SuperSoft |
-| Dev Lead | `devlead` | coordinator | Watches mentees for SuperSoft; does not mentor | SuperSoft |
-| Sr. Dev | `srdev` | coordinator, mentor | Matches and mentors SuperSoft mentees | SuperSoft |
-| Lucky | `lucky` | mentee | Mentee from SuperSoft | SuperSoft |
+| Daniel the Mentee | `daniel` | mentee | Mentee from Persevere | Persevere |
+| Marti the Mentor | `marti` | mentor | Any Mentee | ALI |
+| Mike the Admin | `mike` | admin | Platform SRE / super-user | ALI |
+| Paula the Persevere Mentor | `paula` | mentor | Mentors **only** Persevere mentees (Daniel) | ALI |
+| Elon the Money Mentor | `elon` | mentor | Compensated encounters only | ALI |
+| Eddy the Entrepreneur | `eddy` | customer | Startup CEO for SuperSoft | SuperSoft |
+| Danny the Dev Lead | `danny` | coordinator, mentor | Watches mentees for SuperSoft; mentors for SuperSoft only | SuperSoft |
+| Lucky the Mentee | `lucky` | mentee | Mentee from SuperSoft | SuperSoft |
+| Donny the Deadbeat | `danny` | customer | Past Due Subscription Customer | ScamSoft |
+| Melinda the Multi Customer Mentor | `melinda` | Mentor | Mentors for Compensated and Persevere only | ALI |
+| Linda the Archived Mentee | `linda` | Mentee |  Linda left, and is archived status | ALI | 
 
 ### Customers (target)
 
@@ -50,8 +57,9 @@ All paths are relative to **this API repository root** (the directory that conta
 | `persevere` | Persevere Now | Stacey, Emma, Daniel |
 | `ali` | Agile Learning Institute | Mike, Marti, Special, Money |
 | `supersoft` | SuperSoft | Entrepreneur, Dev Lead, Sr. Dev, Lucky |
+| `scamsoft` | ScamSoft | Overdue Subscription Customer | 
 
-### Current seed snapshot (pre-migration)
+### Current seed snapshot (baseline)
 
 **Customers (3):** `cat`, `Persevere Now`, `Agile Learning Institute`  
 **Profiles (10):** `mike`, `daniel`, `lucky`, `mary`, `luther`, `marti`, `carol`, `cat`, `sam`, `taylor`
@@ -61,17 +69,10 @@ All paths are relative to **this API repository root** (the directory that conta
 | Current | Disposition |
 | --- | --- |
 | `luther` | Remove unless audit finds a unique role combo not covered elsewhere |
-| `sam` | Remove — duplicate all-role admin; Mike covers super-user |
+| `sam` | Rename -> `donny`; past due CEO |
 | `carol` | Rename → `emma`; reassign customer to Persevere |
 | `cat` | Remove — replaced by Mary customer + Entrepreneur |
-| `taylor` | Remove — replaced by `srdev` (coordinator + mentor) |
-
-### Suggested additional personas (audit should confirm or reject)
-
-| Persona | Roles | Rationale |
-| --- | --- | --- |
-| **Archived Mentee** (`archived`) | mentee (archived status) | Preserve `archived` profile/encounter enum coverage if Luther is removed |
-| **Suspended Coordinator** (`suspended_coord`) | coordinator (suspended) | Cover `suspended` profile_status if no other persona uses it |
+| `taylor` | Remove — replaced by `donny` (coordinator + mentor) |
 
 ### Role-combination coverage checklist
 
@@ -82,10 +83,8 @@ Audit must confirm every meaningful `user_roles` combination appears at least on
 - [ ] `mentee` only — Daniel, Lucky
 - [ ] `mentor` only — Marti, Special, Money
 - [ ] `customer` + `coordinator` + `mentee` — Mary
-- [ ] `customer` + `coordinator` + `mentor` + `mentee` + `admin` — Mike
+- [ ] `admin` only — Mike
 - [ ] `coordinator` + `mentor` — Sr. Dev
-- [ ] `mentor` + `mentee` (no coordinator) — **gap**; accept as covered by Mike or propose a lightweight persona
-- [ ] `admin` without all other roles — **gap**; Mike covers; document decision
 
 ### Collections to audit
 
@@ -111,28 +110,22 @@ For each file under `configurator/test_data/`, record:
 
 ### Mentor assignment matrix (target)
 
-| Mentee | Primary mentor | Alternate / special |
-| --- | --- | --- |
-| Daniel | Special (`special`) | Marti for historical encounters optional |
-| Lucky | Sr. Dev (`srdev`) | Marti optional for cross-customer edge case |
-| Mary | Marti (`marti`) | Self-coordinated |
-
 | Mentor | Mentees | Notes |
 | --- | --- | --- |
-| Marti | Mary | ALI platform mentor |
-| Special | Daniel only | Persevere-exclusive |
-| Money | Any (paid sessions) | At least one compensated encounter each with Daniel and Lucky |
-| Sr. Dev | Lucky | SuperSoft coordinator-mentor |
+| Marti | Mary | ALI volunteer mentor |
+| Paula | Daniel only | Persevere-exclusive |
+| Elon | Daniel, Lucky | At least one compensated encounter each with Daniel and Lucky |
+| Danny | Lucky | SuperSoft coordinator-mentor |
 
 ## Goals
 
-- Produce a **Persona Migration Plan** in **Execution Notes** with:
+- Produce a **Persona Realignment Plan** in **Execution Notes** with:
   - Final persona count and stable `_id` assignment table (Profile `A000…`, Customer `D000…`, Mentee `CC…` where applicable)
   - Per-collection change summary (add / update / remove counts)
   - Explicit list of deprecated slugs (`luther`, `sam`, `carol`, `cat`, `taylor`) and replacement mapping
   - Encounter and event realignment outline (which mentees get sessions, event density targets)
-  - Decision on suggested additional personas (archived mentee, suspended coordinator)
-- Confirm configure-database **baseline** passes before migration (`make process` → SUCCESS with current data).
+  - Confirmation that no dictionary version bumps or configurator migrations are required
+- Confirm configure-database **baseline** passes before realignment (`make process` → SUCCESS with current data).
 - Do **not** modify seed JSON files in this task — audit and plan only.
 
 ## Testing Expectations
@@ -158,7 +151,7 @@ mh up mongodb
 
 ## Outputs
 
-- `./Tasks/PENDING.T209.audit_persona_test_data.md` — **Execution Notes** only (migration plan)
+- `./Tasks/PENDING.T209.audit_persona_test_data.md` — **Execution Notes** only (realignment plan)
 
 ## Execution Notes
 

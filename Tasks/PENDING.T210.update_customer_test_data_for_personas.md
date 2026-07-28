@@ -17,8 +17,9 @@ All paths are relative to **this API repository root** (the directory that conta
 - `../mentorhub/DeveloperEdition/standards/data_standards.md`
 - `./Tasks/_PLANNING.md`
 - `./README.md`
-- `Tasks/PENDING.T209.audit_persona_test_data.md` — **Execution Notes** persona migration plan (source of truth for `_id` values)
-- `Tasks/SHIPPED.T203.update_customer_test_data.md` — prior three-customer migration
+- `Tasks/PENDING.T209.audit_persona_test_data.md` — **Execution Notes** persona realignment plan (source of truth for `_id` values)
+- `Tasks/SHIPPED.T203.update_customer_test_data.md` — prior three-customer seed
+- `README.md` **Pre-release** — test-data only; no dictionary version bumps
 
 ### Target Customer records (4 documents)
 
@@ -31,7 +32,7 @@ Apply `_id` values from T209 audit. Proposed defaults (adjust if audit reassigns
 | `D00000000000000000000006` | `ali` | Agile Learning Institute — platform operator |
 | `D00000000000000000000007` | `supersoft` | SuperSoft — startup engineering mentorship (**new** `_id`) |
 
-### Migration rules
+### Update rules
 
 - **Replace** former `cat` record (`D000…01`) with **Mary** customer (same or new `_id` per T209).
 - **Keep** Persevere slot (`D000…02`); update slug to `persevere` and refresh description/breadcrumbs.

@@ -45,7 +45,7 @@ All paths are relative to **this API repository root** (the directory that conta
 
 **Enum coverage:** Every `event_types` value appears at least once (`fail` may be rare).
 
-### Migration rules
+### Update rules
 
 - Remove events whose `context.profile_id` references deprecated profiles.
 - Regenerate deterministic `_id` prefix `F000…` if document count changes substantially.

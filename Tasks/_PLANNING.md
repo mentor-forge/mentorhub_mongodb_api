@@ -77,6 +77,7 @@ mh up mongodb
 
 Dictionary schema tasks and test-data tasks are often **separate**, but plan them together.
 
+- **Pre-release** (see `README.md`): edit existing **0.1.0** dictionaries, configurations, and test data in place. Do **not** plan version bumps or configurator migration pipelines unless release status changes.
 - **Schema-only tasks without test-data changes** are appropriate only when the schema update **relaxes** constraints — for example adding an optional property, widening an enum, or loosening validation so existing documents still pass.
 - **Tightening constraints** — removing a property, changing a type, setting `additional_properties: false` on a field that test data still carries, or making a field required — almost always requires **test data updates in the same pipeline** before the work can be marked complete.
 - **Removing a property** from a dictionary is a common case: existing EJSON in `configurator/test_data/` will fail configure-database until that property is stripped from every document. Do not treat “dictionary change only” as shippable when `make process` / `POST /api/configurations/` will fail; either include test-data files in **Outputs** or add a dependent test-data task and document the expected configure failure only as an interim state between tasks.

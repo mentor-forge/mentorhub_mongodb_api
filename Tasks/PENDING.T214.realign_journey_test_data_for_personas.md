@@ -31,7 +31,7 @@ All paths are relative to **this API repository root** (the directory that conta
 | Lucky | `lucky` | Moderate — mid `library`, active `now` | Backend / SRE practitioner path |
 | Mary | `mary` | Deep — extensive `library`, rich `now` | Full-stack / platform path |
 
-### Migration rules
+### Update rules
 
 - Remove journey documents owned by deprecated profiles (`luther`, `taylor`, etc.).
 - Reassign or regenerate journeys so exactly **three** mentee journeys exist (one per persona mentee).

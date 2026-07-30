@@ -1,0 +1,60 @@
+_locked: false
+file_name: Notification.0.1.0.yaml
+root:
+  additional_properties: false
+  description: Cross-domain notification for Discovery presentation and dismiss.
+  name: Notification
+  properties:
+  - description: The unique identifier for the Notification.
+    name: _id
+    required: false
+    type: identifier
+  - description: Searchable / display title for the notification
+    name: name
+    required: false
+    type: word
+  - description: User-facing notification body text
+    name: message
+    required: false
+    type: sentence
+  - description: Profile-scoped target (omit for customer/mentor/global scope)
+    name: profile_id
+    required: false
+    type: identifier
+  - description: Customer-scoped target (omit for profile/mentor/global scope)
+    name: customer_id
+    required: false
+    type: identifier
+  - description: Mentor-scoped target (omit for profile/customer/global scope)
+    name: mentor_id
+    required: false
+    type: identifier
+  - description: Global scope published-at breadcrumb (omit when targeting an entity id)
+    name: global
+    required: false
+    type: breadcrumb
+  - additional_properties: true
+    description: Optional cross-SPA route metadata (F-US09); additional properties allowed
+    name: link_metadata
+    properties: []
+    required: false
+    type: object
+  - description: Breadcrumb set when the user dismisses the notification
+    name: dismissed
+    required: false
+    type: breadcrumb
+  - description: Breadcrumb set when the notification is cancelled or superseded
+    name: cancelled
+    required: false
+    type: breadcrumb
+  - description: The tracking breadcrumb for when the Notification was created.
+    name: created
+    required: false
+    type: breadcrumb
+  - description: Soft-delete status (active / archived); distinct from dismissed / cancelled
+    enums: default_status
+    name: status
+    required: false
+    type: enum
+  required: false
+  type: object

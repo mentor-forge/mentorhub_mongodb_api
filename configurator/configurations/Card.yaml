@@ -1,0 +1,11 @@
+_locked: false
+description: Discovery dashboard polymorphic card payloads — configurator-only schema (version 0.0.0.0 skips collection creation).
+file_name: Card.yaml
+title: ''
+versions:
+- _locked: false
+  add_indexes: []
+  drop_indexes: []
+  migrations: []
+  test_data: null
+  version: 0.0.0.0

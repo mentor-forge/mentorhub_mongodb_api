@@ -26,7 +26,7 @@ root:
     required: false
     type: breadcrumb
   - description: Status of the document
-    enums: default_status
+    enums: customer_status
     name: status
     required: false
     type: enum

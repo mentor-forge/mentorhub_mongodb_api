@@ -1,6 +1,6 @@
 # T224 – Seed Notification, ingress Event chains, and card samples (F-D29)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T221, T222, T223  
 **Description:** Add test data and sample payloads for F-D29: Notification fixtures (invite, payment reminder, past_due), ExternalEvent + Event chains for new `event_types`, and non-persisted Discovery card chain samples. Align `_id`s with persona maps.
@@ -88,4 +88,39 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Seed Notification / ExternalEvent fixtures, append Event chains for new `event_types`, and add non-persisted Card samples under `configurator/samples/`. Leave Customer/Profile statuses unchanged (F-D21). Verify local configure-database then package via `make container` + `mh up mongodb`.
+
+**Notification `_id` prefix:** T222 planned `N0…`, but `N` is not valid ObjectId hex. Seeds use **`C0…`** (`C00000000000000000000001` … `C00000000000000000000005`), distinct from Mentee `CC…` ids. ExternalEvent keeps **`E0…`** (same hex family as Encounter; uniqueness is per-collection). New Events continue **`F0…`** from `F…0175`.
+
+**Notification fixtures (5):**
+
+| `_id` | `name` | `scope_id` | Notes |
+| --- | --- | --- | --- |
+| C…001 | InviteMember | `profile_id` → daniel | active invite |
+| C…002 | PaymentReminder | `customer_id` → persevere | active |
+| C…003 | PastDue | `customer_id` → scamsoft | **dismissed** |
+| C…004 | MentorDigest | `mentor_id` → paula | **cancelled** |
+| C…005 | PlatformNotice | `global` breadcrumb | active |
+
+`name` is type `word` (no spaces, ≤40). Breadcrumb `correlation_id` also ≤40.
+
+**ExternalEvent fixtures (5):** cognito provision, stripe past_due, stripe checkout, cognito invite, cognito GDPR redact — sources `stripe` \| `cognito`.
+
+**Event append (17 docs, F…0175–F…0191):** preserves prior 174 activity/login events. Covers `external_received`, `identity_provisioned`, `organization_enriched`, `subscription_changed`, `payment_recorded`, `invite_created`, `invite_accepted`, `notification_created`, `notification_dismissed`, `profile_redacted`. `identity_provisioned` is illustrative only — no Customer/Profile flipped to `provisioned`.
+
+**Card samples:** `configurator/samples/Card.chain.json` — three one_of payloads (Customer / Profile / Notification). `Card.yaml` `test_data` remains `null`; samples are **not** loaded into Mongo. Dockerfile does not COPY `samples/` (repo-local illustrative artifacts).
+
+**Changes**
+
+- Populated `Notification.0.1.0.0.json` (5 docs).
+- Populated `ExternalEvent.0.1.0.0.json` (5 docs).
+- Appended 17 Events to `Event.0.1.0.0.json` (191 total).
+- Created `configurator/samples/Card.chain.json`.
+- Did not modify Customer/Profile provisioned status.
+
+**Testing results**
+
+- Local configurator (Mongo host `:27018` override): `DELETE /api/database/` → HTTP 200 SUCCESS; `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `CFG-05-Notification.yaml`, `CFG-05-ExternalEvent.yaml`, `CFG-05-Event.yaml`, `CFG-05-Card.yaml` SUCCESS.
+- Spot-check: Notification=5 (scope keys profile/customer/mentor/global; dismissed+cancelled present); ExternalEvent=5 (stripe+cognito); Event=191; `HAS_Card=false`.
+- `make container` → image includes Notification/ExternalEvent test_data under `/input`.
+- `mh up mongodb` → API :8383 lists Notification/ExternalEvent/Card/Event; packaged mongo `HAS_Card=false`, Notification=5, ExternalEvent=5, Event=191; packaged DROP → 403 as expected.

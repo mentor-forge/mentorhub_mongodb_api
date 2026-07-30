@@ -4041,5 +4041,413 @@
       },
       "correlation_id": "seed-auth-marti-login-02"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000175"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "external_id": "cognito-post-confirmation-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-06-01T10:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-cognito-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000176"
+    },
+    "type": "identity_provisioned",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000006"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000006"
+      },
+      "note": "illustrative provision chain; profiles remain active (F-D21 owns provisioned seeds)"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-06-01T10:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-id-provision-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000177"
+    },
+    "type": "organization_enriched",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-06-01T10:05:00.000Z"
+      },
+      "correlation_id": "seed-evt-org-enriched-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000178"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "external_id": "evt_stripe_checkout_session_completed_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-checkout-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000179"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      },
+      "change": "checkout_completed"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-sub-checkout-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000180"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "amount_total": 9900,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:15.000Z"
+      },
+      "correlation_id": "seed-evt-pay-recorded-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000181"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "external_id": "evt_stripe_invoice_payment_failed_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-12T10:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000182"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000013"
+      },
+      "change": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-12T10:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-sub-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000183"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "reason": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-12T11:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000184"
+    },
+    "type": "notification_dismissed",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000013"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "donny",
+      "at_time": {
+        "$date": "2026-07-15T16:30:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-dismiss-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000185"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000004"
+      },
+      "external_id": "cognito-admin-create-user-invite-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-01T13:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-invite-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000186"
+    },
+    "type": "invite_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000004"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "invited_by": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-07-01T13:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-invite-created-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000187"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000001"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "reason": "invite"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-07-01T14:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-invite-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000188"
+    },
+    "type": "invite_accepted",
+    "context": {
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000001"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2026-07-02T10:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-invite-accept-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000189"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      },
+      "reason": "payment_reminder"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-10T09:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-payrem-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000190"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000005"
+      },
+      "external_id": "cognito-gdpr-redact-request-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-22T09:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-redact-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000191"
+    },
+    "type": "profile_redacted",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000005"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      },
+      "reason": "gdpr_erasure"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-22T09:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-profile-redact-01"
+    }
   }
 ]

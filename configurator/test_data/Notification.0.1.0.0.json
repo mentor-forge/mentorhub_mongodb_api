@@ -1,1 +1,151 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "C00000000000000000000001"
+    },
+    "name": "InviteMember",
+    "message": "You have been invited to join Persevere on Mentor Hub.",
+    "scope_id": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      }
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/invites/accept",
+      "invite_token": "seed-invite-daniel-01"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-07-01T14:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-invite-01"
+    },
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000002"
+    },
+    "name": "PaymentReminder",
+    "message": "Your Persevere subscription payment is due soon. Update billing to avoid interruption.",
+    "scope_id": {
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      }
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/billing",
+      "customer_id": "D00000000000000000000002"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-10T09:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-pay-remind-01"
+    },
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000003"
+    },
+    "name": "PastDue",
+    "message": "ScamSoft subscription is past due. Resolve payment to restore full access.",
+    "scope_id": {
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      }
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/billing",
+      "customer_id": "D00000000000000000000008"
+    },
+    "dismissed": {
+      "from_ip": "127.0.0.1",
+      "by_user": "donny",
+      "at_time": {
+        "$date": "2026-07-15T16:30:00.000Z"
+      },
+      "correlation_id": "seed-notif-pastdue-dism-01"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-12T11:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-pastdue-01"
+    },
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000004"
+    },
+    "name": "MentorDigest",
+    "message": "You have pending mentee invites waiting for your review.",
+    "scope_id": {
+      "mentor_id": {
+        "$oid": "A00000000000000000000010"
+      }
+    },
+    "link_metadata": {
+      "spa": "mentor",
+      "route": "/home"
+    },
+    "cancelled": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-18T08:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-mentor-canc-01"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-08T08:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-mentor-01"
+    },
+    "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000005"
+    },
+    "name": "PlatformNotice",
+    "message": "Mentor Hub maintenance window scheduled for this weekend.",
+    "scope_id": {
+      "global": {
+        "from_ip": "127.0.0.1",
+        "by_user": "admin",
+        "at_time": {
+          "$date": "2026-07-20T12:00:00.000Z"
+        },
+        "correlation_id": "seed-notif-global-scope-01"
+      }
+    },
+    "link_metadata": {
+      "spa": "discovery",
+      "route": "/notifications"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin",
+      "at_time": {
+        "$date": "2026-07-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-global-01"
+    },
+    "status": "active"
+  }
+]

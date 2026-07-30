@@ -3,53 +3,53 @@
 **Status:** Pending  
 **Type:** Feature  
 **Depends On:** T220  
-**Description:** Add a **configurator-only, non-persisted** polymorphic Card schema for Discovery dashboard card payloads (version `-1` / orphan pattern). **Do not** create a MongoDB Card collection. Omit Coordinator card type. This is **not** the dropped payment-Card collection (F-D16 / #37).
+**Description:** Add a **configurator-only, non-persisted** polymorphic Card schema for Discovery dashboard card payloads. Prevent collection creation by manually setting configuration **and** dictionary version/name to **`0.0.0.0`**. MVP: **one** Customer card, **one** Profile card, **one** Notification card (no Mine/Other/role splits; no Coordinator). This is **not** the dropped payment-Card collection (F-D16 / #37).
 
 ## Path Anchoring
 
 All paths are relative to **this API repository root** (the directory that contains `Pipfile`).
 
 - Standards: `../mentorhub/DeveloperEdition/standards/data_standards.md`
-- In-repo: `configurator/dictionaries/`, `configurator/configurations/` (only if required for orphan registration), `Tasks/`
+- In-repo: `configurator/dictionaries/`, `configurator/configurations/`, `Tasks/`
 
 ## Context
 
 - `../mentorhub/DeveloperEdition/standards/data_standards.md`
 - `./Tasks/_PLANNING.md`
 - `./README.md`
-- `../mentorhub/Workshops/discovery_journey_issues.md` — [Polymorphic card types (MVP catalog)](../mentorhub/Workshops/discovery_journey_issues.md); omit `Profile (Coordinator)`
+- `../mentorhub/Workshops/discovery_journey_issues.md` — Discovery card concept (simplify catalog per this task)
 - GitHub: [F-D29 #61](https://github.com/mentor-forge/mentorhub_mongodb_api/issues/61); F-W14 originally F-SD01
-- Payment **Card** already removed ([F-D16 #37](https://github.com/mentor-forge/mentorhub_mongodb_api/issues/37)) — reclaiming the `Card` dictionary name for Discovery UI types is OK if clearly described; alternatively use `Discovery_Card` if configurator naming conflicts — document choice in Execution Notes
-- **Out of scope:** Persisted card documents; Notification fixtures (T224); Discovery API aggregate (external F-DA01).
+- Payment **Card** already removed ([F-D16 #37](https://github.com/mentor-forge/mentorhub_mongodb_api/issues/37)) — reclaiming the `Card` dictionary name for Discovery UI types is OK if clearly described
+- `Tasks/PENDING.T222.add_notification_collection.md` — Notification shape cards may reference
+- **Out of scope:** Persisted card documents; Notification fixtures (T224); Discovery API aggregate (external F-DA01); fine-grained Mine/Other/Mentor/Mentee card variants (defer).
 
-### MVP card type catalog (must cover; no Coordinator)
+### MVP card types (simplified)
 
-| Card type | Source data |
+Root polymorphism via configurator **`one_of`** — **three** variants only:
+
+| Card type | Intent |
 | --- | --- |
-| Customer (Mine) | JWT `customer_id` org |
-| Customer (Other) | Customer visible via RBAC |
-| Profile (Me) | Caller’s Profile |
-| Profile (Mentor) | Profiles linked via `mentor_id` |
-| Profile (Mentee) | Mentee profiles visible to mentor/customer |
-| Profile (Customer) | Profiles with `customer` role in org |
-| Notification (Global) | Scope `all` |
-| Notification (Customer) | Scope `customer` + id |
-| Notification (Mentor) | Scope `mentor` + id |
-| Notification (Profile) | Scope `profile` + id |
+| **Customer** | Single Customer card shape (mine vs other is API/RBAC, not separate schemas) |
+| **Profile** | Single Profile card shape (role/context is API/RBAC, not separate schemas) |
+| **Notification** | Single Notification card shape (scope comes from Notification `scope_id`) |
 
-Use configurator `one_of` (or equivalent) polymorphism discriminated by card type. Include fields Discovery needs for title, summary, and link/target metadata aligned with F-US09 templates (link shapes may be stubs until spa_utils ships).
+Omit Coordinator. Do **not** create separate Customer (Mine)/(Other) or Profile (Me)/(Mentor)/(Mentee)/(Customer) dictionary variants for now.
 
-### Version `-1` / non-persisted pattern
+Include fields Discovery needs for title, summary, and link/target metadata aligned with F-US09 templates (link shapes may be stubs until spa_utils ships).
 
-- Confirm via **running configurator** how to register a dictionary **without** creating a Mongo collection (orphan dictionary and/or configuration version `-1`).
-- Prefer: dictionary present for API/OpenAPI consumers; **no** `test_data` load into Mongo; configure-database must **not** create a `Card` collection.
-- Prefer delete+create of any mistaken Configuration that would persist cards.
+### Non-persisted pattern — version `0.0.0.0`
+
+- Create both a **Configuration** and a **Dictionary**.
+- Manually set the configuration version to **`0.0.0.0`** and align the dictionary name/version to **`0.0.0.0`** (e.g. `Card.0.0.0.yaml` / config version `0.0.0.0`) — this **prevents the collection from being created**.
+- Do **not** attach loadable Mongo test data that would create documents; configure-database must **not** create a `Card` collection.
+- Confirm via **running configurator** that `0.0.0.0` behaves as expected; document any nuances in Execution Notes.
+- Prefer delete+create of any mistaken Configuration that would persist cards at `0.1.0.0`.
 
 ## Goals
 
-- Create polymorphic Card (or `Discovery_Card`) dictionary covering the MVP catalog; omit Coordinator.
-- Register as non-persisted / version `-1` orphan so configure-database does **not** create a collection.
-- Document the chosen configurator pattern in Execution Notes for F-DA01 / F-DS01 consumers.
+- Create Card dictionary + configuration with version/name **`0.0.0.0`** so no Mongo collection is created.
+- Polymorphic root `one_of` with **exactly three** card types: Customer, Profile, Notification.
+- Document the `0.0.0.0` non-persist pattern in Execution Notes for F-DA01 / F-DS01 consumers.
 - Leave Notification / ExternalEvent / Event collections untouched except as schema refs if needed.
 
 ## Testing Expectations
@@ -61,8 +61,8 @@ curl -X POST "http://localhost:8385/api/configurations/" -H "accept: application
 ```
 
 - Expect HTTP **200**, top-level **`status: SUCCESS`**.
-- After configure, confirm **no** persisted `Card` / `Discovery_Card` collection in Mongo (e.g. list collections / configurator process result).
-- Dictionary (or orphan config) is visible to the configurator for schema inspection.
+- After configure, confirm **no** persisted `Card` collection in Mongo (list collections / configurator process result).
+- Card configuration/dictionary at `0.0.0.0` is visible for schema inspection.
 
 **Packaging verification:**
 
@@ -74,8 +74,8 @@ mh up mongodb
 
 ## Outputs
 
-- `configurator/dictionaries/Card.0.1.0.yaml` or `Discovery_Card.0.1.0.yaml` — **create** (name per Execution Notes)
-- Optional orphan configuration only if required by configurator for version `-1` — list exact path in Execution Notes
+- `configurator/dictionaries/Card.0.0.0.yaml` — **create** (name/version `0.0.0.0`; adjust filename if configurator requires a different pattern — document in Execution Notes)
+- `configurator/configurations/Card.yaml` — **create** with version **`0.0.0.0`** (no collection creation)
 - `Tasks/PENDING.T223.add_discovery_card_polymorphic_schema.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
 
 ## Execution Notes

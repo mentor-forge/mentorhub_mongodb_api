@@ -44,8 +44,8 @@ All paths are relative to **this API repository root** (the directory that conta
 
 **New enumerators:**
 
-- `notification_scope`: `all`, `customer`, `mentor`, `profile`
 - `external_event_source`: `stripe`, `cognito`
+- **Do not** add `notification_scope` — Notification targeting is a `scope_id` **`one_of`** (`profile_id` | `customer_id` | `mentor_id` | global breadcrumb) per T222
 
 **Lifecycle:**
 
@@ -55,7 +55,7 @@ All paths are relative to **this API repository root** (the directory that conta
 ## Goals
 
 - Extend `event_types` for ingress, subscription, invite, notification, and GDPR (Admin) use cases; keep existing activity types.
-- Add `notification_scope` and `external_event_source` enumerators.
+- Add `external_event_source` enumerator (Notification scope is `scope_id` one_of in T222, not an enum).
 - Support Profile / Customer `provisioned` → `active` lifecycle via status enums + Customer dictionary enum retarget.
 - Pre-release: edit enumerators / 0.1.0 dictionaries in place; no version bumps.
 
@@ -80,7 +80,7 @@ mh up mongodb
 
 ## Outputs
 
-- `configurator/enumerators/enumerations.0.yaml` — extend `event_types`, `profile_status`; add `notification_scope`, `external_event_source`, `customer_status`
+- `configurator/enumerators/enumerations.0.yaml` — extend `event_types`, `profile_status`; add `external_event_source`, `customer_status`
 - `configurator/dictionaries/Customer.0.1.0.yaml` — `status.enums: customer_status`
 - `Tasks/PENDING.T220.extend_event_types_and_lifecycle_enums.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
 

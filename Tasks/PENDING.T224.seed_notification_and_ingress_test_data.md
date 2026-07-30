@@ -30,13 +30,13 @@ All paths are relative to **this API repository root** (the directory that conta
 
 ### Notification fixtures (minimum)
 
-| Fixture | Scope (typical) | Persona hint |
+| Fixture | `scope_id` one_of (typical) | Persona hint |
 | --- | --- | --- |
-| Invite | `profile` or `customer` | e.g. invite toward a Persevere / ALI member |
-| Payment reminder | `customer` | e.g. Stacey / Persevere (`stacey`, `persevere`) |
-| Past due | `customer` | e.g. Donny / ScamSoft (`donny`, `scamsoft`) |
+| Invite | `profile_id` or `customer_id` | e.g. invite toward a Persevere / ALI member |
+| Payment reminder | `customer_id` | e.g. Stacey / Persevere (`stacey`, `persevere`) |
+| Past due | `customer_id` | e.g. Donny / ScamSoft (`donny`, `scamsoft`) |
 
-Include `message`, `link_metadata`, dismiss state (at least one dismissed + one active), and `created` breadcrumbs.
+Include `name`, `message` (no `description`), `link_metadata`, `dismissed` / `cancelled` breadcrumbs where relevant (at least one dismissed + one active), and `created`.
 
 ### Ingress / Event chains
 
@@ -45,7 +45,8 @@ Include `message`, `link_metadata`, dismiss state (at least one dismissed + one 
 
 ### Card chain samples
 
-- Because Card is **non-persisted**, store illustrative JSON samples that validate against the Card dictionary (path agreed in T223 Execution Notes — e.g. `configurator/samples/` or a non-loaded fixture file). Cover one sample per MVP card type **except** Coordinator.
+- Card is non-persisted (`0.0.0.0` per T223). Store illustrative JSON samples that validate against the Card dictionary (path from T223 Execution Notes).
+- Cover **three** samples only: one **Customer**, one **Profile**, one **Notification** card (no Mine/Other/role splits).
 - Samples should reference real persona Customer/Profile/Notification `_id`s where applicable so Discovery can demo end-to-end locally.
 
 ## Goals
@@ -66,7 +67,7 @@ curl -X POST "http://localhost:8385/api/configurations/" -H "accept: application
 
 - Expect HTTP **200**, top-level **`status: SUCCESS`**.
 - Notification / ExternalEvent / Event sub-events SUCCESS; no Card collection created from samples.
-- Spot-check seeded Notification scopes and Event `type` values against new enums.
+- Spot-check seeded Notification `scope_id` variants and Event `type` values against new enums / one_of shapes.
 
 **Packaging verification:**
 

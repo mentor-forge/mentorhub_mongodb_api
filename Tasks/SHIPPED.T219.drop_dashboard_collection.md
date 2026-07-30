@@ -1,6 +1,6 @@
 # T219 – Drop Dashboard collection (F-D15 / E0)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Delete the Dashboard Configuration, Dictionary, and Test Data so custom dashboards are no longer a MentorHub collection. Discovery SPA aggregation and Customer org home replace this surface. Prefer delete over rename.
@@ -66,8 +66,24 @@ mh up mongodb
 - `configurator/configurations/Dashboard.yaml` — **delete**
 - `configurator/dictionaries/Dashboard.0.1.0.yaml` — **delete**
 - `configurator/test_data/Dashboard.0.1.0.0.json` — **delete**
-- `Tasks/PENDING.T219.drop_dashboard_collection.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
+- `Tasks/SHIPPED.T219.drop_dashboard_collection.md` — this file (Execution Notes)
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Delete Dashboard Configuration, Dictionary, and empty test-data file; leave Event untouched; verify via local configurator (Mongo host port 27018 `ports: !override` because 27017 is in use by mentorhub stack) then `make container` + `mh up mongodb`.
+
+**Changes**
+
+- Deleted `configurator/configurations/Dashboard.yaml`.
+- Deleted `configurator/dictionaries/Dashboard.0.1.0.yaml`.
+- Deleted `configurator/test_data/Dashboard.0.1.0.0.json`.
+- Event Configuration / Dictionary / Test Data unchanged.
+
+**Testing results**
+
+- Local configurator (INPUT_FOLDER mount, Mongo host port 27018 via `ports: !override`): `GET /api/configurations/` — no `Dashboard.yaml`; `Event.yaml` present (12 configs).
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; sub-event `CFG-05-Event.yaml` SUCCESS; no `Dashboard.yaml` in process result.
+- Grep `configurator/` for `configurations/Dashboard|dictionaries/Dashboard|test_data/Dashboard` — none.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` built successfully.
+- `mh up mongodb` → API on :8383 lists configurations without `Dashboard.yaml`; `Event.yaml` still present.

@@ -17,51 +17,22 @@ root:
     name: message
     required: false
     type: sentence
-  - description: Scope target — exactly one of profile_id, customer_id, mentor_id, or global breadcrumb
-    name: scope_id
-    properties:
-    - additional_properties: false
-      description: Profile-scoped notification target
-      name: profile_id
-      properties:
-      - description: Target Profile _id
-        name: profile_id
-        required: true
-        type: identifier
-      required: false
-      type: object
-    - additional_properties: false
-      description: Customer-scoped notification target
-      name: customer_id
-      properties:
-      - description: Target Customer _id
-        name: customer_id
-        required: true
-        type: identifier
-      required: false
-      type: object
-    - additional_properties: false
-      description: Mentor-scoped notification target
-      name: mentor_id
-      properties:
-      - description: Target Mentor Profile _id
-        name: mentor_id
-        required: true
-        type: identifier
-      required: false
-      type: object
-    - additional_properties: false
-      description: Globally scoped notification
-      name: global
-      properties:
-      - description: Global scope breadcrumb (when the notification was published globally)
-        name: global
-        required: true
-        type: breadcrumb
-      required: false
-      type: object
+  - description: Profile-scoped target (omit for customer/mentor/global scope)
+    name: profile_id
     required: false
-    type: one_of
+    type: identifier
+  - description: Customer-scoped target (omit for profile/mentor/global scope)
+    name: customer_id
+    required: false
+    type: identifier
+  - description: Mentor-scoped target (omit for profile/customer/global scope)
+    name: mentor_id
+    required: false
+    type: identifier
+  - description: Global scope published-at breadcrumb (omit when targeting an entity id)
+    name: global
+    required: false
+    type: breadcrumb
   - additional_properties: true
     description: Optional cross-SPA route metadata (F-US09); additional properties allowed
     name: link_metadata

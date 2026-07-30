@@ -5,10 +5,8 @@
     },
     "name": "InviteMember",
     "message": "You have been invited to join Persevere on Mentor Hub.",
-    "scope_id": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      }
+    "profile_id": {
+      "$oid": "A00000000000000000000002"
     },
     "link_metadata": {
       "spa": "customer",
@@ -31,10 +29,8 @@
     },
     "name": "PaymentReminder",
     "message": "Your Persevere subscription payment is due soon. Update billing to avoid interruption.",
-    "scope_id": {
-      "customer_id": {
-        "$oid": "D00000000000000000000002"
-      }
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
     },
     "link_metadata": {
       "spa": "customer",
@@ -57,10 +53,8 @@
     },
     "name": "PastDue",
     "message": "ScamSoft subscription is past due. Resolve payment to restore full access.",
-    "scope_id": {
-      "customer_id": {
-        "$oid": "D00000000000000000000008"
-      }
+    "customer_id": {
+      "$oid": "D00000000000000000000008"
     },
     "link_metadata": {
       "spa": "customer",
@@ -91,10 +85,8 @@
     },
     "name": "MentorDigest",
     "message": "You have pending mentee invites waiting for your review.",
-    "scope_id": {
-      "mentor_id": {
-        "$oid": "A00000000000000000000010"
-      }
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
     },
     "link_metadata": {
       "spa": "mentor",
@@ -124,15 +116,13 @@
     },
     "name": "PlatformNotice",
     "message": "Mentor Hub maintenance window scheduled for this weekend.",
-    "scope_id": {
-      "global": {
-        "from_ip": "127.0.0.1",
-        "by_user": "admin",
-        "at_time": {
-          "$date": "2026-07-20T12:00:00.000Z"
-        },
-        "correlation_id": "seed-notif-global-scope-01"
-      }
+    "global": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin",
+      "at_time": {
+        "$date": "2026-07-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-global-scope-01"
     },
     "link_metadata": {
       "spa": "discovery",

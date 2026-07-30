@@ -10,18 +10,18 @@ versions:
     name: Created
     options: {}
   - key:
-      scope_id.profile_id: 1
-    name: Scope Profile Id
+      profile_id: 1
+    name: Profile Id
     options:
       sparse: true
   - key:
-      scope_id.customer_id: 1
-    name: Scope Customer Id
+      customer_id: 1
+    name: Customer Id
     options:
       sparse: true
   - key:
-      scope_id.mentor_id: 1
-    name: Scope Mentor Id
+      mentor_id: 1
+    name: Mentor Id
     options:
       sparse: true
   drop_indexes: []

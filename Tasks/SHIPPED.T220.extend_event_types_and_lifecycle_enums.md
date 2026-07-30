@@ -1,6 +1,6 @@
 # T220 – Extend event types and provisioned lifecycle enums (F-D29)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T219  
 **Description:** Extend shared enumerators for Admin ingress and Discovery: new `event_types`, Notification scope, ExternalEvent source, and `provisioned` → `active` lifecycle values on Profile and Customer status enums. Schema/enum work only — no new collections in this task.
@@ -82,8 +82,20 @@ mh up mongodb
 
 - `configurator/enumerators/enumerations.0.yaml` — extend `event_types`, `profile_status`; add `external_event_source`, `customer_status`
 - `configurator/dictionaries/Customer.0.1.0.yaml` — `status.enums: customer_status`
-- `Tasks/PENDING.T220.extend_event_types_and_lifecycle_enums.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
+- `Tasks/SHIPPED.T220.extend_event_types_and_lifecycle_enums.md` — this file (Execution Notes)
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Extend `enumerations.0.yaml` in place (keep existing `event_types`; add provisioned to `profile_status`; add `external_event_source` and `customer_status`; do not add `notification_scope` or touch `default_status`). Point Customer `status` at `customer_status`. Verify via local configurator (Mongo host port 27018 `ports: !override` if 27017 busy) then `make container` + `mh up mongodb`.
+
+**Changes**
+
+- `enumerations.0.yaml`: added `provisioned` to `profile_status`; extended `event_types` with ingress/subscription/invite/notification/GDPR values; added `external_event_source` (`stripe`, `cognito`) and `customer_status` (`provisioned`, `active`, `archived`). Left `default_status` unchanged; did not add `notification_scope`.
+- `Customer.0.1.0.yaml`: `status.enums` retargeted from `default_status` to `customer_status` (in place, no version bump).
+
+**Testing results**
+
+- Local configurator (INPUT_FOLDER mount, Mongo host port 27018 via `ports: !override`): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `ENU-01-enumerations.0.yaml`, `CFG-05-Customer.yaml`, `CFG-05-Profile.yaml`, `CFG-05-Event.yaml` SUCCESS; process result mentions `customer_status`, `external_event_source`, `provisioned`, `identity_provisioned`.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` built successfully; image `/input` contains new enums and Customer `customer_status`.
+- `mh up mongodb` → API on :8383 lists configs including `Customer.yaml` / `Event.yaml` (packaged DROP disabled → 403 as expected).

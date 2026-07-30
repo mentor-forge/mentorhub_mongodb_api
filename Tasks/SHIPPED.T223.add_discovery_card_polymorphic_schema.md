@@ -1,6 +1,6 @@
 # T223 – Add Discovery Card polymorphic schema (F-D29)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T220  
 **Description:** Add a **configurator-only, non-persisted** polymorphic Card schema for Discovery dashboard card payloads. Prevent collection creation by manually setting configuration **and** dictionary version/name to **`0.0.0.0`**. MVP: **one** Customer card, **one** Profile card, **one** Notification card (no Mine/Other/role splits; no Coordinator). This is **not** the dropped payment-Card collection (F-D16 / #37).
@@ -80,4 +80,42 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Create non-persisted Card dictionary/configuration at `0.0.0.0` with root `one_of` + `constant` discriminators for Customer / Profile / Notification. No test_data file. Verify via local configurator then `make container` + `mh up mongodb`.
+
+### `0.0.0.0` non-persist pattern (for F-DA01 / F-DS01)
+
+Configurator `VersionManager.get_current_version` returns `{Collection}.0.0.0.0` when no `CollectionVersions` row exists. `Version.process` **skips** any target version when `current_version >= target_version`. Therefore a configuration whose only version is **`0.0.0.0`** is always skipped on a fresh DB: no collection create, no schema validation, no indexes, no test-data load, no `CollectionVersions` upsert.
+
+- Dictionary filename aligns via `VersionNumber.get_schema_filename()` → **`Card.0.0.0.yaml`** (four-part name + three version digits; enumerator omitted).
+- Configuration version string is **`0.0.0.0`** (four parts including enumerator `0`).
+- Observed process event: `CFG-05-Card.yaml` SUCCESS with nested skip `skip_reason: "Version already implemented"`, `current_version: "Card.0.0.0.yaml"`, `target_version: "0.0.0.0"`.
+- Schema remains inspectable: `GET /api/configurations/Card.yaml/`, `GET /api/dictionaries/Card.0.0.0.yaml/`, `GET /api/configurations/json_schema/Card.yaml/0.0.0.0/`.
+
+**Do not** bump Card to `0.1.0.0` unless intentionally creating a Mongo collection.
+
+### `one_of` + `constant` modeling
+
+Per mongodb_configurator_spa WelcomePage Dictionary guidance: root **`one_of`** of three **object** variants; each variant has a required **`type`** field with **`constant`** discriminator (`Customer` | `Profile` | `Notification`). JSON Schema emits `oneOf` with `const` on `type` so exactly one alternate matches.
+
+Shared Discovery fields on each variant (stubs OK for F-US09):
+
+- `title` (`sentence`), `summary` (`sentence`)
+- entity id: `customer_id` | `profile_id` | `notification_id` (`identifier`)
+- `link_metadata` optional object (`additional_properties: true`, empty property list) — same stub pattern as Notification
+
+No Coordinator; no Mine/Other/role-split card types.
+
+### Changes
+
+- Created `Card.0.0.0.yaml` — root `one_of` of Customer / Profile / Notification objects with `constant` `type` discriminators + title/summary/id/link_metadata.
+- Created `Card.yaml` version `0.0.0.0`, empty indexes/migrations, `test_data: null` (no loadable Card documents).
+- Did not touch Notification / ExternalEvent / Event collections.
+
+### Testing results
+
+- Local configurator (`docker compose` + `/tmp/mh-mongo-port-override.yaml` host **27018**; INPUT_FOLDER mount): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `CFG-05-Card.yaml` SUCCESS with version skip as above.
+- Mongo `db.getCollectionNames()` — **no `Card`**; `CollectionVersions` count for Card = **0**.
+- `GET` Card config/dictionary/`json_schema/.../0.0.0.0/` — three `oneOf` variants with consts `Customer`, `Profile`, `Notification`.
+- `make container` → image includes Card under `/input`.
+- `mh up mongodb` → API :8383 lists `Card.yaml` + `Card.0.0.0.yaml`; packaged mongo **HAS_Card=false**.

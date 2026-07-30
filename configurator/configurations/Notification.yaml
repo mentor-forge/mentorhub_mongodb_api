@@ -1,0 +1,30 @@
+_locked: false
+description: Cross-domain notification for Discovery presentation and dismiss.
+file_name: Notification.yaml
+title: ''
+versions:
+- _locked: false
+  add_indexes:
+  - key:
+      created.at_time: -1
+    name: Created
+    options: {}
+  - key:
+      scope_id.profile_id: 1
+    name: Scope Profile Id
+    options:
+      sparse: true
+  - key:
+      scope_id.customer_id: 1
+    name: Scope Customer Id
+    options:
+      sparse: true
+  - key:
+      scope_id.mentor_id: 1
+    name: Scope Mentor Id
+    options:
+      sparse: true
+  drop_indexes: []
+  migrations: []
+  test_data: Notification.0.1.0.0.json
+  version: 0.1.0.0

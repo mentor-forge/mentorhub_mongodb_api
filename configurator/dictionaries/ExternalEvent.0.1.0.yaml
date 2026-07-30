@@ -1,0 +1,36 @@
+_locked: false
+file_name: ExternalEvent.0.1.0.yaml
+root:
+  additional_properties: false
+  description: Append-only ingress record of a verified external webhook or provider message.
+  name: ExternalEvent
+  properties:
+  - description: The unique identifier for the ExternalEvent.
+    name: _id
+    required: false
+    type: identifier
+  - description: Provider that emitted the ingress payload
+    enums: external_event_source
+    name: source
+    required: false
+    type: enum
+  - description: Provider event or message id used for ingress idempotency
+    name: external_id
+    required: false
+    type: sentence
+  - description: Hash of the verified raw payload
+    name: payload_hash
+    required: false
+    type: sentence
+  - additional_properties: true
+    description: Normalized ingress payload; additional properties allowed
+    name: normalized_body
+    properties: []
+    required: false
+    type: object
+  - description: The tracking breadcrumb for when the ExternalEvent was recorded.
+    name: created
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

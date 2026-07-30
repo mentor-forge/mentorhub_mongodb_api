@@ -1,6 +1,6 @@
 # T221 – Add ExternalEvent collection (F-D29)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T220  
 **Description:** Create append-only **ExternalEvent** Configuration and Dictionary for Admin ingress (Stripe / Cognito). Prefer delete+create of new artifacts over rename. Empty or minimal test data only if configure requires a file; full ingress chains land in T224.
@@ -77,4 +77,21 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Create append-only ExternalEvent dictionary/configuration/test_data matching Event style (`created` only; no `saved`). Unique compound index on `source`+`external_id`; `created.at_time:-1` like Event. Empty test data `[]`. Verify via local configurator (Mongo host port 27018 `ports: !override`) then `make container` + `mh up mongodb`.
+
+**_id prefix for T224 seeds:** `E0…` hex ObjectIds (e.g. `E00000000000000000000001`). Same hex prefix family as Encounter seeds; uniqueness is per-collection, so ExternalEvent seeds can reuse the `E0…` pattern.
+
+**Changes**
+
+- Created `ExternalEvent.0.1.0.yaml`: `_id`, `source` (`external_event_source`), `external_id`, `payload_hash`, `normalized_body` (object, `additional_properties: true`), `created` breadcrumb; no `saved`.
+- Created `ExternalEvent.yaml` version `0.1.0.0` with unique `Source External Id` index (`source`+`external_id`) and `Created` index (`created.at_time:-1`).
+- Created `ExternalEvent.0.1.0.0.json` as `[]` (full ingress fixtures deferred to T224).
+- Did not touch Notification or Card.
+
+**Testing results**
+
+- Local configurator (INPUT_FOLDER mount, Mongo host port 27018 via `ports: !override`): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `CFG-05-ExternalEvent.yaml` SUCCESS; `CFG-05-Event.yaml` SUCCESS; unique index `PRO-04-Source External Id` SUCCESS.
+- `GET /api/configurations/` lists `ExternalEvent.yaml` and `Event.yaml`; no `Card.yaml` / `Notification.yaml`.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` includes ExternalEvent configuration/dictionary/test_data under `/input`.
+- `mh up mongodb` → API on :8383 lists `ExternalEvent.yaml` and `Event.yaml` (packaged DROP disabled → 403 as expected).

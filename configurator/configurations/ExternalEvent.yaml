@@ -1,0 +1,21 @@
+_locked: false
+description: Append-only ingress record of a verified external webhook or provider message.
+file_name: ExternalEvent.yaml
+title: ''
+versions:
+- _locked: false
+  add_indexes:
+  - key:
+      source: 1
+      external_id: 1
+    name: Source External Id
+    options:
+      unique: true
+  - key:
+      created.at_time: -1
+    name: Created
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: ExternalEvent.0.1.0.0.json
+  version: 0.1.0.0

@@ -1,6 +1,6 @@
 # T218 – Drop top-level Subscription collection (F-D14 / E0)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Delete the top-level Subscription Configuration, Dictionary, and Test Data so subscriptions are no longer a standalone MentorHub collection. Billing state will live on `Customer.subscriptions[]` under **F-D22** (do **not** implement F-D22 in this task). Prefer delete over rename.
@@ -66,8 +66,23 @@ mh up mongodb
 - `configurator/configurations/Subscription.yaml` — **delete**
 - `configurator/dictionaries/Subscription.0.1.0.yaml` — **delete**
 - `configurator/test_data/Subscription.0.1.0.0.json` — **delete**
-- `Tasks/PENDING.T218.drop_top_level_subscription_collection.md` — this file (Execution Notes only when run)
+- `Tasks/SHIPPED.T218.drop_top_level_subscription_collection.md` — this file (Execution Notes)
 
 ## Execution Notes
 
-(Reserved for the execution agent.)
+**Plan:** Delete Subscription Configuration, Dictionary, and empty test-data file; leave Event untouched; verify via local configurator (port override) then `make container` + `mh up mongodb`.
+
+**Changes**
+
+- Deleted `configurator/configurations/Subscription.yaml`.
+- Deleted `configurator/dictionaries/Subscription.0.1.0.yaml`.
+- Deleted `configurator/test_data/Subscription.0.1.0.0.json`.
+- Event Configuration / Dictionary / Test Data unchanged.
+
+**Testing results**
+
+- Local configurator (INPUT_FOLDER mount, Mongo host port 27018): `GET /api/configurations/` — no `Subscription.yaml`; `Event.yaml` present.
+- `DELETE /api/database/` → HTTP 200.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; Event sub-event `CFG-05-Event.yaml` SUCCESS.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` built successfully.
+- `mh up mongodb` → API on :8383 lists configurations without `Subscription.yaml`; `Event.yaml` still present.

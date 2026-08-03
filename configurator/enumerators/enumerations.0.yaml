@@ -117,6 +117,30 @@ enumerators:
     value: active
   - description: Soft Delete Indicator
     value: archived
+- name: subscription_status
+  values:
+  - description: Subscription is current and billable
+    value: active
+  - description: Payment failed; subscription past due
+    value: past_due
+  - description: Subscription canceled (Stripe canceled)
+    value: canceled
+- name: discount_status
+  values:
+  - description: Discount is available for checkout
+    value: active
+  - description: Discount is not available
+    value: inactive
+- name: payment_status
+  values:
+  - description: PaymentIntent created; awaiting completion (Stripe requires_payment_method / processing)
+    value: pending
+  - description: PaymentIntent succeeded
+    value: succeeded
+  - description: PaymentIntent failed or requires_action abandoned
+    value: failed
+  - description: PaymentIntent canceled
+    value: canceled
 - name: ratings
   values:
   - description: One Star

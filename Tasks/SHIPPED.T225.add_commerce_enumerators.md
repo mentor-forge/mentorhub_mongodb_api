@@ -1,6 +1,6 @@
 # T225 – Add F-D22 commerce enumerators (subscription / discount / payment status)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Add shared enumerators needed by Customer `subscriptions[]`, Discount, and Payment for E2 Checkout (F-D22). Enum-only — no collection schemas in this task.
@@ -62,8 +62,22 @@ mh up mongodb
 ## Outputs
 
 - `configurator/enumerators/enumerations.0.yaml` — add F-D22 commerce status enums
-- `Tasks/PENDING.T225.add_commerce_enumerators.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
+- `Tasks/SHIPPED.T225.add_commerce_enumerators.md` — this file (Execution Notes; rename to `SHIPPED.` when done)
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Additively insert `subscription_status`, `discount_status`, and `payment_status` into `enumerations.0.yaml` (no version bump; leave all existing enumerators unchanged). For `payment_status`, use a lean Stripe PaymentIntent-aligned set for E2 Payment docs: `pending`, `succeeded`, `failed`, `canceled` (snake_case; maps common PI lifecycle outcomes without inventing invoice/charge/refund granularity). Verify via local configurator on existing `:8385` / `:27017` stack (INPUT_FOLDER mount already live), then `make down` → `make container` → `mh up mongodb`.
+
+**Changes**
+
+- `enumerations.0.yaml`: added after `customer_status`:
+  - `subscription_status`: `active`, `past_due`, `canceled`
+  - `discount_status`: `active`, `inactive`
+  - `payment_status`: `pending`, `succeeded`, `failed`, `canceled` (PaymentIntent-aligned; lean for E2)
+
+**Testing results**
+
+- Local configurator (existing `docker compose` with INPUT_FOLDER → `./configurator`; Mongo host `:27017`): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `ENU-01-enumerations.0.yaml` SUCCESS; process result contains `subscription_status`, `discount_status`, `payment_status`.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` built successfully; packaged `/input/enumerators/enumerations.0.yaml` includes the three new enum names.
+- `mh up mongodb` → API on `:8383` GET `/api/configurations/` HTTP 200 (packaged DROP disabled → 403 as expected; not re-run).

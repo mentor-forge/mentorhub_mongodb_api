@@ -1,0 +1,58 @@
+_locked: false
+file_name: Payment.0.1.0.yaml
+root:
+  additional_properties: false
+  description: Financial record of a Stripe-backed payment (no card PANs).
+  name: Payment
+  properties:
+  - description: The unique identifier for the Payment.
+    name: _id
+    required: false
+    type: identifier
+  - description: MentorHub Customer _id associated with the payment
+    name: customer_id
+    required: false
+    type: identifier
+  - description: Stripe PaymentIntent id (primary provider id for idempotent sync)
+    name: stripe_payment_intent_id
+    required: false
+    type: sentence
+  - description: Stripe Invoice id when payment is invoice-backed
+    name: stripe_invoice_id
+    required: false
+    type: sentence
+  - description: Stripe Checkout Session id when payment originated from Checkout
+    name: stripe_checkout_session_id
+    required: false
+    type: sentence
+  - description: Settled amount in smallest currency unit (e.g. cents)
+    name: amount
+    required: false
+    type: count
+  - description: ISO currency code (e.g. usd)
+    name: currency
+    required: false
+    type: word
+  - description: Payment lifecycle status mapped from Stripe PaymentIntent status
+    enums: payment_status
+    name: status
+    required: false
+    type: enum
+  - description: Setting Product _id from checkout metadata
+    name: product_id
+    required: false
+    type: identifier
+  - description: Plan / subscription product key from checkout (Product.subscription)
+    name: subscription
+    required: false
+    type: word
+  - description: Quantity purchased (members / seats)
+    name: quantity
+    required: false
+    type: count
+  - description: The tracking breadcrumb for when the Payment was recorded.
+    name: created
+    required: false
+    type: breadcrumb
+  required: false
+  type: object

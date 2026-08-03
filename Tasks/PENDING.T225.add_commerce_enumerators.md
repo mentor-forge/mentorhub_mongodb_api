@@ -21,14 +21,14 @@ All paths are relative to **this API repository root** (the directory that conta
 - GitHub: [F-D22 #50](https://github.com/mentor-forge/mentorhub_mongodb_api/issues/50)
 - Prerequisites (already shipped): F-D-E0 drops; F-D29 event types (`Tasks/SHIPPED.T220`–`T224`)
 - `configurator/enumerators/enumerations.0.yaml` — extend in place (pre-release; no version bump)
-- **Out of scope:** Customer / Product / Discount / Payment dictionaries (T226–T229); seeds (T230); Admin SPA Product UI (external ISSUE).
+- **Out of scope:** Customer / Setting / Payment dictionaries (T226–T229); seeds (T230); Admin SPA Setting UI (external ISSUE).
 
 ### Enumerators to add (snake_case values; refine descriptions in implementation)
 
 | Enumerator | Values | Used by |
 | --- | --- | --- |
 | `subscription_status` | `active`, `past_due`, `canceled` | `Customer.subscriptions[].status` |
-| `discount_status` | `active`, `inactive` | Discount.`status` |
+| `discount_status` | `active`, `inactive` | Setting Discount variant.`status` |
 | `payment_status` | derive from Stripe PaymentIntent / Invoice lifecycle during T229 (e.g. `succeeded`, `failed`, `pending` / equivalents) — finalize against Stripe docs + F-D29 `payment_recorded` / `subscription_changed` event context | Payment.`status` |
 
 Do **not** revive a top-level Subscription collection enum; subscriptions are embedded on Customer.

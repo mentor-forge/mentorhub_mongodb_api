@@ -23,7 +23,7 @@ All paths are relative to **this API repository root** (the directory that conta
 - `configurator/dictionaries/Customer.0.1.0.yaml` — current Customer (no billing fields)
 - `configurator/configurations/Customer.yaml` — indexes; consider sparse index on `stripe_customer_id` / `subscriptions.stripe_subscription_id` if useful
 - Top-level Subscription collection already dropped (F-D14 / T218) — do **not** recreate it
-- **Out of scope:** Product / Discount / Payment collections; full Customer seed rewrite (T230 may add unsubscribed vs active subscription fixtures); Customer API Checkout (external F-CA06).
+- **Out of scope:** Setting (Product/Discount variants) / Payment collections; full Customer seed rewrite (T230 may add unsubscribed vs active subscription fixtures); Customer API Checkout (external F-CA06).
 
 ### Locked Customer additions
 
@@ -38,9 +38,9 @@ All paths are relative to **this API repository root** (the directory that conta
 | --- | --- |
 | `mentee_count` | Entitled mentee seats |
 | `encounters_mo` | Encounters-per-month entitlement |
-| `subscription` | Plan identifier (matches Product.`subscription`) |
+| `subscription` | Plan identifier (matches Setting Product.`subscription`) |
 | `quantity` | Purchased seat quantity |
-| `unit_cost` | Snapshot of Product.`unit_price` at purchase |
+| `unit_cost` | Snapshot of Setting Product.`unit_price` at purchase |
 | `total_cost` | `quantity × unit_cost` (or Stripe-reconciled) |
 | `discount_code` | Redeemed code or `""` |
 | `free_encounters_granted` | From Discount at checkout (0 if none) |

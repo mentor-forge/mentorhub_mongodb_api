@@ -23,7 +23,7 @@ All paths are relative to **this API repository root** (the directory that conta
 - `Tasks/SHIPPED.T221.add_external_event_collection.md` — ExternalEvent append-only ingress
 - `Tasks/PENDING.T225.add_commerce_enumerators.md` — `payment_status`
 - Payment Card collection already dropped (F-D16) — Payment here is **financial record**, not PAN storage
-- **Out of scope:** Writing Payments from Customer API (F-CA06); rich invoice fixtures for E5–E7 (later F-D25/F-D26); seeds beyond empty/minimal (T230 may add a couple of Payment docs).
+- **Out of scope:** Setting Product/Discount variants (T227); Writing Payments from Customer API (F-CA06); rich invoice fixtures for E5–E7 (later F-D25/F-D26); seeds beyond empty/minimal (T230 may add a couple of Payment docs).
 
 ### Property design (illustrative — finalize in implementation)
 
@@ -36,7 +36,7 @@ Derive from Stripe PaymentIntent / Invoice / Checkout Session objects as needed 
 | `stripe_payment_intent_id` / `stripe_invoice_id` / `stripe_checkout_session_id` | provider ids (keep only those justified by webhook payloads) |
 | `amount` / `currency` | settled amounts |
 | `status` | enum `payment_status` |
-| `product_id` / `subscription` / `quantity` | optional MentorHub context from checkout metadata |
+| `product_id` / `subscription` / `quantity` | optional MentorHub context from checkout metadata (`product_id` → Setting Product `_id`) |
 | `created` | breadcrumb (append-oriented OK; `saved` only if updates expected) |
 
 Indexes: unique on chosen Stripe id(s); `customer_id` + `created.at_time`.  

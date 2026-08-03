@@ -6,6 +6,7 @@
     "name": "mary",
     "description": "Mary Anderson — self-funded apprenticeship sponsorship",
     "status": "active",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "system",
@@ -30,6 +31,26 @@
     "name": "persevere",
     "description": "Persevere Now — graduate mentorship programs",
     "status": "active",
+    "stripe_customer_id": "cus_test_persevere",
+    "subscriptions": [
+      {
+        "mentee_count": 5,
+        "encounters_mo": 20,
+        "subscription": "growth",
+        "quantity": 5,
+        "unit_cost": 9900,
+        "total_cost": 49500,
+        "discount_code": "TRIAL2WK",
+        "free_encounters_granted": 4,
+        "free_encounters_remaining": 3,
+        "status": "active",
+        "stripe_subscription_id": "sub_test_persevere_growth",
+        "stripe_price_id": "price_test_growth",
+        "current_period_end": {
+          "$date": "2026-09-05T15:00:00.000Z"
+        }
+      }
+    ],
     "created": {
       "from_ip": "192.168.1.100",
       "by_user": "carol",
@@ -54,6 +75,7 @@
     "name": "ali",
     "description": "Agile Learning Institute — platform operator",
     "status": "active",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "mike",
@@ -78,6 +100,26 @@
     "name": "supersoft",
     "description": "SuperSoft — startup engineering mentorship",
     "status": "active",
+    "stripe_customer_id": "cus_test_supersoft",
+    "subscriptions": [
+      {
+        "mentee_count": 2,
+        "encounters_mo": 8,
+        "subscription": "starter",
+        "quantity": 2,
+        "unit_cost": 4900,
+        "total_cost": 9800,
+        "discount_code": "",
+        "free_encounters_granted": 0,
+        "free_encounters_remaining": 0,
+        "status": "active",
+        "stripe_subscription_id": "sub_test_supersoft_starter",
+        "stripe_price_id": "price_test_starter",
+        "current_period_end": {
+          "$date": "2026-08-12T09:30:00.000Z"
+        }
+      }
+    ],
     "created": {
       "from_ip": "10.0.0.42",
       "by_user": "alex",
@@ -102,6 +144,7 @@
     "name": "scamsoft",
     "description": "ScamSoft — past-due subscription customer",
     "status": "active",
+    "subscriptions": [],
     "created": {
       "from_ip": "203.0.113.88",
       "by_user": "system",

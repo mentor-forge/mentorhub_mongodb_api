@@ -1,1 +1,150 @@
-[]
+[
+  {
+    "_id": {
+      "$oid": "e00000000000000000000001"
+    },
+    "type": "Product",
+    "name": "Starter",
+    "description": "Entry plan for small mentoring orgs (1+ members)",
+    "status": "active",
+    "minimum_members": 1,
+    "subscription": "starter",
+    "unit_price": 4900,
+    "stripe_price_id": "price_test_starter",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-01-15T10:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-product-starter"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-01-15T10:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-product-starter"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "e00000000000000000000002"
+    },
+    "type": "Product",
+    "name": "Growth",
+    "description": "Growth plan for teams needing five or more seats",
+    "status": "active",
+    "minimum_members": 5,
+    "subscription": "growth",
+    "unit_price": 9900,
+    "stripe_price_id": "price_test_growth",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-01-15T10:05:00.000Z"
+      },
+      "correlation_id": "seed-setting-product-growth"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-01-15T10:05:00.000Z"
+      },
+      "correlation_id": "seed-setting-product-growth"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "type": "Discount",
+    "name": "Two Week Trial",
+    "description": "Retail trial code granting modest free encounters",
+    "code": "TRIAL2WK",
+    "free_encounters": 4,
+    "status": "active",
+    "max_redemptions": 1000,
+    "redemption_count": 1,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-02-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-trial2wk"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-02-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-trial2wk"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "type": "Discount",
+    "name": "Old Promo",
+    "description": "Expired inactive promo for negative-path demos",
+    "code": "OLDPROMO",
+    "free_encounters": 10,
+    "status": "inactive",
+    "expires_at": {
+      "$date": "2025-01-01T00:00:00.000Z"
+    },
+    "max_redemptions": 50,
+    "redemption_count": 50,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-06-01T12:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-oldpromo"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-02T08:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-oldpromo-retire"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "f00000000000000000000003"
+    },
+    "type": "Discount",
+    "name": "Partner Grant 100",
+    "description": "Partner high-grant code for sponsored orgs",
+    "code": "PARTNER100",
+    "free_encounters": 100,
+    "status": "active",
+    "max_redemptions": 100,
+    "redemption_count": 0,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-03-01T11:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-partner100"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-03-01T11:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-partner100"
+    }
+  }
+]

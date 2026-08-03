@@ -1,0 +1,21 @@
+_locked: false
+description: Financial record of a Stripe-backed payment (no card PANs).
+file_name: Payment.yaml
+title: ''
+versions:
+- _locked: false
+  add_indexes:
+  - key:
+      stripe_payment_intent_id: 1
+    name: Stripe Payment Intent Id
+    options:
+      unique: true
+  - key:
+      customer_id: 1
+      created.at_time: -1
+    name: Customer Created
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: Payment.0.1.0.0.json
+  version: 0.1.0.0

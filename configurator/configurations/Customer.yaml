@@ -14,6 +14,18 @@ versions:
       saved.at_time: -1
     name: Last Saved
     options: {}
+  - key:
+      stripe_customer_id: 1
+    name: Stripe Customer Id
+    options:
+      unique: true
+      sparse: true
+  - key:
+      subscriptions.stripe_subscription_id: 1
+    name: Stripe Subscription Id
+    options:
+      unique: true
+      sparse: true
   drop_indexes: []
   migrations: []
   test_data: Customer.0.1.0.0.json

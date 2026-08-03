@@ -1,0 +1,112 @@
+_locked: false
+file_name: Setting.0.1.0.yaml
+root:
+  description: Polymorphic Admin/reference bag for small catalog and ops documents. Root one_of of Product and Discount variants with constant type discriminators. Extension point for future non-secret admin knobs (e.g. websocket settings).
+  name: Setting
+  properties:
+  - additional_properties: false
+    description: Product catalog / plan picker row (Stripe Checkout price mapping)
+    name: Product
+    properties:
+    - description: The unique identifier for the Product setting
+      name: _id
+      required: false
+      type: identifier
+    - constant: Product
+      description: Discriminator — Product setting variant
+      name: type
+      required: true
+      type: constant
+    - description: Display name for the product / plan
+      name: name
+      required: false
+      type: sentence
+    - description: Short description of the product offering
+      name: description
+      required: false
+      type: sentence
+    - description: Floor for cart quantity / seat validation
+      name: minimum_members
+      required: false
+      type: count
+    - description: Immutable plan identifier key for the offering (not a Mongo foreign key; match Customer.subscriptions[].subscription)
+      name: subscription
+      required: false
+      type: word
+    - description: Unit price in integer minor units for display and checkout snapshot
+      name: unit_price
+      required: false
+      type: money
+    - description: Stripe Price id for Checkout line_items[].price
+      name: stripe_price_id
+      required: false
+      type: sentence
+    - description: Soft-delete / catalog visibility status
+      enums: default_status
+      name: status
+      required: false
+      type: enum
+    - description: The tracking breadcrumb for when the document was created
+      name: created
+      required: false
+      type: breadcrumb
+    - description: The tracking breadcrumb for when the document was last saved
+      name: saved
+      required: false
+      type: breadcrumb
+    required: false
+    type: object
+  - additional_properties: false
+    description: Discount code granting free encounters at checkout (not a Stripe coupon). Catalog definition only — redemption usage is derived from Customer.subscriptions[] or Admin-owned counters, not Customer-domain writes to Setting.
+    name: Discount
+    properties:
+    - description: The unique identifier for the Discount setting
+      name: _id
+      required: false
+      type: identifier
+    - constant: Discount
+      description: Discriminator — Discount setting variant
+      name: type
+      required: true
+      type: constant
+    - description: Short searchable label for the discount
+      name: name
+      required: false
+      type: sentence
+    - description: Ops label (e.g. retail trial or partner grant); not shown on Stripe Checkout
+      name: description
+      required: false
+      type: sentence
+    - description: Redeemable code (API normalizes trim + uppercase on lookup)
+      name: code
+      required: false
+      type: word
+    - description: Encounters granted when code is applied at checkout
+      name: free_encounters
+      required: false
+      type: count
+    - description: Optional expiry; reject checkout when now is after this time
+      name: expires_at
+      required: false
+      type: date-time
+    - description: Optional global redemption cap; omit for unlimited. Enforce via counting Customer.subscriptions[].discount_code (or Admin ingress), not Customer writes to Setting.
+      name: max_redemptions
+      required: false
+      type: count
+    - description: Whether the code accepts redemptions (active / inactive)
+      enums: discount_status
+      name: status
+      required: false
+      type: enum
+    - description: The tracking breadcrumb for when the document was created
+      name: created
+      required: false
+      type: breadcrumb
+    - description: The tracking breadcrumb for when the document was last saved
+      name: saved
+      required: false
+      type: breadcrumb
+    required: false
+    type: object
+  required: false
+  type: one_of

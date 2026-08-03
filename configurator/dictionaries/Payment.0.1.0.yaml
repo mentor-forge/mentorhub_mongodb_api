@@ -25,11 +25,11 @@ root:
     name: stripe_checkout_session_id
     required: false
     type: sentence
-  - description: Settled amount in smallest currency unit (e.g. cents)
+  - description: Settled amount in integer minor units of currency (e.g. cents for USD)
     name: amount
     required: false
-    type: count
-  - description: ISO currency code (e.g. usd)
+    type: money
+  - description: ISO 4217 currency code from Stripe (loose word so ingress payloads are not rejected)
     name: currency
     required: false
     type: word

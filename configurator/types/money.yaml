@@ -1,0 +1,14 @@
+_locked: false
+file_name: money.yaml
+root:
+  bson_type:
+    bsonType: int
+    minimum: 0
+  description: Monetary amount in integer minor units of the associated currency (e.g. cents for USD). Not a float dollar value.
+  json_type:
+    minimum: 0
+    multipleOf: 1
+    type: number
+  name: money
+  required: false
+  type: complex

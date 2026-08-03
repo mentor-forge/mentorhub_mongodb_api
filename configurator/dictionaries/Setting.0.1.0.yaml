@@ -25,6 +25,27 @@ root:
       name: description
       required: false
       type: sentence
+    - description: Floor for cart quantity / seat validation
+      name: minimum_members
+      required: false
+      type: count
+    - description: Immutable plan identifier key for the offering (not a Mongo foreign key; match Customer.subscriptions[].subscription)
+      name: subscription
+      required: false
+      type: word
+    - description: Unit price in integer minor units for display and checkout snapshot
+      name: unit_price
+      required: false
+      type: money
+    - description: Stripe Price id for Checkout line_items[].price
+      name: stripe_price_id
+      required: false
+      type: sentence
+    - description: Soft-delete / catalog visibility status
+      enums: default_status
+      name: status
+      required: false
+      type: enum
     - description: The tracking breadcrumb for when the document was created
       name: created
       required: false
@@ -33,31 +54,10 @@ root:
       name: saved
       required: false
       type: breadcrumb
-    - description: Soft-delete / catalog visibility status
-      enums: default_status
-      name: status
-      required: false
-      type: enum
-    - description: Floor for cart quantity / seat validation
-      name: minimum_members
-      required: false
-      type: count
-    - description: Plan identifier key for the offering
-      name: subscription
-      required: false
-      type: word
-    - description: Unit price in integer minor units (cents) for display and checkout snapshot
-      name: unit_price
-      required: false
-      type: count
-    - description: Stripe Price id for Checkout line_items[].price
-      name: stripe_price_id
-      required: false
-      type: sentence
     required: false
     type: object
   - additional_properties: false
-    description: Discount code granting free encounters at checkout (not a Stripe coupon)
+    description: Discount code granting free encounters at checkout (not a Stripe coupon). Catalog definition only — redemption usage is derived from Customer.subscriptions[] or Admin-owned counters, not Customer-domain writes to Setting.
     name: Discount
     properties:
     - description: The unique identifier for the Discount setting
@@ -77,14 +77,6 @@ root:
       name: description
       required: false
       type: sentence
-    - description: The tracking breadcrumb for when the document was created
-      name: created
-      required: false
-      type: breadcrumb
-    - description: The tracking breadcrumb for when the document was last saved
-      name: saved
-      required: false
-      type: breadcrumb
     - description: Redeemable code (API normalizes trim + uppercase on lookup)
       name: code
       required: false
@@ -93,23 +85,27 @@ root:
       name: free_encounters
       required: false
       type: count
+    - description: Optional expiry; reject checkout when now is after this time
+      name: expires_at
+      required: false
+      type: date-time
+    - description: Optional global redemption cap; omit for unlimited. Enforce via counting Customer.subscriptions[].discount_code (or Admin ingress), not Customer writes to Setting.
+      name: max_redemptions
+      required: false
+      type: count
     - description: Whether the code accepts redemptions (active / inactive)
       enums: discount_status
       name: status
       required: false
       type: enum
-    - description: Optional expiry; reject checkout when now is after this time
-      name: expires_at
+    - description: The tracking breadcrumb for when the document was created
+      name: created
       required: false
-      type: date-time
-    - description: Optional global redemption cap; omit for unlimited
-      name: max_redemptions
+      type: breadcrumb
+    - description: The tracking breadcrumb for when the document was last saved
+      name: saved
       required: false
-      type: count
-    - description: Cumulative successful redemptions (incremented on subscribe webhook)
-      name: redemption_count
-      required: false
-      type: count
+      type: breadcrumb
     required: false
     type: object
   required: false

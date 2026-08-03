@@ -43,14 +43,14 @@ root:
         name: quantity
         required: false
         type: count
-      - description: Unit price at purchase in cents (snapshot of Product.unit_price)
+      - description: Unit price at purchase in minor units (snapshot of Product.unit_price)
         name: unit_cost
         required: false
-        type: count
-      - description: quantity x unit_cost (or Stripe-reconciled) in cents
+        type: money
+      - description: quantity x unit_cost (or Stripe-reconciled) in minor units
         name: total_cost
         required: false
-        type: count
+        type: money
       - description: Redeemed discount code or empty string if none
         name: discount_code
         required: false

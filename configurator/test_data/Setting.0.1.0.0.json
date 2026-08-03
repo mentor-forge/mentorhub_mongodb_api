@@ -68,7 +68,6 @@
     "free_encounters": 4,
     "status": "active",
     "max_redemptions": 1000,
-    "redemption_count": 1,
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "system",
@@ -100,7 +99,6 @@
       "$date": "2025-01-01T00:00:00.000Z"
     },
     "max_redemptions": 50,
-    "redemption_count": 50,
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "system",
@@ -129,7 +127,6 @@
     "free_encounters": 100,
     "status": "active",
     "max_redemptions": 100,
-    "redemption_count": 0,
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "system",

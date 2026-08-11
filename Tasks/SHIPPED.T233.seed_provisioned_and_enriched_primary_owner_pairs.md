@@ -1,6 +1,6 @@
 # T233 – Seed provisioned + enriched primary-owner Customer/Profile pairs (F-D21)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T231, T232  
 **Description:** Seed **provisioned** (minimal Admin-ingress) and **enriched** (post–Customer API) primary-owner **Customer + Profile** pairs for E1 / F-CA05 integration tests. Align `_id`s with `persona_ids.json` style (valid 24-hex ObjectIds). No Card fixtures; no GDPR fields.
@@ -81,4 +81,27 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+### Chosen ObjectIds
+
+Verified unused as Customer/Profile `_id`s (Rating already reuses `D0…09`/`D0…10` as Rating `_id`s — same cross-collection pattern as scamsoft `D0…08`). Profiles `A0…16` / `A0…17` free.
+
+| Pair | Role | Customer `_id` | Profile `_id` | Customer `name` | Profile IdP `name` |
+| --- | --- | --- | --- | --- | --- |
+| A (provisioned) | Admin ingress stub | `D00000000000000000000009` | `A00000000000000000000016` | `provisioned-org-path-a` | `patha-owner` |
+| B (enriched) | post F-CA05 | `D00000000000000000000010` | `A00000000000000000000017` | `northstar` | `nora` |
+
+Registered in `Tasks/scripts/persona_ids.json`. Did **not** mutate mary/persevere.
+
+### Seed contents
+
+- **Pair A:** Customer `status: provisioned`, no description; Profile `status: provisioned`, `roles: ["customer"]`, `mentor_id` omitted, `email` + `cognito_sub` (UUID-like word) + `email_verified: true`, unique `full_name` `Path A Owner`.
+- **Pair B:** Customer `status: active` with org name/description; Profile `status: active`, linked `customer_id`, claims fields (`name`, `full_name`, `email`, `email_verified`, `cognito_sub`, `roles`), plus enrichment (`description`, `goals`, `interests`, `experience`).
+- No Card, GDPR fields, or F-D22 billing seeds.
+
+### Verification
+
+- Local configurator (`docker compose` + `/tmp/mh-mongo-port-override.yaml` host **27018**; INPUT_FOLDER mount): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; Customer/Profile CFG SUCCESS; fail_count 0.
+- Spot-check: provisioned Customer `D0…09` ↔ Profile `A0…16` (`customer_id`, `cognito_sub`); enriched active Customer `D0…10` ↔ Profile `A0…17` with `cognito_sub`.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` (test_data layer rebuilt).
+- `mh up mongodb` → packaged API + SPA healthy.

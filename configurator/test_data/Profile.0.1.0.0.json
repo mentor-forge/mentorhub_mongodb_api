@@ -926,5 +926,101 @@
     "roles": [
       "mentor"
     ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000016"
+    },
+    "name": "patha-owner",
+    "status": "provisioned",
+    "email": "patha-owner@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "full_name": "Path A Owner",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-16"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-16"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000009"
+    },
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000017"
+    },
+    "name": "nora",
+    "status": "active",
+    "description": "Northstar Labs primary owner after Customer API enrichment (F-CA05).",
+    "email": "nora@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "full_name": "Nora Northstar",
+    "goals": [
+      "Complete org profile enrichment",
+      "Invite first cohort members"
+    ],
+    "interests": [
+      "api",
+      "ux"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-02-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-17"
+    },
+    "saved": {
+      "from_ip": "10.0.4.22",
+      "by_user": "nora",
+      "at_time": {
+        "$date": "2026-03-10T16:45:00.000Z"
+      },
+      "correlation_id": "save-profile-17"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000010"
+    },
+    "experience": [
+      {
+        "company": "Northstar Labs",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": {
+              "$date": "2024-06-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-03-01T00:00:00.000Z"
+            },
+            "description": "Primary owner sponsoring mentorship seats after Path A self-registration.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "customer"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # T231 – Extend Profile for Cognito primary self-registration (F-D21)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Confirm Profile already carries JWT/Cognito claim homes (`name`, `customer_id`, `mentor_id`, `roles`, `email`, `full_name`, `email_verified`) and add **`cognito_sub`** plus indexes so Admin ingress / Customer API can idempotently provision Path A owners. Prefer add over rename. No Card; no GDPR request fields. Pre-release: edit `Profile.0.1.0` in place.
@@ -91,4 +91,58 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+### Plan
+
+1. Confirm JWT/Cognito claim homes already on `Profile.0.1.0` (including `status` → `profile_status` with `provisioned`).
+2. Add optional `cognito_sub` only (no Card / GDPR / phone).
+3. Extend `Profile.yaml` indexes: keep unique `full_name` + Last Saved; add unique sparse `cognito_sub` and unique sparse `email` (Notification.yaml options pattern).
+4. `make dev` → DROP + PROCESS_ALL; expect SUCCESS.
+5. Package: `make down` / `make container` / `mh up mongodb`.
+6. Ship task file; commit + push on `F-D21/E1-extend-customer-profile-self-registration`.
+
+### Claim-field confirm
+
+| Field | Present | Type / notes |
+| --- | --- | --- |
+| `_id` | Yes | `identifier` → JWT / `custom:profile_id` |
+| `name` | Yes | `word` — IdP username |
+| `full_name` | Yes | `sentence` — display name |
+| `email` | Yes | `email` |
+| `email_verified` | Yes | `boolean` |
+| `customer_id` | Yes | `identifier` → `custom:customer_id` |
+| `mentor_id` | Yes | `identifier` → `custom:mentor_id` |
+| `roles` | Yes | `enum_array` / `user_roles` → `custom:roles` |
+| `status` | Yes | `enum` / `profile_status` includes **`provisioned`**, `active`, `archived`, `suspended` |
+
+No gaps requiring extra properties beyond `cognito_sub`.
+
+### Field added
+
+- `cognito_sub` — optional, type **`word`** (Cognito UUID `sub` is 36 chars, no whitespace; `word` allows 1–40 non-whitespace via `^[^\s]{1,40}$`). Description: Cognito user sub (immutable); Path A idempotency key.
+
+### Index choices
+
+| Index | Key | Options in YAML |
+| --- | --- | --- |
+| Full Name Index | `full_name: 1` | `unique: true` (kept) |
+| Last Saved | `saved.at_time: -1` | `{}` (kept) |
+| Cognito Sub Index | `cognito_sub: 1` | `unique: true`, `sparse: true` (added) |
+| Email Index | `email: 1` | `unique: true`, `sparse: true` (added) |
+
+Did **not** reintroduce unique `name`. Sparse pattern matches `Notification.yaml` (`options: { sparse: true }` plus `unique` where needed).
+
+**Configurator runtime gap (pre-existing):** `mongo_io.add_index` builds `IndexModel(key, name=...)` and **does not pass `options`**, so unique/sparse are declared in YAML but not applied to MongoDB (same for existing Full Name unique and Notification sparse). Indexes **are** created with correct names/keys; CFG reports SUCCESS. Documented for follow-up; YAML remains authoritative intent for when configurator honors options.
+
+### Test results
+
+- Port 27017 free — no 27018 override needed.
+- `DELETE /api/database/` → HTTP **200**, `status: SUCCESS` (`DROP_DATABASE`).
+- `POST /api/configurations/` → HTTP **200**, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`).
+- Profile: indexes added (`PRO-04-Full Name Index`, `PRO-04-Cognito Sub Index`, `PRO-04-Email Index` SUCCESS); test data loaded; schema includes `cognito_sub` (`bsonType: string`, word pattern); `status` enum includes `provisioned`.
+- Existing Profile test data configured without requiring new fields.
+
+### Packaging
+
+- `make down` — OK
+- `make container` — OK (`ghcr.io/mentor-forge/mentorhub_mongodb_api:latest`)
+- `mh up mongodb` — OK (SSO refreshed; `mentorhub-mongodb_api-1` running packaged image)

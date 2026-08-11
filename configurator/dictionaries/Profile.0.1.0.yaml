@@ -34,6 +34,10 @@ root:
     name: email_verified
     required: false
     type: boolean
+  - description: Cognito user sub (immutable); Path A idempotency key
+    name: cognito_sub
+    required: false
+    type: word
   - description: The _id of this persons Mentor
     name: mentor_id
     required: false

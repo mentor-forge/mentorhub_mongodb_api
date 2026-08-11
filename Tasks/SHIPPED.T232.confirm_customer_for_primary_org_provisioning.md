@@ -1,6 +1,6 @@
 # T232 – Confirm Customer for primary org provisioning (F-D21)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Confirm **Customer (Organization)** dictionary supports Admin-ingress minimal create + Customer API enrich for Path A: `customer_status` includes `provisioned` → `active` (F-D29). Extend only where the **running configurator** shows a real E1 gap. Do **not** add `subscriptions[]` / `stripe_customer_id` (F-D22), Card, or GDPR fields. Prefer add over rename; pre-release edit `Customer.0.1.0` in place.
@@ -76,4 +76,28 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**confirm-only** (no property gaps for Path A org provisioning).
+
+### Field confirmation
+
+| Field | Present | Notes |
+| --- | --- | --- |
+| `_id` | yes | `identifier` |
+| `name` | yes | `sentence`; unique index retained |
+| `description` | yes | optional org blurb |
+| `status` | yes | `enums: customer_status` (`provisioned`, `active`, `archived` from T220/F-D29) |
+| `created` / `saved` | yes | breadcrumbs |
+
+### Changes
+
+- Clarified root `description` on `Customer.0.1.0.yaml` to state Customer = paying sponsor Organization for Path A (Admin ingress provisions; Customer API enriches).
+- **No** index changes — kept unique `name` + `Last Saved` (`saved.at_time: -1`); ingress/enrich lookups do not need additional indexes.
+- **Did not** add `subscriptions[]`, `stripe_customer_id`, Card, GDPR fields, or rename Customer → Organization.
+- `Customer.yaml` unchanged.
+
+### Verification
+
+- Local configurator (`docker compose` + `/tmp/mh-mongo-port-override.yaml` host **27018**; INPUT_FOLDER mount): `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `CFG-05-Customer.yaml` SUCCESS; `customer_status` present in process; zero failures.
+- `make container` → image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest`; `/input/dictionaries/Customer.0.1.0.yaml` includes clarified description.
+- `mh up mongodb` → packaged API on `:8383` lists `Customer.yaml`.

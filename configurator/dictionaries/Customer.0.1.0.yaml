@@ -2,7 +2,7 @@ _locked: false
 file_name: Customer.0.1.0.yaml
 root:
   additional_properties: false
-  description: An customer who pays for the service for a craftsperson.
+  description: Paying sponsor organization (Organization) that funds mentoring for craftspeople; Path A Admin ingress provisions a Customer and Customer API enriches it.
   name: Customer
   properties:
   - description: The unique identifier for the Customer.

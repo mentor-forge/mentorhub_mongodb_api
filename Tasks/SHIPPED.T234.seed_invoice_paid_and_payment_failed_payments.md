@@ -1,6 +1,6 @@
 # T234 – Seed invoice.paid and invoice.payment_failed Payment fixtures (F-D26)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Append **Payment** test data for E6 renewal webhooks: one **`invoice.paid`** (succeeded) and one **`invoice.payment_failed`** (failed) record, plus matching Stripe **ExternalEvent** + **Event** chains. Prefer add over rewrite. Do **not** mutate Customer / Profile documents (F-D21 / F-D25 / F-D27 own those). Pre-release: edit `Payment.0.1.0.0.json` (and Event / ExternalEvent test data) in place.
@@ -97,4 +97,24 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Append invoice.paid (succeeded) and invoice.payment_failed (failed) Payments plus matching Stripe ExternalEvent + Event chains. Confirm existing Payment schema is enough (no dictionary edits). Do not mutate Customer / Profile / Setting / Notification. Configure-database SUCCESS, then package.
+
+**Schema confirm (no gap):** `Payment.0.1.0.yaml` already has `stripe_invoice_id`, `stripe_payment_intent_id`, optional `stripe_checkout_session_id`, and `status` enum `payment_status` (`pending` \| `succeeded` \| `failed` \| `canceled`). Configurator loaded the new invoice shapes without schema changes.
+
+**IDs used** (confirmed unused in their collections before write; T230 `b…01`/`b…02` and T224 `E…01`–`E…05` / Events through `F…0191` preserved)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Payment invoice.paid | `b00000000000000000000003` | persevere `D…02`; `status: succeeded`; `in_test_persevere_invoice_paid_01` + `pi_test_persevere_invoice_paid_01`; checkout session omitted; growth `e…02` qty 5 amount 49500 |
+| Payment invoice.payment_failed | `b00000000000000000000004` | supersoft `D…07`; `status: failed`; `in_test_supersoft_invoice_fail_01` + `pi_test_supersoft_invoice_fail_01`; starter `e…01` qty 2 amount 9800 |
+| ExternalEvent invoice.paid | `E00000000000000000000006` | `evt_stripe_invoice_paid_seed_01`; thin E…02 scamsoft failed invoice kept |
+| ExternalEvent invoice.payment_failed | `E00000000000000000000007` | `evt_stripe_invoice_payment_failed_seed_02` (unique vs E…02 `…_seed_01`) |
+| Event | `F00000000000000000000192`–`F…0196` | external_received + payment_recorded for paid; external_received + payment_recorded + subscription_changed (`past_due`, eddy `A…12`) for failed |
+
+`E…06`/`E…07` already exist on Encounter (same E prefix pattern as T224 ExternalEvent vs Encounter). Unique `stripe_payment_intent_id`s vs T230. All `correlation_id`s ≤40.
+
+**Testing results**
+
+- Orchestrator `:8385` (Mongo `:27017`; 27017 was free so no 27018 override): `DELETE /api/database/` → HTTP 200 SUCCESS; `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); `CFG-05-Payment.yaml` SUCCESS (4 docs); `CFG-05-ExternalEvent.yaml` SUCCESS (7 docs); `CFG-05-Event.yaml` SUCCESS (196 docs); zero FAILURE events.
+- Spot-check: Payment `b…03` succeeded + `stripe_invoice_id`, no checkout session; `b…04` failed + `stripe_invoice_id`; four distinct `stripe_payment_intent_id`s.
+- Packaging: `make down && make container` built `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` (`9716fa455d84`). `mh up mongodb` blocked on expired AWS SSO (`mentorhub-shared`); equivalent packaged profile started via DeveloperEdition compose `--profile mongodb --pull never`. Packaged API `:8383` `GET /api/configurations/` lists `Payment.yaml` + `ExternalEvent.yaml` + `Event.yaml`; AUTO_PROCESS `CFG-07-PROCESS_ALL` SUCCESS (Payment 4 / ExternalEvent 7 / Event 196). `DELETE /api/database/` → HTTP 403 (expected non-Local `BUILT_AT=20260814-152109`).

@@ -4449,5 +4449,127 @@
       },
       "correlation_id": "seed-evt-profile-redact-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000192"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000006"
+      },
+      "external_id": "evt_stripe_invoice_paid_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000193"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000006"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "payment_id": {
+        "$oid": "b00000000000000000000003"
+      },
+      "amount_total": 49500,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:15.000Z"
+      },
+      "correlation_id": "seed-evt-pay-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000194"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "external_id": "evt_stripe_invoice_payment_failed_seed_02",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000195"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "payment_id": {
+        "$oid": "b00000000000000000000004"
+      },
+      "amount_total": 9800,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-pay-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000196"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      },
+      "change": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:15.000Z"
+      },
+      "correlation_id": "seed-evt-sub-inv-fail-01"
+    }
   }
 ]

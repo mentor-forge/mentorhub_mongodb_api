@@ -106,5 +106,51 @@
       },
       "correlation_id": "seed-ext-cognito-redact-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000006"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_invoice_paid_seed_01",
+    "payload_hash": "sha256:stripe-invoice-paid-seed-01",
+    "normalized_body": {
+      "type": "invoice.paid",
+      "customer_id": "D00000000000000000000002",
+      "stripe_invoice_id": "in_test_persevere_invoice_paid_01",
+      "stripe_payment_intent_id": "pi_test_persevere_invoice_paid_01",
+      "payment_id": "b00000000000000000000003"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000007"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_invoice_payment_failed_seed_02",
+    "payload_hash": "sha256:stripe-invoice-payment-failed-seed-02",
+    "normalized_body": {
+      "type": "invoice.payment_failed",
+      "customer_id": "D00000000000000000000007",
+      "stripe_invoice_id": "in_test_supersoft_invoice_fail_01",
+      "stripe_payment_intent_id": "pi_test_supersoft_invoice_fail_01",
+      "payment_id": "b00000000000000000000004"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-inv-fail-01"
+    }
   }
 ]

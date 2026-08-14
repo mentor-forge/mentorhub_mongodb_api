@@ -1,6 +1,6 @@
 # T235 – Seed past_due Notification for failed invoice (F-D26)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T234  
 **Description:** Add an **active** Discovery **past_due** Notification for the E6 `invoice.payment_failed` Customer (supersoft), plus a `notification_created` Event. Keep the existing dismissed PastDue seed (T224 / scamsoft). Do **not** edit Customer.`subscriptions[]` (F-D25 / F-D27). Pre-release: extend `Notification.0.1.0.0.json` in place.
@@ -85,4 +85,19 @@ mh up mongodb
 
 ## Execution Notes
 
-*(Reserved for the execution agent.)*
+**Plan:** Append one active (undismissed) past_due Notification for supersoft plus a `notification_created` Event. Preserve all T224 Notification fixtures including dismissed scamsoft PastDue `C…003`. Do not edit Customer / Profile / Payment / ExternalEvent / Setting. Configure-database SUCCESS, then package.
+
+**IDs used** (confirmed unused in Notification / Event collections before write; Path still owns EngineerKit `C…006` in a different collection)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Notification InvoicePastDue | `C00000000000000000000006` | supersoft `D…07`; `status: active`; no `dismissed` / `cancelled`; `link_metadata` customer SPA `/billing`; created `2026-08-12T10:00:10.000Z` after T234 failed Payment `10:00:00Z` |
+| Event notification_created | `F00000000000000000000197` | references Notification `C…006`, supersoft `D…07`, ExternalEvent `E…07`, `reason: past_due` |
+
+T224 `C…001`–`C…005` kept (scamsoft PastDue `C…003` still dismissed). Events through `F…0196` preserved. All `correlation_id`s ≤40 (`seed-notif-inv-pastdue-01`, `seed-evt-notif-inv-fail-01`).
+
+**Testing results**
+
+- Local configurator `:8385` (Mongo host `:27018` via `/tmp/mh-mongo-port-override.yaml` `ports: !override`; packaged DeveloperEdition stack held `:27017` and `mh down` did not stop it): `DELETE /api/database/` → HTTP 200 SUCCESS; `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); `CFG-05-Notification.yaml` SUCCESS (6 docs); `CFG-05-Event.yaml` SUCCESS (197 docs); Payment 4 / ExternalEvent 7 unchanged; zero FAILURE events.
+- Spot-check: Notification `C…006` `InvoicePastDue` on supersoft, active, no `dismissed`; T224 `C…003` still present and dismissed on scamsoft (`D…08`). Event `F…0197` `notification_created`.
+- Packaging: `make down && make container` built `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest` (`4c7dadd3bf57`). `mh up mongodb` succeeded. Packaged API `:8383` `GET /api/configurations/` lists `Notification.yaml` + `Event.yaml`; AUTO_PROCESS `CFG-07-PROCESS_ALL` SUCCESS (Notification 6 / Event 197 / Payment 4 / ExternalEvent 7). `DELETE /api/database/` → HTTP 403 (expected non-Local `BUILT_AT=20260814-152802`).

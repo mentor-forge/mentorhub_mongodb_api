@@ -4571,5 +4571,31 @@
       },
       "correlation_id": "seed-evt-sub-inv-fail-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000197"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000006"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "reason": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-08-12T10:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-notif-inv-fail-01"
+    }
   }
 ]

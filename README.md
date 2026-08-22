@@ -47,6 +47,8 @@ make down
 
 Persistent **Developer Edition personas** in seed data support manual SPA testing and JWT claims on [`login.html`](https://github.com/mentor-forge/mentorhub/blob/main/login.html) (synced via `welcome-auth.js` in the `mentorhub` repo — see `Tasks/ISSUE.mentorhub.login_html_persona_alignment.md`).
 
+**Path A self-registration fixtures** (`patha-owner` provisioned / `nora` enriched) are primary-owner Customer + Profile pairs for Cognito Path A. They are **not** Sign-in personas until Developer Edition `login.html` is aligned — see `Tasks/ISSUE.mentorhub.login_html_e3_roster_personas.md`. Northstar is unsubscribed (`subscriptions: []`) for Choose-a-plan + empty mentee roster.
+
 **Path B invite fixtures** (`riley` pending / `quinn` revoked) are org-invite Profiles under Persevere, invited by Stacey. They are **not** Sign-in personas until accepted. Invitation state is `profile_status` only (`provisioned` / `active` / `archived`) — reuse **emma** as the accepted member.
 
 ### Customer organizations
@@ -58,6 +60,8 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 | `D00000000000000000000006` | `ali` | Agile Learning Institute | Mike, Marti, Paula, Elon, Melinda, Linda |
 | `D00000000000000000000007` | `supersoft` | SuperSoft | Eddy, Danny, Lucky |
 | `D00000000000000000000008` | `scamsoft` | ScamSoft | Donny |
+| `D00000000000000000000009` | `provisioned-org-path-a` | (provisioned stub) | Path A Owner |
+| `D00000000000000000000010` | `northstar` | Northstar Labs | Nora |
 | `D00000000000000000000011` | `harbor` | Harbor | Helen |
 
 ### Persona matrix
@@ -79,6 +83,8 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 | Donny the Deadbeat | `donny` | Donny Deadbeat | `A00000000000000000000013` | customer | ScamSoft | — |
 | Danny the Dev Lead | `danny` | Danny Dev Lead | `A00000000000000000000014` | coordinator, mentor | SuperSoft | — |
 | Melinda the Multi Customer Mentor | `melinda` | Melinda Multi | `A00000000000000000000015` | mentor | ALI | — |
+| Path A Owner | `patha-owner` | Path A Owner | `A00000000000000000000016` | customer (provisioned) | Path A stub | — |
+| Nora the Northstar Owner | `nora` | Nora Northstar | `A00000000000000000000017` | customer | Northstar | — |
 | Helen the Harbor Owner | `helen` | Helen Harbor | `A00000000000000000000018` | customer | Harbor | — |
 | Pat the Empty-Activity Mentee | `pat` | Pat Persevere | `A00000000000000000000019` | mentee | Persevere | Paula |
 | Riley the Pending Invitee | `riley` | Riley Invitee | `A00000000000000000000020` | customer (provisioned) | Persevere | — |

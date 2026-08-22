@@ -103,5 +103,31 @@
       },
       "correlation_id": "seed-pay-supersoft-inv-fail-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "b00000000000000000000005"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "stripe_payment_intent_id": "pi_test_persevere_capacity_01",
+    "stripe_invoice_id": "in_test_persevere_capacity_01",
+    "amount": 29700,
+    "currency": "usd",
+    "status": "succeeded",
+    "product_id": {
+      "$oid": "e00000000000000000000002"
+    },
+    "subscription": "growth",
+    "quantity": 8,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T16:00:00.000Z"
+      },
+      "correlation_id": "seed-pay-persevere-capacity-01"
+    }
   }
 ]

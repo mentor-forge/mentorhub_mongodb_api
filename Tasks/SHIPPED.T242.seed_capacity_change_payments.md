@@ -1,6 +1,6 @@
 # T242 – Seed capacity-change Payment and webhook fixtures (F-D25)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T241  
 **Description:** Append **Payment** plus Stripe **ExternalEvent** / **Event** chains for an E5 **capacity change** (Checkout and/or `customer.subscription.updated`). New Payment `quantity` must match T241 persevere `subscriptions[].quantity`. Prefer append over rewrite. Keep `status: succeeded` — not E6 `invoice.payment_failed`. Pre-release: edit test_data in place.
@@ -95,4 +95,38 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Append only (no rewrite of T230/T234 Payments `b…01`–`b…04`, T224/T234 ExternalEvents `E…01`–`E…07`, or Events through T240 `F…0205`). Do **not** edit Customer / Profile / Notification / Setting. Confirm Payment schema is enough (quantity, amount, stripe_invoice_id, stripe_payment_intent_id; optional checkout session). Model E5 as **Portal-driven** mid-cycle capacity increase (omit `stripe_checkout_session_id`; no `checkout.session.completed`). **Amount choice: proration 29700** (3 added seats × 9900) — Stripe-shaped for `customer.subscription.updated` mid-period, not a new full-period 79200. Timestamps after T234 persevere `invoice.paid` (`2026-08-05`), aligned with T241 Customer `saved` `2026-08-18T16:00:00.000Z`. IDs (confirm unused in their collections): Payment `b…05`; ExternalEvent `E…08` (Encounter already uses `E…08` — same cross-collection prefix as T234 `E…06`/`E…07`); Events `F…0206`–`F…0208` (`external_received` + `subscription_changed` capacity + `payment_recorded`). Unique `pi_test_persevere_capacity_01` / `in_test_persevere_capacity_01` / `evt_stripe_subscription_updated_seed_01`. No past_due/cancel Notifications. Configure-database on already-running `:8385`; skip packaging.
+
+**Amount choice:** **29700** proration (3 × 9900) for the added seats — not the new period total 79200. Portal-only `customer.subscription.updated` (no Checkout session id).
+
+**IDs used** (confirmed unused in their collections before write; T230/T234 `b…01`–`b…04` and T224/T234 `E…01`–`E…07` / Events through T240 `F…0205` preserved)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Payment capacity | `b00000000000000000000005` | persevere `D…02`; growth `e…02`; `quantity` **8**; `amount` **29700**; `status: succeeded`; `pi_test_persevere_capacity_01` + `in_test_persevere_capacity_01`; checkout session omitted; `created` `2026-08-18T16:00:00.000Z` |
+| ExternalEvent | `E00000000000000000000008` | `evt_stripe_subscription_updated_seed_01`; `normalized_body.type` `customer.subscription.updated`; quantity 8 / previous 5; Payment / PI / invoice ids; Encounter already owns `E…08` (cross-collection prefix, same as T234) |
+| Event external_received | `F00000000000000000000206` | links `E…08` |
+| Event subscription_changed | `F00000000000000000000207` | `change: capacity`; quantity 8 / previous 5; Stacey `A…08`; persevere `D…02` |
+| Event payment_recorded | `F00000000000000000000208` | Payment `b…05`; `amount_total` 29700 |
+
+All `correlation_id`s ≤40. Unique `stripe_payment_intent_id` vs T230/T234.
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (Mongo host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Payment.yaml` SUCCESS (`PRO-06-LOAD_TEST_DATA` Payment.0.1.0.0.json); `CFG-05-ExternalEvent.yaml` SUCCESS; `CFG-05-Event.yaml` SUCCESS.
+- Spot-check (mongosh `mentor_hub`):
+  - Payment `b…05`: quantity 8, `status: succeeded`, amount 29700, unique `pi_test_persevere_capacity_01`, `in_test_persevere_capacity_01`, no checkout session.
+  - T234 `b…03` and `b…04` still present; Payment count **5**; five distinct `stripe_payment_intent_id`s.
+  - ExternalEvent `E…08`: `customer.subscription.updated`, quantity 8 / previous 5; ExternalEvent count **8**.
+  - Event `F…0206` `external_received`; `F…0207` `subscription_changed`; `F…0208` `payment_recorded`; Event count **208**.
+  - Customer JSON untouched (persevere qty still 8 from T241). Notification count still **7** (no new past_due/cancel Notifications).
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS (Payment / ExternalEvent / Event CFG). Spot-check: `b…05` qty 8 succeeded amount 29700 unique PI; `b…03`/`b…04` present; Payment 5; `E…08` `customer.subscription.updated`.
+
+**Follow-ups (T245)**
+
+- Last Event `_id`: `F00000000000000000000208`. Next free Event: `F00000000000000000000209`.
+- Last ExternalEvent `_id`: `E00000000000000000000008`. Next free ExternalEvent: `E00000000000000000000009`.

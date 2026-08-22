@@ -152,5 +152,31 @@
       },
       "correlation_id": "seed-ext-stripe-inv-fail-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000008"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_subscription_updated_seed_01",
+    "payload_hash": "sha256:stripe-subscription-updated-seed-01",
+    "normalized_body": {
+      "type": "customer.subscription.updated",
+      "customer_id": "D00000000000000000000002",
+      "quantity": 8,
+      "previous_quantity": 5,
+      "stripe_subscription_id": "sub_test_persevere_growth",
+      "stripe_invoice_id": "in_test_persevere_capacity_01",
+      "stripe_payment_intent_id": "pi_test_persevere_capacity_01",
+      "payment_id": "b00000000000000000000005"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T15:59:50.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-sub-upd-01"
+    }
   }
 ]

@@ -3,6 +3,275 @@
     "_id": {
       "$oid": "F00000000000000000000001"
     },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000107"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-01T13:55:00.000Z"
+      },
+      "correlation_id": "evt-linda-link-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000002"
+    },
+    "type": "started",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000107"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-01T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-start-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000003"
+    },
+    "type": "completed",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000107"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-02T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-done-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000004"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000108"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-03T13:55:00.000Z"
+      },
+      "correlation_id": "evt-linda-link-1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000005"
+    },
+    "type": "started",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000108"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-03T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-start-1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000006"
+    },
+    "type": "completed",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000108"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-04T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-done-1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000007"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-05T13:55:00.000Z"
+      },
+      "correlation_id": "evt-linda-link-2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000008"
+    },
+    "type": "started",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-05T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-start-2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000009"
+    },
+    "type": "completed",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-06T14:00:00.000Z"
+      },
+      "correlation_id": "evt-linda-done-2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000010"
+    },
+    "type": "note",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2023-06-06T14:30:00.000Z"
+      },
+      "correlation_id": "evt-linda-note"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000011"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "emma",
+      "at_time": {
+        "$date": "2024-01-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-emma"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000012"
+    },
     "type": "arrived",
     "context": {
       "profile_id": {
@@ -15,12 +284,167 @@
       "at_time": {
         "$date": "2024-03-01T13:00:00.000Z"
       },
-      "correlation_id": "seed-auth-03"
+      "correlation_id": "seed-arrived-mary"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000002"
+      "$oid": "F00000000000000000000013"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2024-04-01T08:45:00.000Z"
+      },
+      "correlation_id": "seed-arrived-marti"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000014"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2024-05-01T14:20:00.000Z"
+      },
+      "correlation_id": "seed-arrived-stacey"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000015"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      },
+      "encounter_id": {
+        "$oid": "E00000000000000000000009"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2024-05-15T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-linda-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000016"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000009"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "margaret",
+      "at_time": {
+        "$date": "2024-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-margaret"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000017"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000010"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2024-07-01T08:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-paula"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000018"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2024-08-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-elon"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000019"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "eddy",
+      "at_time": {
+        "$date": "2024-09-01T14:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-eddy"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000020"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2024-11-20T15:10:00.000Z"
+      },
+      "correlation_id": "seed-arrived-danny"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000021"
     },
     "type": "link",
     "context": {
@@ -38,14 +462,64 @@
       "from_ip": "127.0.0.1",
       "by_user": "daniel",
       "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
+        "$date": "2025-01-10T13:55:00.000Z"
       },
       "correlation_id": "evt-daniel-link-0"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000003"
+      "$oid": "F00000000000000000000022"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000107"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-10T13:55:00.000Z"
+      },
+      "correlation_id": "evt-lucky-link-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000023"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000107"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-10T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000024"
     },
     "type": "started",
     "context": {
@@ -70,32 +544,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000004"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-link-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000005"
+      "$oid": "F00000000000000000000025"
     },
     "type": "started",
     "context": {
@@ -120,32 +569,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000006"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000007"
+      "$oid": "F00000000000000000000026"
     },
     "type": "started",
     "context": {
@@ -170,107 +594,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000008"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000009"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000012"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000013"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000016"
+      "$oid": "F00000000000000000000027"
     },
     "type": "completed",
     "context": {
@@ -295,7 +619,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000017"
+      "$oid": "F00000000000000000000028"
     },
     "type": "completed",
     "context": {
@@ -320,7 +644,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000018"
+      "$oid": "F00000000000000000000029"
     },
     "type": "completed",
     "context": {
@@ -345,57 +669,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000019"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000021"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000107"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000023"
+      "$oid": "F00000000000000000000030"
     },
     "type": "link",
     "context": {
@@ -413,14 +687,64 @@
       "from_ip": "127.0.0.1",
       "by_user": "daniel",
       "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
+        "$date": "2025-01-12T13:55:00.000Z"
       },
       "correlation_id": "evt-daniel-link-1"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000024"
+      "$oid": "F00000000000000000000031"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000108"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-12T13:55:00.000Z"
+      },
+      "correlation_id": "evt-lucky-link-1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000032"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000108"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-12T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-1"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000033"
     },
     "type": "started",
     "context": {
@@ -445,32 +769,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000025"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-link-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000026"
+      "$oid": "F00000000000000000000034"
     },
     "type": "started",
     "context": {
@@ -495,32 +794,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000027"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000028"
+      "$oid": "F00000000000000000000035"
     },
     "type": "started",
     "context": {
@@ -545,107 +819,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000029"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000030"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000033"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000034"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000037"
+      "$oid": "F00000000000000000000036"
     },
     "type": "completed",
     "context": {
@@ -670,7 +844,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000038"
+      "$oid": "F00000000000000000000037"
     },
     "type": "completed",
     "context": {
@@ -695,7 +869,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000039"
+      "$oid": "F00000000000000000000038"
     },
     "type": "completed",
     "context": {
@@ -720,57 +894,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000040"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-13T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000042"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000108"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-13T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000044"
+      "$oid": "F00000000000000000000039"
     },
     "type": "link",
     "context": {
@@ -788,14 +912,64 @@
       "from_ip": "127.0.0.1",
       "by_user": "daniel",
       "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
+        "$date": "2025-01-14T13:55:00.000Z"
       },
       "correlation_id": "evt-daniel-link-2"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000045"
+      "$oid": "F00000000000000000000040"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-14T13:55:00.000Z"
+      },
+      "correlation_id": "evt-lucky-link-2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000041"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-14T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-2"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000042"
     },
     "type": "started",
     "context": {
@@ -820,32 +994,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000046"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-link-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000047"
+      "$oid": "F00000000000000000000043"
     },
     "type": "started",
     "context": {
@@ -870,32 +1019,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000048"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000049"
+      "$oid": "F00000000000000000000044"
     },
     "type": "started",
     "context": {
@@ -920,107 +1044,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000050"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000051"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000054"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000055"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000058"
+      "$oid": "F00000000000000000000045"
     },
     "type": "completed",
     "context": {
@@ -1045,7 +1069,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000059"
+      "$oid": "F00000000000000000000046"
     },
     "type": "completed",
     "context": {
@@ -1070,7 +1094,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000060"
+      "$oid": "F00000000000000000000047"
     },
     "type": "completed",
     "context": {
@@ -1095,57 +1119,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000061"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-15T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000063"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000007"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-15T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-2"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000065"
+      "$oid": "F00000000000000000000048"
     },
     "type": "link",
     "context": {
@@ -1163,14 +1137,64 @@
       "from_ip": "127.0.0.1",
       "by_user": "daniel",
       "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
+        "$date": "2025-01-16T13:55:00.000Z"
       },
       "correlation_id": "evt-daniel-link-3"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000066"
+      "$oid": "F00000000000000000000049"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-01-16T13:55:00.000Z"
+      },
+      "correlation_id": "evt-lucky-link-3"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000050"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-16T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-3"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000051"
     },
     "type": "started",
     "context": {
@@ -1195,32 +1219,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000067"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-link-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000068"
+      "$oid": "F00000000000000000000052"
     },
     "type": "started",
     "context": {
@@ -1245,32 +1244,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000069"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000070"
+      "$oid": "F00000000000000000000053"
     },
     "type": "started",
     "context": {
@@ -1295,107 +1269,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000071"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000072"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000075"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000076"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000079"
+      "$oid": "F00000000000000000000054"
     },
     "type": "completed",
     "context": {
@@ -1420,32 +1294,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000080"
-    },
-    "type": "note",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000002"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "daniel",
-      "at_time": {
-        "$date": "2025-01-17T14:00:00.000Z"
-      },
-      "correlation_id": "evt-daniel-note"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000081"
+      "$oid": "F00000000000000000000055"
     },
     "type": "completed",
     "context": {
@@ -1470,7 +1319,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000082"
+      "$oid": "F00000000000000000000056"
     },
     "type": "completed",
     "context": {
@@ -1495,15 +1344,15 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000083"
+      "$oid": "F00000000000000000000057"
     },
-    "type": "completed",
+    "type": "note",
     "context": {
       "profile_id": {
-        "$oid": "A00000000000000000000005"
+        "$oid": "A00000000000000000000002"
       },
       "journey_id": {
-        "$oid": "A00000000000000000000005"
+        "$oid": "A00000000000000000000002"
       },
       "resource_id": {
         "$oid": "B00000000000000000000008"
@@ -1511,41 +1360,16 @@
     },
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "daniel",
       "at_time": {
-        "$date": "2025-01-17T14:00:00.000Z"
+        "$date": "2025-01-17T14:30:00.000Z"
       },
-      "correlation_id": "evt-luther-done-3"
+      "correlation_id": "evt-daniel-note"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000086"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000008"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-17T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-3"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000088"
+      "$oid": "F00000000000000000000058"
     },
     "type": "link",
     "context": {
@@ -1563,14 +1387,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
+        "$date": "2025-01-18T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-4"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000089"
+      "$oid": "F00000000000000000000059"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000633"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-18T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-4"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000060"
     },
     "type": "started",
     "context": {
@@ -1595,32 +1444,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000090"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000091"
+      "$oid": "F00000000000000000000061"
     },
     "type": "started",
     "context": {
@@ -1645,107 +1469,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000092"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000093"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000094"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000095"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000098"
+      "$oid": "F00000000000000000000062"
     },
     "type": "completed",
     "context": {
@@ -1770,7 +1494,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000099"
+      "$oid": "F00000000000000000000063"
     },
     "type": "completed",
     "context": {
@@ -1795,57 +1519,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000100"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-19T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000101"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000633"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-19T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-4"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000103"
+      "$oid": "F00000000000000000000064"
     },
     "type": "link",
     "context": {
@@ -1863,14 +1537,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
+        "$date": "2025-01-20T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-5"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000104"
+      "$oid": "F00000000000000000000065"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000403"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-20T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000066"
     },
     "type": "started",
     "context": {
@@ -1895,32 +1594,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000105"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000106"
+      "$oid": "F00000000000000000000067"
     },
     "type": "started",
     "context": {
@@ -1945,107 +1619,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000107"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000108"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000109"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000110"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000113"
+      "$oid": "F00000000000000000000068"
     },
     "type": "completed",
     "context": {
@@ -2070,7 +1644,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000114"
+      "$oid": "F00000000000000000000069"
     },
     "type": "completed",
     "context": {
@@ -2095,57 +1669,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000115"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-21T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000116"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000403"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-21T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-5"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000118"
+      "$oid": "F00000000000000000000070"
     },
     "type": "link",
     "context": {
@@ -2163,14 +1687,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
+        "$date": "2025-01-22T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-6"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000119"
+      "$oid": "F00000000000000000000071"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000571"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-22T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-6"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000072"
     },
     "type": "started",
     "context": {
@@ -2195,32 +1744,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000120"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000121"
+      "$oid": "F00000000000000000000073"
     },
     "type": "started",
     "context": {
@@ -2245,107 +1769,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000122"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000123"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000124"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000125"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000128"
+      "$oid": "F00000000000000000000074"
     },
     "type": "completed",
     "context": {
@@ -2370,7 +1794,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000129"
+      "$oid": "F00000000000000000000075"
     },
     "type": "completed",
     "context": {
@@ -2395,57 +1819,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000130"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-23T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000131"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000571"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-23T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-6"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000133"
+      "$oid": "F00000000000000000000076"
     },
     "type": "link",
     "context": {
@@ -2463,14 +1837,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
+        "$date": "2025-01-24T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-7"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000134"
+      "$oid": "F00000000000000000000077"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000572"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-24T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-7"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000078"
     },
     "type": "started",
     "context": {
@@ -2495,32 +1894,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000135"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000136"
+      "$oid": "F00000000000000000000079"
     },
     "type": "started",
     "context": {
@@ -2545,107 +1919,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000137"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000138"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000139"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000140"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000143"
+      "$oid": "F00000000000000000000080"
     },
     "type": "completed",
     "context": {
@@ -2670,7 +1944,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000144"
+      "$oid": "F00000000000000000000081"
     },
     "type": "completed",
     "context": {
@@ -2695,57 +1969,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000145"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-25T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000146"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000572"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-25T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-7"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000148"
+      "$oid": "F00000000000000000000082"
     },
     "type": "link",
     "context": {
@@ -2763,14 +1987,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
+        "$date": "2025-01-26T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-8"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000149"
+      "$oid": "F00000000000000000000083"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000573"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-26T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-8"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000084"
     },
     "type": "started",
     "context": {
@@ -2795,32 +2044,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000150"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000151"
+      "$oid": "F00000000000000000000085"
     },
     "type": "started",
     "context": {
@@ -2845,107 +2069,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000152"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000153"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000154"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000155"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000158"
+      "$oid": "F00000000000000000000086"
     },
     "type": "completed",
     "context": {
@@ -2970,7 +2094,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000159"
+      "$oid": "F00000000000000000000087"
     },
     "type": "completed",
     "context": {
@@ -2995,57 +2119,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000160"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-27T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000161"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000573"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-27T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-8"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000163"
+      "$oid": "F00000000000000000000088"
     },
     "type": "link",
     "context": {
@@ -3063,14 +2137,39 @@
       "from_ip": "127.0.0.1",
       "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
+        "$date": "2025-01-28T13:55:00.000Z"
       },
       "correlation_id": "evt-lucky-link-9"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000164"
+      "$oid": "F00000000000000000000089"
+    },
+    "type": "link",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000574"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-01-28T13:55:00.000Z"
+      },
+      "correlation_id": "evt-mary-link-9"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000090"
     },
     "type": "started",
     "context": {
@@ -3095,32 +2194,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000165"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-link-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000166"
+      "$oid": "F00000000000000000000091"
     },
     "type": "started",
     "context": {
@@ -3145,107 +2219,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000167"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000168"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000169"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-link-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000170"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-start-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000173"
+      "$oid": "F00000000000000000000092"
     },
     "type": "completed",
     "context": {
@@ -3270,32 +2244,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000174"
-    },
-    "type": "note",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-01-29T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-note"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000175"
+      "$oid": "F00000000000000000000093"
     },
     "type": "completed",
     "context": {
@@ -3320,65 +2269,15 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000176"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-29T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000177"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000574"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-29T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-done-9"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000178"
+      "$oid": "F00000000000000000000094"
     },
     "type": "note",
     "context": {
       "profile_id": {
-        "$oid": "A00000000000000000000014"
+        "$oid": "A00000000000000000000003"
       },
       "journey_id": {
-        "$oid": "A00000000000000000000014"
+        "$oid": "A00000000000000000000003"
       },
       "resource_id": {
         "$oid": "B00000000000000000000574"
@@ -3386,16 +2285,16 @@
     },
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "taylor",
+      "by_user": "lucky",
       "at_time": {
-        "$date": "2025-01-29T14:00:00.000Z"
+        "$date": "2025-01-29T14:30:00.000Z"
       },
-      "correlation_id": "evt-taylor-note"
+      "correlation_id": "evt-lucky-note"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000180"
+      "$oid": "F00000000000000000000095"
     },
     "type": "link",
     "context": {
@@ -3413,14 +2312,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-01-30T14:00:00.000Z"
+        "$date": "2025-01-30T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-10"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000181"
+      "$oid": "F00000000000000000000096"
     },
     "type": "started",
     "context": {
@@ -3445,57 +2344,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000182"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000575"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-30T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-10"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000183"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000575"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-30T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-10"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000186"
+      "$oid": "F00000000000000000000097"
     },
     "type": "completed",
     "context": {
@@ -3520,32 +2369,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000187"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000575"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-01-31T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-10"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000189"
+      "$oid": "F00000000000000000000098"
     },
     "type": "link",
     "context": {
@@ -3563,14 +2387,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-01T14:00:00.000Z"
+        "$date": "2025-02-01T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-11"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000190"
+      "$oid": "F00000000000000000000099"
     },
     "type": "started",
     "context": {
@@ -3595,57 +2419,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000191"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000576"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-01T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-11"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000192"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000576"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-01T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-11"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000195"
+      "$oid": "F00000000000000000000100"
     },
     "type": "completed",
     "context": {
@@ -3670,32 +2444,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000196"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000576"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-02T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-11"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000199"
+      "$oid": "F00000000000000000000101"
     },
     "type": "link",
     "context": {
@@ -3713,14 +2462,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-03T14:00:00.000Z"
+        "$date": "2025-02-03T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-12"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000200"
+      "$oid": "F00000000000000000000102"
     },
     "type": "started",
     "context": {
@@ -3745,57 +2494,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000201"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000577"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-03T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-12"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000202"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000577"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-03T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-12"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000203"
+      "$oid": "F00000000000000000000103"
     },
     "type": "completed",
     "context": {
@@ -3820,55 +2519,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000204"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000577"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-04T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-12"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000205"
-    },
-    "type": "advanced",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000002"
-      },
-      "resource_name": "12FactorApp"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "daniel",
-      "at_time": {
-        "$date": "2025-02-05T14:00:00.000Z"
-      },
-      "correlation_id": "evt-daniel-adv-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000206"
+      "$oid": "F00000000000000000000104"
     },
     "type": "link",
     "context": {
@@ -3886,14 +2537,40 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-05T14:00:00.000Z"
+        "$date": "2025-02-05T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-13"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000207"
+      "$oid": "F00000000000000000000105"
+    },
+    "type": "advanced",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000633"
+      },
+      "resource_name": "12 Factor App"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-02-05T14:00:00.000Z"
+      },
+      "correlation_id": "evt-daniel-adv-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000106"
     },
     "type": "started",
     "context": {
@@ -3918,57 +2595,29 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000208"
+      "$oid": "F00000000000000000000107"
     },
-    "type": "link",
+    "type": "encounter",
     "context": {
       "profile_id": {
-        "$oid": "A00000000000000000000005"
+        "$oid": "A00000000000000000000002"
       },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000578"
+      "encounter_id": {
+        "$oid": "E00000000000000000000001"
       }
     },
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "marti",
       "at_time": {
-        "$date": "2025-02-05T14:00:00.000Z"
+        "$date": "2025-02-05T15:00:00.000Z"
       },
-      "correlation_id": "evt-luther-link-13"
+      "correlation_id": "evt-enc-daniel-01"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000209"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000578"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-05T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-13"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000211"
+      "$oid": "F00000000000000000000108"
     },
     "type": "started",
     "context": {
@@ -3978,7 +2627,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000002"
       },
-      "resource_name": "12FactorApp"
+      "resource_id": {
+        "$oid": "B00000000000000000000633"
+      },
+      "resource_name": "12 Factor App"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -3991,7 +2643,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000212"
+      "$oid": "F00000000000000000000109"
     },
     "type": "completed",
     "context": {
@@ -4016,32 +2668,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000213"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000578"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-06T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-13"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000215"
+      "$oid": "F00000000000000000000110"
     },
     "type": "link",
     "context": {
@@ -4059,14 +2686,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-07T14:00:00.000Z"
+        "$date": "2025-02-07T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-14"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000216"
+      "$oid": "F00000000000000000000111"
     },
     "type": "started",
     "context": {
@@ -4091,57 +2718,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000217"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000579"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-07T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-14"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000218"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000579"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-07T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-14"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000219"
+      "$oid": "F00000000000000000000112"
     },
     "type": "completed",
     "context": {
@@ -4166,32 +2743,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000220"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000579"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-08T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-14"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000221"
+      "$oid": "F00000000000000000000113"
     },
     "type": "link",
     "context": {
@@ -4209,14 +2761,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-09T14:00:00.000Z"
+        "$date": "2025-02-09T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-15"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000222"
+      "$oid": "F00000000000000000000114"
     },
     "type": "started",
     "context": {
@@ -4241,57 +2793,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000223"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000656"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-09T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-15"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000224"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000656"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-09T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-15"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000225"
+      "$oid": "F00000000000000000000115"
     },
     "type": "completed",
     "context": {
@@ -4316,55 +2818,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000226"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000656"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-15"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000227"
-    },
-    "type": "advanced",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_name": "Howtoknowwhattotest"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-02-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-adv-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000228"
+      "$oid": "F00000000000000000000116"
     },
     "type": "link",
     "context": {
@@ -4382,14 +2836,40 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-11T14:00:00.000Z"
+        "$date": "2025-02-11T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-16"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000229"
+      "$oid": "F00000000000000000000117"
+    },
+    "type": "advanced",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "journey_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "resource_id": {
+        "$oid": "B00000000000000000000575"
+      },
+      "resource_name": "How to know what to test"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-02-11T14:00:00.000Z"
+      },
+      "correlation_id": "evt-lucky-adv-0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000118"
     },
     "type": "started",
     "context": {
@@ -4414,80 +2894,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000230"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000657"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-16"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000231"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000657"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-16"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000232"
-    },
-    "type": "advanced",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_name": "Howtoknowwhattotest"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-02-11T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-adv-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000233"
+      "$oid": "F00000000000000000000119"
     },
     "type": "started",
     "context": {
@@ -4497,7 +2904,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000003"
       },
-      "resource_name": "Howtoknowwhattotest"
+      "resource_id": {
+        "$oid": "B00000000000000000000575"
+      },
+      "resource_name": "How to know what to test"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -4510,7 +2920,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000234"
+      "$oid": "F00000000000000000000120"
     },
     "type": "advanced",
     "context": {
@@ -4520,7 +2930,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000003"
       },
-      "resource_name": "UserStories"
+      "resource_id": {
+        "$oid": "B00000000000000000000576"
+      },
+      "resource_name": "User Stories"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -4533,30 +2946,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000235"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "resource_name": "UserStories"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "lucky",
-      "at_time": {
-        "$date": "2025-02-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-lucky-now-start-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000236"
+      "$oid": "F00000000000000000000121"
     },
     "type": "completed",
     "context": {
@@ -4581,55 +2971,29 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000237"
+      "$oid": "F00000000000000000000122"
     },
-    "type": "completed",
+    "type": "encounter",
     "context": {
       "profile_id": {
-        "$oid": "A00000000000000000000005"
+        "$oid": "A00000000000000000000004"
       },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000657"
+      "encounter_id": {
+        "$oid": "E00000000000000000000005"
       }
     },
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "marti",
       "at_time": {
-        "$date": "2025-02-12T14:00:00.000Z"
+        "$date": "2025-02-12T15:00:00.000Z"
       },
-      "correlation_id": "evt-luther-done-16"
+      "correlation_id": "evt-enc-mary-05"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000238"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000014"
-      },
-      "resource_name": "Howtoknowwhattotest"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-02-12T14:00:00.000Z"
-      },
-      "correlation_id": "evt-taylor-now-start-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000239"
+      "$oid": "F00000000000000000000123"
     },
     "type": "link",
     "context": {
@@ -4647,14 +3011,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-13T14:00:00.000Z"
+        "$date": "2025-02-13T13:55:00.000Z"
       },
       "correlation_id": "evt-mary-link-17"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000240"
+      "$oid": "F00000000000000000000124"
     },
     "type": "started",
     "context": {
@@ -4679,57 +3043,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000241"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000658"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-13T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-17"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000242"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000658"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-13T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-17"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000244"
+      "$oid": "F00000000000000000000125"
     },
     "type": "completed",
     "context": {
@@ -4754,7 +3068,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000245"
+      "$oid": "F00000000000000000000126"
     },
     "type": "note",
     "context": {
@@ -4772,189 +3086,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "mary",
       "at_time": {
-        "$date": "2025-02-14T14:00:00.000Z"
+        "$date": "2025-02-14T14:30:00.000Z"
       },
       "correlation_id": "evt-mary-note"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000246"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000658"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-14T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-17"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000248"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000659"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-15T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-18"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000249"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000659"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-15T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-18"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000250"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000659"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-16T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-18"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000251"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000660"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-17T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-19"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000252"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000660"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-17T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-19"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000253"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000660"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-18T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-19"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000254"
+      "$oid": "F00000000000000000000127"
     },
     "type": "advanced",
     "context": {
@@ -4964,7 +3103,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000004"
       },
-      "resource_name": "IntegratedTestsAreAScam"
+      "resource_id": {
+        "$oid": "B00000000000000000000659"
+      },
+      "resource_name": "Integrated Tests Are A Scam"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -4977,57 +3119,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000255"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000661"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-19T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-20"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000256"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000661"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-19T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-20"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000257"
+      "$oid": "F00000000000000000000128"
     },
     "type": "started",
     "context": {
@@ -5037,7 +3129,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000004"
       },
-      "resource_name": "IntegratedTestsAreAScam"
+      "resource_id": {
+        "$oid": "B00000000000000000000659"
+      },
+      "resource_name": "Integrated Tests Are A Scam"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -5050,7 +3145,7 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000258"
+      "$oid": "F00000000000000000000129"
     },
     "type": "advanced",
     "context": {
@@ -5060,7 +3155,10 @@
       "journey_id": {
         "$oid": "A00000000000000000000004"
       },
-      "resource_name": "RedGreenRefactor"
+      "resource_id": {
+        "$oid": "B00000000000000000000660"
+      },
+      "resource_name": "Red, Green, Refactor"
     },
     "created": {
       "from_ip": "127.0.0.1",
@@ -5073,991 +3171,12 @@
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000259"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "resource_name": "RedGreenRefactor"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2025-02-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-mary-now-start-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000260"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000661"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-20T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-20"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000261"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000662"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-21T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-21"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000262"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000662"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-21T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-21"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000263"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000662"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-22T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-21"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000264"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000663"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-23T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-22"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000265"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000663"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-23T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-22"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000266"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000663"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-24T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-22"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000267"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000664"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-25T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-23"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000268"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000664"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-25T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-23"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000269"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000664"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-26T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-23"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000270"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000665"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-27T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-24"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000271"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000665"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-27T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-24"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000272"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000665"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-02-28T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-24"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000273"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000666"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-01T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-25"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000274"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000666"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-01T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-25"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000275"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000666"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-02T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-25"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000276"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000667"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-03T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-26"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000277"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000667"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-03T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-26"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000278"
-    },
-    "type": "advanced",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_name": "TestDrivenDevelopment1"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-03T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-adv-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000279"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000667"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-04T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-26"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000280"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_name": "TestDrivenDevelopment1"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-04T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-now-start-0"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000281"
-    },
-    "type": "advanced",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_name": "TestingJavaScript"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-04T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-adv-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000282"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_name": "TestingJavaScript"
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-04T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-now-start-1"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000283"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000668"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-05T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-27"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000284"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000668"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-05T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-27"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000285"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000668"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-06T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-27"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000286"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000669"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-07T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-28"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000287"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000669"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-07T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-28"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000288"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000669"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-08T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-28"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000289"
-    },
-    "type": "link",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000670"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-09T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-link-29"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000290"
-    },
-    "type": "started",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000670"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-09T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-start-29"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000291"
-    },
-    "type": "completed",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000670"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-done-29"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000292"
-    },
-    "type": "note",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "journey_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "resource_id": {
-        "$oid": "B00000000000000000000670"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2025-03-10T14:00:00.000Z"
-      },
-      "correlation_id": "evt-luther-note"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000293"
-    },
-    "type": "login",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "daniel",
-      "at_time": {
-        "$date": "2025-12-01T09:00:00.000Z"
-      },
-      "correlation_id": "seed-auth-01"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000294"
-    },
-    "type": "logout",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "daniel",
-      "at_time": {
-        "$date": "2025-12-01T11:30:00.000Z"
-      },
-      "correlation_id": "seed-auth-02"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000295"
-    },
-    "type": "fail",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000010"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2026-04-10T08:15:00.000Z"
-      },
-      "correlation_id": "seed-auth-05"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000296"
-    },
-    "type": "login",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "mary",
-      "at_time": {
-        "$date": "2026-05-05T09:00:00.000Z"
-      },
-      "correlation_id": "seed-auth-04"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000297"
+      "$oid": "F00000000000000000000130"
     },
     "type": "encounter",
     "context": {
       "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000001"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-05-05T09:31:00.000Z"
-      },
-      "correlation_id": "evt-enc-mary-01"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000298"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000002"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000002"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-05-06T09:58:00.000Z"
-      },
-      "correlation_id": "evt-enc-daniel-02"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000299"
-    },
-    "type": "login",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "luther",
-      "at_time": {
-        "$date": "2026-05-07T08:45:00.000Z"
-      },
-      "correlation_id": "seed-auth-06"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000300"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
+        "$oid": "A00000000000000000000003"
       },
       "encounter_id": {
         "$oid": "E00000000000000000000003"
@@ -6067,85 +3186,19 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2026-05-07T09:31:00.000Z"
+        "$date": "2025-03-10T15:00:00.000Z"
       },
-      "correlation_id": "evt-enc-luther-03"
+      "correlation_id": "evt-enc-lucky-03"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000301"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000004"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-05-12T09:50:00.000Z"
-      },
-      "correlation_id": "evt-enc-mary-04"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000302"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000005"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-05-28T10:33:00.000Z"
-      },
-      "correlation_id": "evt-enc-luther-05"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000303"
+      "$oid": "F00000000000000000000131"
     },
     "type": "encounter",
     "context": {
       "profile_id": {
         "$oid": "A00000000000000000000002"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000006"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-03T09:22:00.000Z"
-      },
-      "correlation_id": "evt-enc-daniel-06"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000304"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
       },
       "encounter_id": {
         "$oid": "E00000000000000000000007"
@@ -6155,14 +3208,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2026-06-04T10:02:00.000Z"
+        "$date": "2025-04-15T14:00:00.000Z"
       },
-      "correlation_id": "evt-enc-luther-07"
+      "correlation_id": "evt-enc-daniel-07"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000305"
+      "$oid": "F00000000000000000000132"
     },
     "type": "encounter",
     "context": {
@@ -6177,102 +3230,14 @@
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2026-06-08T09:33:00.000Z"
+        "$date": "2025-04-22T14:00:00.000Z"
       },
       "correlation_id": "evt-enc-lucky-08"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000306"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000009"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-09T09:58:00.000Z"
-      },
-      "correlation_id": "evt-enc-mary-09"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000307"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000010"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-11T09:46:00.000Z"
-      },
-      "correlation_id": "evt-enc-luther-10"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000308"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000003"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000011"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-15T09:58:00.000Z"
-      },
-      "correlation_id": "evt-enc-lucky-11"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000309"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000004"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000012"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-16T10:08:00.000Z"
-      },
-      "correlation_id": "evt-enc-mary-12"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000310"
+      "$oid": "F00000000000000000000133"
     },
     "type": "encounter",
     "context": {
@@ -6280,43 +3245,21 @@
         "$oid": "A00000000000000000000002"
       },
       "encounter_id": {
-        "$oid": "E00000000000000000000013"
+        "$oid": "E00000000000000000000002"
       }
     },
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2026-06-17T09:58:00.000Z"
+        "$date": "2025-05-06T15:00:00.000Z"
       },
-      "correlation_id": "evt-enc-daniel-13"
+      "correlation_id": "evt-enc-daniel-02"
     }
   },
   {
     "_id": {
-      "$oid": "F00000000000000000000311"
-    },
-    "type": "encounter",
-    "context": {
-      "profile_id": {
-        "$oid": "A00000000000000000000005"
-      },
-      "encounter_id": {
-        "$oid": "E00000000000000000000014"
-      }
-    },
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": {
-        "$date": "2026-06-18T10:05:00.000Z"
-      },
-      "correlation_id": "evt-enc-luther-14"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "F00000000000000000000312"
+      "$oid": "F00000000000000000000134"
     },
     "type": "encounter",
     "context": {
@@ -6324,16 +3267,1673 @@
         "$oid": "A00000000000000000000003"
       },
       "encounter_id": {
-        "$oid": "E00000000000000000000015"
+        "$oid": "E00000000000000000000004"
       }
     },
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "marti",
       "at_time": {
-        "$date": "2026-06-22T10:00:00.000Z"
+        "$date": "2025-05-20T15:00:00.000Z"
       },
-      "correlation_id": "evt-enc-lucky-15"
+      "correlation_id": "evt-enc-lucky-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000135"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      },
+      "encounter_id": {
+        "$oid": "E00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-06-09T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-mary-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000136"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-daniel-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000137"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-lucky-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000138"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000139"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "emma",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-emma-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000140"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-danny-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000141"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000009"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "margaret",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-margaret-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000142"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-stacey-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000143"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "eddy",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-eddy-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000144"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2025-12-21T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-marti-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000145"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-01-10T20:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000146"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-01-31T04:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000147"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-02-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000148"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "emma",
+      "at_time": {
+        "$date": "2026-02-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-emma-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000149"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-02-20T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-danny-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000150"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-03-12T20:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000151"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2026-03-23T00:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-daniel-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000152"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2026-03-23T00:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-lucky-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000153"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-03-23T00:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-stacey-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000154"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "eddy",
+      "at_time": {
+        "$date": "2026-03-23T00:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-eddy-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000155"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-04-02T04:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000156"
+    },
+    "type": "fail",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000009"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "margaret",
+      "at_time": {
+        "$date": "2026-04-10T08:15:00.000Z"
+      },
+      "correlation_id": "seed-auth-fail-margaret"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000157"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-04-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000158"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "emma",
+      "at_time": {
+        "$date": "2026-04-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-emma-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000159"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-04-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-danny-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000160"
+    },
+    "type": "logout",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2026-05-01T17:30:00.000Z"
+      },
+      "correlation_id": "seed-auth-logout-daniel"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000161"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-05-12T20:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000162"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-06-02T04:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000163"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000005"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "linda",
+      "at_time": {
+        "$date": "2026-06-15T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-linda-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000164"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000010"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-06-15T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-paula-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000165"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2026-06-15T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-elon-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000166"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-daniel-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000167"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "lucky",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-lucky-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000168"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000004"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mary",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-mary-login-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000169"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "emma",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-emma-login-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000170"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-danny-login-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000171"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000009"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "margaret",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-margaret-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000172"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-stacey-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000173"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "eddy",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-eddy-login-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000174"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-22T12:00:00.000Z"
+      },
+      "correlation_id": "seed-auth-marti-login-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000175"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "external_id": "cognito-post-confirmation-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-06-01T10:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-cognito-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000176"
+    },
+    "type": "identity_provisioned",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000006"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000006"
+      },
+      "note": "illustrative provision chain; profiles remain active (F-D21 owns provisioned seeds)"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-06-01T10:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-id-provision-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000177"
+    },
+    "type": "organization_enriched",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000001"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000006"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-06-01T10:05:00.000Z"
+      },
+      "correlation_id": "seed-evt-org-enriched-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000178"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "external_id": "evt_stripe_checkout_session_completed_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-checkout-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000179"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      },
+      "change": "checkout_completed"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-sub-checkout-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000180"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "amount_total": 9900,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:15.000Z"
+      },
+      "correlation_id": "seed-evt-pay-recorded-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000181"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "external_id": "evt_stripe_invoice_payment_failed_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-12T10:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000182"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000013"
+      },
+      "change": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-12T10:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-sub-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000183"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000002"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "reason": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-12T11:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-pastdue-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000184"
+    },
+    "type": "notification_dismissed",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000003"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000008"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000013"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "donny",
+      "at_time": {
+        "$date": "2026-07-15T16:30:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-dismiss-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000185"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000004"
+      },
+      "external_id": "cognito-admin-create-user-invite-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-01T13:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-invite-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000186"
+    },
+    "type": "invite_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000004"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "invited_by": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-07-01T13:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-invite-created-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000187"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000001"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "reason": "invite"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-07-01T14:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-invite-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000188"
+    },
+    "type": "invite_accepted",
+    "context": {
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000001"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "daniel",
+      "at_time": {
+        "$date": "2026-07-02T10:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-invite-accept-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000189"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000002"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      },
+      "reason": "payment_reminder"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-07-10T09:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-payrem-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000190"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000005"
+      },
+      "external_id": "cognito-gdpr-redact-request-seed-01",
+      "source": "cognito"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-22T09:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-redact-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000191"
+    },
+    "type": "profile_redacted",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000005"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000014"
+      },
+      "reason": "gdpr_erasure"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-22T09:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-profile-redact-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000192"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000006"
+      },
+      "external_id": "evt_stripe_invoice_paid_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000193"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000006"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "payment_id": {
+        "$oid": "b00000000000000000000003"
+      },
+      "amount_total": 49500,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:15.000Z"
+      },
+      "correlation_id": "seed-evt-pay-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000194"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "external_id": "evt_stripe_invoice_payment_failed_seed_02",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:05.000Z"
+      },
+      "correlation_id": "seed-evt-ext-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000195"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "payment_id": {
+        "$oid": "b00000000000000000000004"
+      },
+      "amount_total": 9800,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-pay-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000196"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000012"
+      },
+      "change": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:15.000Z"
+      },
+      "correlation_id": "seed-evt-sub-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000197"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000007"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000006"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      },
+      "reason": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-08-12T10:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-notif-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000198"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "encounter_id": {
+        "$oid": "E0000000000000000000000a"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-07-14T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-daniel-0a"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000199"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "encounter_id": {
+        "$oid": "E0000000000000000000000b"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-11T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-lucky-0b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000200"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-helen"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000201"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-15T14:30:00.000Z"
+      },
+      "correlation_id": "seed-auth-helen-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000202"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000017"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000010"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "nora",
+      "at_time": {
+        "$date": "2026-03-10T16:45:00.000Z"
+      },
+      "correlation_id": "seed-auth-nora-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000203"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000019"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "pat",
+      "at_time": {
+        "$date": "2026-05-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-pat"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000204"
+    },
+    "type": "invite_created",
+    "context": {
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000020"
+      },
+      "invited_by": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-08-20T13:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-invite-riley-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000205"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000007"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000020"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "reason": "invite"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-08-20T14:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-riley-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000206"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000008"
+      },
+      "external_id": "evt_stripe_subscription_updated_seed_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T15:59:55.000Z"
+      },
+      "correlation_id": "seed-evt-ext-sub-upd-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000207"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000008"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000008"
+      },
+      "change": "capacity",
+      "quantity": 8,
+      "previous_quantity": 5
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T16:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-sub-capacity-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000208"
+    },
+    "type": "payment_recorded",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000008"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "payment_id": {
+        "$oid": "b00000000000000000000005"
+      },
+      "amount_total": 29700,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T16:00:05.000Z"
+      },
+      "correlation_id": "seed-evt-pay-capacity-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000209"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "external_id": "evt_stripe_subscription_updated_cancel_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T17:59:55.000Z"
+      },
+      "correlation_id": "seed-evt-ext-sub-cancel-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000210"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "change": "cancel_at_period_end"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T18:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-sub-cancel-sched-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000211"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000008"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      },
+      "reason": "cancel_at_period_end"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-08-20T18:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-notif-cancel-01"
     }
   }
 ]

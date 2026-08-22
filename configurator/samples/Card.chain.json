@@ -1,0 +1,41 @@
+[
+  {
+    "type": "Customer",
+    "title": "Persevere",
+    "summary": "Active customer organization with billing and member roster.",
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/home",
+      "customer_id": "D00000000000000000000002"
+    }
+  },
+  {
+    "type": "Profile",
+    "title": "Stacey CEO",
+    "summary": "Persevere organization lead and billing contact.",
+    "profile_id": {
+      "$oid": "A00000000000000000000008"
+    },
+    "link_metadata": {
+      "spa": "discovery",
+      "route": "/profiles/A00000000000000000000008",
+      "profile_id": "A00000000000000000000008"
+    }
+  },
+  {
+    "type": "Notification",
+    "title": "InviteMember",
+    "summary": "You have been invited to join Persevere on Mentor Hub.",
+    "notification_id": {
+      "$oid": "C00000000000000000000001"
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/invites/accept",
+      "invite_token": "seed-invite-daniel-01"
+    }
+  }
+]

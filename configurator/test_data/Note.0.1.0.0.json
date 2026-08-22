@@ -100,106 +100,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-11T14:30:00.000Z"
       },
-      "correlation_id": "note-luther-004"
+      "correlation_id": "note-linda-004"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-11T16:30:00.000Z"
       },
-      "correlation_id": "note-luther-004-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000005"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000107"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000010"
-    },
-    "note": "**Stackshare** felt dense for where I am. The article format helped, yet I walked away with more questions than answers.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-11T14:30:00.000Z"
-      },
-      "correlation_id": "note-riley-005"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-11T16:30:00.000Z"
-      },
-      "correlation_id": "note-riley-005-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000006"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000107"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000014"
-    },
-    "note": "**Stackshare** was worth the time \u2014 good balance of theory and practice. I'll try applying one idea this week.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-11T14:30:00.000Z"
-      },
-      "correlation_id": "note-taylor-006"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-11T16:30:00.000Z"
-      },
-      "correlation_id": "note-taylor-006-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000007"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000107"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000015"
-    },
-    "note": "Archived note on **Stackshare** from earlier progress. Still a useful reference even though my journey is inactive.",
-    "status": "archived",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-01-11T14:30:00.000Z"
-      },
-      "correlation_id": "note-casey-007"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-01-11T16:30:00.000Z"
-      },
-      "correlation_id": "note-casey-007-saved"
+      "correlation_id": "note-linda-004-saved"
     }
   },
   {
@@ -229,35 +142,6 @@
         "$date": "2025-01-15T18:52:00.000Z"
       },
       "correlation_id": "note-daniel-008-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000009"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000007"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000010"
-    },
-    "note": "Finished **DemystifyingConwaysLaw** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-15T14:52:00.000Z"
-      },
-      "correlation_id": "note-riley-009"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-15T18:52:00.000Z"
-      },
-      "correlation_id": "note-riley-009-saved"
     }
   },
   {
@@ -361,77 +245,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-17T15:03:00.000Z"
       },
-      "correlation_id": "note-luther-013"
+      "correlation_id": "note-linda-013"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-17T20:03:00.000Z"
       },
-      "correlation_id": "note-luther-013-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000014"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000008"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000010"
-    },
-    "note": "Finished **AgileInceptionDeck** but I'm still unclear on the main takeaway. Need to revisit before I can explain it to someone else.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-17T15:03:00.000Z"
-      },
-      "correlation_id": "note-riley-014"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "riley",
-      "at_time": {
-        "$date": "2025-01-17T20:03:00.000Z"
-      },
-      "correlation_id": "note-riley-014-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000015"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000008"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000014"
-    },
-    "note": "Solid intro via **AgileInceptionDeck**. Useful context on Agile Inception Deck \u2014 supports learning in Assembling a Tech Stack., though I want one more example before I move on.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-17T15:03:00.000Z"
-      },
-      "correlation_id": "note-taylor-015"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-17T20:03:00.000Z"
-      },
-      "correlation_id": "note-taylor-015-saved"
+      "correlation_id": "note-linda-013-saved"
     }
   },
   {
@@ -448,19 +274,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-21T15:25:00.000Z"
       },
-      "correlation_id": "note-luther-016"
+      "correlation_id": "note-linda-016"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-21T22:25:00.000Z"
       },
-      "correlation_id": "note-luther-016-saved"
+      "correlation_id": "note-linda-016-saved"
     }
   },
   {
@@ -490,64 +316,6 @@
         "$date": "2025-01-23T23:36:00.000Z"
       },
       "correlation_id": "note-lucky-017-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000018"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000571"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000014"
-    },
-    "note": "**AcceptanceCriteriaforUserStoriesPurposes** was worth the time \u2014 good balance of theory and practice. I'll try applying one idea this week.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-23T15:36:00.000Z"
-      },
-      "correlation_id": "note-taylor-018"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-23T23:36:00.000Z"
-      },
-      "correlation_id": "note-taylor-018-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000019"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000571"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000015"
-    },
-    "note": "Archived note on **AcceptanceCriteriaforUserStoriesPurposes** from earlier progress. Still a useful reference even though my journey is inactive.",
-    "status": "archived",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-01-23T15:36:00.000Z"
-      },
-      "correlation_id": "note-casey-019"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-01-23T23:36:00.000Z"
-      },
-      "correlation_id": "note-casey-019-saved"
     }
   },
   {
@@ -593,19 +361,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-27T15:58:00.000Z"
       },
-      "correlation_id": "note-luther-021"
+      "correlation_id": "note-linda-021"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-01-28T01:58:00.000Z"
       },
-      "correlation_id": "note-luther-021-saved"
+      "correlation_id": "note-linda-021-saved"
     }
   },
   {
@@ -635,35 +403,6 @@
         "$date": "2025-01-30T03:09:00.000Z"
       },
       "correlation_id": "note-lucky-022-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000023"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000574"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000014"
-    },
-    "note": "Helpful video (**IntroductiononhowtowriteUserStories**). I captured a few bullets; still comparing it with other EngineerKit resources.",
-    "status": "active",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-29T16:09:00.000Z"
-      },
-      "correlation_id": "note-taylor-023"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "taylor",
-      "at_time": {
-        "$date": "2025-01-30T03:09:00.000Z"
-      },
-      "correlation_id": "note-taylor-023-saved"
     }
   },
   {
@@ -709,48 +448,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-02T16:31:00.000Z"
       },
-      "correlation_id": "note-luther-025"
+      "correlation_id": "note-linda-025"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-03T05:31:00.000Z"
       },
-      "correlation_id": "note-luther-025-saved"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "E00000000000000000000026"
-    },
-    "resource_id": {
-      "$oid": "B00000000000000000000576"
-    },
-    "profile_id": {
-      "$oid": "A00000000000000000000015"
-    },
-    "note": "Archived note on **UserStories** from earlier progress. Still a useful reference even though my journey is inactive.",
-    "status": "archived",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-02-02T16:31:00.000Z"
-      },
-      "correlation_id": "note-casey-026"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "casey",
-      "at_time": {
-        "$date": "2025-02-03T05:31:00.000Z"
-      },
-      "correlation_id": "note-casey-026-saved"
+      "correlation_id": "note-linda-025-saved"
     }
   },
   {
@@ -767,19 +477,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-06T16:53:00.000Z"
       },
-      "correlation_id": "note-luther-027"
+      "correlation_id": "note-linda-027"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-07T07:53:00.000Z"
       },
-      "correlation_id": "note-luther-027-saved"
+      "correlation_id": "note-linda-027-saved"
     }
   },
   {
@@ -825,19 +535,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-12T17:26:00.000Z"
       },
-      "correlation_id": "note-luther-029"
+      "correlation_id": "note-linda-029"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-13T11:26:00.000Z"
       },
-      "correlation_id": "note-luther-029-saved"
+      "correlation_id": "note-linda-029-saved"
     }
   },
   {
@@ -883,19 +593,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-16T17:48:00.000Z"
       },
-      "correlation_id": "note-luther-031"
+      "correlation_id": "note-linda-031"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-17T13:48:00.000Z"
       },
-      "correlation_id": "note-luther-031-saved"
+      "correlation_id": "note-linda-031-saved"
     }
   },
   {
@@ -912,19 +622,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-22T18:21:00.000Z"
       },
-      "correlation_id": "note-luther-032"
+      "correlation_id": "note-linda-032"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-23T17:21:00.000Z"
       },
-      "correlation_id": "note-luther-032-saved"
+      "correlation_id": "note-linda-032-saved"
     }
   },
   {
@@ -941,19 +651,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-02-28T18:54:00.000Z"
       },
-      "correlation_id": "note-luther-033"
+      "correlation_id": "note-linda-033"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-03-01T20:54:00.000Z"
       },
-      "correlation_id": "note-luther-033-saved"
+      "correlation_id": "note-linda-033-saved"
     }
   },
   {
@@ -970,19 +680,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-03-04T19:16:00.000Z"
       },
-      "correlation_id": "note-luther-034"
+      "correlation_id": "note-linda-034"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-03-05T23:16:00.000Z"
       },
-      "correlation_id": "note-luther-034-saved"
+      "correlation_id": "note-linda-034-saved"
     }
   },
   {
@@ -999,19 +709,19 @@
     "status": "active",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-03-10T19:49:00.000Z"
       },
-      "correlation_id": "note-luther-035"
+      "correlation_id": "note-linda-035"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-03-12T02:49:00.000Z"
       },
-      "correlation_id": "note-luther-035-saved"
+      "correlation_id": "note-linda-035-saved"
     }
   }
 ]

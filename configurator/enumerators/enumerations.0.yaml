@@ -8,6 +8,8 @@ enumerators:
     value: archived
 - name: profile_status
   values:
+  - description: Provisioned by Admin ingress; not yet fully active
+    value: provisioned
   - description: An Active User
     value: active
   - description: Soft Delete - to be removed and archived at a future date
@@ -81,6 +83,65 @@ enumerators:
   - description: A user promoted a resource from one part of their learning roadmap
       to another
     value: advanced
+  - description: Raw normalized external payload reference
+    value: external_received
+  - description: Profile and/or Customer created by Admin ingress
+    value: identity_provisioned
+  - description: Customer domain filled business fields
+    value: organization_enriched
+  - description: Checkout, invoice, cancel, or past_due subscription change
+    value: subscription_changed
+  - description: Member invite created
+    value: invite_created
+  - description: Member invite accepted
+    value: invite_accepted
+  - description: Notification write
+    value: notification_created
+  - description: Notification dismiss
+    value: notification_dismissed
+  - description: Payment persistence
+    value: payment_recorded
+  - description: GDPR profile redact
+    value: profile_redacted
+- name: external_event_source
+  values:
+  - description: Stripe webhook or billing ingress
+    value: stripe
+  - description: Cognito Forms or identity ingress
+    value: cognito
+- name: customer_status
+  values:
+  - description: Provisioned by Admin ingress; not yet fully active
+    value: provisioned
+  - description: An active paying customer
+    value: active
+  - description: Soft Delete Indicator
+    value: archived
+- name: subscription_status
+  values:
+  - description: Subscription is current and billable
+    value: active
+  - description: Payment failed; subscription past due
+    value: past_due
+  - description: Subscription canceled (Stripe canceled)
+    value: canceled
+- name: discount_status
+  values:
+  - description: Discount is available for checkout
+    value: active
+  - description: Discount is not available
+    value: inactive
+- name: payment_status
+  values:
+  - description: PaymentIntent created; awaiting completion (Stripe
+      requires_payment_method / processing)
+    value: pending
+  - description: PaymentIntent succeeded
+    value: succeeded
+  - description: PaymentIntent failed or requires_action abandoned
+    value: failed
+  - description: PaymentIntent canceled
+    value: canceled
 - name: ratings
   values:
   - description: One Star

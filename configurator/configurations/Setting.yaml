@@ -1,0 +1,36 @@
+_locked: false
+description: Polymorphic Admin/reference bag (Product catalog and Discount codes). Persisted Mongo collection.
+file_name: Setting.yaml
+title: ''
+versions:
+- _locked: false
+  add_indexes:
+  - key:
+      type: 1
+      subscription: 1
+    name: Type Subscription
+    options:
+      unique: true
+      sparse: true
+  - key:
+      type: 1
+      code: 1
+    name: Type Code
+    options:
+      unique: true
+      sparse: true
+  - key:
+      type: 1
+      stripe_price_id: 1
+    name: Type Stripe Price Id
+    options:
+      unique: true
+      sparse: true
+  - key:
+      created.at_time: -1
+    name: Created
+    options: {}
+  drop_indexes: []
+  migrations: []
+  test_data: Setting.0.1.0.0.json
+  version: 0.1.0.0

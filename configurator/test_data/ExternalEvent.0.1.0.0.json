@@ -1,0 +1,207 @@
+[
+  {
+    "_id": {
+      "$oid": "E00000000000000000000001"
+    },
+    "source": "cognito",
+    "external_id": "cognito-post-confirmation-seed-01",
+    "payload_hash": "sha256:cognito-post-confirmation-seed-01",
+    "normalized_body": {
+      "trigger": "PostConfirmation",
+      "email": "new.member@example.com",
+      "organization_name": "ALI Onboarding Demo",
+      "profile_hint": "identity_provisioned"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-ext-cognito-provision-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000002"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_invoice_payment_failed_seed_01",
+    "payload_hash": "sha256:stripe-invoice-payment-failed-seed-01",
+    "normalized_body": {
+      "type": "invoice.payment_failed",
+      "customer_id": "D00000000000000000000008",
+      "subscription_status": "past_due"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-12T10:55:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-past-due-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000003"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_checkout_session_completed_seed_01",
+    "payload_hash": "sha256:stripe-checkout-session-completed-seed-01",
+    "normalized_body": {
+      "type": "checkout.session.completed",
+      "customer_id": "D00000000000000000000002",
+      "amount_total": 9900,
+      "currency": "usd"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-05T15:00:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-checkout-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000004"
+    },
+    "source": "cognito",
+    "external_id": "cognito-admin-create-user-invite-seed-01",
+    "payload_hash": "sha256:cognito-admin-create-user-invite-seed-01",
+    "normalized_body": {
+      "trigger": "AdminCreateUser",
+      "invited_email": "daniel@example.com",
+      "customer_id": "D00000000000000000000002",
+      "profile_id": "A00000000000000000000002"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-01T13:55:00.000Z"
+      },
+      "correlation_id": "seed-ext-cognito-invite-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000005"
+    },
+    "source": "cognito",
+    "external_id": "cognito-gdpr-redact-request-seed-01",
+    "payload_hash": "sha256:cognito-gdpr-redact-request-seed-01",
+    "normalized_body": {
+      "trigger": "UserDataRedaction",
+      "profile_id": "A00000000000000000000014",
+      "reason": "gdpr_erasure"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-07-22T09:00:00.000Z"
+      },
+      "correlation_id": "seed-ext-cognito-redact-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000006"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_invoice_paid_seed_01",
+    "payload_hash": "sha256:stripe-invoice-paid-seed-01",
+    "normalized_body": {
+      "type": "invoice.paid",
+      "customer_id": "D00000000000000000000002",
+      "stripe_invoice_id": "in_test_persevere_invoice_paid_01",
+      "stripe_payment_intent_id": "pi_test_persevere_invoice_paid_01",
+      "payment_id": "b00000000000000000000003"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:00:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000007"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_invoice_payment_failed_seed_02",
+    "payload_hash": "sha256:stripe-invoice-payment-failed-seed-02",
+    "normalized_body": {
+      "type": "invoice.payment_failed",
+      "customer_id": "D00000000000000000000007",
+      "stripe_invoice_id": "in_test_supersoft_invoice_fail_01",
+      "stripe_payment_intent_id": "pi_test_supersoft_invoice_fail_01",
+      "payment_id": "b00000000000000000000004"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T09:55:00.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-inv-fail-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000008"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_subscription_updated_seed_01",
+    "payload_hash": "sha256:stripe-subscription-updated-seed-01",
+    "normalized_body": {
+      "type": "customer.subscription.updated",
+      "customer_id": "D00000000000000000000002",
+      "quantity": 8,
+      "previous_quantity": 5,
+      "stripe_subscription_id": "sub_test_persevere_growth",
+      "stripe_invoice_id": "in_test_persevere_capacity_01",
+      "stripe_payment_intent_id": "pi_test_persevere_capacity_01",
+      "payment_id": "b00000000000000000000005"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-18T15:59:50.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-sub-upd-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000009"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_subscription_updated_cancel_01",
+    "payload_hash": "sha256:stripe-subscription-updated-cancel-01",
+    "normalized_body": {
+      "type": "customer.subscription.updated",
+      "customer_id": "D00000000000000000000011",
+      "subscription_status": "active",
+      "cancel_at_period_end": true,
+      "stripe_subscription_id": "sub_test_harbor_starter",
+      "stripe_customer_id": "cus_test_harbor",
+      "current_period_end": "2026-09-15T12:00:00.000Z"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T17:59:50.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-sub-cancel-01"
+    }
+  }
+]

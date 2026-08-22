@@ -2,7 +2,7 @@ _locked: false
 file_name: Customer.0.1.0.yaml
 root:
   additional_properties: false
-  description: An customer who pays for the service for a craftsperson.
+  description: Paying sponsor organization (Organization) that funds mentoring for craftspeople; Path A Admin ingress provisions a Customer and Customer API enriches it.
   name: Customer
   properties:
   - description: The unique identifier for the Customer.
@@ -17,6 +17,78 @@ root:
     name: description
     required: false
     type: sentence
+  - description: Stripe Customer id (cus_…) for billing sync
+    name: stripe_customer_id
+    required: false
+    type: sentence
+  - description: Embedded purchase / entitlement subscriptions (business + Stripe sync)
+    items:
+      additional_properties: false
+      description: Array item
+      name: item
+      properties:
+      - description: Entitled mentee seats
+        name: mentee_count
+        required: false
+        type: count
+      - description: Encounters-per-month entitlement
+        name: encounters_mo
+        required: false
+        type: count
+      - description: Plan identifier (matches Setting Product.subscription)
+        name: subscription
+        required: false
+        type: word
+      - description: Purchased seat quantity
+        name: quantity
+        required: false
+        type: count
+      - description: Unit price at purchase in minor units (snapshot of Product.unit_price)
+        name: unit_cost
+        required: false
+        type: money
+      - description: quantity x unit_cost (or Stripe-reconciled) in minor units
+        name: total_cost
+        required: false
+        type: money
+      - description: Redeemed discount code or empty string if none
+        name: discount_code
+        required: false
+        type: sentence
+      - description: Free encounters granted from Discount at checkout (0 if none)
+        name: free_encounters_granted
+        required: false
+        type: count
+      - description: Remaining free encounters (starts at granted; decremented by Encounter domain)
+        name: free_encounters_remaining
+        required: false
+        type: count
+      - description: Stripe subscription lifecycle status
+        enums: subscription_status
+        name: status
+        required: false
+        type: enum
+      - description: Stripe Subscription id (sub_…)
+        name: stripe_subscription_id
+        required: false
+        type: sentence
+      - description: Stripe Price id (price_…)
+        name: stripe_price_id
+        required: false
+        type: sentence
+      - description: End of the current Stripe billing period
+        name: current_period_end
+        required: false
+        type: date-time
+      - description: Stripe cancel_at_period_end — entitlement continues until current_period_end when status is still active
+        name: cancel_at_period_end
+        required: false
+        type: boolean
+      required: false
+      type: object
+    name: subscriptions
+    required: false
+    type: array
   - description: The tracking breadcrumb for when the document was created.
     name: created
     required: false
@@ -26,7 +98,7 @@ root:
     required: false
     type: breadcrumb
   - description: Status of the document
-    enums: default_status
+    enums: customer_status
     name: status
     required: false
     type: enum

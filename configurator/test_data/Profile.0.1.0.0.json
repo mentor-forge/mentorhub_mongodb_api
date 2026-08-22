@@ -5,8 +5,8 @@
     },
     "name": "mike",
     "status": "active",
-    "description": "Platform architect and mentor supporting full-stack mentorship programs.",
-    "email": "mike.storey@mentor-forge.dev",
+    "description": "Platform architect and administrator supporting full-stack mentorship programs.",
+    "email": "mike@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Grow the mentor network",
@@ -56,15 +56,8 @@
     ],
     "full_name": "Mike Storey",
     "roles": [
-      "admin",
-      "coordinator",
-      "customer",
-      "mentee",
-      "mentor"
-    ],
-    "customer_id": {
-      "$oid": "D00000000000000000000006"
-    }
+      "admin"
+    ]
   },
   {
     "_id": {
@@ -73,13 +66,14 @@
     "name": "daniel",
     "status": "active",
     "description": "SPA engineer learning advanced frontend patterns and component design.",
-    "email": "daniel.dissler@mentor-forge.dev",
+    "email": "daniel@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Master Vue composition patterns",
       "Ship a portfolio SPA"
     ],
     "interests": [
+      "ux",
       "api"
     ],
     "created": {
@@ -99,14 +93,14 @@
       "correlation_id": "save-profile-02"
     },
     "mentor_id": {
-      "$oid": "A00000000000000000000006"
+      "$oid": "A00000000000000000000010"
     },
     "customer_id": {
       "$oid": "D00000000000000000000002"
     },
     "experience": [
       {
-        "company": "Mentor Forge",
+        "company": "Persevere Now",
         "roles": [
           {
             "title": "Frontend Developer",
@@ -116,7 +110,7 @@
             "end": {
               "$date": "2024-12-01T00:00:00.000Z"
             },
-            "description": "Built Vue SPAs and shared component libraries for journey applications.",
+            "description": "Built Vue SPAs and shared component libraries for graduate mentorship cohorts.",
             "technologies": [
               "React",
               "HTML",
@@ -138,7 +132,7 @@
     "name": "lucky",
     "status": "active",
     "description": "Career switcher focused on site reliability and operational excellence.",
-    "email": "lucky.minyard@mentor-forge.dev",
+    "email": "lucky@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Earn SRE fundamentals certification",
@@ -164,26 +158,27 @@
       "correlation_id": "save-profile-03"
     },
     "mentor_id": {
-      "$oid": "A00000000000000000000006"
+      "$oid": "A00000000000000000000014"
     },
     "customer_id": {
-      "$oid": "D00000000000000000000002"
+      "$oid": "D00000000000000000000007"
     },
     "experience": [
       {
-        "company": "Lucky Consulting",
+        "company": "SuperSoft",
         "roles": [
           {
-            "title": "Contributor",
+            "title": "Junior SRE",
             "start": {
               "$date": "2023-01-01T09:00:00.000Z"
             },
             "end": {
               "$date": "2024-06-01T00:00:00.000Z"
             },
-            "description": "Applied skills while participating in the mentorship program as lucky.",
+            "description": "Supported on-call rotations and deployment pipelines while upskilling through mentorship.",
             "technologies": [
-              "Python"
+              "Python",
+              "MongoDB"
             ]
           }
         ]
@@ -200,8 +195,8 @@
     },
     "name": "mary",
     "status": "active",
-    "description": "Data-curious mentee building analytics and pipeline skills.",
-    "email": "mary.anderson@mentor-forge.dev",
+    "description": "Self-funded apprentice who coordinates her own cohort while learning data engineering.",
+    "email": "mary@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Build a data pipeline project",
@@ -231,23 +226,24 @@
       "$oid": "A00000000000000000000006"
     },
     "customer_id": {
-      "$oid": "D00000000000000000000002"
+      "$oid": "D00000000000000000000001"
     },
     "experience": [
       {
-        "company": "Mary Consulting",
+        "company": "Mary Anderson Consulting",
         "roles": [
           {
-            "title": "Contributor",
+            "title": "Apprentice Engineer",
             "start": {
               "$date": "2023-01-01T09:00:00.000Z"
             },
             "end": {
               "$date": "2024-06-01T00:00:00.000Z"
             },
-            "description": "Applied skills while participating in the mentorship program as mary.",
+            "description": "Applied analytics and pipeline skills while sponsoring and coordinating a personal apprenticeship.",
             "technologies": [
-              "TypeScript"
+              "TypeScript",
+              "MongoDB"
             ]
           }
         ]
@@ -255,6 +251,8 @@
     ],
     "full_name": "Mary Anderson",
     "roles": [
+      "customer",
+      "coordinator",
       "mentee"
     ]
   },
@@ -262,14 +260,14 @@
     "_id": {
       "$oid": "A00000000000000000000005"
     },
-    "name": "luther",
-    "status": "active",
-    "description": "Mentee and admin helping coordinate cohort onboarding.",
-    "email": "luther.still@mentor-forge.dev",
+    "name": "linda",
+    "status": "archived",
+    "description": "Former mentee who completed the ALI program and moved on from active learning.",
+    "email": "linda@mentor-forge.dev",
     "email_verified": true,
     "goals": [
-      "Complete mentee capstone",
-      "Support admin workflows"
+      "Archive completed journey artifacts",
+      "Transition to alumni status"
     ],
     "interests": [
       "design"
@@ -284,7 +282,7 @@
     },
     "saved": {
       "from_ip": "192.168.1.20",
-      "by_user": "luther",
+      "by_user": "linda",
       "at_time": {
         "$date": "2025-06-10T09:00:00.000Z"
       },
@@ -294,21 +292,21 @@
       "$oid": "A00000000000000000000006"
     },
     "customer_id": {
-      "$oid": "D00000000000000000000002"
+      "$oid": "D00000000000000000000006"
     },
     "experience": [
       {
-        "company": "Luther Consulting",
+        "company": "Agile Learning Institute",
         "roles": [
           {
-            "title": "Contributor",
+            "title": "Mentee",
             "start": {
               "$date": "2023-01-01T09:00:00.000Z"
             },
             "end": {
               "$date": "2024-06-01T00:00:00.000Z"
             },
-            "description": "Applied skills while participating in the mentorship program as luther.",
+            "description": "Completed mentee capstone under Marti before archiving the profile.",
             "technologies": [
               "Java"
             ]
@@ -316,10 +314,9 @@
         ]
       }
     ],
-    "full_name": "Luther Still",
+    "full_name": "Linda Left",
     "roles": [
-      "mentee",
-      "admin"
+      "mentee"
     ]
   },
   {
@@ -329,7 +326,7 @@
     "name": "marti",
     "status": "active",
     "description": "Experienced mentor guiding mentees through delivery and code review.",
-    "email": "marti.lombardi@mentor-forge.dev",
+    "email": "marti@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Mentor two active mentees",
@@ -385,10 +382,10 @@
     "_id": {
       "$oid": "A00000000000000000000007"
     },
-    "name": "carol",
+    "name": "emma",
     "status": "active",
-    "description": "Coordinator matching mentors to mentees and tracking program progress.",
-    "email": "carol.coordinator@mentor-forge.dev",
+    "description": "Coordinator matching mentors to mentees and tracking Persevere cohort progress.",
+    "email": "emma@mentor-forge.dev",
     "email_verified": true,
     "goals": [
       "Reduce time-to-match",
@@ -408,55 +405,56 @@
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "carol",
+      "by_user": "emma",
       "at_time": {
         "$date": "2025-06-12T10:15:00.000Z"
       },
       "correlation_id": "save-profile-07"
     },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
     "experience": [
       {
-        "company": "Carol Consulting",
+        "company": "Persevere Now",
         "roles": [
           {
-            "title": "Contributor",
+            "title": "Program Coordinator",
             "start": {
-              "$date": "2023-01-01T09:00:00.000Z"
+              "$date": "2022-03-01T09:00:00.000Z"
             },
             "end": {
-              "$date": "2024-06-01T00:00:00.000Z"
+              "$date": "2025-06-01T00:00:00.000Z"
             },
-            "description": "Applied skills while participating in the mentorship program as carol.",
+            "description": "Matched mentors to mentees and monitored graduate program milestones.",
             "technologies": [
-              "CSS"
+              "MongoDB",
+              "TypeScript"
             ]
           }
         ]
       }
     ],
-    "full_name": "Carol Coordinator",
+    "full_name": "Emma Coordinator",
     "roles": [
       "coordinator"
-    ],
-    "customer_id": {
-      "$oid": "D00000000000000000000006"
-    }
+    ]
   },
   {
     "_id": {
       "$oid": "A00000000000000000000008"
     },
-    "name": "cat",
+    "name": "stacey",
     "status": "active",
-    "description": "Customer sponsoring mentorship for a family member learning to code.",
-    "email": "cat.customer@mentor-forge.dev",
+    "description": "CEO sponsoring Persevere graduate mentorship for her engineering organization.",
+    "email": "stacey@mentor-forge.dev",
     "email_verified": true,
     "goals": [
-      "Find the right mentor match",
+      "Fund cohort sponsorships",
       "Monitor learning milestones"
     ],
     "interests": [
-      "robot"
+      "data"
     ],
     "created": {
       "from_ip": "127.0.0.1",
@@ -468,25 +466,28 @@
     },
     "saved": {
       "from_ip": "192.168.2.15",
-      "by_user": "cat",
+      "by_user": "stacey",
       "at_time": {
         "$date": "2025-05-15T13:50:00.000Z"
       },
       "correlation_id": "save-profile-08"
     },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
     "experience": [
       {
-        "company": "Cat Consulting",
+        "company": "Persevere Now",
         "roles": [
           {
-            "title": "Contributor",
+            "title": "Chief Executive Officer",
             "start": {
-              "$date": "2023-01-01T09:00:00.000Z"
+              "$date": "2016-01-01T09:00:00.000Z"
             },
             "end": {
-              "$date": "2024-06-01T00:00:00.000Z"
+              "$date": "2025-06-01T00:00:00.000Z"
             },
-            "description": "Applied skills while participating in the mentorship program as cat.",
+            "description": "Leads graduate mentorship programs and sponsors engineering apprenticeships.",
             "technologies": [
               "Other"
             ]
@@ -494,77 +495,333 @@
         ]
       }
     ],
-    "full_name": "Cat Customer",
+    "full_name": "Stacey CEO",
     "roles": [
       "customer"
-    ],
-    "customer_id": {
-      "$oid": "D00000000000000000000001"
-    }
+    ]
   },
   {
     "_id": {
-      "$oid": "A00000000000000000000013"
+      "$oid": "A00000000000000000000009"
     },
-    "name": "sam",
-    "status": "active",
-    "description": "Administrator maintaining identity access and platform configuration.",
-    "email": "sam.admin@mentor-forge.dev",
+    "name": "margaret",
+    "status": "suspended",
+    "description": "Former Persevere coordinator whose account is suspended pending review.",
+    "email": "margaret@mentor-forge.dev",
     "email_verified": true,
     "goals": [
-      "Audit role assignments",
-      "Streamline dev login testing"
+      "Resolve account suspension",
+      "Hand off open matches"
     ],
     "interests": [
       "design"
     ],
     "created": {
       "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-09"
+    },
+    "saved": {
+      "from_ip": "192.168.1.50",
       "by_user": "mike",
       "at_time": {
-        "$date": "2024-10-05T07:30:00.000Z"
+        "$date": "2025-04-01T09:00:00.000Z"
+      },
+      "correlation_id": "save-profile-09"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "experience": [
+      {
+        "company": "Persevere Now",
+        "roles": [
+          {
+            "title": "Coordinator",
+            "start": {
+              "$date": "2021-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-03-01T00:00:00.000Z"
+            },
+            "description": "Managed mentor-mentee matching until account suspension.",
+            "technologies": [
+              "CSS",
+              "HTML"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Margaret Coordinator",
+    "roles": [
+      "coordinator"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "name": "paula",
+    "status": "active",
+    "description": "Special mentor focused on Persevere graduate onboarding and frontend craft.",
+    "email": "paula@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Guide Daniel through capstone",
+      "Publish mentoring templates"
+    ],
+    "interests": [
+      "ux",
+      "api"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-07-01T08:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2025-05-25T16:00:00.000Z"
+      },
+      "correlation_id": "save-profile-10"
+    },
+    "experience": [
+      {
+        "company": "Agile Learning Institute",
+        "roles": [
+          {
+            "title": "Senior Mentor",
+            "start": {
+              "$date": "2017-06-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Mentors Persevere graduates on SPA delivery and component architecture.",
+            "technologies": [
+              "React",
+              "TypeScript",
+              "HTML"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Paula Persevere",
+    "roles": [
+      "mentor"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000011"
+    },
+    "name": "elon",
+    "status": "active",
+    "description": "Money mentor advising ALI cohorts on startup funding and technical due diligence.",
+    "email": "elon@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Mentor two funded founders",
+      "Document pitch review checklist"
+    ],
+    "interests": [
+      "api",
+      "data"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-08-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-11"
+    },
+    "saved": {
+      "from_ip": "10.0.0.80",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2025-06-05T11:30:00.000Z"
+      },
+      "correlation_id": "save-profile-11"
+    },
+    "experience": [
+      {
+        "company": "Venture Mentors LLC",
+        "roles": [
+          {
+            "title": "Angel Mentor",
+            "start": {
+              "$date": "2010-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Reviews startup technical plans and coaches founders on fundraising narratives.",
+            "technologies": [
+              "Python",
+              "Other"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Elon Money",
+    "roles": [
+      "mentor"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000012"
+    },
+    "name": "eddy",
+    "status": "active",
+    "description": "Entrepreneur customer sponsoring SuperSoft engineering apprenticeships.",
+    "email": "eddy@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Sponsor two mentee seats",
+      "Track ROI on mentorship spend"
+    ],
+    "interests": [
+      "sre",
+      "iot"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-09-01T14:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-12"
+    },
+    "saved": {
+      "from_ip": "192.168.3.10",
+      "by_user": "eddy",
+      "at_time": {
+        "$date": "2025-05-30T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-12"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000007"
+    },
+    "experience": [
+      {
+        "company": "SuperSoft",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": {
+              "$date": "2019-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Bootstrapped a startup and sponsors in-house mentorship for engineering hires.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Eddy Entrepreneur",
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000013"
+    },
+    "name": "donny",
+    "status": "active",
+    "description": "ScamSoft customer persona used to test delinquent sponsorship edge cases.",
+    "email": "donny@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Validate billing failure workflows",
+      "Exercise suspended customer paths"
+    ],
+    "interests": [
+      "robot"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2024-10-01T11:00:00.000Z"
       },
       "correlation_id": "seed-profile-13"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "sam",
+      "by_user": "mike",
       "at_time": {
-        "$date": "2025-06-14T09:45:00.000Z"
+        "$date": "2025-06-01T09:00:00.000Z"
       },
       "correlation_id": "save-profile-13"
     },
-    "full_name": "Sam Admin",
-    "roles": [
-      "admin",
-      "coordinator",
-      "customer",
-      "mentee",
-      "mentor"
-    ],
     "customer_id": {
-      "$oid": "D00000000000000000000006"
-    }
+      "$oid": "D00000000000000000000008"
+    },
+    "experience": [
+      {
+        "company": "ScamSoft Inc",
+        "roles": [
+          {
+            "title": "Account Holder",
+            "start": {
+              "$date": "2024-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Placeholder customer for testing non-payment and churn scenarios.",
+            "technologies": [
+              "Other"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Donny Deadbeat",
+    "roles": [
+      "customer"
+    ]
   },
   {
     "_id": {
       "$oid": "A00000000000000000000014"
     },
-    "name": "taylor",
+    "name": "danny",
     "status": "active",
-    "description": "Dual-role participant mentoring newcomers while continuing to learn.",
-    "email": "taylor.dual@mentor-forge.dev",
+    "description": "SuperSoft dev lead who coordinates cohorts and mentors senior-track engineers.",
+    "email": "danny@mentor-forge.dev",
     "email_verified": true,
     "goals": [
-      "Share mentoring notes",
-      "Complete advanced TypeScript course"
+      "Onboard Lucky to SRE practices",
+      "Standardize code review rituals"
     ],
     "interests": [
-      "games"
+      "sre",
+      "api"
     ],
     "created": {
       "from_ip": "10.0.0.75",
-      "by_user": "carol",
+      "by_user": "eddy",
       "at_time": {
         "$date": "2024-11-20T15:10:00.000Z"
       },
@@ -572,22 +829,395 @@
     },
     "saved": {
       "from_ip": "10.0.0.75",
-      "by_user": "taylor",
+      "by_user": "danny",
       "at_time": {
         "$date": "2025-05-05T11:00:00.000Z"
       },
       "correlation_id": "save-profile-14"
     },
-    "mentor_id": {
-      "$oid": "A00000000000000000000006"
+    "customer_id": {
+      "$oid": "D00000000000000000000007"
+    },
+    "experience": [
+      {
+        "company": "SuperSoft",
+        "roles": [
+          {
+            "title": "Dev Lead",
+            "start": {
+              "$date": "2018-06-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Leads platform engineering and mentors Lucky on reliability practices.",
+            "technologies": [
+              "Python",
+              "MongoDB",
+              "TypeScript"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Danny Dev Lead",
+    "roles": [
+      "coordinator",
+      "mentor"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000015"
+    },
+    "name": "melinda",
+    "status": "active",
+    "description": "Multi-skilled ALI mentor covering UX, API design, and cross-functional coaching.",
+    "email": "melinda@mentor-forge.dev",
+    "email_verified": true,
+    "goals": [
+      "Mentor across two skill tracks",
+      "Publish API design patterns guide"
+    ],
+    "interests": [
+      "ux",
+      "api",
+      "design"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2024-12-01T08:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-15"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "melinda",
+      "at_time": {
+        "$date": "2025-06-08T14:00:00.000Z"
+      },
+      "correlation_id": "save-profile-15"
+    },
+    "experience": [
+      {
+        "company": "Agile Learning Institute",
+        "roles": [
+          {
+            "title": "Principal Mentor",
+            "start": {
+              "$date": "2014-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2025-06-01T00:00:00.000Z"
+            },
+            "description": "Coaches mentees on full-stack delivery spanning UX, APIs, and team practices.",
+            "technologies": [
+              "TypeScript",
+              "React",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "full_name": "Melinda Multi",
+    "roles": [
+      "mentor"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000016"
+    },
+    "name": "patha-owner",
+    "status": "provisioned",
+    "email": "patha-owner@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "full_name": "Path A Owner",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-16"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-16"
     },
     "customer_id": {
-      "$oid": "D00000000000000000000001"
+      "$oid": "D00000000000000000000009"
     },
-    "full_name": "Taylor Dual",
     "roles": [
-      "mentor",
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000017"
+    },
+    "name": "nora",
+    "status": "active",
+    "description": "Northstar Labs primary owner after Customer API enrichment (F-CA05).",
+    "email": "nora@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+    "full_name": "Nora Northstar",
+    "goals": [
+      "Complete org profile enrichment",
+      "Invite first cohort members"
+    ],
+    "interests": [
+      "api",
+      "ux"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-02-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-17"
+    },
+    "saved": {
+      "from_ip": "10.0.4.22",
+      "by_user": "nora",
+      "at_time": {
+        "$date": "2026-03-10T16:45:00.000Z"
+      },
+      "correlation_id": "save-profile-17"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000010"
+    },
+    "experience": [
+      {
+        "company": "Northstar Labs",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": {
+              "$date": "2024-06-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-03-01T00:00:00.000Z"
+            },
+            "description": "Primary owner sponsoring mentorship seats after Path A self-registration.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000018"
+    },
+    "name": "helen",
+    "status": "active",
+    "description": "Harbor primary owner sponsoring a starter plan with no mentees enrolled yet.",
+    "email": "helen@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "full_name": "Helen Harbor",
+    "goals": [
+      "Invite the first mentee cohort",
+      "Track starter-plan seat usage"
+    ],
+    "interests": [
+      "api",
+      "ux"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-18"
+    },
+    "saved": {
+      "from_ip": "10.0.5.18",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-15T14:30:00.000Z"
+      },
+      "correlation_id": "save-profile-18"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000011"
+    },
+    "experience": [
+      {
+        "company": "Harbor",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": {
+              "$date": "2025-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-04-01T00:00:00.000Z"
+            },
+            "description": "Primary owner of a subscribed org that has not enrolled mentees yet.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "name": "pat",
+    "status": "active",
+    "description": "Persevere mentee on the roster who has not started mentoring encounters.",
+    "email": "pat@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "d4e5f6a7-b8c9-0123-def1-234567890123",
+    "full_name": "Pat Persevere",
+    "goals": [
+      "Start first mentoring session",
+      "Complete onboarding checklist"
+    ],
+    "interests": [
+      "ux",
+      "api"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-19"
+    },
+    "saved": {
+      "from_ip": "192.168.2.19",
+      "by_user": "pat",
+      "at_time": {
+        "$date": "2026-05-02T11:00:00.000Z"
+      },
+      "correlation_id": "save-profile-19"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "experience": [
+      {
+        "company": "Persevere Now",
+        "roles": [
+          {
+            "title": "Apprentice Engineer",
+            "start": {
+              "$date": "2025-09-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-05-01T00:00:00.000Z"
+            },
+            "description": "Joined the Persevere roster but has not started mentoring sessions.",
+            "technologies": [
+              "React",
+              "HTML"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
       "mentee"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000020"
+    },
+    "name": "riley",
+    "status": "provisioned",
+    "description": "Persevere Path B invitee pending first login after Stacey invited them.",
+    "email": "riley@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "e5f6a7b8-c9d0-1234-ef12-345678901234",
+    "full_name": "Riley Invitee",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-20"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-20"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000021"
+    },
+    "name": "quinn",
+    "status": "archived",
+    "description": "Persevere Path B invitee whose invitation Stacey revoked before first login.",
+    "email": "quinn@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "f6a7b8c9-d0e1-2345-f123-456789012345",
+    "full_name": "Quinn Revoked",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-21"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-20T14:00:00.000Z"
+      },
+      "correlation_id": "save-profile-21"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
     ]
   }
 ]

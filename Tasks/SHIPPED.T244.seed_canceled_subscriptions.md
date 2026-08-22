@@ -1,6 +1,6 @@
 # T244 – Seed canceled and cancel_at_period_end subscriptions (F-D27)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T241, T243  
 **Description:** Seed **E7** `Customer.subscriptions[]` cancel scenarios: **scheduled cancel** (`status: active`, `cancel_at_period_end: true`) and **already canceled** (`status: canceled`). Do **not** flip persevere (E5) or supersoft (E6 failed invoice). Pre-release: edit `Customer.0.1.0.0.json` in place.
@@ -81,4 +81,40 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Edit `Customer.0.1.0.0.json` in place only. E7 scheduled cancel is **harbor** `D00000000000000000000011`: keep starter qty 1, `cus_test_harbor`, `sub_test_harbor_starter`, `price_test_starter`, `status: active`, and existing future `current_period_end` `2026-09-15T12:00:00.000Z` (still entitled as of 2026-08-22). Add `cancel_at_period_end: true`. Bump `saved` after T241 (`2026-08-18`). E7 already-canceled is **scamsoft** `D00000000000000000000008` (today `subscriptions: []`): add `stripe_customer_id: cus_test_scamsoft` and one starter-shaped `subscriptions[]` entry (`qty`/`mentee_count` 1, `unit_cost` 4900, `total_cost` 4900, `price_test_starter`) with `status: canceled`, `cancel_at_period_end: true`, `current_period_end` in the past, unique `stripe_subscription_id: sub_test_scamsoft_starter`. Do **not** reuse `sub_test_persevere_growth` or `sub_test_supersoft_starter`. Do **not** change persevere or supersoft `subscriptions[].status` (remain `active`). Preserve unsubscribed mary / ali / northstar / Path A stub (`[]`). No Payment / Notification / Event / dictionary edits. Configure-database SUCCESS on already-running `:8385`; skip packaging. T245 should prefer harbor for the cancel Notification (`customer_id` → `D…11`).
+
+**Implemented**
+
+| Customer | Field | Value |
+| --- | --- | --- |
+| harbor `D00000000000000000000011` | `subscriptions[0].status` | `active` |
+| harbor | `cancel_at_period_end` | `true` |
+| harbor | `current_period_end` | `2026-09-15T12:00:00.000Z` (future; still entitled) |
+| harbor | qty / stripe ids | starter qty 1; `cus_test_harbor`; `sub_test_harbor_starter`; `price_test_starter` (T236 unchanged) |
+| harbor | `saved` | `2026-08-20T18:00:00.000Z` (`save-customer-011-cancel`) |
+| scamsoft `D00000000000000000000008` | `stripe_customer_id` | `cus_test_scamsoft` (new) |
+| scamsoft | `subscriptions[0].status` | `canceled` |
+| scamsoft | `cancel_at_period_end` | `true` |
+| scamsoft | `current_period_end` | `2026-07-15T08:00:00.000Z` (past; period ended) |
+| scamsoft | qty / stripe ids | starter qty 1; `sub_test_scamsoft_starter`; `price_test_starter` |
+| scamsoft | `saved` | `2026-07-15T08:05:00.000Z` (`save-customer-008-canceled`) |
+| persevere / supersoft | `subscriptions[].status` | `active` (unchanged) |
+| mary / ali / northstar / Path A stub | `subscriptions` | `[]` (unchanged) |
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (Mongo host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Customer.yaml` SUCCESS.
+- Spot-check (mongosh `mentor_hub`):
+  - harbor `D…11`: `status: active`, `cancel_at_period_end: true`, `current_period_end` `2026-09-15T12:00:00.000Z`, qty 1, `sub_test_harbor_starter`.
+  - scamsoft `D…08`: `status: canceled`, `cancel_at_period_end: true`, `current_period_end` `2026-07-15T08:00:00.000Z`, `cus_test_scamsoft` / `sub_test_scamsoft_starter`.
+  - persevere `D…02`: `status: active`.
+  - supersoft `D…07`: `status: active`.
+  - mary / ali / northstar / provisioned-org-path-a: `subscriptions: []`.
+  - Distinct `stripe_subscription_id`s: `sub_test_harbor_starter`, `sub_test_persevere_growth`, `sub_test_scamsoft_starter`, `sub_test_supersoft_starter` (no collisions).
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS. Spot-check: harbor active+cancel_at_period_end true; scamsoft canceled; persevere/supersoft active.
+
+**T245 handoff:** Prefer **harbor** `D00000000000000000000011` for the cancel Notification (`CancelScheduled` / still-entitled Portal cancel). Scamsoft is the already-`canceled` org if a second card is needed.

@@ -47,12 +47,14 @@ make down
 
 Persistent **Developer Edition personas** in seed data support manual SPA testing and JWT claims on [`login.html`](https://github.com/mentor-forge/mentorhub/blob/main/login.html) (synced via `welcome-auth.js` in the `mentorhub` repo — see `Tasks/ISSUE.mentorhub.login_html_persona_alignment.md`).
 
+**Path B invite fixtures** (`riley` pending / `quinn` revoked) are org-invite Profiles under Persevere, invited by Stacey. They are **not** Sign-in personas until accepted. Invitation state is `profile_status` only (`provisioned` / `active` / `archived`) — reuse **emma** as the accepted member.
+
 ### Customer organizations
 
 | `_id` | Slug | Display name | Sponsored personas |
 | --- | --- | --- | --- |
 | `D00000000000000000000001` | `mary` | Mary | Mary (self-funded) |
-| `D00000000000000000000002` | `persevere` | Persevere Now | Stacey, Emma, Margaret, Daniel, Pat |
+| `D00000000000000000000002` | `persevere` | Persevere Now | Stacey, Emma, Margaret, Daniel, Pat, Riley, Quinn |
 | `D00000000000000000000006` | `ali` | Agile Learning Institute | Mike, Marti, Paula, Elon, Melinda, Linda |
 | `D00000000000000000000007` | `supersoft` | SuperSoft | Eddy, Danny, Lucky |
 | `D00000000000000000000008` | `scamsoft` | ScamSoft | Donny |
@@ -79,6 +81,8 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 | Melinda the Multi Customer Mentor | `melinda` | Melinda Multi | `A00000000000000000000015` | mentor | ALI | — |
 | Helen the Harbor Owner | `helen` | Helen Harbor | `A00000000000000000000018` | customer | Harbor | — |
 | Pat the Empty-Activity Mentee | `pat` | Pat Persevere | `A00000000000000000000019` | mentee | Persevere | Paula |
+| Riley the Pending Invitee | `riley` | Riley Invitee | `A00000000000000000000020` | customer (provisioned) | Persevere | — |
+| Quinn the Revoked Invitee | `quinn` | Quinn Revoked | `A00000000000000000000021` | customer (archived) | Persevere | — |
 
 ### Mentor–mentee relationships
 

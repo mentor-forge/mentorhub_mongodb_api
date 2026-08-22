@@ -1151,5 +1151,73 @@
     "roles": [
       "mentee"
     ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000020"
+    },
+    "name": "riley",
+    "status": "provisioned",
+    "description": "Persevere Path B invitee pending first login after Stacey invited them.",
+    "email": "riley@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "e5f6a7b8-c9d0-1234-ef12-345678901234",
+    "full_name": "Riley Invitee",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-20"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-20"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000021"
+    },
+    "name": "quinn",
+    "status": "archived",
+    "description": "Persevere Path B invitee whose invitation Stacey revoked before first login.",
+    "email": "quinn@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "f6a7b8c9-d0e1-2345-f123-456789012345",
+    "full_name": "Quinn Revoked",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-21"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-20T14:00:00.000Z"
+      },
+      "correlation_id": "save-profile-21"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
+    ]
   }
 ]

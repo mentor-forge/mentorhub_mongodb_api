@@ -1,6 +1,6 @@
 # T239 – Seed Path B invitee Profiles using profile_status (F-D24)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T238  
 **Description:** Seed Path B member **Profiles** under the inviter’s `customer_id`. Invitation state is **existing `profile_status` only** — `provisioned` (pending), `active` (accepted), `archived` (revoked). Reorder Profile dictionary properties so JWT/claim fields sit together after `_id` (no new fields). Do **not** add an Invite collection, `invite_status`, or any invite-state field. No GDPR property. Pre-release: edit `Profile.0.1.0.yaml` / `Profile.0.1.0.0.json` in place.
@@ -123,4 +123,36 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Confirm unused Profile hex after helen `A…18` / pat `A…19` — next free `A00000000000000000000020` / `A…21`. Dictionary reorder is **not** already present (`8dfbf3b` only folded the spec into this task file; CURRENT `Profile.0.1.0.yaml` still has `status` after `name` and `customer_id`/`roles` at the bottom). Reorder `root.properties` to `_id` → `customer_id`/`mentor_id`/`roles`/`cognito_sub` → `name`/`full_name`/`description`/`email`/`email_verified` → `goals`/`interests`/`experience` → `status` → `created`/`saved`; keep existing descriptions/types; fold the overlong root `description`. No new Profile fields, no `invited_by` / `invite_status`. Wrap `payment_status` `pending` description only. Append **riley** (`A…20`, `provisioned`, persevere `D…02`, `roles: ["customer"]`, no `mentor_id`, `email_verified: false`, unique email/`cognito_sub`/`full_name`) and **quinn** (`A…21`, same Path B shape, `status: archived`). Reuse **emma** `A…07` as accepted/`active` — do not rewrite. Register ids in `persona_ids.json`; README Test Personas note Path B invite fixtures (not Sign-in). Preserve all existing Profiles. No Invite collection / GDPR / Mentee / Journey / Encounter for riley or quinn. Reuse already-running configurator `:8385`; skip packaging so later sequential tasks can reuse it.
+
+**IDs used** (confirmed unused in Profile before write; last prior seed remains `A…19`)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Profile riley | `A00000000000000000000020` | Path B pending; `status: provisioned`; persevere `D…02`; `roles: ["customer"]`; no `mentor_id`; `riley@mentor-forge.dev`; `email_verified: false`; inviter Stacey `A…08` (README only) |
+| Profile quinn | `A00000000000000000000021` | Path B revoked; `status: archived`; same Path B shape; `quinn@mentor-forge.dev`; `email_verified: false` |
+
+**Accepted reuse:** emma `A00000000000000000000007` left `active` (not rewritten). Do **not** confuse with Path A `patha-owner` `A…16` / Customer `D…09`.
+
+**Dictionary reorder:** edited now (was incomplete vs spec). Claim fields sit after `_id`; `status` immediately before breadcrumbs. No new properties.
+
+**Preserved:** `A000…01`–`A000…19` unchanged. No Invite collection / `invite_status`. No GDPR on Customer/Profile dictionaries. No Mentee / Journey / Encounter for riley or quinn.
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (compose on host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Profile.yaml` SUCCESS (21 docs: prior 19 + riley + quinn).
+- Spot-check (mongosh `mentor_hub`):
+  - riley `A…20` `status: provisioned`; quinn `A…21` `status: archived`; emma `A…07` `status: active` under persevere `D…02`.
+  - `roles: "customer"` + `customer_id` persevere: stacey (active), riley (provisioned), quinn (archived). Emma remains coordinator/`active` (accepted-member reuse; not `roles: customer`).
+  - riley/quinn: no `mentor_id`; `email_verified: false`; 0 Mentee / Journey / Encounter docs.
+- Grep `configurator/` for `Invite.yaml` / `dictionaries/Invite` / `invite_status` — **none**.
+- Grep Customer / Profile dictionaries for `gdpr` — **none**.
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS (`CFG-05-Profile.yaml`). Spot-check: Profile 21; riley provisioned; quinn archived; emma active; no Invite artifacts.
+
+**Follow-ups**
+
+- T240: riley `A00000000000000000000020` (pending/provisioned); quinn `A00000000000000000000021` (revoked/archived); accepted reuse emma `A00000000000000000000007`; inviter Stacey `A00000000000000000000008` / persevere `D00000000000000000000002`. Next free Profile `_id` is `A00000000000000000000022`.

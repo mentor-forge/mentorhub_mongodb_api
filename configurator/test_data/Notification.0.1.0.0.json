@@ -161,5 +161,29 @@
       "correlation_id": "seed-notif-inv-pastdue-01"
     },
     "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000007"
+    },
+    "name": "MemberInvite",
+    "message": "You have been invited to join Persevere on Mentor Hub.",
+    "profile_id": {
+      "$oid": "A00000000000000000000020"
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/invites/accept",
+      "invite_token": "seed-invite-riley-01"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-08-20T14:00:00.000Z"
+      },
+      "correlation_id": "seed-notif-invite-riley-01"
+    },
+    "status": "active"
   }
 ]

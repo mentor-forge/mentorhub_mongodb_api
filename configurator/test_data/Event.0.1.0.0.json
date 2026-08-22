@@ -4735,5 +4735,56 @@
       },
       "correlation_id": "seed-arrived-pat"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000204"
+    },
+    "type": "invite_created",
+    "context": {
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000020"
+      },
+      "invited_by": {
+        "$oid": "A00000000000000000000008"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-08-20T13:55:10.000Z"
+      },
+      "correlation_id": "seed-evt-invite-riley-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000205"
+    },
+    "type": "notification_created",
+    "context": {
+      "notification_id": {
+        "$oid": "C00000000000000000000007"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000020"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      },
+      "reason": "invite"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-08-20T14:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-notif-riley-01"
+    }
   }
 ]

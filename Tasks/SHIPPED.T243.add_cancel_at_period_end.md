@@ -1,6 +1,6 @@
 # T243 – Add cancel_at_period_end on Customer.subscriptions[] (F-D27)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Add optional **`cancel_at_period_end`** (boolean) on embedded **Customer.subscriptions[]** so E7 Portal cancel can be seeded as “cancels at period end” vs already **`canceled`**. Pre-release: edit `Customer.0.1.0.yaml` in place. Relaxing change — existing Customer documents must still configure.
@@ -68,4 +68,22 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Edit `Customer.0.1.0.yaml` in place. Add optional `cancel_at_period_end` (`type: boolean`, `required: false`) on embedded `subscriptions[]` items, after `current_period_end` (Stripe sync group). Matches `configurator/types/boolean.yaml` and existing boolean usage (`Profile.email_verified`, `Encounter.steps[].checked`). Relaxing change — omit = not canceling; existing Customer docs (T241 Persevere qty 8, Harbor qty 1) keep configuring. No enumerator. No version bump. No Customer.yaml index: boolean is not a lookup key; existing sparse unique indexes on `stripe_customer_id` / `subscriptions.stripe_subscription_id` remain sufficient. No test-data value changes (T244). Skip packaging — prefer already-running configurator :8385 / Mongo :27017.
+
+**Property types (Customer.0.1.0 `subscriptions[]` addition):**
+
+| Field | Type |
+| --- | --- |
+| `cancel_at_period_end` | boolean (optional) |
+
+**Indexes (`Customer.yaml`):** none added.
+
+**Test data:** No change to `Customer.0.1.0.0.json` (optional field omitted = not canceling).
+
+**Testing results**
+
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS` (localhost:8385 / Mongo :27017).
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS`; `CFG-05-Customer.yaml` SUCCESS (PRO-05 schema, PRO-06 test data including T241 Persevere qty 8 / Harbor qty 1 without `cancel_at_period_end`); indexes `PRO-04-Name Index`, `PRO-04-Last Saved`, `PRO-04-Stripe Customer Id`, `PRO-04-Stripe Subscription Id` SUCCESS. No new index.
+- Packaging verification skipped (orchestrator owns stack).
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS (`CFG-05-Customer.yaml`). Field is optional boolean after `current_period_end`; no index.

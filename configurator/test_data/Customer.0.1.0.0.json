@@ -34,12 +34,12 @@
     "stripe_customer_id": "cus_test_persevere",
     "subscriptions": [
       {
-        "mentee_count": 5,
+        "mentee_count": 8,
         "encounters_mo": 20,
         "subscription": "growth",
-        "quantity": 5,
+        "quantity": 8,
         "unit_cost": 9900,
-        "total_cost": 49500,
+        "total_cost": 79200,
         "discount_code": "TRIAL2WK",
         "free_encounters_granted": 4,
         "free_encounters_remaining": 3,
@@ -63,9 +63,9 @@
       "from_ip": "192.168.1.100",
       "by_user": "morgan",
       "at_time": {
-        "$date": "2025-02-14T18:45:00.000Z"
+        "$date": "2026-08-18T16:00:00.000Z"
       },
-      "correlation_id": "save-customer-002"
+      "correlation_id": "save-customer-002-capacity"
     }
   },
   {

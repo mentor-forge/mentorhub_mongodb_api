@@ -1,6 +1,6 @@
 # T241 – Seed active capacity-changed Customer.subscriptions[] (F-D25)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T236  
 **Description:** Update **Customer.subscriptions[]** so E5 has **varied seat quantities**, all **`status: active`**. Represent a mid-lifecycle **capacity increase** on an existing paid org (quantity / `mentee_count` / `total_cost` in sync). Do **not** set `past_due` or `canceled` (F-D26 / F-D27). Pre-release: edit `Customer.0.1.0.0.json` in place.
@@ -89,4 +89,36 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent. Record previous vs new quantity for T242.)_
+**Plan:** Edit `Customer.0.1.0.0.json` in place only. Mid-lifecycle E5 capacity increase is **persevere** `D00000000000000000000002` growth subscription: keep `status: active`, `stripe_customer_id`, `stripe_subscription_id` / `stripe_price_id`, `unit_cost` 9900, discount fields (`TRIAL2WK` / free encounters), and `encounters_mo`. Change `quantity` / `mentee_count` 5 → **8** and `total_cost` 49500 → **79200** (8 × 9900). Bump `saved` to after T234 persevere `invoice.paid` (`2026-08-05`). Leave **harbor** `D…11` starter qty 1 active unchanged. Leave **northstar** `D…10` as `subscriptions: []` (no `stripe_customer_id`). Leave **supersoft** starter qty 2 active unchanged. Do **not** set `past_due` or `canceled`. Do **not** subscribe mary / ali / scamsoft / Path A stub. No Payment / ExternalEvent / Event / dictionary / Profile edits (T242 owns the capacity Payment). Configure-database SUCCESS on already-running `:8385`; skip packaging.
+
+**Previous vs new quantity (for T242)**
+
+| Customer | Field | Previous | New |
+| --- | --- | --- | --- |
+| persevere `D00000000000000000000002` | `quantity` | 5 | **8** |
+| persevere | `mentee_count` | 5 | **8** |
+| persevere | `total_cost` | 49500 (5 × 9900) | **79200** (8 × 9900) |
+| persevere | `status` | active | active (unchanged) |
+| supersoft `D…07` | `quantity` | 2 | 2 (unchanged) |
+| harbor `D…11` | `quantity` | 1 | 1 (unchanged) |
+
+**Implemented:** persevere `subscriptions[0]` quantity / mentee_count 8, `total_cost` 79200; `saved.at_time` `2026-08-18T16:00:00.000Z` (`save-customer-002-capacity`). Stripe ids and discount fields unchanged. Harbor / northstar / supersoft / unsubscribed orgs untouched.
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (Mongo host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Customer.yaml` SUCCESS (8 docs, includes `D…02` / `D…07` / `D…10` / `D…11`).
+- Spot-check (mongosh `mentor_hub`):
+  - persevere `D…02`: `quantity` 8, `mentee_count` 8, `total_cost` 79200, `status: active`, `unit_cost` 9900, `stripe_subscription_id: sub_test_persevere_growth`, `stripe_price_id: price_test_growth`, `discount_code: TRIAL2WK`.
+  - supersoft `D…07`: quantity 2, `status: active`.
+  - harbor `D…11`: quantity 1, `status: active`.
+  - northstar `D…10`: `subscriptions: []` (no `stripe_customer_id`).
+  - `db.Customer.find({ "subscriptions.status": { $in: ["past_due", "canceled"] } }).count()` → **0**.
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS. Spot-check: persevere 8/8/79200 active; supersoft qty 2; 0 past_due/canceled.
+
+**Follow-ups**
+
+- T242: append capacity Payment for persevere at **quantity 8** (previous 5). Amount may be proration 29700 (3 × 9900) or new period total 79200. Timestamps after T234 `invoice.paid` (`2026-08-05`); this seed’s `saved` is `2026-08-18T16:00:00.000Z`.

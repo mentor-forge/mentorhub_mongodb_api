@@ -161,5 +161,52 @@
       },
       "correlation_id": "save-customer-008"
     }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000009"
+    },
+    "name": "provisioned-org-path-a",
+    "status": "provisioned",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-009"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-03-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-customer-009"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000010"
+    },
+    "name": "northstar",
+    "description": "Northstar Labs — enriched primary-owner organization after F-CA05",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "admin-ingress",
+      "at_time": {
+        "$date": "2026-02-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-010"
+    },
+    "saved": {
+      "from_ip": "10.0.4.22",
+      "by_user": "nora",
+      "at_time": {
+        "$date": "2026-03-10T16:45:00.000Z"
+      },
+      "correlation_id": "save-customer-010"
+    }
   }
 ]

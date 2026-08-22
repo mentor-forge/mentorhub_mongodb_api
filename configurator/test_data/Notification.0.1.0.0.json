@@ -185,5 +185,29 @@
       "correlation_id": "seed-notif-invite-riley-01"
     },
     "status": "active"
+  },
+  {
+    "_id": {
+      "$oid": "C00000000000000000000008"
+    },
+    "name": "CancelScheduled",
+    "message": "Your Harbor plan is scheduled to end at the current period. Resubscribe to keep access.",
+    "customer_id": {
+      "$oid": "D00000000000000000000011"
+    },
+    "link_metadata": {
+      "spa": "customer",
+      "route": "/billing",
+      "customer_id": "D00000000000000000000011"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-08-20T18:00:10.000Z"
+      },
+      "correlation_id": "seed-notif-cancel-sched-01"
+    },
+    "status": "active"
   }
 ]

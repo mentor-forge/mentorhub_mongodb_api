@@ -178,5 +178,30 @@
       },
       "correlation_id": "seed-ext-stripe-sub-upd-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000009"
+    },
+    "source": "stripe",
+    "external_id": "evt_stripe_subscription_updated_cancel_01",
+    "payload_hash": "sha256:stripe-subscription-updated-cancel-01",
+    "normalized_body": {
+      "type": "customer.subscription.updated",
+      "customer_id": "D00000000000000000000011",
+      "subscription_status": "active",
+      "cancel_at_period_end": true,
+      "stripe_subscription_id": "sub_test_harbor_starter",
+      "stripe_customer_id": "cus_test_harbor",
+      "current_period_end": "2026-09-15T12:00:00.000Z"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T17:59:50.000Z"
+      },
+      "correlation_id": "seed-ext-stripe-sub-cancel-01"
+    }
   }
 ]

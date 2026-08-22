@@ -4862,5 +4862,78 @@
       },
       "correlation_id": "seed-evt-pay-capacity-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000209"
+    },
+    "type": "external_received",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "external_id": "evt_stripe_subscription_updated_cancel_01",
+      "source": "stripe"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T17:59:55.000Z"
+      },
+      "correlation_id": "seed-evt-ext-sub-cancel-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000210"
+    },
+    "type": "subscription_changed",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      },
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "change": "cancel_at_period_end"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-20T18:00:00.000Z"
+      },
+      "correlation_id": "seed-evt-sub-cancel-sched-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000211"
+    },
+    "type": "notification_created",
+    "context": {
+      "external_event_id": {
+        "$oid": "E00000000000000000000009"
+      },
+      "notification_id": {
+        "$oid": "C00000000000000000000008"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      },
+      "reason": "cancel_at_period_end"
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-08-20T18:00:10.000Z"
+      },
+      "correlation_id": "seed-evt-notif-cancel-01"
+    }
   }
 ]

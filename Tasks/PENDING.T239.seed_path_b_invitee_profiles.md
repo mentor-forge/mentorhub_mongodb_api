@@ -3,14 +3,14 @@
 **Status:** Pending  
 **Type:** Feature  
 **Depends On:** T238  
-**Description:** Seed Path B member **Profiles** under the inviter’s `customer_id`. Invitation state is **existing `profile_status` only** — `provisioned` (pending), `active` (accepted), `archived` (revoked). Do **not** add an Invite collection, `invite_status`, or any invite-state field. No GDPR property. Pre-release: edit `Profile.0.1.0.0.json` in place.
+**Description:** Seed Path B member **Profiles** under the inviter’s `customer_id`. Invitation state is **existing `profile_status` only** — `provisioned` (pending), `active` (accepted), `archived` (revoked). Reorder Profile dictionary properties so JWT/claim fields sit together after `_id` (no new fields). Do **not** add an Invite collection, `invite_status`, or any invite-state field. No GDPR property. Pre-release: edit `Profile.0.1.0.yaml` / `Profile.0.1.0.0.json` in place.
 
 ## Path Anchoring
 
 All paths are relative to **this API repository root** (the directory that contains `Pipfile`).
 
 - Standards: `../mentorhub/DeveloperEdition/standards/data_standards.md`
-- In-repo: `configurator/test_data/`, `README.md`, `Tasks/`
+- In-repo: `configurator/dictionaries/`, `configurator/enumerators/`, `configurator/test_data/`, `README.md`, `Tasks/`
 
 ## Context
 
@@ -23,11 +23,24 @@ All paths are relative to **this API repository root** (the directory that conta
 - Prerequisites (already on `main`): F-D21 `cognito_sub` + unique `email` (`Tasks/SHIPPED.T231`); `profile_status` includes `provisioned` / `active` / `archived` (`Tasks/SHIPPED.T220`); F-D29 Notification schema (`Tasks/SHIPPED.T222`)
 - `Tasks/PENDING.T238.seed_roster_event_activity.md` — wait so T236 Profile edits (helen/pat) land first
 - `Tasks/PENDING.T236.seed_customer_org_roster_profiles.md` — do **not** reuse helen `A…18` / pat `A…19`; next free Profile ids expected `A00000000000000000000020` / `A…21` (confirm unused)
-- `configurator/dictionaries/Profile.0.1.0.yaml` — confirm-only; no new properties
-- `configurator/enumerators/enumerations.0.yaml` — **do not** add `invite_status`
+- `configurator/dictionaries/Profile.0.1.0.yaml` — **reorder only** (see below); no new properties
+- `configurator/enumerators/enumerations.0.yaml` — **do not** add `invite_status`; wrap the long `payment_status` `pending` description if still one overlong line
 - Unique Profile indexes: `email`, `cognito_sub`, `full_name`
 - **Locked design:** The pending member **is** the Profile. UI/API writes Profile, then Cognito with `custom:profile_id`, `custom:customer_id`, `custom:roles`. Org invite list = Profiles with that `customer_id`, filtered by `status`.
-- **Out of scope:** Invite collection / `Customer.invites[]`; Notification / Event files (T240); Dashboard; GDPR fields; dictionary or enumerator changes unless running configurator proves a gap (stop and document — do not invent fields)
+- **Out of scope:** Invite collection / `Customer.invites[]`; Notification / Event files (T240); Dashboard; GDPR fields; new Profile/enumerator values
+
+### Profile dictionary property order (no new fields)
+
+HEAD today interleaves `status` after `name` and leaves `customer_id` / `mentor_id` / `roles` / `cognito_sub` at the bottom. Reorder `Profile.0.1.0.yaml` `root.properties` to:
+
+1. `_id`
+2. `customer_id`, `mentor_id`, `roles`, `cognito_sub` (JWT / Path A–B claim homes)
+3. `name`, `full_name`, `description`, `email`, `email_verified`
+4. `goals`, `interests`, `experience` (unchanged nested shapes)
+5. `status` (`profile_status`)
+6. `created`, `saved`
+
+Keep existing descriptions and types. Fold the root `description` string if the YAML line is overlong. Do **not** add `invited_by` or `invite_status`.
 
 ### Invitation state → Profile.status (do not track separately)
 
@@ -63,6 +76,7 @@ Preserve all existing Profiles. Do not add Mentee / Journey / Encounter document
 ## Goals
 
 - Persevere has Profiles that demo pending (`provisioned`), accepted (`active` emma), and revoked (`archived`) without an Invite collection or invite-status field.
+- Profile dictionary lists claim fields (`customer_id`, `mentor_id`, `roles`, `cognito_sub`) immediately after `_id`, and `status` immediately before breadcrumbs — same properties as today.
 - No `Invite.yaml` / `dictionaries/Invite*` / `test_data/Invite*` created.
 - Register riley / quinn in `persona_ids.json`; note them on `README.md` Test Personas as Path B invite fixtures (not Sign-in personas until accepted).
 - Configure-database **SUCCESS**. No GDPR fields.
@@ -100,6 +114,8 @@ mh up mongodb
 
 ## Outputs
 
+- `configurator/dictionaries/Profile.0.1.0.yaml` — reorder properties as specified (no new fields)
+- `configurator/enumerators/enumerations.0.yaml` — wrap `payment_status` `pending` description only (no new enum values)
 - `configurator/test_data/Profile.0.1.0.0.json` — append riley + quinn
 - `Tasks/scripts/persona_ids.json` — riley / quinn ids
 - `README.md` — Test Personas note for Path B invite fixtures

@@ -4597,5 +4597,143 @@
       },
       "correlation_id": "seed-evt-notif-inv-fail-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000198"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000002"
+      },
+      "encounter_id": {
+        "$oid": "E0000000000000000000000a"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-07-14T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-daniel-0a"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000199"
+    },
+    "type": "encounter",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000003"
+      },
+      "encounter_id": {
+        "$oid": "E0000000000000000000000b"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000007"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-11T15:00:00.000Z"
+      },
+      "correlation_id": "evt-enc-lucky-0b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000200"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-helen"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000201"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000018"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000011"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-15T14:30:00.000Z"
+      },
+      "correlation_id": "seed-auth-helen-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000202"
+    },
+    "type": "login",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000017"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000010"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "nora",
+      "at_time": {
+        "$date": "2026-03-10T16:45:00.000Z"
+      },
+      "correlation_id": "seed-auth-nora-login-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "F00000000000000000000203"
+    },
+    "type": "arrived",
+    "context": {
+      "profile_id": {
+        "$oid": "A00000000000000000000019"
+      },
+      "customer_id": {
+        "$oid": "D00000000000000000000002"
+      }
+    },
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "pat",
+      "at_time": {
+        "$date": "2026-05-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-arrived-pat"
+    }
   }
 ]

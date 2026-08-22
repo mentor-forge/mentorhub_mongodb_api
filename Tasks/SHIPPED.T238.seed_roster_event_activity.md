@@ -1,6 +1,6 @@
 # T238 – Seed Event activity trails for Customer org roster (F-D23)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T237  
 **Description:** Append **Event** trails for E3 roster activity (encounter + sparse login/arrived), including `context.customer_id` on **new** Events so org-home aggregates can filter without a Dashboard collection. Do **not** seed Discovery Notification cards. Prefer append over rewrite. Pre-release: edit `Event.0.1.0.0.json` in place.
@@ -100,4 +100,38 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Append roster Event trails in place (no rewrite of `F…0001`–`F…0197`; no Notification / Dashboard / Encounter / Profile edits). Confirm next unused Event hex after `F…0197` — `F00000000000000000000198` onward (Event seeds increment as decimal-looking hex: `198`, `199`, `200`… not `19a`). (1) `type: encounter` for Daniel `A…02` / `E…0a` / persevere `D…02` at `2026-07-14T15:00:00.000Z`; (2) `type: encounter` for Lucky `A…03` / `E…0b` / supersoft `D…07` at `2026-08-11T15:00:00.000Z`; both include `profile_id`, `encounter_id`, and `customer_id`. (3) Sparse non-encounter for empty-state orgs: helen `A…18` `arrived` + `login` (harbor `D…11`); nora `A…17` `login` (northstar `D…10`); pat `A…19` single `arrived` without encounter/journey types (persevere `D…02`). Do **not** add `encounter` / `started` / `completed` / `note` / `notification_created` for pat, helen, nora, or donny. Do **not** backfill `customer_id` on existing Events. Reuse already-running configurator `:8385`; skip packaging so later sequential tasks can reuse it.
+
+**IDs used** (confirmed unused in Event before write; last prior seed remains `F…0197`)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Event (Daniel 2026 encounter) | `F00000000000000000000198` | `type: encounter`; Daniel `A…02`; `E…0a`; persevere `D…02`; `created.at_time` 2026-07-14 |
+| Event (Lucky 2026 encounter) | `F00000000000000000000199` | `type: encounter`; Lucky `A…03`; `E…0b`; supersoft `D…07`; `created.at_time` 2026-08-11 |
+| Event (helen arrived) | `F00000000000000000000200` | `type: arrived`; helen `A…18`; harbor `D…11` |
+| Event (helen login) | `F00000000000000000000201` | `type: login`; helen `A…18`; harbor `D…11` |
+| Event (nora login) | `F00000000000000000000202` | `type: login`; nora `A…17`; northstar `D…10` |
+| Event (pat arrived) | `F00000000000000000000203` | `type: arrived` only (no encounter/journey); pat `A…19`; persevere `D…02` |
+
+**Preserved:** `F000…01`–`F000…0197` unchanged. Notification seeds unchanged (still `C…01`–`C…06`). No Dashboard collection.
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (compose on host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Event.yaml` SUCCESS (203 docs: prior 197 + 6 new).
+- `CFG-05-Notification.yaml` SUCCESS (6 docs; no new Notification documents).
+- Spot-check (mongosh `mentor_hub`):
+  - `type: encounter` + `context.customer_id` persevere `D…02`: **1** (`F…0198` / `E…0a`).
+  - `type: encounter` + `context.customer_id` supersoft `D…07`: **1** (`F…0199` / `E…0b`).
+  - `type: encounter` + pat `A…19` / helen `A…18` / nora `A…17` / donny `A…13` / harbor `D…11`: **0**.
+  - helen `A…18` `type: login`: **1**; nora `A…17` `type: login`: **1**; pat `A…19` `arrived` only.
+  - `F…0197` retained; Notification count **6**; no `notification_created` after `F…0197`; no `Dashboard` collection.
+- Grep `configurator/` for Dashboard collection paths: none (only Resource name `Project: Admin Dashboard`).
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS (Event + Notification CFG). Spot-check: Event 203; Notification 6; encounter+customer persevere 1 / supersoft 1; pat/harbor encounter 0; helen login 1.
+
+**Follow-ups**
+
+- T240 / T242: next free Event `_id` is `F00000000000000000000204`.

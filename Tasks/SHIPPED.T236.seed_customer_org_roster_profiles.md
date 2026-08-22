@@ -1,6 +1,6 @@
 # T236 – Seed Customer/Profile roster fixtures for org home (F-D23)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Seed **Customer org roster** fixtures joined only by **`Profile.customer_id`**: populated subscribed orgs, unsubscribed Choose-a-plan orgs, a **subscribed empty mentee roster**, and a **mentee with no Encounter activity**. No Dashboard collection; not Discovery notification/dashboard cards. Pre-release: edit `Customer.0.1.0.0.json` / `Profile.0.1.0.0.json` in place.
@@ -110,4 +110,36 @@ mh up mongodb
 
 ## Execution Notes
 
-_(Reserved for the task execution agent.)_
+**Plan:** Extend Customer/Profile seeds in place (no version bumps). Confirm suggested `_id`s unused in the **target** collection, then: (1) append **harbor** Customer `D…11` with T230 supersoft starter shape (`stripe_customer_id: cus_test_harbor`, one `subscriptions[]` entry `status: active`, Product `e…01` starter, `quantity`/`mentee_count` = 1 ≥ `minimum_members`); (2) set `subscriptions: []` on **northstar** and **provisioned-org-path-a** (empty array, not missing; no `stripe_customer_id`); (3) append **helen** Profile `A…18` (`roles: ["customer"]` only, `customer_id` → harbor, unique `full_name`/`email`/`cognito_sub`, no `mentor_id`); (4) append **pat** Profile `A…19` (`roles: ["mentee"]`, `customer_id` → persevere `D…02`, `mentor_id` → Paula `A…10`, no Mentee/Journey/Note/Rating/Encounter docs). Preserve every existing Customer/Profile document and `_id`. Do **not** flip existing `subscriptions[].status`. Register ids in `persona_ids.json`; document harbor/helen/pat on README Test Personas (customers + persona matrix only). No Dashboard/Notification seeds. Configure-database SUCCESS; skip packaging (`make down` / `make container` / `mh up mongodb`) so later tasks can reuse `:8385`.
+
+**IDs used** (confirmed unused in Customer / Profile before write; Rating may reuse `D…11` in another collection)
+
+| Kind | `_id` | Notes |
+| --- | --- | --- |
+| Customer harbor | `D00000000000000000000011` | starter `active`; `cus_test_harbor`; `sub_test_harbor_starter`; qty/mentee_count 1 |
+| Profile helen | `A00000000000000000000018` | harbor owner; `roles: ["customer"]`; no mentee; no `mentor_id` |
+| Profile pat | `A00000000000000000000019` | persevere mentee; Paula `A…10`; **zero** Encounters (T237 must keep this) |
+
+**Preserved:** all existing Customers (`D…01`–`D…10`) and Profiles (`A…01`–`A…17`); persevere growth `active` / supersoft starter `active` statuses unchanged.
+
+**Testing results**
+
+- Reused already-running local configurator `:8385` (compose `mentorhub_mongodb_api-mongodb-1` on host `:27017`; no `make dev`, no port override). Packaging skipped (`make down` / `make container` / `mh up mongodb`) so later sequential tasks can reuse `:8385`.
+- `DELETE /api/database/` → HTTP 200, `status: SUCCESS`.
+- `POST /api/configurations/` → HTTP 200, top-level `status: SUCCESS` (`CFG-07-PROCESS_ALL`); zero FAILURE events.
+- `CFG-05-Customer.yaml` SUCCESS (8 docs, includes `D…11`); `CFG-05-Profile.yaml` SUCCESS (19 docs, includes `A…18` / `A…19`).
+- Spot-check (mongosh `mentor_hub`):
+  - harbor `D…11`: `subscriptions[0].status: active`, starter, `cus_test_harbor`, `sub_test_harbor_starter`, qty/mentee_count 1.
+  - **no** Profile with `roles` containing `mentee` and `customer_id` → harbor (helen only, `roles: ["customer"]`).
+  - pat `A…19`: `customer_id` → persevere `D…02`; `roles: ["mentee"]`; `mentor_id` → Paula `A…10`; **0** Encounters.
+  - northstar `D…10` `subscriptions: []` (no `stripe_customer_id`); provisioned-org-path-a also `[]`.
+  - persevere still has Daniel mentee; supersoft still has Lucky mentee.
+- Grep `configurator/` for `configurations/Dashboard`, `dictionaries/Dashboard`, `test_data/Dashboard` — **none**. No Dashboard collections in Mongo.
+
+**Orchestrator confirmation:** `DELETE`/`POST` on `:8385` re-ran SUCCESS. Spot-check: harbor active qty 1, 0 harbor mentees, pat 0 Encounters, northstar `[]`, Daniel/Lucky mentees present, Customer 8 / Profile 19.
+
+**Follow-ups**
+
+- T237: do **not** add any Encounter with `mentee_id` → pat `A00000000000000000000019`. Pat must remain zero-activity after T237.
+- T238: Event activity for roster list; harbor has no mentee-role Profiles; pat has no Encounter to hang Events on.
+- T241: northstar `D00000000000000000000010` already has `subscriptions: []` (Choose-a-plan); do not add `stripe_customer_id` or a paid entry.

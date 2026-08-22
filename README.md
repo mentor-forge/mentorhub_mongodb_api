@@ -52,10 +52,11 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 | `_id` | Slug | Display name | Sponsored personas |
 | --- | --- | --- | --- |
 | `D00000000000000000000001` | `mary` | Mary | Mary (self-funded) |
-| `D00000000000000000000002` | `persevere` | Persevere Now | Stacey, Emma, Margaret, Daniel |
+| `D00000000000000000000002` | `persevere` | Persevere Now | Stacey, Emma, Margaret, Daniel, Pat |
 | `D00000000000000000000006` | `ali` | Agile Learning Institute | Mike, Marti, Paula, Elon, Melinda, Linda |
 | `D00000000000000000000007` | `supersoft` | SuperSoft | Eddy, Danny, Lucky |
 | `D00000000000000000000008` | `scamsoft` | ScamSoft | Donny |
+| `D00000000000000000000011` | `harbor` | Harbor | Helen |
 
 ### Persona matrix
 
@@ -76,6 +77,8 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 | Donny the Deadbeat | `donny` | Donny Deadbeat | `A00000000000000000000013` | customer | ScamSoft | — |
 | Danny the Dev Lead | `danny` | Danny Dev Lead | `A00000000000000000000014` | coordinator, mentor | SuperSoft | — |
 | Melinda the Multi Customer Mentor | `melinda` | Melinda Multi | `A00000000000000000000015` | mentor | ALI | — |
+| Helen the Harbor Owner | `helen` | Helen Harbor | `A00000000000000000000018` | customer | Harbor | — |
+| Pat the Empty-Activity Mentee | `pat` | Pat Persevere | `A00000000000000000000019` | mentee | Persevere | Paula |
 
 ### Mentor–mentee relationships
 

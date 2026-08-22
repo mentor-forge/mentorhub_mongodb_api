@@ -168,6 +168,7 @@
     },
     "name": "provisioned-org-path-a",
     "status": "provisioned",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "admin-ingress",
@@ -192,6 +193,7 @@
     "name": "northstar",
     "description": "Northstar Labs — enriched primary-owner organization after F-CA05",
     "status": "active",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "admin-ingress",
@@ -207,6 +209,50 @@
         "$date": "2026-03-10T16:45:00.000Z"
       },
       "correlation_id": "save-customer-010"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000011"
+    },
+    "name": "harbor",
+    "description": "Harbor — subscribed starter org with an empty mentee roster",
+    "status": "active",
+    "stripe_customer_id": "cus_test_harbor",
+    "subscriptions": [
+      {
+        "mentee_count": 1,
+        "encounters_mo": 8,
+        "subscription": "starter",
+        "quantity": 1,
+        "unit_cost": 4900,
+        "total_cost": 4900,
+        "discount_code": "",
+        "free_encounters_granted": 0,
+        "free_encounters_remaining": 0,
+        "status": "active",
+        "stripe_subscription_id": "sub_test_harbor_starter",
+        "stripe_price_id": "price_test_starter",
+        "current_period_end": {
+          "$date": "2026-09-15T12:00:00.000Z"
+        }
+      }
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-011"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-15T14:30:00.000Z"
+      },
+      "correlation_id": "save-customer-011"
     }
   }
 ]

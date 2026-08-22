@@ -51,5 +51,57 @@
       },
       "correlation_id": "seed-payment-supersoft-starter-01"
     }
+  },
+  {
+    "_id": {
+      "$oid": "b00000000000000000000003"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "stripe_payment_intent_id": "pi_test_persevere_invoice_paid_01",
+    "stripe_invoice_id": "in_test_persevere_invoice_paid_01",
+    "amount": 49500,
+    "currency": "usd",
+    "status": "succeeded",
+    "product_id": {
+      "$oid": "e00000000000000000000002"
+    },
+    "subscription": "growth",
+    "quantity": 5,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-05T15:01:00.000Z"
+      },
+      "correlation_id": "seed-pay-persevere-inv-paid-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "b00000000000000000000004"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000007"
+    },
+    "stripe_payment_intent_id": "pi_test_supersoft_invoice_fail_01",
+    "stripe_invoice_id": "in_test_supersoft_invoice_fail_01",
+    "amount": 9800,
+    "currency": "usd",
+    "status": "failed",
+    "product_id": {
+      "$oid": "e00000000000000000000001"
+    },
+    "subscription": "starter",
+    "quantity": 2,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "ingress",
+      "at_time": {
+        "$date": "2026-08-12T10:00:00.000Z"
+      },
+      "correlation_id": "seed-pay-supersoft-inv-fail-01"
+    }
   }
 ]

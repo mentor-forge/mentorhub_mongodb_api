@@ -143,5 +143,32 @@
       },
       "correlation_id": "seed-setting-discount-partner100"
     }
+  },
+  {
+    "_id": {
+      "$oid": "f00000000000000000000004"
+    },
+    "type": "Discount",
+    "name": "Open House",
+    "description": "Unlimited active code omitting max_redemptions",
+    "code": "OPENHOUSE",
+    "free_encounters": 2,
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-openhouse"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-setting-discount-openhouse"
+    }
   }
 ]

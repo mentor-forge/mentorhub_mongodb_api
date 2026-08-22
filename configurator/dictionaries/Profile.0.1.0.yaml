@@ -2,28 +2,41 @@ _locked: false
 file_name: Profile.0.1.0.yaml
 root:
   additional_properties: false
-  description: Authoritative person record - IdP username in JWT claims, roles and customer sponsorship on Profile.
+  description: Authoritative person record - IdP username in JWT claims, roles
+    and customer sponsorship on Profile.
   name: Profile
   properties:
   - description: The unique identifier for the Profile.
     name: _id
     required: false
     type: identifier
+  - description: the customer this profile is associated with
+    name: customer_id
+    required: false
+    type: identifier
+  - description: The _id of this persons Mentor
+    name: mentor_id
+    required: false
+    type: identifier
+  - description: The user roles this profile has
+    enums: user_roles
+    name: roles
+    required: false
+    type: enum_array
+  - description: Cognito user sub (immutable); Path A idempotency key
+    name: cognito_sub
+    required: false
+    type: word
   - description: The IDP Username used in JWT Claims
     name: name
     required: false
     type: word
-  - description: Status of the document
-    enums: profile_status
-    name: status
-    required: false
-    type: enum
-  - description: A Comment the user adds to their profile
-    name: description
-    required: false
-    type: sentence
   - description: Display name from intake (distinct from IdP username)
     name: full_name
+    required: false
+    type: sentence
+  - description: A Comment the user adds to their profile
+    name: description
     required: false
     type: sentence
   - description: The users email address
@@ -34,14 +47,6 @@ root:
     name: email_verified
     required: false
     type: boolean
-  - description: Cognito user sub (immutable); Path A idempotency key
-    name: cognito_sub
-    required: false
-    type: word
-  - description: The _id of this persons Mentor
-    name: mentor_id
-    required: false
-    type: identifier
   - description: 'The goals set by a user '
     items:
       description: Array item
@@ -103,6 +108,11 @@ root:
     name: experience
     required: false
     type: array
+  - description: Status of the document
+    enums: profile_status
+    name: status
+    required: false
+    type: enum
   - description: The tracking breadcrumb for when the document was created.
     name: created
     required: false
@@ -111,14 +121,5 @@ root:
     name: saved
     required: false
     type: breadcrumb
-  - description: the customer this profile is associated with
-    name: customer_id
-    required: false
-    type: identifier
-  - description: The user roles this profile has
-    enums: user_roles
-    name: roles
-    required: false
-    type: enum_array
   required: false
   type: object

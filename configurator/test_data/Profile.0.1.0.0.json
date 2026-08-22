@@ -1022,5 +1022,202 @@
     "roles": [
       "customer"
     ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000018"
+    },
+    "name": "helen",
+    "status": "active",
+    "description": "Harbor primary owner sponsoring a starter plan with no mentees enrolled yet.",
+    "email": "helen@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+    "full_name": "Helen Harbor",
+    "goals": [
+      "Invite the first mentee cohort",
+      "Track starter-plan seat usage"
+    ],
+    "interests": [
+      "api",
+      "ux"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-18"
+    },
+    "saved": {
+      "from_ip": "10.0.5.18",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-04-15T14:30:00.000Z"
+      },
+      "correlation_id": "save-profile-18"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000011"
+    },
+    "experience": [
+      {
+        "company": "Harbor",
+        "roles": [
+          {
+            "title": "Founder",
+            "start": {
+              "$date": "2025-01-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-04-01T00:00:00.000Z"
+            },
+            "description": "Primary owner of a subscribed org that has not enrolled mentees yet.",
+            "technologies": [
+              "TypeScript",
+              "MongoDB"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "name": "pat",
+    "status": "active",
+    "description": "Persevere mentee on the roster who has not started mentoring encounters.",
+    "email": "pat@mentor-forge.dev",
+    "email_verified": true,
+    "cognito_sub": "d4e5f6a7-b8c9-0123-def1-234567890123",
+    "full_name": "Pat Persevere",
+    "goals": [
+      "Start first mentoring session",
+      "Complete onboarding checklist"
+    ],
+    "interests": [
+      "ux",
+      "api"
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-01T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-19"
+    },
+    "saved": {
+      "from_ip": "192.168.2.19",
+      "by_user": "pat",
+      "at_time": {
+        "$date": "2026-05-02T11:00:00.000Z"
+      },
+      "correlation_id": "save-profile-19"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "experience": [
+      {
+        "company": "Persevere Now",
+        "roles": [
+          {
+            "title": "Apprentice Engineer",
+            "start": {
+              "$date": "2025-09-01T09:00:00.000Z"
+            },
+            "end": {
+              "$date": "2026-05-01T00:00:00.000Z"
+            },
+            "description": "Joined the Persevere roster but has not started mentoring sessions.",
+            "technologies": [
+              "React",
+              "HTML"
+            ]
+          }
+        ]
+      }
+    ],
+    "roles": [
+      "mentee"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000020"
+    },
+    "name": "riley",
+    "status": "provisioned",
+    "description": "Persevere Path B invitee pending first login after Stacey invited them.",
+    "email": "riley@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "e5f6a7b8-c9d0-1234-ef12-345678901234",
+    "full_name": "Riley Invitee",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-20"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-06-01T10:00:00.000Z"
+      },
+      "correlation_id": "save-profile-20"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000021"
+    },
+    "name": "quinn",
+    "status": "archived",
+    "description": "Persevere Path B invitee whose invitation Stacey revoked before first login.",
+    "email": "quinn@mentor-forge.dev",
+    "email_verified": false,
+    "cognito_sub": "f6a7b8c9-d0e1-2345-f123-456789012345",
+    "full_name": "Quinn Revoked",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-15T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-21"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "stacey",
+      "at_time": {
+        "$date": "2026-05-20T14:00:00.000Z"
+      },
+      "correlation_id": "save-profile-21"
+    },
+    "customer_id": {
+      "$oid": "D00000000000000000000002"
+    },
+    "roles": [
+      "customer"
+    ]
   }
 ]

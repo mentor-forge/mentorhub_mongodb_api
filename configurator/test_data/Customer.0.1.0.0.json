@@ -34,12 +34,12 @@
     "stripe_customer_id": "cus_test_persevere",
     "subscriptions": [
       {
-        "mentee_count": 5,
+        "mentee_count": 8,
         "encounters_mo": 20,
         "subscription": "growth",
-        "quantity": 5,
+        "quantity": 8,
         "unit_cost": 9900,
-        "total_cost": 49500,
+        "total_cost": 79200,
         "discount_code": "TRIAL2WK",
         "free_encounters_granted": 4,
         "free_encounters_remaining": 3,
@@ -63,9 +63,9 @@
       "from_ip": "192.168.1.100",
       "by_user": "morgan",
       "at_time": {
-        "$date": "2025-02-14T18:45:00.000Z"
+        "$date": "2026-08-18T16:00:00.000Z"
       },
-      "correlation_id": "save-customer-002"
+      "correlation_id": "save-customer-002-capacity"
     }
   },
   {
@@ -144,7 +144,27 @@
     "name": "scamsoft",
     "description": "ScamSoft — past-due subscription customer",
     "status": "active",
-    "subscriptions": [],
+    "stripe_customer_id": "cus_test_scamsoft",
+    "subscriptions": [
+      {
+        "mentee_count": 1,
+        "encounters_mo": 8,
+        "subscription": "starter",
+        "quantity": 1,
+        "unit_cost": 4900,
+        "total_cost": 4900,
+        "discount_code": "",
+        "free_encounters_granted": 0,
+        "free_encounters_remaining": 0,
+        "status": "canceled",
+        "stripe_subscription_id": "sub_test_scamsoft_starter",
+        "stripe_price_id": "price_test_starter",
+        "current_period_end": {
+          "$date": "2026-07-15T08:00:00.000Z"
+        },
+        "cancel_at_period_end": true
+      }
+    ],
     "created": {
       "from_ip": "203.0.113.88",
       "by_user": "system",
@@ -157,9 +177,9 @@
       "from_ip": "203.0.113.88",
       "by_user": "billing-bot",
       "at_time": {
-        "$date": "2025-04-22T11:05:00.000Z"
+        "$date": "2026-07-15T08:05:00.000Z"
       },
-      "correlation_id": "save-customer-008"
+      "correlation_id": "save-customer-008-canceled"
     }
   },
   {
@@ -168,6 +188,7 @@
     },
     "name": "provisioned-org-path-a",
     "status": "provisioned",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "admin-ingress",
@@ -192,6 +213,7 @@
     "name": "northstar",
     "description": "Northstar Labs — enriched primary-owner organization after F-CA05",
     "status": "active",
+    "subscriptions": [],
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "admin-ingress",
@@ -207,6 +229,51 @@
         "$date": "2026-03-10T16:45:00.000Z"
       },
       "correlation_id": "save-customer-010"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "D00000000000000000000011"
+    },
+    "name": "harbor",
+    "description": "Harbor — subscribed starter org with an empty mentee roster",
+    "status": "active",
+    "stripe_customer_id": "cus_test_harbor",
+    "subscriptions": [
+      {
+        "mentee_count": 1,
+        "encounters_mo": 8,
+        "subscription": "starter",
+        "quantity": 1,
+        "unit_cost": 4900,
+        "total_cost": 4900,
+        "discount_code": "",
+        "free_encounters_granted": 0,
+        "free_encounters_remaining": 0,
+        "status": "active",
+        "stripe_subscription_id": "sub_test_harbor_starter",
+        "stripe_price_id": "price_test_starter",
+        "current_period_end": {
+          "$date": "2026-09-15T12:00:00.000Z"
+        },
+        "cancel_at_period_end": true
+      }
+    ],
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2026-04-01T10:00:00.000Z"
+      },
+      "correlation_id": "seed-customer-011"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "helen",
+      "at_time": {
+        "$date": "2026-08-20T18:00:00.000Z"
+      },
+      "correlation_id": "save-customer-011-cancel"
     }
   }
 ]

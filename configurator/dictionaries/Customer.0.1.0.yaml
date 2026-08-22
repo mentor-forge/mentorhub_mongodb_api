@@ -80,6 +80,10 @@ root:
         name: current_period_end
         required: false
         type: date-time
+      - description: Stripe cancel_at_period_end — entitlement continues until current_period_end when status is still active
+        name: cancel_at_period_end
+        required: false
+        type: boolean
       required: false
       type: object
     name: subscriptions

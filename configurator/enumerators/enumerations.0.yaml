@@ -133,7 +133,8 @@ enumerators:
     value: inactive
 - name: payment_status
   values:
-  - description: PaymentIntent created; awaiting completion (Stripe requires_payment_method / processing)
+  - description: PaymentIntent created; awaiting completion (Stripe
+      requires_payment_method / processing)
     value: pending
   - description: PaymentIntent succeeded
     value: succeeded

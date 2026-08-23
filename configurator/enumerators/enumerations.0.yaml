@@ -133,8 +133,8 @@ enumerators:
     value: inactive
 - name: payment_status
   values:
-  - description: PaymentIntent created; awaiting completion (Stripe
-      requires_payment_method / processing)
+  - description: PaymentIntent created; awaiting completion (Stripe requires_payment_method
+      / processing)
     value: pending
   - description: PaymentIntent succeeded
     value: succeeded
@@ -236,5 +236,21 @@ enumerators:
     value: online-instructor
   - description: In Person Instructor Led class
     value: in-person
+- name: card_type
+  values:
+  - description: A Notification Card
+    value: Notification
+  - description: A Profile that is a Member of a Customer Org
+    value: Member
+  - description: A Profile that has a Mentor
+    value: Mentee
+  - description: An Event
+    value: Event
+  - description: A Learning Resource
+    value: Resource
+  - description: A Learning Path
+    value: Path
+  - description: An encounter Plan
+    value: Plan
 file_name: enumerations.0.yaml
 version: 0

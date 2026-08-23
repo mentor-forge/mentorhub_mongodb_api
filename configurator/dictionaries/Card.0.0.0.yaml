@@ -1,95 +1,32 @@
 _locked: false
 file_name: Card.0.0.0.yaml
 root:
-  description: Discovery dashboard polymorphic card payloads (configurator-only schema; not a Mongo collection). Root one_of of Customer, Profile, and Notification variants with constant type discriminators.
+  additional_properties: false
+  description: Discovery dashboard polymorphic card payloads (configurator-only schema;
+    not a Mongo collection). Root one_of of Customer, Profile, and Notification variants
+    with constant type discriminators.
   name: Card
   properties:
-  - additional_properties: false
-    description: Customer organization card for Discovery CardGrid
-    name: Customer
-    properties:
-    - constant: Customer
-      description: Discriminator — Customer card variant
-      name: type
-      required: true
-      type: constant
-    - description: Card display title (org name)
-      name: title
-      required: false
-      type: sentence
-    - description: Short supporting summary for the card
-      name: summary
-      required: false
-      type: sentence
-    - description: Source Customer document _id
-      name: customer_id
-      required: false
-      type: identifier
-    - additional_properties: true
-      description: Cross-SPA route metadata stub (F-US09); additional properties allowed until spa_utils link templates ship
-      name: link_metadata
-      properties: []
-      required: false
-      type: object
+  - description: ID of source document
+    name: _id
     required: false
-    type: object
-  - additional_properties: false
-    description: Profile person card for Discovery CardGrid
-    name: Profile
-    properties:
-    - constant: Profile
-      description: Discriminator — Profile card variant
-      name: type
-      required: true
-      type: constant
-    - description: Card display title (person display name)
-      name: title
-      required: false
-      type: sentence
-    - description: Short supporting summary for the card
-      name: summary
-      required: false
-      type: sentence
-    - description: Source Profile document _id
-      name: profile_id
-      required: false
-      type: identifier
-    - additional_properties: true
-      description: Cross-SPA route metadata stub (F-US09); additional properties allowed until spa_utils link templates ship
-      name: link_metadata
-      properties: []
-      required: false
-      type: object
+    type: identifier
+  - description: The Card Type (Collection Aligned)
+    enums: card_type
+    name: type
     required: false
-    type: object
-  - additional_properties: false
-    description: Notification attention card for Discovery CardGrid
-    name: Notification
-    properties:
-    - constant: Notification
-      description: Discriminator — Notification card variant
-      name: type
-      required: true
-      type: constant
-    - description: Card display title (notification name)
-      name: title
-      required: false
-      type: sentence
-    - description: Short supporting summary (notification message excerpt)
-      name: summary
-      required: false
-      type: sentence
-    - description: Source Notification document _id
-      name: notification_id
-      required: false
-      type: identifier
-    - additional_properties: true
-      description: Cross-SPA route metadata stub (F-US09); may mirror Notification.link_metadata
-      name: link_metadata
-      properties: []
-      required: false
-      type: object
+    type: enum
+  - description: The card title
+    name: name
     required: false
-    type: object
+    type: sentence
+  - description: The card contents
+    name: description
+    required: false
+    type: markdown
+  - description: The url the card links to
+    name: link
+    required: false
+    type: url
   required: false
-  type: one_of
+  type: object

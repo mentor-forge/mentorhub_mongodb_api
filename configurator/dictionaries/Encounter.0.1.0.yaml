@@ -45,7 +45,7 @@ root:
     required: false
     type: array
   - description: Status of the document
-    enums: default_status
+    enums: encounter_status
     name: status
     required: false
     type: enum

@@ -15,7 +15,7 @@
       { "step": "How do you want to wrap up today?", "checked": true },
       { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
     ],
-    "status": "active",
+    "status": "complete",
     "transcript": "**Paula:** Welcome Daniel. This hour is Persevere capstone time — Vue patterns and API integration for your portfolio SPA.\n\n**Daniel:** I've been sketching components but I'm unsure how to structure composables for shared fetch logic.\n\n**Paula:** Let's map your capstone routes first, then extract a composable for authenticated API calls.",
     "summary": "## Summary\nPaula Persevere opened Daniel Dissler's first dedicated Persevere mentoring session by aligning on capstone scope. They reviewed Vue composition patterns, sketched route structure for the portfolio SPA, and agreed Daniel would extract a reusable composable for authenticated API calls before the next weekly session.",
     "tldr": "Paula and Daniel aligned on Vue composable patterns for the Persevere capstone SPA.",
@@ -333,7 +333,7 @@
     "_id": { "$oid": "E0000000000000000000000b" },
     "mentor_id": { "$oid": "A00000000000000000000014" },
     "mentee_id": { "$oid": "A00000000000000000000003" },
-    "date": { "$date": "2026-08-11T15:00:00.000Z" },
+    "date": { "$date": "2026-12-09T15:00:00.000Z" },
     "plan_id": { "$oid": "f00000000000000000000001" },
     "agenda": [
       { "step": "Start Whisper Recording", "checked": true },
@@ -345,20 +345,20 @@
       { "step": "How do you want to wrap up today?", "checked": true },
       { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
     ],
-    "status": "active",
+    "status": "scheduled",
     "transcript": "**Danny:** Lucky, we said we'd extend the health-check script to on-call paging — what landed this quarter?\n\n**Lucky:** I added SLA-breach pages and a runbook link in the alert payload. Two staging drills fired correctly last week.\n\n**Danny:** That's the SuperSoft reliability bar. Next, document rollback owners so paging doesn't land on a single engineer.",
     "summary": "## Summary\nDanny Dev Lead reviewed Lucky Minyard's 2026 SuperSoft on-call paging work. Lucky demonstrated SLA-breach pages and staging drills; they agreed to document rollback owners so paging is not single-threaded.",
     "tldr": "Lucky's 2026 SuperSoft paging extension passed staging drills; Danny assigned rollback-owner docs.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "danny",
-      "at_time": { "$date": "2026-08-11T15:00:00.000Z" },
+      "at_time": { "$date": "2026-12-09T15:00:00.000Z" },
       "correlation_id": "seed-encounter-0b"
     },
     "saved": {
       "from_ip": "127.0.0.1",
       "by_user": "danny",
-      "at_time": { "$date": "2026-08-11T15:00:00.000Z" },
+      "at_time": { "$date": "2026-12-09T15:00:00.000Z" },
       "correlation_id": "save-encounter-0b"
     }
   }

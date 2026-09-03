@@ -2,8 +2,8 @@ _locked: false
 file_name: Profile.0.1.0.yaml
 root:
   additional_properties: false
-  description: Authoritative person record - IdP username in JWT claims, roles
-    and customer sponsorship on Profile.
+  description: Authoritative person record for display identity, roles, and
+    customer sponsorship on Profile.
   name: Profile
   properties:
   - description: The unique identifier for the Profile.
@@ -27,12 +27,8 @@ root:
     name: cognito_sub
     required: false
     type: word
-  - description: The IDP Username used in JWT Claims
-    name: name
-    required: false
-    type: word
   - description: Display name from intake (distinct from IdP username)
-    name: full_name
+    name: display_name
     required: false
     type: sentence
   - description: A Comment the user adds to their profile

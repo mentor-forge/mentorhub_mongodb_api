@@ -1,6 +1,6 @@
 # T253 – Replace Encounter seed `date` with `appointment.{from,to}` (F-D32)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T252  
 **Description:** Update Encounter seed data so every document uses the new `appointment` object with `from` and `to` date-times instead of top-level `date`, while preserving existing persona pairings and status coverage.
@@ -86,3 +86,23 @@ mh up mongodb
 - `Tasks/PENDING.T253.update_encounter_test_data_for_appointment_window.md` — this file (Execution Notes)
 
 ## Execution Notes
+**2026-09-03 Plan**
+
+- Update `configurator/test_data/Encounter.0.1.0.0.json` in place so each Encounter replaces top-level `date` with `appointment.from` and `appointment.to`.
+- Preserve the current 11-document persona graph and status coverage established by prior tasks: `E00000000000000000000001` stays `complete`, `E0000000000000000000000b` stays `scheduled`, `E00000000000000000000009` stays `archived`, and the rest stay `active`.
+- Use the existing timestamp as `appointment.from` and set `appointment.to` to one hour later for every document, leaving breadcrumbs and narrative fields unchanged unless validation requires otherwise.
+- Verify locally with the configure-database flow and the task's MongoDB spot checks, then record results here.
+
+**2026-09-03 Completion**
+
+- Updated all 11 Encounter seed documents in `configurator/test_data/Encounter.0.1.0.0.json` to replace top-level `date` with `appointment.from` and `appointment.to`.
+- Preserved the existing persona pairings, deterministic Encounter `_id`s, agendas, narrative fields, and the shipped status coverage: `E...01` remains `complete`, `E...0b` remains `scheduled`, `E...09` remains `archived`, and all other Encounter rows remain `active`.
+- Kept each original meeting start time as `appointment.from` and set `appointment.to` to one hour later for a consistent mentoring window; breadcrumb timestamps stayed unchanged.
+
+**Testing results**
+
+- `make dev` succeeded locally.
+- `DELETE /api/database/` on `http://localhost:8385` returned top-level `status: SUCCESS`.
+- `POST /api/configurations/` on `http://localhost:8385` returned top-level `status: SUCCESS`; `CFG-05-Encounter.yaml` loaded **11** Encounter documents successfully.
+- MongoDB spot checks passed: total Encounter count = **11**, `date` exists count = **0**, `appointment.from` exists count = **11**, `appointment.to` exists count = **11**, and invalid appointment windows (`from >= to`) = **0**.
+- Packaging verification passed: `make down && make container && mh up mongodb` exited **0**.

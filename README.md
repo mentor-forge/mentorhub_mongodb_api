@@ -66,7 +66,7 @@ Persistent **Developer Edition personas** in seed data support manual SPA testin
 
 ### Persona matrix
 
-| Persona | Slug | `full_name` | Profile `_id` | Roles | Customer | Mentor |
+ | Persona | Slug | `display_name` | Profile `_id` | Roles | Customer | Mentor |
 | --- | --- | --- | --- | --- | --- | --- |
 | Mike the Admin | `mike` | Mike Storey | `A00000000000000000000001` | admin | ALI | — |
 | Daniel the Mentee | `daniel` | Daniel Dissler | `A00000000000000000000002` | mentee | Persevere | Paula |

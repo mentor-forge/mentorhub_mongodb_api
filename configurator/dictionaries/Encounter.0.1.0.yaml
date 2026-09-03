@@ -17,20 +17,10 @@ root:
     name: mentee_id
     required: false
     type: identifier
-  - additional_properties: false
-    description: The scheduled appointment window for this encounter
+  - description: The scheduled appointment window for this encounter
     name: appointment
-    properties:
-    - description: When the scheduled appointment starts
-      name: from
-      required: false
-      type: date-time
-    - description: When the scheduled appointment ends
-      name: to
-      required: false
-      type: date-time
     required: false
-    type: object
+    type: appointment
   - description: The Encounter Plan used for this encounter
     name: plan_id
     required: false

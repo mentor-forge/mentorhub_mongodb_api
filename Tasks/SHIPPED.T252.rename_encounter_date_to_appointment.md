@@ -1,6 +1,6 @@
 # T252 – Replace Encounter `date` with `appointment.{from,to}` (F-D32)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Replace Encounter `date` with an embedded `appointment` object containing `from` and `to` date-times. Schema only — existing Encounter JSON still uses `date` until T253.
@@ -79,3 +79,16 @@ mh up mongodb
 - `Tasks/PENDING.T252.rename_encounter_date_to_appointment.md` — this file (Execution Notes)
 
 ## Execution Notes
+**2026-09-03 Plan**
+
+- Update `configurator/dictionaries/Encounter.0.1.0.yaml` in place by replacing top-level `date` with an inline `appointment` object containing optional `from` and `to` `date-time` fields.
+- Revise the Encounter field descriptions so they describe a scheduled appointment window instead of a single encounter timestamp.
+- Verify packaging and configurator behavior locally, expecting dictionary load to succeed and configure-database to fail only because Encounter seed data still uses top-level `date` until T253.
+
+**2026-09-03 Completion**
+
+- Updated `configurator/dictionaries/Encounter.0.1.0.yaml` to remove top-level `date` and add inline `appointment.from` / `appointment.to` with `additional_properties: false`.
+- Updated the Encounter description for that field to describe the scheduled appointment window.
+- `make dev` succeeded locally.
+- `DELETE /api/database/` succeeded and `POST /api/configurations/` reached Encounter processing, then failed as expected on Encounter seed data validation because documents still include top-level `date` (`additionalProperties: ['date']`) and do not yet supply `appointment`.
+- `make down && make container && mh up mongodb` succeeded.

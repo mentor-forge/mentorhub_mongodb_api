@@ -1,6 +1,6 @@
 # T251 – Update Profile seeds and README for `display_name` (F-D31)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T250  
 **Description:** Align all Profile test documents with the F-D31 schema: remove `name`, rename `full_name` to `display_name`, keep uniqueness, and retitle the README persona matrix column.
@@ -79,3 +79,16 @@ Plan:
 - Update `configurator/test_data/Profile.0.1.0.0.json` so every Profile document removes `name` and uses `display_name` instead of `full_name`.
 - Update `README.md` persona matrix/prose to refer to `display_name` while keeping the separate slug/sign-in column unchanged.
 - Run the configure/package verification commands from this task if the local environment supports them, then record results here.
+
+Completed:
+- Updated all 21 Profile seed documents to remove top-level `name` and rename `full_name` to `display_name`.
+- Updated the README persona matrix header from `full_name` to `display_name`; the Slug column remains the Developer Edition sign-in / JWT persona key.
+
+Tests:
+- `make dev` followed by `curl -X DELETE http://localhost:8385/api/database/` returned HTTP 200 with `status: SUCCESS`.
+- `curl -X POST http://localhost:8385/api/configurations/` returned HTTP 200 with top-level `status: SUCCESS`.
+- MongoDB spot checks passed against database `mentor_hub`: `name` count = 0, `full_name` count = 0, `display_name` count = 21, total Profile count = 21, duplicate `display_name` aggregate = `[]`.
+- Packaging verification passed: `make down`, `make container`, and `mh up mongodb` all completed successfully.
+
+Follow-up:
+- No additional in-repo follow-up identified for T251. Dependent tasks can assume Profile seed data now matches the T250 `display_name` schema.

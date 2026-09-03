@@ -1,0 +1,17 @@
+_locked: false
+file_name: appointment.yaml
+root:
+  additional_properties: false
+  description: A scheduled appointment window {from, to}
+  name: appointment
+  properties:
+  - description: When the scheduled appointment starts
+    name: from
+    required: false
+    type: date-time
+  - description: When the scheduled appointment ends
+    name: to
+    required: false
+    type: date-time
+  required: false
+  type: object

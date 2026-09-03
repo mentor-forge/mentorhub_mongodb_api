@@ -6,6 +6,16 @@ enumerators:
     value: active
   - description: Soft Delete Indicator
     value: archived
+- name: encounter_status
+  values:
+  - description: Session is booked and not yet started
+    value: scheduled
+  - description: Session is currently in progress
+    value: active
+  - description: Session has finished
+    value: complete
+  - description: Session is soft deleted
+    value: archived
 - name: profile_status
   values:
   - description: Provisioned by Admin ingress; not yet fully active

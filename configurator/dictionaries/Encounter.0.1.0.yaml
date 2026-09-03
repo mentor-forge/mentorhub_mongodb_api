@@ -17,10 +17,10 @@ root:
     name: mentee_id
     required: false
     type: identifier
-  - description: When did the encounter occur
-    name: date
+  - description: The scheduled appointment window for this encounter
+    name: appointment
     required: false
-    type: date-time
+    type: appointment
   - description: The Encounter Plan used for this encounter
     name: plan_id
     required: false
@@ -45,7 +45,7 @@ root:
     required: false
     type: array
   - description: Status of the document
-    enums: default_status
+    enums: encounter_status
     name: status
     required: false
     type: enum

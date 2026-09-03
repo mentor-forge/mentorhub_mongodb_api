@@ -6,7 +6,7 @@ versions:
 - _locked: false
   add_indexes:
   - key:
-      full_name: 1
+      display_name: 1
     name: Full Name Index
     options:
       unique: true

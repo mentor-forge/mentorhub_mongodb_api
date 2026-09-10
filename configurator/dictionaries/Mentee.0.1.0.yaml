@@ -13,10 +13,6 @@ root:
     name: description
     required: false
     type: sentence
-  - description: The _id of the related mentee Profile document
-    name: profile_id
-    required: false
-    type: identifier
   - description: Mentor notes about this mentee (shared across mentors over time)
     name: notes
     required: false

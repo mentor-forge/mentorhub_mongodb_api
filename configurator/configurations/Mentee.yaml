@@ -6,11 +6,6 @@ versions:
 - _locked: false
   add_indexes:
   - key:
-      profile_id: 1
-    name: Profile Index
-    options:
-      unique: true
-  - key:
       saved.at_time: -1
     name: Last Saved
     options: {}

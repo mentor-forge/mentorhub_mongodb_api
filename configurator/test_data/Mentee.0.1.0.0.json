@@ -1,12 +1,9 @@
 [
   {
     "_id": {
-      "$oid": "CC0000000000000000000001"
-    },
-    "description": "Daniel is a Persevere graduate deepening frontend and Vue skills with Paula.",
-    "profile_id": {
       "$oid": "A00000000000000000000002"
     },
+    "description": "Daniel is a Persevere graduate deepening frontend and Vue skills with Paula.",
     "notes": "## Progress\nStrong Vue composition patterns; building portfolio SPA for Persevere cohort.\n\n## Observations\nResponds well to concrete homework between sessions with Paula.\n\n## Mentor (paula)\nPersevere-exclusive mentor; continue API integration practice alongside Vue component design.",
     "focus": "Vue composition API patterns for Persevere capstone SPA",
     "homework": "- Complete one API integration exercise in Vue\n- Review mentor-shared component library patterns",
@@ -39,12 +36,9 @@
   },
   {
     "_id": {
-      "$oid": "CC0000000000000000000002"
-    },
-    "description": "Lucky is a SuperSoft engineering apprentice building SRE and backend depth with Danny.",
-    "profile_id": {
       "$oid": "A00000000000000000000003"
     },
+    "description": "Lucky is a SuperSoft engineering apprentice building SRE and backend depth with Danny.",
     "notes": "## Progress\nGood automation instincts; working through reliability and backend service fundamentals.\n\n## Observations\nPrefers exploratory conversation with Danny over rigid agendas.\n\n## Mentor (danny)\nSuperSoft coordinator-mentor; emphasize deployment pipelines and on-call readiness.",
     "focus": "Backend service hardening and deployment check automation",
     "homework": "- Draft runbook for weekly deployment verification\n- Prototype one health-check script for SuperSoft stack",
@@ -77,12 +71,9 @@
   },
   {
     "_id": {
-      "$oid": "CC0000000000000000000003"
-    },
-    "description": "Mary is a self-funded apprentice deepening full-stack skills with bi-weekly Marti sessions.",
-    "profile_id": {
       "$oid": "A00000000000000000000004"
     },
+    "description": "Mary is a self-funded apprentice deepening full-stack skills with bi-weekly Marti sessions.",
     "notes": "## Progress\nSolid API design; growing confidence with database modeling on her own sponsorship.\n\n## Observations\nBenefits from pairing with Marti on architecture decisions.\n\n## Mentor (marti)\nALI volunteer mentor; balance coordinator duties with mentee learning goals.",
     "focus": "Design REST endpoints for self-funded capstone feature",
     "homework": "- Sketch ER diagram for capstone domain\n- Read OpenAPI path design guide",
@@ -115,12 +106,9 @@
   },
   {
     "_id": {
-      "$oid": "CC0000000000000000000004"
-    },
-    "description": "Linda completed her ALI mentee program and left active learning; dossier retained for archive.",
-    "profile_id": {
       "$oid": "A00000000000000000000005"
     },
+    "description": "Linda completed her ALI mentee program and left active learning; dossier retained for archive.",
     "notes": "## Progress\nClosed out capstone work with Marti before transitioning to alumni status.\n\n## Observations\nArchived mentee record kept for historical mentor notes.\n\n## Mentor (marti)\nFinal handoff completed; no further sessions scheduled.",
     "focus": "Archive completed journey artifacts",
     "homework": "- N/A — mentee archived",

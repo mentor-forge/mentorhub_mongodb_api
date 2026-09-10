@@ -3,6 +3,7 @@
 This folder contains coding tasks that an orchestration agent can execute, based on the context and instructions in each task file. This file is a guide for an agent that is helping to plan changes by creating task files to achieve a goal. Create tasks following the [naming conventions](#naming-conventions) and guides below.
 
 - **Context** Before creating any task files you should review the following files for context:
+- ../mentorhub/DeveloperEdition/architecture/ArchitecturePrinciples.md
 - ../mentorhub/DeveloperEdition/standards/data_standards.md
 - ./README.md
 - ./Tasks/_ORCHESTRATE.md

@@ -9,10 +9,6 @@ root:
     name: _id
     required: false
     type: identifier
-  - description: The Profile ID of the owner of this journey
-    name: profile_id
-    required: false
-    type: identifier
   - description: Status of the document
     enums: default_status
     name: status

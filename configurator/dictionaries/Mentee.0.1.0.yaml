@@ -10,39 +10,13 @@ root:
     required: false
     type: identifier
   - description: Short summary of the mentoring relationship
-    name: description
+    name: summary
     required: false
     type: sentence
   - description: Mentor notes about this mentee (shared across mentors over time)
     name: notes
     required: false
     type: markdown
-  - description: Current mentoring focus for upcoming sessions
-    name: focus
-    required: false
-    type: sentence
-  - description: Follow-up items or homework assigned to the mentee
-    name: homework
-    required: false
-    type: markdown
-  - additional_properties: false
-    description: Recurring appointment schedule for mentor and mentee meetings
-    name: schedule
-    properties:
-    - description: When meetings begin
-      name: starting
-      required: false
-      type: date-time
-    - description: Meeting repeats every N weeks
-      name: repeats
-      required: false
-      type: count
-    required: false
-    type: object
-  - description: The next scheduled appointment date and time
-    name: next_appointment
-    required: false
-    type: date-time
   - description: Status of the document
     enums: default_status
     name: status

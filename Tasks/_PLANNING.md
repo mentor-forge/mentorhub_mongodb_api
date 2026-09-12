@@ -6,6 +6,7 @@ This folder contains coding tasks that an orchestration agent can execute, based
 - ../mentorhub/DeveloperEdition/architecture/ArchitecturePrinciples.md
 - ../mentorhub/DeveloperEdition/standards/data_standards.md
 - ./README.md
+- ./Tasks/scripts/*
 - ./Tasks/_ORCHESTRATE.md
 - ./Tasks/_PLANNING.md (this file)
 

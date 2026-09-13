@@ -1,6 +1,6 @@
 # T256 – Add Encounter actual and no_show properties (F-D33)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** none  
 **Description:** Add `actual` (type: `appointment`) and `no_show` (type: `boolean`) properties to Encounter dictionary in `Encounter.0.1.0.yaml`. Schema update only — existing Encounter test data remains valid since new properties are optional.
@@ -84,8 +84,21 @@ mh up mongodb
 ## Outputs
 
 - `configurator/dictionaries/Encounter.0.1.0.yaml` — add `actual` and `no_show`
-- `Tasks/PENDING.T256.add_encounter_actual_and_no_show_properties.md` — this file (Execution Notes)
+- `Tasks/SHIPPED.T256.add_encounter_actual_and_no_show_properties.md` — this file (Execution Notes)
 
 ## Execution Notes
 
-*Reserved for the task execution agent to record plan, commands run, test results, and follow-ups.*
+### Plan
+1. Add `actual` (type: `appointment`, description: `"When the encounter actually happened"`) and `no_show` (type: `boolean`, description: `"Flag indicating whether the encounter was a no-show"`) as optional properties in `configurator/dictionaries/Encounter.0.1.0.yaml`.
+2. Start dev environment via `make dev`, reset database via `DELETE /api/database/`, and apply configuration via `POST /api/configurations/` to verify schema loads and existing test data validates cleanly.
+3. Verify packaging with `make container`.
+
+### Completion Summary
+- Modified `configurator/dictionaries/Encounter.0.1.0.yaml`:
+  - Added `actual` property with `type: appointment`, `required: false`.
+  - Added `no_show` property with `type: boolean`, `required: false`.
+  - Kept `root.additional_properties: false`.
+- Ran `DELETE /api/database/` on port 8385 -> HTTP 200, status SUCCESS (`DROP_DATABASE`).
+- Ran `POST /api/configurations/` on port 8385 -> HTTP 200, top-level status SUCCESS (`PROCESS_ALL`).
+- Verified `CFG-05-Encounter.yaml` loaded with status SUCCESS.
+- Ran `make container` -> Successfully built Docker image `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest`.

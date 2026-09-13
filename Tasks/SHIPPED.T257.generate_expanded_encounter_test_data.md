@@ -1,6 +1,6 @@
 # T257 – Generate expanded Encounter test data with relative schedules and no-shows (F-D33)
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T256  
 **Description:** Create `Tasks/scripts/generate_encounter_test_data.py` and regenerate `configurator/test_data/Encounter.0.1.0.0.json` so every Mentee has at least 12 weekly encounter records, relative `Now() +/- days` windows, `actual` appointment times on completed/active sessions, `no_show` flags on select completed sessions (without transcript/summary/tldr), `FirstEncounter` vs `Standard` plans, Obsidian-aligned transcript/summary formats, and required persona status distributions.
@@ -169,8 +169,31 @@ mh up mongodb
 
 - `Tasks/scripts/generate_encounter_test_data.py` — generator script for expanded relative encounter data
 - `configurator/test_data/Encounter.0.1.0.0.json` — 48 encounter documents matching issue #79 requirements
-- `Tasks/PENDING.T257.generate_expanded_encounter_test_data.md` — this file (Execution Notes)
+- `Tasks/SHIPPED.T257.generate_expanded_encounter_test_data.md` — this file (Execution Notes)
 
 ## Execution Notes
 
-*Reserved for the task execution agent to record plan, commands run, test results, and follow-ups.*
+### Plan
+1. Create `Tasks/scripts/generate_encounter_test_data.py` to deterministically generate 48 Encounter documents (12 per mentee across Daniel, Lucky, Mary, and Linda) relative to `now = datetime.now(timezone.utc)`.
+2. Ensure persona distributions, relative weekly scheduling, `FirstEncounter` vs `Standard` plans, `no_show` omissions, `actual` appointment windows, and realistic Obsidian markdown transcripts/summaries and frontmatter `tldr` values.
+3. Run generator script to output `configurator/test_data/Encounter.0.1.0.0.json`.
+4. Run database reset and configuration via API (`DELETE /api/database/`, `POST /api/configurations/`) on port 8385.
+5. Execute MongoDB spot checks via `mongosh` to verify counts, distributions, plans, and no-show invariants.
+6. Verify packaging via `make down`, `make container`, and `mh up mongodb`.
+
+### Completion Summary
+- Created `Tasks/scripts/generate_encounter_test_data.py` and generated 48 valid EJSON documents to `configurator/test_data/Encounter.0.1.0.0.json`.
+- Per-mentee requirements fully met:
+  - Daniel (`A...02`): 12 encounters (8 completed, 4 scheduled; 1 Money Mentor session with Elon; 1 no-show).
+  - Lucky (`A...03`): 12 encounters (7 completed, 1 active in progress, 4 scheduled; 1 Money Mentor session with Elon).
+  - Mary (`A...04`): 12 encounters (all future scheduled).
+  - Linda (`A...05`): 12 encounters (all historical completed; 1 no-show).
+  - Pat (`A...19`): 0 encounters (empty-activity roster state preserved).
+- Plan mapping: First session for each mentee uses `FirstEncounter` (`f...02`); subsequent sessions use `Standard` (`f...01`).
+- No-show handling: 2 completed encounters flagged `no_show: true` with `transcript`, `summary`, `tldr`, and `actual` strictly omitted.
+- Actual windows: Populated with realistic slight jitter on all completed attended encounters and the active encounter.
+- Database tests:
+  - `DELETE /api/database/` returned status SUCCESS (`DROP_DATABASE`).
+  - `POST /api/configurations/` returned top-level status SUCCESS (`PROCESS_ALL`); `CFG-05-Encounter.yaml` imported 48 documents cleanly.
+  - All mongosh spot checks passed: Total = 48; Daniel = 12; Lucky = 12; Mary = 12; Linda = 12; Pat = 0; Linda complete = 12; Mary scheduled = 12; Lucky active = 1; no_show = 2 (0 transcripts/summaries/tldr/actual); FirstEncounter = 4; Standard = 44; completed attended with actual = 25.
+- Packaging verification: `make down && make container && mh up mongodb` succeeded; Docker image built cleanly and container reached healthy status.

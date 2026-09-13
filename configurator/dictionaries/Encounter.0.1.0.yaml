@@ -21,6 +21,14 @@ root:
     name: appointment
     required: false
     type: appointment
+  - description: When the encounter actually happened
+    name: actual
+    required: false
+    type: appointment
+  - description: Flag indicating whether the encounter was a no-show
+    name: no_show
+    required: false
+    type: boolean
   - description: The Encounter Plan used for this encounter
     name: plan_id
     required: false

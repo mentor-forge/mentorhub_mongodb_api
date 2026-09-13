@@ -1,398 +1,4772 @@
 [
   {
-    "_id": { "$oid": "E00000000000000000000001" },
-    "mentor_id": { "$oid": "A00000000000000000000010" },
-    "mentee_id": { "$oid": "A00000000000000000000002" },
-    "appointment": {
-      "from": { "$date": "2025-02-05T15:00:00.000Z" },
-      "to": { "$date": "2025-02-05T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000001"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000002"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "Introduction - The Agile Learning Institute",
+        "checked": true
+      },
+      {
+        "step": "Introduction - Mentor / Mentee",
+        "checked": true
+      },
+      {
+        "step": "How many weeks are you commiting to?",
+        "checked": true
+      },
+      {
+        "step": "What do you want to be able to say at the end of that time?",
+        "checked": true
+      },
+      {
+        "step": "Introduce Mentee Journey interface.",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe, and Paste Updates",
+        "checked": true
+      }
     ],
     "status": "complete",
-    "transcript": "**Paula:** Welcome Daniel. This hour is Persevere capstone time — Vue patterns and API integration for your portfolio SPA.\n\n**Daniel:** I've been sketching components but I'm unsure how to structure composables for shared fetch logic.\n\n**Paula:** Let's map your capstone routes first, then extract a composable for authenticated API calls.",
-    "summary": "## Summary\nPaula Persevere opened Daniel Dissler's first dedicated Persevere mentoring session by aligning on capstone scope. They reviewed Vue composition patterns, sketched route structure for the portfolio SPA, and agreed Daniel would extract a reusable composable for authenticated API calls before the next weekly session.",
-    "tldr": "Paula and Daniel aligned on Vue composable patterns for the Persevere capstone SPA.",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-19T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Paula\nWelcome Daniel. This hour is Persevere capstone onboarding time\u2014Vue patterns and API integration for your portfolio SPA.\n\n#### Daniel\nI'm excited to get started. I've been sketching components, but I want to make sure my project structure follows best practices.\n\n#### Paula\nWe'll map your capstone routes first, then extract a composable for authenticated API calls.",
+    "summary": "## Summary\n**Summary:** Paula Persevere welcomed Daniel Dissler to the Persevere learning journey. They walked through the ALI intro, aligned on a 12-week mentoring commitment, and toured the Mentee Journey roadmap interface.",
+    "tldr": "Daniel and Paula completed initial Persevere onboarding and agreed on 12-week capstone goals.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "paula",
-      "at_time": { "$date": "2025-02-05T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-01"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "paula",
-      "at_time": { "$date": "2025-02-05T15:00:00.000Z" },
-      "correlation_id": "save-encounter-01"
-    }
-  },
-  {
-    "_id": { "$oid": "E00000000000000000000002" },
-    "mentor_id": { "$oid": "A00000000000000000000010" },
-    "mentee_id": { "$oid": "A00000000000000000000002" },
-    "appointment": {
-      "from": { "$date": "2025-05-06T15:00:00.000Z" },
-      "to": { "$date": "2025-05-06T16:00:00.000Z" }
-    },
-    "plan_id": { "$oid": "f00000000000000000000001" },
-    "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
-    ],
-    "status": "active",
-    "transcript": "**Paula:** Daniel, walk me through the component library patterns you applied this week.\n\n**Daniel:** I refactored the dashboard cards into presentational components and wired props from a parent container composable.\n\n**Paula:** Good separation. Next, let's harden error states and loading skeletons before your cohort demo.",
-    "summary": "## Summary\nPaula reviewed Daniel's Vue component refactor for the Persevere capstone, praised presentational versus container separation, and set homework on error states and loading skeletons ahead of the cohort demo.",
-    "tldr": "Paula reviewed Daniel's Vue component refactor and assigned error-state polish before demo.",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "paula",
-      "at_time": { "$date": "2025-05-06T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-02"
+      "at_time": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-01"
     },
     "saved": {
       "from_ip": "127.0.0.1",
       "by_user": "paula",
-      "at_time": { "$date": "2025-05-06T15:00:00.000Z" },
-      "correlation_id": "save-encounter-02"
+      "at_time": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-01"
     }
   },
   {
-    "_id": { "$oid": "E00000000000000000000003" },
-    "mentor_id": { "$oid": "A00000000000000000000014" },
-    "mentee_id": { "$oid": "A00000000000000000000003" },
-    "appointment": {
-      "from": { "$date": "2025-03-10T15:00:00.000Z" },
-      "to": { "$date": "2025-03-10T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000002"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
     ],
-    "status": "active",
-    "transcript": "**Danny:** Lucky, let's talk SuperSoft deployment verification — what does your weekly runbook look like today?\n\n**Lucky:** I have manual steps in a doc but nothing automated for health checks after deploy.\n\n**Danny:** We'll draft a script that hits each service endpoint and fails the pipeline if any check misses SLA.",
-    "summary": "## Summary\nDanny Dev Lead and Lucky Minyard focused on SuperSoft reliability work. They reviewed Lucky's manual deployment checklist and agreed to prototype an automated health-check script that gates weekly releases.",
-    "tldr": "Danny and Lucky planned automated deployment health checks for the SuperSoft stack.",
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-26T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Paula\nDaniel, let's review your Vue component architecture sketches.\n\n#### Daniel\nI started scaffolding the dashboard navigation and cards using Vue Router.\n\n#### Paula\nClean layout. Next step is extracting state into a Pinia store so auth tokens are accessible globally.",
+    "summary": "## Summary\n**Summary:** Reviewed Daniel's initial Vue Router structure and dashboard scaffolding. Paula recommended introducing Pinia for shared authentication state.",
+    "tldr": "Paula reviewed Daniel's dashboard layout and assigned Pinia store integration for auth state.",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "danny",
-      "at_time": { "$date": "2025-03-10T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-03"
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-02"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "danny",
-      "at_time": { "$date": "2025-03-10T15:00:00.000Z" },
-      "correlation_id": "save-encounter-03"
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-02"
     }
   },
   {
-    "_id": { "$oid": "E00000000000000000000004" },
-    "mentor_id": { "$oid": "A00000000000000000000014" },
-    "mentee_id": { "$oid": "A00000000000000000000003" },
-    "appointment": {
-      "from": { "$date": "2025-05-20T15:00:00.000Z" },
-      "to": { "$date": "2025-05-20T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000003"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
     ],
-    "status": "active",
-    "transcript": "**Danny:** How did the health-check script behave in staging?\n\n**Lucky:** It caught a misconfigured Mongo connection string before we promoted — exactly what we wanted.\n\n**Danny:** Excellent. Next session we'll extend it to cover on-call paging thresholds.",
-    "summary": "## Summary\nLucky demonstrated the new SuperSoft health-check automation to Danny. The script blocked a bad staging promotion, validating the mentoring focus on backend hardening and on-call readiness.",
-    "tldr": "Lucky's deployment health-check script caught a staging misconfiguration before promote.",
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-02T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Paula\nHow did the Pinia store integration go?\n\n#### Daniel\nThe store is working for auth state, but I'm getting TypeScript errors on the reactive getters.\n\n#### Paula\nLet's inspect your type definitions. We'll define an explicit interface for the user state.",
+    "summary": "## Summary\n**Summary:** Pair-debugged TypeScript typing issues in Daniel's Pinia user store. Verified reactive getters compile without errors.",
+    "tldr": "Paula helped Daniel resolve TypeScript interface typing on Pinia auth getters.",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "danny",
-      "at_time": { "$date": "2025-05-20T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-04"
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-03"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "danny",
-      "at_time": { "$date": "2025-05-20T15:00:00.000Z" },
-      "correlation_id": "save-encounter-04"
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-03"
     }
   },
   {
-    "_id": { "$oid": "E00000000000000000000005" },
-    "mentor_id": { "$oid": "A00000000000000000000006" },
-    "mentee_id": { "$oid": "A00000000000000000000004" },
+    "_id": {
+      "$oid": "E00000000000000000000004"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000011"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
     "appointment": {
-      "from": { "$date": "2025-02-12T15:00:00.000Z" },
-      "to": { "$date": "2025-02-12T16:00:00.000Z" }
+      "from": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      }
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
     ],
-    "status": "active",
-    "transcript": "**Marti:** Mary, you self-funded this apprenticeship — what outcome do you want from our bi-weekly sessions?\n\n**Mary:** I need confidence designing REST endpoints for my capstone without over-scoping the database layer.\n\n**Marti:** Let's sketch the ER diagram together and map each entity to a minimal OpenAPI path set.",
-    "summary": "## Summary\nMarti Lombardi and Mary Anderson aligned on self-funded capstone goals. They sketched domain entities for Mary's REST API and agreed on a minimal OpenAPI surface before the next bi-weekly session.",
-    "tldr": "Marti helped Mary scope REST endpoints and ER design for her self-funded capstone.",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2025-02-12T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-05"
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-09T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T02:57:00.000Z"
+      }
     },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2025-02-12T15:00:00.000Z" },
-      "correlation_id": "save-encounter-05"
-    }
-  },
-  {
-    "_id": { "$oid": "E00000000000000000000006" },
-    "mentor_id": { "$oid": "A00000000000000000000006" },
-    "mentee_id": { "$oid": "A00000000000000000000004" },
-    "appointment": {
-      "from": { "$date": "2025-06-09T15:00:00.000Z" },
-      "to": { "$date": "2025-06-09T16:00:00.000Z" }
-    },
-    "plan_id": { "$oid": "f00000000000000000000001" },
-    "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
-    ],
-    "status": "active",
-    "transcript": "**Marti:** Walk me through the OpenAPI paths you added since our last session.\n\n**Mary:** I split collection routes from singleton routes and documented pagination query params.\n\n**Marti:** Solid API design progress. Before next week, add error response schemas for 404 and 422 cases.",
-    "summary": "## Summary\nMary reviewed her OpenAPI progress with Marti, covering collection versus singleton routes and pagination parameters. Marti confirmed strong API design momentum and assigned error-response schema work.",
-    "tldr": "Mary showed OpenAPI pagination work; Marti assigned 404 and 422 error schema tasks.",
-    "created": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2025-06-09T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-06"
-    },
-    "saved": {
-      "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2025-06-09T15:00:00.000Z" },
-      "correlation_id": "save-encounter-06"
-    }
-  },
-  {
-    "_id": { "$oid": "E00000000000000000000007" },
-    "mentor_id": { "$oid": "A00000000000000000000011" },
-    "mentee_id": { "$oid": "A00000000000000000000002" },
-    "appointment": {
-      "from": { "$date": "2025-04-15T14:00:00.000Z" },
-      "to": { "$date": "2025-04-15T15:00:00.000Z" }
-    },
-    "plan_id": { "$oid": "f00000000000000000000001" },
-    "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
-    ],
-    "status": "active",
-    "transcript": "**Elon:** Daniel, let's pressure-test your Persevere capstone pitch — what problem does your SPA solve and who pays for it?\n\n**Daniel:** It's a cohort progress dashboard for nonprofit program managers evaluating graduate outcomes.\n\n**Elon:** Good framing. Tighten the unit economics slide and we'll mark this as a compensated money-mentor review session.",
-    "summary": "## Summary\nElon Money mentored Daniel Dissler on startup pitch structure for the Persevere capstone. They refined problem framing and unit economics; this was a **compensated** money-mentor session (billing tracked outside Encounter schema).",
+    "transcript": "#### Elon\nDaniel, let's pressure-test your Persevere capstone pitch\u2014what problem does your SPA solve and who pays for it?\n\n#### Daniel\nIt's a cohort progress dashboard for nonprofit program managers evaluating graduate outcomes.\n\n#### Elon\nGood framing. Tighten the unit economics slide and we'll mark this as a compensated money-mentor review session.",
+    "summary": "## Summary\n**Summary:** Elon Money mentored Daniel Dissler on startup pitch structure for the Persevere capstone. They refined problem framing and unit economics; this was a **compensated** money-mentor review session.",
     "tldr": "Compensated money-mentor session: Elon reviewed Daniel's Persevere capstone pitch and unit economics.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "elon",
-      "at_time": { "$date": "2025-04-15T14:00:00.000Z" },
-      "correlation_id": "seed-encounter-07"
+      "at_time": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-04"
     },
     "saved": {
       "from_ip": "127.0.0.1",
       "by_user": "elon",
-      "at_time": { "$date": "2025-04-15T14:00:00.000Z" },
-      "correlation_id": "save-encounter-07"
+      "at_time": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-04"
     }
   },
   {
-    "_id": { "$oid": "E00000000000000000000008" },
-    "mentor_id": { "$oid": "A00000000000000000000011" },
-    "mentee_id": { "$oid": "A00000000000000000000003" },
-    "appointment": {
-      "from": { "$date": "2025-04-22T14:00:00.000Z" },
-      "to": { "$date": "2025-04-22T15:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000005"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
     ],
-    "status": "active",
-    "transcript": "**Elon:** Lucky, SuperSoft is paying for engineering depth — how do you justify the reliability work to a budget holder?\n\n**Lucky:** I can tie each health check to reduced incident minutes and faster rollback time.\n\n**Elon:** That's the story investors expect. We'll log this as a compensated money-mentor advisory on technical due diligence.",
-    "summary": "## Summary\nElon Money coached Lucky Minyard on articulating SuperSoft reliability investments to budget holders. Lucky linked health checks to incident reduction; this was a **compensated** money-mentor session (billing tracked outside Encounter schema).",
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-16T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Paula\nToday we focus on composables for data fetching.\n\n#### Daniel\nI wrote a `useFetch` wrapper that handles auth headers and loading states.\n\n#### Paula\nGreat abstraction. Make sure you test the 401 token refresh interceptor before next week.",
+    "summary": "## Summary\n**Summary:** Evaluated Daniel's custom `useFetch` composable. Confirmed loading and error states are handled; set next step on token refresh logic.",
+    "tldr": "Daniel demonstrated custom Vue fetch composable with error handling and loading indicators.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-05"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000006"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-23T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Daniel\nI'm here.\n\n#### Mike\nHey, Daniel. How are you doing today?\n\n#### Daniel\nOh, it's rough. We had a flood last night. Whole garage got washed out. Just had to spend some time cleaning that up.\n\n#### Mike\nOh no, that's no fun. If it got up to the walls, you really need to take it all the way back to the studs. Well, what would you like to focus on today?\n\n#### Daniel\nI want to get this ticket done today. The bump to SPA utils 0.5.5.\n\n#### Mike\nDo an MH down, an MH pull all, and an MH up all, and then go to localhost:8080. Pull all pulls the latest version of all the containers so you get Lucky's API updates.\n\n#### Daniel\nOkay, it's done. I'm looking at localhost:8080. Oh, it's clean.\n\n#### Mike\nLook at the Mentee SPA because it's using all the shared components from the new SPA utils. Your update to 5.5 is going to make your app look a lot like the Mentee app.\n\n#### Daniel\nCollapse Single Page Applications, open API Explorer, and choose Mentor API. This is almost the same as the Pokemon layout. It was an app for Pokemon, but when you have a category of all the different Pokemon, they have all these different abilities. This basically is the layout of each one.\n\n#### Mike\nYes, exactly like the Pokemon API. The API reaches out to the database and makes the data the correct shape for how you want to use it. These API definitions are the contract between you on your SPA and Lucky on the API.\n\n#### Daniel\nI'll get to reviewing the tasks and open a draft PR for review.\n\n#### Mike\nSounds good. I look forward to the PR review. Peace.",
+    "summary": "## Summary\n**Summary:** Daniel opened the chat describing a series of personal stresses\u2014a recent flood that soaked his garage, the death of his cousin, a dog\u2019s accidental overdose, and a close call on the highway\u2014before shifting focus to work. He and Mike walked through updating the SPA utils to version 5.5, using MH commands (pull-all, down/up), handling cursor sandbox restrictions, cleaning up pending tasks, committing changes, and preparing a draft pull request. They then explored the local API via localhost:8080, discussed how the API shapes data for the UI (comparing it to a Pok\u00e9mon API), and planned next steps for reviewing UI components and finalizing the PR.",
+    "tldr": "Daniel vented recent personal setbacks, then with Mike debugged and updated their SPA project, cleaned up tasks, reviewed the API, and set up a draft PR.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000007"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "complete",
+    "no_show": true,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000008"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-09-06T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T02:57:00.000Z"
+      }
+    },
+    "transcript": "#### Paula\nGlad you're feeling better after missing last week, Daniel. Let's run a full regression before cohort demo day.\n\n#### Daniel\nAll tests passed and error states are handled with toast notifications.\n\n#### Paula\nOutstanding progress. We're ready for your cohort presentation.",
+    "summary": "## Summary\n**Summary:** Paula and Daniel conducted a comprehensive pre-demo review of the capstone SPA, verifying end-to-end user flows and toast notifications.",
+    "tldr": "Paula verified Daniel's pre-demo capstone checklist and test coverage.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-08"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000009"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-20T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-20T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-09"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000a"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-27T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-27T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000b"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-04T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-04T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000c"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000002"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-11T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-11T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-daniel-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-daniel-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000d"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-07-26T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "Introduction - The Agile Learning Institute",
+        "checked": true
+      },
+      {
+        "step": "Introduction - Mentor / Mentee",
+        "checked": true
+      },
+      {
+        "step": "How many weeks are you commiting to?",
+        "checked": true
+      },
+      {
+        "step": "What do you want to be able to say at the end of that time?",
+        "checked": true
+      },
+      {
+        "step": "Introduce Mentee Journey interface.",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe, and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Danny\nWelcome Lucky to SuperSoft engineering mentorship. In this introductory session, we'll establish your reliability and backend objectives.\n\n#### Lucky\nThanks Danny. I want to build automated deployment verification and on-call paging pipelines.\n\n#### Danny\nWe walked through the ALI philosophy and your 12-week roadmap in the Mentee Journey app.",
+    "summary": "## Summary\n**Summary:** Danny Dev Lead kicked off Lucky Minyard's SuperSoft SRE apprenticeship with onboarding, roadmap orientation, and tooling setup.",
+    "tldr": "Danny and Lucky completed onboarding and established SuperSoft reliability goals.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000e"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-02T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Danny\nLucky, let's inspect your current manual deploy checklist.\n\n#### Lucky\nRight now it takes 15 manual curl commands across three staging environments.\n\n#### Danny\nWe'll script that into a python automated health-check CLI.",
+    "summary": "## Summary\n**Summary:** Analyzed manual deployment verification bottlenecks; designed automated health check suite.",
+    "tldr": "Danny and Lucky planned an automated health-check script to replace manual curl steps.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-02"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000000f"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-09T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Danny\nHow did the initial health-check script run in staging?\n\n#### Lucky\nIt successfully verified Mongo connectivity and flagged an expired TLS cert before promote.\n\n#### Danny\nThat's an immediate win. Next, add automated rollback triggering.",
+    "summary": "## Summary\n**Summary:** Reviewed staging run of health-check automation; script prevented a broken deployment due to expired TLS cert.",
+    "tldr": "Lucky's deployment script blocked a bad promotion, proving SRE value.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-03"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000010"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000011"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-16T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Elon\nLucky, SuperSoft is paying for engineering depth\u2014how do you justify the reliability work to a budget holder?\n\n#### Lucky\nI can tie each health check to reduced incident minutes and faster rollback time.\n\n#### Elon\nThat's the story investors expect. We'll log this as a compensated money-mentor advisory on technical due diligence.",
+    "summary": "## Summary\n**Summary:** Elon Money coached Lucky Minyard on articulating SuperSoft reliability investments to budget holders. Lucky linked health checks to incident reduction; this was a **compensated** session.",
     "tldr": "Compensated money-mentor session: Elon coached Lucky on ROI framing for reliability work.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "elon",
-      "at_time": { "$date": "2025-04-22T14:00:00.000Z" },
-      "correlation_id": "seed-encounter-08"
+      "at_time": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-04"
     },
     "saved": {
       "from_ip": "127.0.0.1",
       "by_user": "elon",
-      "at_time": { "$date": "2025-04-22T14:00:00.000Z" },
-      "correlation_id": "save-encounter-08"
+      "at_time": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-04"
     }
   },
   {
-    "_id": { "$oid": "E00000000000000000000009" },
-    "mentor_id": { "$oid": "A00000000000000000000006" },
-    "mentee_id": { "$oid": "A00000000000000000000005" },
-    "appointment": {
-      "from": { "$date": "2024-05-15T15:00:00.000Z" },
-      "to": { "$date": "2024-05-15T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000011"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-23T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
     ],
-    "status": "archived",
-    "transcript": "**Marti:** Linda, you're wrapping up your ALI program — let's archive your journey artifacts and capture final mentor notes.\n\n**Linda:** I've exported my capstone repo and closed the remaining homework items.\n\n**Marti:** Perfect handoff. I'll mark this session archived since you're transitioning to alumni status.",
-    "summary": "## Summary\nMarti Lombardi held a final mentoring session with Linda Left before archival. They confirmed capstone export and homework completion; the encounter is retained as historical context for Linda's archived mentee dossier.",
-    "tldr": "Archived final session: Marti and Linda closed out Linda's ALI capstone before alumni transition.",
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Lucky\nOver the weekend and this morning I wanted to read over a lot of the tasks to understand them better. Did you get a chance to look at what I committed and pushed on Friday?\n\n#### Mike\nThere is a PR on mentor API. You went to 0.5.0, and 0.5.1 added new filter options to the list composable. So you're backing that up with filters by URL, interests, technologies, and skill level.\n\n#### Lucky\nI need to focus on getting some enthusiasm back. I've been in a slump for a few days. I feel like I just cannot keep up.\n\n#### Mike\nThe Kanban board is meant to deal with that overwhelming feeling. Pick up one ticket; the only thing you're supposed to work on is that ticket. When that ticket's done, you go bang out the next one.\n\n#### Lucky\nI want to learn everything, but I'm kind of scatterbrained. I know a little bit about this and a little bit about that.\n\n#### Mike\nDid you read the article on the Agile Learning Institute's webpage about the T-shaped engineer? Employers are looking for T-shaped engineers. They're looking for someone with deep expertise in a skill set that they need, who can work with the entire team because they understand what everybody else does.\n\n#### Lucky\nRight.\n\n#### Mike\nIn your curriculum, we have a tool called the Engineer Kit. If you work your way through the Engineer Kit modules, you will establish that top of the T, and then you can decide on your specialty.\n\n#### Lucky\nI think I want to start with the Clean Code section. I'll go through some of that this week.\n\n#### Mike\nClean Code is a really good topic. How we implement separation of concerns, routes, services, utilities, and single intent. That's clean code. I'll get that PR reviewed for you this morning. Peace.",
+    "summary": "## Summary\n**Summary:** Lucky and Mike discussed a pending pull request that Lucky had pushed on Friday but hadn't requested review for, leading to some confusion about its status. Mike clarified the PR's details (API utils version bumps, new filters, pagination changes) and outlined upcoming work items such as resource list implementation and API utils updates. The conversation then shifted to Lucky's feeling of burnout and lack of focus. Mike advised using the Kanban board to limit work to one ticket at a time, emphasized the value of becoming a T-shaped engineer rather than trying to master everything, and suggested progressing through the 'Engineer Kit' learning modules (starting with the Clean Code section). Finally, they addressed Lucky's personal issue with an unresolved bank/check problem, with Mike recommending concrete steps: set deadlines, follow up persistently with the bank, and keep documentation. They concluded by setting a short-term goal for Lucky to review the clean-code material this week and for Mike to get the PR reviewed.",
+    "tldr": "Mike helped Lucky clarify his pull request, offered productivity and career guidance (focus on one ticket, become T-shaped via Engineer Kit), and gave practical advice on resolving a stuck bank/check issue.",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2024-05-15T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-09"
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-05"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "marti",
-      "at_time": { "$date": "2024-05-15T15:00:00.000Z" },
-      "correlation_id": "save-encounter-09"
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-05"
     }
   },
   {
-    "_id": { "$oid": "E0000000000000000000000a" },
-    "mentor_id": { "$oid": "A00000000000000000000010" },
-    "mentee_id": { "$oid": "A00000000000000000000002" },
-    "appointment": {
-      "from": { "$date": "2026-07-14T15:00:00.000Z" },
-      "to": { "$date": "2026-07-14T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000012"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-30T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Danny\nLet's discuss Prometheus alerting thresholds for on-call paging.\n\n#### Lucky\nI configured P95 latency alerts at 250ms and error rates above 1% over 5 minutes.\n\n#### Danny\nSensible thresholds to avoid alert fatigue. Let's run a chaos drill.",
+    "summary": "## Summary\n**Summary:** Configured Prometheus alerting rules and pager thresholds for SuperSoft core services.",
+    "tldr": "Danny and Lucky tuned Prometheus latency and error alerts to avoid alert fatigue.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000013"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-09-06T02:01:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T02:59:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Danny\nToday we prepare for the production readiness review.\n\n#### Lucky\nRunbooks are updated and grafana dashboards are grouped by SLA.\n\n#### Danny\nYou're ready for primary on-call rotation starting next week.",
+    "summary": "## Summary\n**Summary:** Final production readiness review for SuperSoft on-call transition. Verified runbook links and dashboards.",
+    "tldr": "Danny approved Lucky's production readiness and on-call rotation schedule.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000014"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-13T01:45:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-13T02:45:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-09-13T01:47:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-13T02:45:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
     ],
     "status": "active",
-    "transcript": "**Paula:** Daniel, last year's error-state work paid off — how did the cohort demo land, and what's next for the capstone SPA?\n\n**Daniel:** The demo went well. I'm now wiring the composable to the live Persevere API and adding a session-history view for program managers.\n\n**Paula:** Let's sketch that history view against Encounter dates, then you can ship a 2026 mid-year checkpoint before the next weekly session.",
-    "summary": "## Summary\nPaula Persevere and Daniel Dissler reviewed post-demo progress on the Persevere capstone. They mapped a session-history view to Encounter dates and agreed Daniel would ship a mid-year 2026 checkpoint against the live API before the next weekly session.",
-    "tldr": "Paula and Daniel planned a 2026 session-history view after Daniel's successful cohort demo.",
+    "no_show": false,
+    "transcript": "#### Danny\nLucky, we are live in session reviewing your weekly service metrics.\n\n#### Lucky\nP95 latency remained under 120ms throughout yesterday's load surge.\n\n#### Danny\nExcellent. Let's finish checking the remaining agenda items.",
+    "summary": "## Summary\n**Summary:** Mid-session review of weekly service performance; meeting is currently active.",
+    "tldr": "Active session: Danny and Lucky reviewing SuperSoft weekly latency metrics in progress.",
     "created": {
       "from_ip": "127.0.0.1",
-      "by_user": "paula",
-      "at_time": { "$date": "2026-07-14T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-0a"
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T01:45:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-08"
     },
     "saved": {
       "from_ip": "127.0.0.1",
-      "by_user": "paula",
-      "at_time": { "$date": "2026-07-14T15:00:00.000Z" },
-      "correlation_id": "save-encounter-0a"
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-08"
     }
   },
   {
-    "_id": { "$oid": "E0000000000000000000000b" },
-    "mentor_id": { "$oid": "A00000000000000000000014" },
-    "mentee_id": { "$oid": "A00000000000000000000003" },
-    "appointment": {
-      "from": { "$date": "2026-12-09T15:00:00.000Z" },
-      "to": { "$date": "2026-12-09T16:00:00.000Z" }
+    "_id": {
+      "$oid": "E00000000000000000000015"
     },
-    "plan_id": { "$oid": "f00000000000000000000001" },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-20T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-20T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
     "agenda": [
-      { "step": "Start Whisper Recording", "checked": true },
-      { "step": "What do you want to focus on today?", "checked": true },
-      { "step": "How would you describe what's happening now?", "checked": true },
-      { "step": "During our time together, what would you like to accomplish?", "checked": true },
-      { "step": "What would you like to be able to share next time?", "checked": true },
-      { "step": "How are your discoveries making a difference?", "checked": true },
-      { "step": "How do you want to wrap up today?", "checked": true },
-      { "step": "Stop Recording, Transcribe and Paste Updates", "checked": true }
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
     ],
     "status": "scheduled",
-    "transcript": "**Danny:** Lucky, we said we'd extend the health-check script to on-call paging — what landed this quarter?\n\n**Lucky:** I added SLA-breach pages and a runbook link in the alert payload. Two staging drills fired correctly last week.\n\n**Danny:** That's the SuperSoft reliability bar. Next, document rollback owners so paging doesn't land on a single engineer.",
-    "summary": "## Summary\nDanny Dev Lead reviewed Lucky Minyard's 2026 SuperSoft on-call paging work. Lucky demonstrated SLA-breach pages and staging drills; they agreed to document rollback owners so paging is not single-threaded.",
-    "tldr": "Lucky's 2026 SuperSoft paging extension passed staging drills; Danny assigned rollback-owner docs.",
     "created": {
       "from_ip": "127.0.0.1",
       "by_user": "danny",
-      "at_time": { "$date": "2026-12-09T15:00:00.000Z" },
-      "correlation_id": "seed-encounter-0b"
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-09"
     },
     "saved": {
       "from_ip": "127.0.0.1",
       "by_user": "danny",
-      "at_time": { "$date": "2026-12-09T15:00:00.000Z" },
-      "correlation_id": "save-encounter-0b"
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000016"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-27T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-27T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000017"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-04T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-04T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000018"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000014"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000003"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-11T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-11T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-lucky-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-lucky-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000019"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-07-19T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "Introduction - The Agile Learning Institute",
+        "checked": true
+      },
+      {
+        "step": "Introduction - Mentor / Mentee",
+        "checked": true
+      },
+      {
+        "step": "How many weeks are you commiting to?",
+        "checked": true
+      },
+      {
+        "step": "What do you want to be able to say at the end of that time?",
+        "checked": true
+      },
+      {
+        "step": "Introduce Mentee Journey interface.",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe, and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nMary, you self-funded this apprenticeship\u2014what outcome do you want from our bi-weekly sessions?\n\n#### Mary\nI need confidence designing REST endpoints for my capstone without over-scoping the database layer.\n\n#### Marti\nLet's sketch the ER diagram together and map each entity to a minimal OpenAPI path set.",
+    "summary": "## Summary\n**Summary:** Marti Lombardi welcomed Mary Anderson to her self-funded engineering apprenticeship. They reviewed Mary's career transition goals, established bi-weekly meeting rhythms, and toured the Mentee Journey roadmap.",
+    "tldr": "Marti Lombardi conducted Mary Anderson's initial ALI apprenticeship onboarding session.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001a"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-07-26T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nLet's examine your entity model drafts.\n\n#### Mary\nI split the user profile from the authentication credentials, but I'm wondering if subscriptions belong on the customer.\n\n#### Marti\nEmbedding subscriptions on the customer document is much cleaner for document databases.",
+    "summary": "## Summary\n**Summary:** Marti Lombardi and Mary Anderson aligned on self-funded capstone goals. They sketched domain entities for Mary's REST API and agreed on a minimal OpenAPI surface.",
+    "tldr": "Marti helped Mary scope REST endpoints and entity relationship design for her capstone.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-02"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001b"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-02T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nWalk me through the OpenAPI paths you added since our last session.\n\n#### Mary\nI split collection routes from singleton routes and documented pagination query params.\n\n#### Marti\nSolid API design progress. Before next week, add error response schemas for 404 and 422 cases.",
+    "summary": "## Summary\n**Summary:** Mary reviewed her OpenAPI progress with Marti, covering collection versus singleton routes and pagination parameters. Marti confirmed strong API design momentum and assigned error-response schema work.",
+    "tldr": "Mary showed OpenAPI pagination work; Marti assigned 404 and 422 error schema tasks.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-03"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001c"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-09T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Mike\nLandscaping is going on outside my door today, so it might be a little noisy. But all those trees blocking my view are coming down! So what would you like to focus on today?\n\n#### Mary\nFinishing FWO2 and the tickets that follow behind it, so you don't have to look over my shoulder all the time.\n\n#### Mike\nOur approach to credit card is probably not appropriate. If we avoid storing credit card information and let it persist in Stripe, we avoid regulatory compliance issues.\n\n#### Mary\nRight, basic form on our end with name and email, and a button to connect to Stripe so we don't store it.\n\n#### Mike\nExactly. In our customer schema, we'll have an array of subscriptions. When Stripe processes payment, they notify our webhook, and we persist the webhook receipt in a payments collection.\n\n#### Mary\nSo we delete card, delete dashboard, and move subscriptions into customer?\n\n#### Mike\nRight! We simplify the data structure significantly. Let's research the exact webhook payloads and document them before making schema edits.\n\n#### Mary\nSounds great, I'll document the research in Markdown.",
+    "summary": "## Summary\n**Summary:** Mike and Mary start with casual chat about noisy landscaping outside Mike\u2019s house, then move into a work session focused on the MentorHub project. Mary wants help finishing the FWO2 tickets, and Mike walks her through his mental model for breaking down UI pages, APIs, and data structures. They agree that storing credit-card data in Stripe is preferable, so they plan to drop the 'card' collection, eliminate the customizable dashboard for the MVP, and move subscription information into the customer document. Mike suggests adding a new collection ('payments') to capture Stripe webhook events.",
+    "tldr": "They decided to simplify the data model by removing card and dashboard collections, embedding subscriptions in the customer entity, and adding payments for Stripe webhooks.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-04"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001d"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-16T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nHow did your research on the Stripe webhook structures turn out?\n\n#### Mary\nI documented the payment_intent.succeeded and invoice.payment_failed payloads in Markdown.\n\n#### Marti\nVery thorough research. That will make implementing the payments collection schema straightforward.",
+    "summary": "## Summary\n**Summary:** Marti and Mary reviewed research findings on Stripe checkout sessions and payment webhooks. Confirmed database structures align with external webhook events.",
+    "tldr": "Marti reviewed Mary's webhook payload documentation and approved the payments collection design.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-05"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001e"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-23T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Mary\nHey Mike.\n\n#### Mike\nHey, Mary. How are you today?\n\n#### Mary\nI have a cold, but I still wanted to meet. I have my assignments to do.\n\n#### Mike\nI glanced at those different job offerings you sent. Which one sounded like the one you believed in?\n\n#### Mary\nI thought about GitHub. We're already working in GitHub, so I feel like we could work on whatever I'm missing.\n\n#### Mike\nStaff software engineer for GitHub. They want demonstrated experience with large-scale system architecture and design in cloud-based environments with microservices. Guess what MentorHub is? It's a cloud-based microservice architecture.\n\n#### Mary\nThose are the environments I've been training on. I want more experience.\n\n#### Mike\nAll of our APIs are written in Python, and the MH command line utility is a Bash script. And for asynchronous messaging, webhooks receive inbound data, but at scale you use message queuing like Kafka or RabbitMQ. It's like a mailbox: you drop an event in, and subscribers process it independently.\n\n#### Mary\nRight, so the services stay completely independent.\n\n#### Mike\nExactly. Finish that introductory Python course first, and next week when we do architectural reviews, pay special attention to how MentorHub maps to these cloud patterns.\n\n#### Mary\nI'm ready to tackle this. Thank you, Mike. Peace.",
+    "summary": "## Summary\n**Summary:** Mary and Mike discussed Mary\u2019s cold and upcoming work schedule, then shifted focus to a GitHub staff software engineer job listing that requires extensive experience in large-scale system architecture, cloud deployment, microservices, DevOps practices (including on-call responsibilities), scripting languages (Bash/Python), GraphQL, asynchronous messaging systems (Kafka/RabbitMQ), CI/CD pipelines, and familiarity with AWS/Azure services. Mike explained how the Mentor Hub project aligns with many of these requirements\u2014providing Mary hands-on experience with cloud architecture, microservices, event-driven design, and API development\u2014and suggested she complete a Python course first before diving deeper into architectural concepts during upcoming sessions. Both agreed to continue building relevant skills step-by-step.",
+    "tldr": "Mary is dealing with a cold but can work later; Mike outlined the GitHub job's heavy technical demands and mapped them to experiences Mary will gain through Mentor Hub, recommending she finish Python training before tackling architecture topics next week.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000001f"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-08-30T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nMary, congratulations on finishing the introductory Python course.\n\n#### Mary\nThanks Marti. Understanding functions, dictionaries, and blueprints made the API code so much clearer.\n\n#### Marti\nNow you're equipped to build domain routes directly against MongoIO.",
+    "summary": "## Summary\n**Summary:** Mary demonstrated completion of the Python course exercises. Marti verified Flask route decorators and blueprint structuring.",
+    "tldr": "Mary completed her Python introductory modules and verified Flask route decorators.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000020"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      }
+    },
+    "actual": {
+      "from": {
+        "$date": "2026-09-06T02:02:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T02:58:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "transcript": "#### Marti\nNext week begins the cloud architecture series Mike mentioned. Ready to dive in?\n\n#### Mary\nYes, I'm ready to connect my Python API work to the broader cloud infrastructure.\n\n#### Marti\nSolid foundation. See you at stand-up.",
+    "summary": "## Summary\n**Summary:** Final pre-architecture session reviewing Docker containerization and AWS ECS deployment patterns.",
+    "tldr": "Marti and Mary planned architectural review checkpoints for the MentorHub cloud deployment.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-08"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000021"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-20T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-20T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-09"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000022"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-27T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-27T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000023"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-04T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-04T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000024"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000004"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-11T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-11T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-mary-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-mary-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000025"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000001"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-06-21T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-06-21T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "Introduction - The Agile Learning Institute",
+        "checked": true
+      },
+      {
+        "step": "Introduction - Mentor / Mentee",
+        "checked": true
+      },
+      {
+        "step": "How many weeks are you commiting to?",
+        "checked": true
+      },
+      {
+        "step": "What do you want to be able to say at the end of that time?",
+        "checked": true
+      },
+      {
+        "step": "Introduce Mentee Journey interface.",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe, and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-06-21T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-06-21T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Mike\nAll right. So what would you like to focus on today?\n\n#### Linda\nI really want to get a professional opinion from you. I've been out of the game for five years. What focus should I invest in? I keep hearing data engineer or data analysis.\n\n#### Mike\nYou already know JavaScript and Node.js. If you want to pursue data engineering, let's start with document databases like MongoDB and ODM tools like Mongoose.\n\n#### Linda\nYes, Mongoose seemed very straightforward and simple.\n\n#### Mike\nThere's a free 20-hour developer course from Mongo with a 50% certification discount. After that, we'll look at relational databases like PostgreSQL, which store tables with rows and columns.\n\n#### Linda\nI have experience with Excel, so rows and columns make sense to me.\n\n#### Mike\nAnd when you get your Mac set up, we'll install the MentorHub developer environment so you can clone the source code and run the whole stack locally.\n\n#### Linda\nThat's awesome. I can't wait to get my Mac and start setting up the local environment.\n\n#### Mike\nCheck your calendar for the stand-up invite every morning Monday through Friday.\n\n#### Linda\nI see the calendar invite now. Thank you, Mike! Talk to you tomorrow for stand-up. Peace.",
+    "summary": "## Summary\n**Summary:** Linda asked Mike for professional advice on re-entering the tech workforce after a five-year gap, wondering whether to focus on data engineering or data analysis. Mike highlighted that Linda already knows JavaScript/Node.js and has experience with MongoDB and Mongoose, and suggested starting with free MongoDB developer courses (\u224820 hours) that lead to a certification discount. He explained the basics of document vs. relational databases, recommending later study of PostgreSQL, and introduced concepts like indexing and data modeling. They also discussed practical setup: Linda's Mac purchase, accessories, configuring Discord backgrounds, and linking work Google calendar for daily stand-up meetings. Finally, they coordinated future onboarding steps and scheduled regular stand-ups.",
+    "tldr": "Linda got a roadmap to transition into data engineering\u2014starting with MongoDB training, then PostgreSQL\u2014plus help setting up her Mac, accounts, and daily stand-up logistics.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-06-21T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "mike",
+      "at_time": {
+        "$date": "2026-06-21T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000026"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-06-28T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-06-28T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-06-28T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-06-28T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nLet's review semantic HTML and CSS Grid layouts from your homework.\n\n#### Linda\nI created responsive page layouts without relying on third-party CSS frameworks.\n\n#### Marti\nClean semantic structure. Next, let's explore JavaScript DOM manipulation.",
+    "summary": "## Summary\n**Summary:** Reviewed semantic markup and CSS grid responsive design; transitioned to DOM event listeners.",
+    "tldr": "Marti verified Linda's CSS Grid homework and introduced DOM event handling.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-28T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-02"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-06-28T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000027"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-05T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-05T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-05T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-05T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nHow did the interactive form validation exercises go?\n\n#### Linda\nI added real-time validation for email and password fields using regex.\n\n#### Marti\nExcellent feedback loop for users. Let's connect this form to a mock REST endpoint next.",
+    "summary": "## Summary\n**Summary:** Evaluated Linda's client-side form validation logic and error messaging.",
+    "tldr": "Linda demonstrated real-time form validation with regex pattern matching.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-05T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-03"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-05T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000028"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-12T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-12T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-12T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-12T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nToday we review fetch requests and async/await syntax.\n\n#### Linda\nI replaced XMLHttpRequest callbacks with async/await and try/catch blocks.\n\n#### Marti\nMuch cleaner and more maintainable error handling.",
+    "summary": "## Summary\n**Summary:** Practiced modern asynchronous JavaScript fetch patterns and error handling with try/catch.",
+    "tldr": "Linda converted asynchronous data fetching to async/await syntax with robust error handling.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-12T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-04"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-12T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000029"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-19T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-19T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nLet's discuss your capstone project scope.\n\n#### Linda\nI want to build a community resource directory with search and tag filtering.\n\n#### Marti\nThat's a great portfolio piece. Let's design the component hierarchy.",
+    "summary": "## Summary\n**Summary:** Scaffolded Linda's capstone community resource directory and established milestone targets.",
+    "tldr": "Marti and Linda scoped the community resource directory capstone application.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-19T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-05"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-19T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002a"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-07-26T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-07-26T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nHow is the search indexing behaving with client-side filters?\n\n#### Linda\nThe search filter updates instantly on keystroke with a 300ms debounce.\n\n#### Marti\nAdding debounce shows mature UX consideration.",
+    "summary": "## Summary\n**Summary:** Reviewed debounced search filter implementation for the capstone directory.",
+    "tldr": "Linda demonstrated debounced live search filtering for her capstone project.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-26T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-07-26T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002b"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "complete",
+    "no_show": true,
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-02T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-02T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002c"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-09T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-09T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nGood to see you back Linda. Let's catch up on the directory details.\n\n#### Linda\nI finished the card modal details and accessible keyboard navigation.\n\n#### Marti\nAccessibility is essential for any public directory. Solid work.",
+    "summary": "## Summary\n**Summary:** Reviewed accessibility and keyboard navigation enhancements following Linda's excused absence.",
+    "tldr": "Linda demonstrated accessible keyboard navigation and modal dialogs.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-09T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-08"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-09T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002d"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-16T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-16T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nLet's conduct a cross-browser layout inspection.\n\n#### Linda\nI tested on Chrome, Firefox, and Safari on mobile viewport sizes.\n\n#### Marti\nResponsive design is solid across all three rendering engines.",
+    "summary": "## Summary\n**Summary:** Validated cross-browser rendering and responsive mobile viewports for the capstone.",
+    "tldr": "Marti and Linda verified cross-browser compatibility and mobile responsiveness.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-16T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-09"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-16T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002e"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-23T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-23T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nWe're approaching your graduation from the ALI program. Let's review your resume and portfolio deploy.\n\n#### Linda\nThe capstone is deployed to GitHub Pages with continuous deployment.\n\n#### Marti\nProfessional presentation. You're well prepared for job interviews.",
+    "summary": "## Summary\n**Summary:** Reviewed GitHub Pages deployment and prepared developer portfolio presentation.",
+    "tldr": "Marti reviewed Linda's portfolio deployment and interview readiness.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-23T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-23T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000002f"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-08-30T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-08-30T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nLet's do a practice technical interview.\n\n#### Linda\nI walked through the event loop, closures, and responsive CSS strategies.\n\n#### Marti\nConfident, clear explanations throughout.",
+    "summary": "## Summary\n**Summary:** Conducted mock technical interview covering core frontend and JavaScript runtime concepts.",
+    "tldr": "Linda demonstrated strong conceptual grasp during mock technical interview.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-30T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-08-30T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000030"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000006"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000005"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": true
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": true
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": true
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": true
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": true
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": true
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": true
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": true
+      }
+    ],
+    "status": "complete",
+    "no_show": false,
+    "actual": {
+      "from": {
+        "$date": "2026-09-06T02:03:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-06T02:56:00.000Z"
+      }
+    },
+    "transcript": "#### Marti\nLinda, you're wrapping up your ALI program\u2014let's archive your journey artifacts and capture final mentor notes.\n\n#### Linda\nI've exported my capstone repo and closed the remaining homework items.\n\n#### Marti\nPerfect handoff. I'll mark this session complete as you transition to alumni status.",
+    "summary": "## Summary\n**Summary:** Marti Lombardi held the final mentoring session with Linda Left before archival. They confirmed capstone export and homework completion; all historical records retained for alumni reference.",
+    "tldr": "Final session: Marti and Linda closed out Linda's ALI capstone before alumni transition.",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-06T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-linda-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "marti",
+      "at_time": {
+        "$date": "2026-09-06T03:00:00.000Z"
+      },
+      "correlation_id": "save-enc-linda-12"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000031"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-20T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-20T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000002"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "Introduction - The Agile Learning Institute",
+        "checked": false
+      },
+      {
+        "step": "Introduction - Mentor / Mentee",
+        "checked": false
+      },
+      {
+        "step": "How many weeks are you commiting to?",
+        "checked": false
+      },
+      {
+        "step": "What do you want to be able to say at the end of that time?",
+        "checked": false
+      },
+      {
+        "step": "Introduce Mentee Journey interface.",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe, and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-01"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-01"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000032"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-09-27T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-09-27T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-02"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-02"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000033"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-04T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-04T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-03"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-03"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000034"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-11T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-11T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-04"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-04"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000035"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-18T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-18T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-05"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-05"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000036"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-10-25T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-10-25T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-06"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-06"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000037"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-11-01T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-11-01T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-07"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-07"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000038"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-11-08T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-11-08T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-08"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-08"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E00000000000000000000039"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-11-15T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-11-15T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-09"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-09"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000003a"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-11-22T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-11-22T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-10"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-10"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000003b"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-11-29T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-11-29T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-11"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-11"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "E0000000000000000000003c"
+    },
+    "mentor_id": {
+      "$oid": "A00000000000000000000010"
+    },
+    "mentee_id": {
+      "$oid": "A00000000000000000000019"
+    },
+    "appointment": {
+      "from": {
+        "$date": "2026-12-06T02:00:00.000Z"
+      },
+      "to": {
+        "$date": "2026-12-06T03:00:00.000Z"
+      }
+    },
+    "plan_id": {
+      "$oid": "f00000000000000000000001"
+    },
+    "agenda": [
+      {
+        "step": "Start Whisper Recording",
+        "checked": false
+      },
+      {
+        "step": "What do you want to focus on today?",
+        "checked": false
+      },
+      {
+        "step": "How would you describe what's happening now?",
+        "checked": false
+      },
+      {
+        "step": "During our time together, what would you like to accomplish?",
+        "checked": false
+      },
+      {
+        "step": "What would you like to be able to share next time?",
+        "checked": false
+      },
+      {
+        "step": "How are your discoveries making a difference?",
+        "checked": false
+      },
+      {
+        "step": "How do you want to wrap up today?",
+        "checked": false
+      },
+      {
+        "step": "Stop Recording, Transcribe and Paste Updates",
+        "checked": false
+      }
+    ],
+    "status": "scheduled",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "seed-enc-pat-12"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2026-09-13T02:00:00.000Z"
+      },
+      "correlation_id": "save-enc-pat-12"
     }
   }
 ]

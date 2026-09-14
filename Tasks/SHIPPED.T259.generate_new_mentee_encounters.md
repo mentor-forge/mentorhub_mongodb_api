@@ -1,6 +1,6 @@
 # T259 – Generate encounters for new mentees with relative scheduling
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T258  
 **Description:** Extend `Tasks/scripts/generate_encounter_test_data.py` and regenerate `configurator/test_data/Encounter.0.1.0.0.json` to include encounter records for all 11 new mentees. The majority of new mentees must have a combination of scheduled and completed encounters, with the "next" encounter scheduled for `now + random days (< 7)`.
@@ -169,8 +169,40 @@ mh up mongodb
 
 ### Completion Summary
 
-*(To be filled by execution agent)*
+- Created `Tasks/scripts/extend_encounters.py` and wired it into `Tasks/scripts/generate_encounter_test_data.py` to generate authentic encounter data for all 11 new mentees (`A...22` through `A...2c`).
+- Cohort distribution requirements fully satisfied:
+  - **Majority (8 of 11)** have a combination of completed and scheduled encounters:
+    - Jordan (`A...22`): 6 completed, 3 scheduled, next at `now + 2 days`
+    - Taylor (`A...23`): 4 completed, 4 scheduled, next at `now + 4 days`
+    - Casey (`A...24`): 8 completed (session 3 no-show), 2 scheduled, next at `now + 1 day`
+    - Morgan (`A...25`): 5 completed, 3 scheduled, next at `now + 5 days`
+    - Sam (`A...27`): 6 completed, 3 scheduled, next at `now + 6 days`
+    - Riley (`A...28`): 4 completed, 4 scheduled, next at `now + 2 days`
+    - Avery (`A...2a`): 7 completed, 3 scheduled, next at `now + 4 days`
+    - Devon (`A...2b`): 5 completed (session 4 no-show), 3 scheduled, next at `now + 1 day`
+  - **2 of 11** have only scheduled encounters:
+    - Alex (`A...26`): 5 scheduled, next at `now + 3 days` (session 1 uses `FirstEncounter` plan)
+    - Harper (`A...2c`): 4 scheduled, next at `now + 5 days` (session 1 uses `FirstEncounter` plan)
+  - **1 of 11** has only completed encounters:
+    - Quinn (`A...29`): 8 completed, 0 scheduled (concluded alumni cycle)
+- For every mentee with scheduled encounters (10 of 10), the "next" encounter is scheduled for `now + random days (< 7)` relative to UTC execution time.
+- All completed attended encounters include `actual` appointment windows with realistic variance, markdown `transcript`, `summary`, and single-line `tldr` (<= 255 chars).
+- Exactly 2 new sessions flagged `no_show: true` with actual window, transcript, summary, and tldr strictly omitted.
+- Regenerated `configurator/test_data/Encounter.0.1.0.0.json` with 147 total valid EJSON documents.
 
 ### Test Results
 
-*(To be filled by execution agent)*
+- Generator executed cleanly: `Successfully generated 147 Encounter documents`.
+- Local dev database reset and configuration:
+  - `curl -X DELETE "http://localhost:8385/api/database/"` returned status SUCCESS (`DROP_DATABASE`).
+  - `curl -X POST "http://localhost:8385/api/configurations/"` returned status SUCCESS (`PROCESS`), with `CFG-05-Encounter.yaml SUCCESS` (0 failures across 18 sub-events).
+- `mongosh` spot checks:
+  - `Total Encounters`: 147
+  - All 11 new mentees verified with correct total, completed, and scheduled counts.
+  - Upcoming encounters within 7 days: exactly 10 mentees.
+  - No-show invariant: 4 total no-shows, 0 with `actual`, 0 with `summary`, 0 with `transcript`.
+- Packaging verification:
+  - `make down` cleanly stopped all dev containers.
+  - `make container` built `ghcr.io/mentor-forge/mentorhub_mongodb_api:latest`.
+  - `mh up mongodb` launched packaged containers and reached healthy status with all 147 encounters, 32 profiles, and 15 mentees confirmed.
+

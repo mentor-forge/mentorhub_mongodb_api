@@ -770,6 +770,18 @@ def generate_encounters() -> list[dict]:
         }
         encounters.append(doc)
 
+    # =========================================================================
+    # 6. Cohort Mentee Encounters for Active Mentors (Paula, Danny, Elon, Melinda)
+    # Generates relative encounters for 11 new mentees.
+    # =========================================================================
+    try:
+        from Tasks.scripts.extend_encounters import generate_new_encounters
+    except ImportError:
+        from extend_encounters import generate_new_encounters
+
+    new_encs, serial = generate_new_encounters(serial, now, profiles)
+    encounters.extend(new_encs)
+
     return encounters
 
 

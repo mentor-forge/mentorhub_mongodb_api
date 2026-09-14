@@ -94,5 +94,269 @@
       },
       "correlation_id": "save-profile-05"
     }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000022"
+    },
+    "summary": "Jordan is a Persevere apprentice mastering responsive UI components and accessibility with Paula.",
+    "notes": "## Progress\nExceptional grasp of semantic HTML and accessibility guidelines; building accessible component library.\n\n## Observations\nApplies feedback immediately during pairing sessions.\n\n## Mentor (paula)\nPersevere mentor; reinforce component composition and automated accessibility testing.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-15T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-22"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2025-06-01T12:00:00.000Z"
+      },
+      "correlation_id": "save-profile-22"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000023"
+    },
+    "summary": "Taylor is a Persevere mentee advancing full-stack Vue patterns and API integrations with Paula.",
+    "notes": "## Progress\nConsistent progress on state management and asynchronous data fetching in Vue.\n\n## Observations\nLearns best with hands-on live coding exercises.\n\n## Mentor (paula)\nPersevere mentor; emphasize reactive store patterns and API error handling.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-02-05T11:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-23"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "paula",
+      "at_time": {
+        "$date": "2025-06-02T13:30:00.000Z"
+      },
+      "correlation_id": "save-profile-23"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000024"
+    },
+    "summary": "Casey is a SuperSoft junior engineer building backend service reliability and CI pipelines with Danny.",
+    "notes": "## Progress\nImplemented clean REST endpoints with robust schema validation in Python.\n\n## Observations\nQuickly debugs container build failures.\n\n## Mentor (danny)\nSuperSoft coordinator-mentor; deepen Docker multi-stage builds and automated test coverage.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-20T14:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-24"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2025-06-03T10:15:00.000Z"
+      },
+      "correlation_id": "save-profile-24"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000025"
+    },
+    "summary": "Morgan is a SuperSoft SRE apprentice establishing metrics collection and alert automation with Danny.",
+    "notes": "## Progress\nSuccessfully instrumented key service endpoints with Prometheus metrics.\n\n## Observations\nMethodical approach to incident investigation and telemetry aggregation.\n\n## Mentor (danny)\nSuperSoft mentor; focus on SLO definition and alert threshold tuning.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-02-12T09:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-25"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2025-06-04T15:45:00.000Z"
+      },
+      "correlation_id": "save-profile-25"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000026"
+    },
+    "summary": "Alex is a SuperSoft cloud platform apprentice learning cluster deployment and rolling updates with Danny.",
+    "notes": "## Progress\nOnboarded to SuperSoft staging environments; reviewing cluster manifests.\n\n## Observations\nHigh enthusiasm for cloud infrastructure automation.\n\n## Mentor (danny)\nSuperSoft mentor; prepare for upcoming onboarding session on rollout strategies.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-03-05T16:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-26"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "danny",
+      "at_time": {
+        "$date": "2025-06-05T11:20:00.000Z"
+      },
+      "correlation_id": "save-profile-26"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000027"
+    },
+    "summary": "Sam is a startup founder refining financial modeling and pitch preparation with Elon.",
+    "notes": "## Progress\nCompleted initial revenue model; articulating TAM and value proposition clearly.\n\n## Observations\nValues Elon sharp commercial feedback and stress-testing of unit economics.\n\n## Mentor (elon)\nMoney mentor; continue pitch deck polish and valuation sensitivity analysis.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-10T10:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-27"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2025-06-06T14:10:00.000Z"
+      },
+      "correlation_id": "save-profile-27"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000028"
+    },
+    "summary": "Riley is a SaaS founder modeling subscription pricing tiers and customer acquisition metrics with Elon.",
+    "notes": "## Progress\nDefined three-tier pricing model; mapped churn risk factors across subscription cohorts.\n\n## Observations\nAnalytical mindset; eager to validate pricing assumptions with real cohort data.\n\n## Mentor (elon)\nMoney mentor; focus on net revenue retention and billing engine integration.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-02-15T15:30:00.000Z"
+      },
+      "correlation_id": "seed-profile-28"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2025-06-07T09:40:00.000Z"
+      },
+      "correlation_id": "save-profile-28"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A00000000000000000000029"
+    },
+    "summary": "Quinn completed the ALI fintech apprenticeship focused on capital ledger systems and risk audit with Elon.",
+    "notes": "## Progress\nFinalized capstone risk model and audit reconciliation reports with Elon.\n\n## Observations\nSuccessfully graduated from the specialized fintech cohort; archive record retained.\n\n## Mentor (elon)\nConcluded coaching program with final milestone sign-off.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-01-25T11:45:00.000Z"
+      },
+      "correlation_id": "seed-profile-29"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "elon",
+      "at_time": {
+        "$date": "2025-06-08T16:00:00.000Z"
+      },
+      "correlation_id": "save-profile-29"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A0000000000000000000002a"
+    },
+    "summary": "Avery is an ALI product design mentee developing design system tokens and user test protocols with Melinda.",
+    "notes": "## Progress\nStandardized token taxonomy across web and mobile Figma libraries.\n\n## Observations\nDeep user empathy and strong cross-functional communication.\n\n## Mentor (melinda)\nALI multi-mentor; guide token export automation into CSS variables.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-02-05T13:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-2a"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "melinda",
+      "at_time": {
+        "$date": "2025-06-09T10:50:00.000Z"
+      },
+      "correlation_id": "save-profile-2a"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A0000000000000000000002b"
+    },
+    "summary": "Devon is an ALI frontend mentee crafting UI micro-interactions and performant animations with Melinda.",
+    "notes": "## Progress\nBuilt reusable modal and drawer components with spring-based motion physics.\n\n## Observations\nExcels at polishing micro-interactions and optimizing 60fps animations.\n\n## Mentor (melinda)\nALI multi-mentor; pair on accessibility considerations for reduced-motion users.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-02-20T10:15:00.000Z"
+      },
+      "correlation_id": "seed-profile-2b"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "melinda",
+      "at_time": {
+        "$date": "2025-06-10T12:30:00.000Z"
+      },
+      "correlation_id": "save-profile-2b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "A0000000000000000000002c"
+    },
+    "summary": "Harper is an ALI full-stack mentee learning MongoDB data modeling and backend API design with Melinda.",
+    "notes": "## Progress\nEnrolled in ALI full-stack cohort; completed initial environment setup.\n\n## Observations\nStrong foundational programming skills, eager to bridge frontend and database layers.\n\n## Mentor (melinda)\nALI multi-mentor; schedule upcoming onboarding session to define capstone milestones.",
+    "status": "active",
+    "created": {
+      "from_ip": "127.0.0.1",
+      "by_user": "system",
+      "at_time": {
+        "$date": "2025-03-05T09:00:00.000Z"
+      },
+      "correlation_id": "seed-profile-2c"
+    },
+    "saved": {
+      "from_ip": "127.0.0.1",
+      "by_user": "melinda",
+      "at_time": {
+        "$date": "2025-06-11T14:20:00.000Z"
+      },
+      "correlation_id": "save-profile-2c"
+    }
   }
 ]

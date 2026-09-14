@@ -1,6 +1,6 @@
 # T258 – Seed Mentee profiles and dossiers for active mentors
 
-**Status:** Pending  
+**Status:** Shipped  
 **Type:** Feature  
 **Depends On:** T257  
 **Description:** Add 11 new mentee Profile documents in `Profile.0.1.0.0.json` and corresponding Mentee dossier documents in `Mentee.0.1.0.0.json`, ensuring every active Mentor other than Marti (Paula, Danny, Elon, Melinda) has 3 to 5 mentees assigned. Update `Tasks/scripts/persona_ids.json`.
@@ -144,8 +144,28 @@ mh up mongodb
 
 ### Completion Summary
 
-*(To be filled by execution agent)*
+- Created and ran `Tasks/scripts/seed_mentee_test_data.py` to deterministically append 11 new mentee documents across `Profile.0.1.0.0.json`, `Mentee.0.1.0.0.json`, and `Tasks/scripts/persona_ids.json`.
+- Mentees added:
+  - Paula (`A...10`): Jordan Persevere (`A...22`), Taylor Persevere (`A...23`) -> Total Paula mentees = 4.
+  - Danny (`A...14`): Casey SuperSoft (`A...24`), Morgan SuperSoft (`A...25`), Alex SuperSoft (`A...26`) -> Total Danny mentees = 4.
+  - Elon (`A...11`): Sam Startup (`A...27`), Riley Revenue (`A...28`), Quinn Capital (`A...29`) -> Total Elon mentees = 3.
+  - Melinda (`A...15`): Avery Design (`A...2a`), Devon Interface (`A...2b`), Harper Fullstack (`A...2c`) -> Total Melinda mentees = 3.
+  - Marti (`A...06`): Unchanged with 2 mentees (Mary, Linda).
+- All profiles satisfy unique indexes on `display_name` and `email`. All mentee dossiers contain valid `summary`, `notes`, and breadcrumbs.
 
 ### Test Results
 
-*(To be filled by execution agent)*
+- Local dev services started cleanly with `INPUT_FOLDER=$(pwd)/configurator docker compose up -d`.
+- `curl -X DELETE "http://localhost:8385/api/database/"` returned HTTP 200 with status SUCCESS (`DROP_DATABASE`).
+- `curl -X POST "http://localhost:8385/api/configurations/"` returned HTTP 200 with status SUCCESS (`PROCESS`), 18 sub-events with 0 failures.
+- `mongosh` spot checks:
+  - `Total profiles`: 32
+  - `Total mentees in Profile`: 16
+  - `Paula mentees`: 4
+  - `Danny mentees`: 4
+  - `Elon mentees`: 3
+  - `Melinda mentees`: 3
+  - `Marti mentees`: 2
+  - `Total Mentee collection docs`: 15
+  - `Mentee docs with summary`: 15
+
